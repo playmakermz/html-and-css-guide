@@ -11,11 +11,11 @@ ditampilkan di peramban atau perangkat internet. dengan bantuannya CSS ( Cascadi
 tampilan dari suatu website bisa dengan mudahnnya untuk dikelola menghasilkan suatu tampilan
 website yang sesuai dengan keinginan sang pembuat.
 
-'Belajar kode tidak harus susah jika kita belajar sesuai tahap'
+`Belajar kode tidak harus susah jika kita belajar sesuai tahap`
 
 ### Table content
 
-- [Setup HTML ]
+- [Mulai HTML]
 - 
 
 # Pengenalan HTMl , CSS dan Javascript

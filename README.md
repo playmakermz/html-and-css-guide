@@ -26,6 +26,23 @@ mulai dari cara kerja wbsite.
 Tujuan dari pembelajaran ini adalah membuat pembaca agar bisa setidaknya membuat website mereka sendiri
 entah static website maupun dynamic website, membuat ilmu yang dimiliki agar bisa bermanfaat bagi mereka sendiri
 
+# HTML, CSS dan Javascript
+
+HTML (Hypertext Text Markup Language) adalah bahasa yang digunakan untuk menyusun kerangka dokumen dan 
+menulis text, setelah suatu dokumen memiliki kerangka pengguna bisa menulis informasi apa saja yang 
+dicantumkan kedalam dokumen.
+
+CSS ( Cascading Style Sheets ) adalah bahasa untuk mengubah, mengatur dan mengelola tampilan
+suatu dokumen, dokumen yang memiliki tampilan terorganisir akan membuat pembaca lebih mudah
+memahami materi atau informasi yang disampaikan.
+
+Javascript adalah bahasa program yang dibuat bertujuan untuk menambahkan dan mengelola Fungsi 
+( tindakan dari suatu element dokument ), dengan adannya Javascript sebuah dokumen bisa 
+terasa lebih hidup, ada respon dari dokument ke pengguna, sebagai contoh Whatsapp website 
+dalam pesan jika pengguna mengklik Reply maka akan muncul kotak pesan.
+
+
+
 
 
 

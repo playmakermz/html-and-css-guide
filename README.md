@@ -41,6 +41,15 @@ Javascript adalah bahasa program yang dibuat bertujuan untuk menambahkan dan men
 terasa lebih hidup, ada respon dari dokument ke pengguna, sebagai contoh Whatsapp website 
 dalam pesan jika pengguna mengklik Reply maka akan muncul kotak pesan.
 
+HTML, CSS dan Javascript bekerja bersama untuk saling melengkapi, dengan adannya
+kerjasama antar bahasa tersebut terwujudlah suatu website yang terasa lebih hidup dari pada
+hanya lembar kosong, Perumpamaannya HTML adalah Tulang , CSS adalah kulit, Javascript adalah
+Oragan tubuh.
+
+Contoh penulisan kode
+- css `h1 { color: red; }`
+- HTML `<p> halo dunia </p>`
+- Javascript `console.log('halo dunia')`
 
 
 

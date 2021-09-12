@@ -51,6 +51,8 @@ Contoh penulisan kode
 - HTML `<p> halo dunia </p>`
 - Javascript `console.log('halo dunia')`
 
+Sebelum memulai belajar pembuatan website saya sarankan untuk menyiapkan text editor dan 
+web browser 
 
 
 

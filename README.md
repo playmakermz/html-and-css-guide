@@ -6,49 +6,36 @@ seminar atau acara online, dengan peningkatan pengunaan website maka tidak ada s
 jika kita belajar untuk membuat website, meskipun tidak untuk dijual tapi untuk diri kita sendiri
 , sebagai contoh membuat website portofolio dan penggunaan website mudah dibuat.
 
-Website adalah 
+Website adalah halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia, penyedia website bisa dari perorangan, kelompok atau organisasi, suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan suatu jaringan yang menghubungkan client dengan webserver.
 
 ### Table content
 
-- [Mulai HTML]
-- 
+- [Mulai HTML](document/html.md)
+- [Mulai CSS](document/css.md)
+- [Mulai Javascript](document/javascript.md)
+- [Mulai SQL](document/sql.md)
 
-# Pengenalan HTMl , CSS dan Javascript
+# Pengenalan Pembelajaran
 
 Mempelajari materi dengan bertahap adalah kunci untuk memahami, kita akan belajar secara bertahap
 mulai dari cara kerja wbsite.
 
 Tujuan dari pembelajaran ini adalah membuat pembaca agar bisa setidaknya membuat website mereka sendiri
-entah static website maupun dynamic website, membuat ilmu yang dimiliki agar bisa bermanfaat bagi mereka sendiri
+seperti static website maupun dynamic website, memastikan ilmu bisa bermanfaat untuk digunakan.
 
-# HTML, CSS dan Javascript
+Dalam membuat website sederhana dibutuhkan setidaknya 1 web browser dan 1 texteditor yang berjalan bersamaan untuk mempermudah dalam pengelolaan,
+web browser digunakan untuk melihat seperti apa website ditampilkan dan bekerja, text editor dibutuhkan untuk menambahkan fitur atau mengelola sebuah fitur didalam website. 
 
-HTML (Hypertext Text Markup Language) adalah bahasa yang digunakan untuk menyusun kerangka dokumen dan 
-menulis text, setelah suatu dokumen memiliki kerangka pengguna bisa menulis informasi apa saja yang 
-dicantumkan kedalam dokumen.
+pengguna bisa mengunakan web browser dan text editor sesuai keinginan mereka, tidak perlu harus mengikuti apa kata orang lain, jika anda suka itu maka pakai saja, 
+pada dasarnya web browser dan text editor hanyalah alat yang membantu pengguna untuk membantu pengguna.
 
-CSS ( Cascading Style Sheets ) adalah bahasa untuk mengubah, mengatur dan mengelola tampilan
-suatu dokumen, dokumen yang memiliki tampilan terorganisir akan membuat pembaca lebih mudah
-memahami materi atau informasi yang disampaikan.
+sebagai contoh, saya mengunakan emacs-doom dan chromium dalam pembuatan website, emacs-doom memiliki segudang fitur yang dapat membantu saya menulis sebuah kode.
 
-Javascript adalah bahasa program yang dibuat bertujuan untuk menambahkan dan mengelola Fungsi 
-( tindakan dari suatu element dokument ), dengan adannya Javascript sebuah dokumen bisa 
-terasa lebih hidup, ada respon dari dokument ke pengguna, sebagai contoh Whatsapp website 
-dalam pesan jika pengguna mengklik Reply maka akan muncul kotak pesan.
+# Mengenai website
 
-HTML, CSS dan Javascript bekerja bersama untuk saling melengkapi, dengan adannya
-kerjasama antar bahasa tersebut terwujudlah suatu website yang terasa lebih hidup dari pada
-hanya lembar kosong, Perumpamaannya HTML adalah Tulang , CSS adalah kulit, Javascript adalah
-Oragan tubuh.
-
-Contoh penulisan kode
-- css `h1 { color: red; }`
-- HTML `<p> halo dunia </p>`
-- Javascript `console.log('halo dunia')`
-
-Sebelum memulai belajar pembuatan website saya sarankan untuk menyiapkan text editor dan 
-web browser 
+sebuah website ditulis dengan aturan html atau xhtml, terkadang berisi dengan bahasa script untuk membantu website lebih hidup, .
 
 
-
+#### Refrensi
+- <https://id.wikipedia.org/wiki/Situs_web>
 

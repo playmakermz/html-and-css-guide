@@ -19,3 +19,5 @@ Contoh Perintah penting dalam SQL:
 - 'CREATE INDEX' - buat index (kata kunci)
 - 'DROP INDEX' - hapus index
 
+#### REFRENSI
+- <https://www.w3schools.com/sql/sql_syntax.asp>

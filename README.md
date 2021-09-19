@@ -37,9 +37,18 @@ sebuah website ditulis dengan aturan html atau xhtml, terkadang berisi dengan ba
 
 Beberapa protocol dalam website:
 - HTTP (Hypertext Transfer Protocol)
-HTTP adalah suatu protocol permintaan-respons, dimana client akan melakukan perminataan kepada server dan akan dibalas dengan informasi atau data yang tersedia dalam server
+HTTP adalah suatu protocol permintaan-respons, dimana client akan melakukan perminataan kepada server dan akan dibalas dengan informasi atau data yang tersedia dalam server.
+- HTTPS (Hypertext Transfer Protocol Secure)
+HTTPS memiliki cara kerja yang hampir sama dengan HTTP, perbedaan adalah disana terdapat enkripsi tambah untuk meningkatkan keamanan jaringan.
+
+Mengenai website dinamis dan statis:
+- website statis
+adalah sekumpulan dokumen atau halaman yang hanya bisa dirubah secara manual, didalam sana tidak tersedia database atau web server framework ( contoh: django, nodejs ), biasanya terdiri dari html, css dan javascript ( javascript hanya untuk tampilan saja ).
+- website dinamis
+adalah sekumpulan dokumen atau halaman yang bisa dengan mudah berubah, dan bisa beroperasi sesuai dengan keinginan sang pembuat website, didalam sana ada local storage atau database untuk menyimpan data, dibangun dengan sistem yang complex ( contoh: instagram, facebook )
 
 
 #### Refrensi
 - <https://id.wikipedia.org/wiki/Situs_web>
+- <https://id.wikipedia.org/wiki/HTTPS>
 

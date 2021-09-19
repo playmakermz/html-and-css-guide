@@ -3,15 +3,10 @@
 Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah,
 menjadi hal biasa kita membuka browser setiap hari, mencari informasi mengikuti
 seminar atau acara online, dengan peningkatan pengunaan website maka tidak ada salahnya
-jika kita belajar untuk membuat website, meskipun tidak untuK dijual tapi untuk diri kita sendiri
-, sebagai contoh membuat website portofolio.
+jika kita belajar untuk membuat website, meskipun tidak untuk dijual tapi untuk diri kita sendiri
+, sebagai contoh membuat website portofolio dan penggunaan website mudah dibuat.
 
-HTML ( Hypertext Markup Language ) adalah bahasa standart untuk membuat dokumen yang dirancang untuk 
-ditampilkan di peramban atau perangkat internet. dengan bantuannya CSS ( Cascading Style Sheets ) 
-tampilan dari suatu website bisa dengan mudahnnya untuk dikelola menghasilkan suatu tampilan
-website yang sesuai dengan keinginan sang pembuat.
-
-`Belajar kode tidak harus susah jika kita belajar sesuai tahap`
+Website adalah 
 
 ### Table content
 

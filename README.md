@@ -33,7 +33,11 @@ sebagai contoh, saya mengunakan emacs-doom dan chromium dalam pembuatan website,
 
 # Mengenai website
 
-sebuah website ditulis dengan aturan html atau xhtml, terkadang berisi dengan bahasa script untuk membantu website lebih hidup, .
+sebuah website ditulis dengan aturan html atau xhtml, terkadang berisi dengan bahasa script untuk membantu website lebih hidup.
+
+Beberapa protocol dalam website:
+- HTTP (Hypertext Transfer Protocol)
+HTTP adalah suatu protocol permintaan-respons, dimana client akan melakukan perminataan kepada server dan akan dibalas dengan informasi atau data yang tersedia dalam server
 
 
 #### Refrensi

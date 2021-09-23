@@ -33,8 +33,7 @@ Mari kita pahami sedikit.
 - `<p> </p>` TAG ini digunakan untuk menulis paragraph biasa didalam document.
 
 
-Refrensi 
-~~~
+#### Refrensi 
 - https://id.wikipedia.org/wiki/HTML
 - https://www.w3schools.com/tags/tag_doctype.asp
 - https://id.wikipedia.org/wiki/Pranala

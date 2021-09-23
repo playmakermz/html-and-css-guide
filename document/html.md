@@ -27,7 +27,6 @@ Fitur HTML:
 Mari kita pahami sedikit. 
 - `<!doctype html>` ini bukan HTML tag, dibutuhkan untuk memberi informasi kepada web browser tentang document apa ini.
 - `<html lang='en>` Ini untuk membantu mesin pencari dan web browser dalam mengelola. Untuk informasi lebih banyak https://www.w3schools.com/tags/ref_language_codes.asp.
-'<html>' data yang berada didalam sini adalah inti dari document html.
 - `<head> </head>` data yang biasannya berada di dalamnya adalah title, css-source code, javascript-source code, 'META' data, data font style dan lain-lain.
 - `<body> </body>` TAG ini digunakan untuk menyimpan informasi atau data sebelum di olah menjadi halaman website.
 - `<p> </p>` TAG ini digunakan untuk menulis paragraph biasa didalam document.

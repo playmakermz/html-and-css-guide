@@ -1,12 +1,11 @@
 # Warkop html dan css
 
-Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah,
-menjadi hal biasa kita membuka browser setiap hari, mencari informasi mengikuti
-seminar atau acara online, dengan peningkatan pengunaan website maka tidak ada salahnya
-jika kita belajar untuk membuat website, meskipun tidak untuk dijual tapi untuk diri kita sendiri
-, sebagai contoh membuat website portofolio dan penggunaan website mudah dibuat.
+Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah.
+menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikuti
+seminar atau acara online. dengan peningkatan pengunaan website maka tidak ada salahnya
+jika kita belajar untuk membuat website. meskipun tidak untuk dijual tapi untuk diri kita sendiri, sebagai contoh membuat website portofolio.
 
-Website adalah halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia, penyedia website bisa dari perorangan, kelompok atau organisasi, suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan suatu jaringan yang menghubungkan client dengan webserver.
+Website adalah halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia. Penyedia website bisa dari perorangan, kelompok atau organisasi. suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan suatu jaringan yang menghubungkan client dengan webserver.
 
 ### Table content
 
@@ -17,19 +16,17 @@ Website adalah halaman atau sekumpulan halaman yang saling terhubung berisi deng
 
 # Pengenalan Pembelajaran
 
-Mempelajari materi dengan bertahap adalah kunci untuk memahami, kita akan belajar secara bertahap
-mulai dari cara kerja wbsite.
+Mempelajari materi dengan bertahap adalah kunci untuk memahami.
 
-Tujuan dari pembelajaran ini adalah membuat pembaca agar bisa setidaknya membuat website mereka sendiri
-seperti static website maupun dynamic website, memastikan ilmu bisa bermanfaat untuk digunakan.
+Tujuan dari pembelajaran ini adalah membuat pembaca agar bisa setidaknya bisa membuat website mereka sendiri,seperti static website maupun dynamic website.
 
-Dalam membuat website sederhana dibutuhkan setidaknya 1 web browser dan 1 texteditor yang berjalan bersamaan untuk mempermudah dalam pengelolaan,
+Dalam membuat website sederhana dibutuhkan setidaknya 1 web browser dan 1 texteditor yang berjalan bersamaan untuk mempermudah dalam pengelolaan.
 web browser digunakan untuk melihat seperti apa website ditampilkan dan bekerja, text editor dibutuhkan untuk menambahkan fitur atau mengelola sebuah fitur didalam website. 
 
-pengguna bisa mengunakan web browser dan text editor sesuai keinginan mereka, tidak perlu harus mengikuti apa kata orang lain, jika anda suka itu maka pakai saja, 
-pada dasarnya web browser dan text editor hanyalah alat yang membantu pengguna untuk membantu pengguna.
+pengguna bisa mengunakan web browser dan text editor sesuai keinginan mereka, tidak perlu harus mengikuti apa kata orang lain. jika anda suka itu maka pakai saja.
+pada dasarnya web browser dan text editor hanyalah sebuah alat yang membantu pengguna untuk membantu.
 
-sebagai contoh, saya mengunakan emacs-doom dan chromium dalam pembuatan website, emacs-doom memiliki segudang fitur yang dapat membantu saya menulis sebuah kode.
+sebagai contoh, saya mengunakan emacs-doom dan chromium dalam pembuatan website. emacs-doom memiliki segudang fitur yang dapat membantu saya menulis sebuah kode.
 
 # Mengenai website
 
@@ -43,9 +40,9 @@ HTTPS memiliki cara kerja yang hampir sama dengan HTTP, perbedaan adalah disana 
 
 Mengenai website dinamis dan statis:
 - website statis
-adalah sekumpulan dokumen atau halaman yang hanya bisa dirubah secara manual, didalam sana tidak tersedia database atau web server framework ( contoh: django, nodejs ), biasanya terdiri dari html, css dan javascript ( javascript hanya untuk tampilan saja ).
+adalah sekumpulan dokumen atau halaman yang hanya bisa dirubah secara manual. didalam web statis tidak tersedia database dan web server framework ( contoh: django, nodejs ). biasanya terdiri dari html, css dan javascript ( javascript hanya untuk tampilan saja ).
 - website dinamis
-adalah sekumpulan dokumen atau halaman yang bisa dengan mudah berubah, dan bisa beroperasi sesuai dengan keinginan sang pembuat website, didalam sana ada local storage atau database untuk menyimpan data, dibangun dengan sistem yang complex ( contoh: instagram, facebook )
+adalah sekumpulan dokumen atau halaman yang bisa dengan mudah berubah dan bisa beroperasi sesuai dengan keinginan sang pembuat website. didalam sana ada local storage atau database untuk menyimpan data. dibangun dengan sistem yang complex ( contoh website dinamis: instagram, facebook )
 
 
 #### Refrensi

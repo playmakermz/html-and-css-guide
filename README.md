@@ -59,10 +59,9 @@ Didalam pekerjaan web developer ada tiga macam class, yaitu Front-end web develo
 - Back-end web developer bertugas mengelola HTTP server dan database. Memastikan website bisa bekerja dengan baik.
 - Full stack web developer memiliki tugas untuk mengelola kedua bagian tersebut.
 
-### Yang perlu diperhatikan web developer
-
+### cara untuk membuat website disukai mesin pencari
 Membuat suatu website yang bisa bekerja sesuai perintah dan memastikan client memiliki pengalaman bagus saat mengunakannya. didalam era industri seperti saat ini peningkatan kualitas suatu website itu adalah hal wajib. dengan membuat website lebih ringan dan simple akan meningkatkan jumlah pengunjung website tersebut, meskipun hanya satu detik.
-Mesin pencari dan client menyukai website yang bisa cepat dan mudah diakses.
+Mesin pencari dan client menyukai website yang bisa cepat diakses dan memiliki informasi halaman yang jelas.
 
 #### Pranala menarik
 [History of Internet by Internet Society](https://www.internethalloffame.org/brief-history-internet)

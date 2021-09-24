@@ -2,7 +2,7 @@
 
 ![image02](../aset/02.png)
 
-HTML ( HyperText Markup Language )  adalah suatu instruksi untuk menulis document yang akan ditampilkan ke dalam web browser. web browser akan mengambil HTML dari penyimpanan local dan akan diubah menjadi halaman website.
+HTML ( HyperText Markup Language )  adalah suatu instruksi untuk menulis document agar bisa ditampilkan ke dalam web browser. web browser akan mengambil file HTML dari penyimpanan local dan akan diubah menjadi halaman website.
 
 Fitur HTML:
 1. Menulis text

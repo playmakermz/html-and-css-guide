@@ -46,11 +46,32 @@ adalah sekumpulan dokumen atau halaman yang hanya bisa dirubah secara manual. di
 - website dinamis
 adalah sekumpulan dokumen atau halaman yang bisa dengan mudah berubah dan bisa beroperasi sesuai dengan keinginan sang pembuat website. didalam sana ada local storage atau database untuk menyimpan data. dibangun dengan sistem yang complex ( contoh website dinamis: instagram, facebook )
 
-## Mengenai kita programer
+## Mengenal Web developer
+Web developer adalah programmer yang memiliki spesialisasi dalam pembangunan suatu World Wide Web application. Ada Tiga macam application tipe application yang dipakai yaitu;
+- HTML, CSS dan javascript biasannya ini dipakai sebagai application penampil document website
+- PHP,ASP, NET (C#), python, Node.js, Go atau Java adalah application yang dipakai untuk mengelolah cara Kerja website
+- Apache2 dan Nginx Berfungsi sebagai HTTP server. HTTP digunakan untuk menghubungkan client dan server
 
-didalam dunia yang dipenuhi oleh technologi, 
+
+Didalam pekerjaan web developer ada dua macam class, yaitu Front-end web developer dan Back-end web developer.
+
+- Front-end web developer bertugas mengelola 'Graphical User Interface' dari website. Membuat User Interface dan User Experience yang bisa diterima oleh client.
+- Back-end web developer bertugas mengelola HTTP server dan database. Memastikan website bisa bekerja dengan baik.
+- Full stack web developer memiliki tugas untuk mengelola kedua bagian tersebut.
+
+### Kesimpulan web developer
+
+Membuat suatu website yang bisa bekerja sesuai perintah dan memastikan client memiliki pengalaman bagus saat mengunakannya. didalam era industri seperti saat ini peningkatan kualitas suatu website itu adalah hal wajib. dengan membuat website lebih ringan dan simple akan meningkatkan jumlah pengunjung website tersebut, meskipun hanya satu detik.
+Mesin pencari dan client menyukai website yang bisa cepat dan mudah diakses.
 
 #### Refrensi
+- https://www.nginx.com/
+- https://en.wikipedia.org/wiki/Web_development
+- https://en.wikipedia.org/wiki/Web_developer
+- https://en.wikipedia.org/wiki/Front-end_web_development
+- https://www.dewaweb.com/blog/web-developer/
+- https://httpd.apache.org/
+- https://glints.com/id/lowongan/pekerjaan-back-end-developer/#.YU1Mv4BBw3w
 - <https://id.wikipedia.org/wiki/Situs_web>
 - <https://id.wikipedia.org/wiki/HTTPS>
 

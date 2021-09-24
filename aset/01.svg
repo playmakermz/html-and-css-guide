@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="132.60948mm"
+   height="123.60059mm"
+   viewBox="0 0 132.60948 123.60059"
+   version="1.1"
+   id="svg5"
+   sodipodi:docname="drawing.svg"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.73049944"
+     inkscape:cx="92.402535"
+     inkscape:cy="23.956213"
+     inkscape:window-width="1920"
+     inkscape:window-height="1006"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <rect
+       x="101.23635"
+       y="512.07928"
+       width="335.15607"
+       height="51.060104"
+       id="rect32688" />
+    <rect
+       x="201.9855"
+       y="535.32928"
+       width="296.35678"
+       height="62.334362"
+       id="rect27640" />
+    <rect
+       x="173.75648"
+       y="534.56757"
+       width="319.9798"
+       height="63.114975"
+       id="rect22992" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-25.079872,-68.718521)">
+    <ellipse
+       style="fill:#000080;stroke-width:0.264583"
+       id="path53"
+       cx="91.384613"
+       cy="130.51881"
+       rx="66.304741"
+       ry="61.800293" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:36.222px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.905551"
+       x="60.217964"
+       y="104.21305"
+       id="text2631"
+       transform="scale(0.77620045,1.288327)"><tspan
+         sodipodi:role="line"
+         id="tspan2629"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:ubuntu;-inkscape-font-specification:'ubuntu Bold';fill:#ffffff;stroke-width:0.905551"
+         x="60.217964"
+         y="104.21305">WWW</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="scale(0.26458333)"
+       id="text22990"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect22992);fill:#000000;fill-opacity:1;stroke:none" />
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,20.696851,10.285829)"
+       id="text32686"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect32688);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="101.23633"
+         y="547.4707"
+         id="tspan52121"><tspan
+           style="font-style:italic;-inkscape-font-specification:'sans-serif Italic';fill:#ffffff"
+           id="tspan52119">World Wide Web</tspan></tspan></text>
+  </g>
+</svg>

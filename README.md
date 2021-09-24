@@ -1,5 +1,7 @@
 # Warkop html dan css
 
+![01.svg](aset/01.csv)
+
 Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah.
 menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikuti
 seminar atau acara online. dengan peningkatan pengunaan website maka tidak ada salahnya
@@ -44,6 +46,9 @@ adalah sekumpulan dokumen atau halaman yang hanya bisa dirubah secara manual. di
 - website dinamis
 adalah sekumpulan dokumen atau halaman yang bisa dengan mudah berubah dan bisa beroperasi sesuai dengan keinginan sang pembuat website. didalam sana ada local storage atau database untuk menyimpan data. dibangun dengan sistem yang complex ( contoh website dinamis: instagram, facebook )
 
+## Mengenai kita programer
+
+didalam dunia yang dipenuhi oleh technologi, 
 
 #### Refrensi
 - <https://id.wikipedia.org/wiki/Situs_web>

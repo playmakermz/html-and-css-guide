@@ -38,7 +38,7 @@ Beberapa protocol dalam website:
 - HTTP (Hypertext Transfer Protocol)
 HTTP adalah suatu protocol permintaan-respons, dimana client akan melakukan perminataan kepada server dan akan dibalas dengan informasi atau data yang tersedia dalam server.
 - HTTPS (Hypertext Transfer Protocol Secure)
-HTTPS memiliki cara kerja yang hampir sama dengan HTTP, perbedaan adalah disana terdapat enkripsi tambah untuk meningkatkan keamanan jaringan. Penambahan kemanan salah satunnya berada di sisi server.
+HTTPS memiliki cara kerja yang hampir sama dengan HTTP, perbedaan adalah disana terdapat enkripsi TLS ( Transport Layer Security )tambah untuk meningkatkan keamanan jaringan. Penambahan kemanan salah satunnya berada di sisi server.
 
 Mengenai website dinamis dan statis:
 - website statis
@@ -67,6 +67,7 @@ Mesin pencari dan client menyukai website yang bisa cepat dan mudah diakses.
 #### Pranala menarik
 [History of Internet by Internet Society](https://www.internethalloffame.org/brief-history-internet)
 - https://www.nginx.com/
+- https://en.wikipedia.org/wiki/HTTPS
 - https://en.wikipedia.org/wiki/Web_development
 - https://en.wikipedia.org/wiki/Web_developer
 - https://en.wikipedia.org/wiki/Front-end_web_development

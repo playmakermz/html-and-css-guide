@@ -7,7 +7,7 @@ menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikut
 seminar atau acara online. dengan peningkatan pengunaan website maka tidak ada salahnya
 jika kita belajar untuk membuat website. meskipun tidak untuk dijual tapi untuk diri kita sendiri, sebagai contoh membuat website portofolio.
 
-Website adalah halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia. Penyedia website bisa dari perorangan, kelompok atau organisasi. suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan suatu jaringan yang menghubungkan client dengan webserver.
+Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia. Penyedia website bisa dari perorangan, kelompok atau organisasi. suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan jaringan yang menghubungkan client dengan webserver.
 
 ### Table content
 
@@ -38,7 +38,7 @@ Beberapa protocol dalam website:
 - HTTP (Hypertext Transfer Protocol)
 HTTP adalah suatu protocol permintaan-respons, dimana client akan melakukan perminataan kepada server dan akan dibalas dengan informasi atau data yang tersedia dalam server.
 - HTTPS (Hypertext Transfer Protocol Secure)
-HTTPS memiliki cara kerja yang hampir sama dengan HTTP, perbedaan adalah disana terdapat enkripsi tambah untuk meningkatkan keamanan jaringan.
+HTTPS memiliki cara kerja yang hampir sama dengan HTTP, perbedaan adalah disana terdapat enkripsi tambah untuk meningkatkan keamanan jaringan. Penambahan kemanan salah satunnya berada di sisi server.
 
 Mengenai website dinamis dan statis:
 - website statis
@@ -59,12 +59,13 @@ Didalam pekerjaan web developer ada dua macam class, yaitu Front-end web develop
 - Back-end web developer bertugas mengelola HTTP server dan database. Memastikan website bisa bekerja dengan baik.
 - Full stack web developer memiliki tugas untuk mengelola kedua bagian tersebut.
 
-### Kesimpulan web developer
+### Yang perlu diperhatikan web developer
 
 Membuat suatu website yang bisa bekerja sesuai perintah dan memastikan client memiliki pengalaman bagus saat mengunakannya. didalam era industri seperti saat ini peningkatan kualitas suatu website itu adalah hal wajib. dengan membuat website lebih ringan dan simple akan meningkatkan jumlah pengunjung website tersebut, meskipun hanya satu detik.
 Mesin pencari dan client menyukai website yang bisa cepat dan mudah diakses.
 
-#### Refrensi
+#### Pranala menarik
+[History of Internet by Internet Society](https://www.internethalloffame.org/brief-history-internet)
 - https://www.nginx.com/
 - https://en.wikipedia.org/wiki/Web_development
 - https://en.wikipedia.org/wiki/Web_developer

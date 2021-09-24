@@ -7,7 +7,7 @@ menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikut
 seminar atau acara online. dengan peningkatan pengunaan website maka tidak ada salahnya
 jika kita belajar untuk membuat website. meskipun tidak untuk dijual tapi untuk diri kita sendiri, sebagai contoh membuat website portofolio.
 
-Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia. Penyedia website bisa dari perorangan, kelompok atau organisasi. suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan jaringan yang menghubungkan client dengan webserver.
+Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia. Penyedia website bisa dari perorangan, kelompok atau organisasi. suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan jaringan yang menghubungkan sisi client dengan sisi server.
 
 ### Table content
 

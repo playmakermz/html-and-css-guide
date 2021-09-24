@@ -1,6 +1,6 @@
 # Warkop html dan css
 
-![01.svg](aset/01.csv)
+![01.png](aset/01.csv)
 
 Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah.
 menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikuti

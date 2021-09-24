@@ -53,7 +53,7 @@ Web developer adalah programmer yang memiliki spesialisasi dalam pembangunan sua
 - Apache2 dan Nginx Berfungsi sebagai HTTP server. HTTP digunakan untuk menghubungkan client dan server
 
 
-Didalam pekerjaan web developer ada dua macam class, yaitu Front-end web developer dan Back-end web developer.
+Didalam pekerjaan web developer ada tiga macam class, yaitu Front-end web developer dan Back-end web developer.
 
 - Front-end web developer bertugas mengelola 'Graphical User Interface' dari website. Membuat User Interface dan User Experience yang bisa diterima oleh client.
 - Back-end web developer bertugas mengelola HTTP server dan database. Memastikan website bisa bekerja dengan baik.

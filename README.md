@@ -64,7 +64,7 @@ Membuat suatu website yang bisa bekerja sesuai perintah dan memastikan client me
 Mesin pencari dan client menyukai website yang bisa cepat diakses dan memiliki informasi halaman yang jelas.
 
 #### Pranala menarik
-[History of Internet by Internet Society](https://www.internethalloffame.org/brief-history-internet)
+- [History of Internet by Internet Society](https://www.internethalloffame.org/brief-history-internet)
 - https://www.nginx.com/
 - https://en.wikipedia.org/wiki/HTTPS
 - https://en.wikipedia.org/wiki/Web_development

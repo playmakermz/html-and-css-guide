@@ -47,7 +47,7 @@ adalah sekumpulan dokumen atau halaman yang hanya bisa dirubah secara manual. di
 adalah sekumpulan dokumen atau halaman yang bisa dengan mudah berubah dan bisa beroperasi sesuai dengan keinginan sang pembuat website. didalam sana ada local storage atau database untuk menyimpan data. dibangun dengan sistem yang complex ( contoh website dinamis: instagram, facebook )
 
 ## Mengenal Web developer
-Web developer adalah programmer yang memiliki spesialisasi dalam pembangunan suatu World Wide Web application. Ada Tiga macam application tipe application yang dipakai yaitu;
+Web developer adalah programmer yang memiliki spesialisasi dalam pembangunan suatu World Wide Web application. Ada Tiga macam tipe application yang dipakai yaitu;
 - HTML, CSS dan javascript biasannya ini dipakai sebagai application penampil document website
 - PHP,ASP, NET (C#), python, Node.js, Go atau Java adalah application yang dipakai untuk mengelolah cara Kerja website
 - Apache2 dan Nginx Berfungsi sebagai HTTP server. HTTP digunakan untuk menghubungkan client dan server

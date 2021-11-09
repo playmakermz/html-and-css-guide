@@ -45,4 +45,29 @@ obj.luas = function() { return (obj.alas * obj.tinggi) / 2 }
 obj.luas() // 7.5 
 ```
 
+## Variabel 
+```
+let a = 'b' // variabel ini masih bisa dirubah
+const c = 'd' // variabel ini tidak bisa dirubah
+let d, e = 'd', 'e'
+```
 
+## readline-sync ( input )
+```
+// sama bisa seperti input() function di python
+let readline = require('readline-sync')
+
+let nama = readline.question('Nama anda?')
+// ambil input dari console
+```
+
+## Check tipe data 
+```
+let a = 3
+typeof a 
+// ouput 'number'
+
+let b = new Number(9)
+typeof b 
+// ouput object 
+```

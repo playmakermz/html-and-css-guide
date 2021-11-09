@@ -29,6 +29,20 @@ ketik `node` didalam terminal
 _ * _ // 36
 ```
 
-## 
+## Membuat function 
+```
+function tambah(a,b){
+  return a + b
+}
+```
+
+## membuat object
+```
+let obj = new object()
+obj.alas = 3
+obj.tinggi = 5 
+obj.luas = function() { return (obj.alas * obj.tinggi) / 2 }
+obj.luas() // 7.5 
+```
 
 

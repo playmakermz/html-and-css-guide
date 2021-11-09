@@ -92,4 +92,26 @@ let heksadesimal = 0xff; // 16
 let float = 123.123
 ```
 
+## Penulisan string
+```
+// petik tunggal ''
+// petik ganda ""
+// tick ``
+'tunggal'
+"ganda"
+`tick`
+```
+
+## escape, squence, new line, horizontal tab
+```
+'halo \n halo'
+// halo 
+// halo 
+```
+## boolean
+```
+let betul = true
+let salah = false
+```
+## Array
 

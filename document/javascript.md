@@ -69,5 +69,27 @@ typeof a
 
 let b = new Number(9)
 typeof b 
-// ouput object 
+// ouput 'object'
 ```
+
+## Mengubah nilai ke string
+```
+let a = 9
+a.toString()
+// '9'
+```
+## Tipe number 
+```
+// dalam beberapa bahasa program
+// ada bilangan int dan float
+// javascript tidak membedakan bilangan berikut
+// alternative declare number
+let number = 255; / 10
+let binner = 0b1111; / 2
+let oktal = 0o377; // 8
+let heksadesimal = 0xff; // 16
+
+let float = 123.123
+```
+
+

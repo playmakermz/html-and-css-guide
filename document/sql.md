@@ -18,5 +18,13 @@ Contoh Perintah penting dalam SQL:
 - 'CREATE INDEX' - buat index (kata kunci)
 - 'DROP INDEX' - hapus index
 
+## kueri 
+kueri adalah cara database berkomunikasi. 
+SQL adalah salah satu bahasa untuk menulis queri
+
+
+
+
+
 #### REFRENSI
 - <https://www.w3schools.com/sql/sql_syntax.asp>

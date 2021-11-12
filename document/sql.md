@@ -1,8 +1,19 @@
 ## SQL
 
-Dengan adannya miliaran pengguna internet saat ini. Sebuah sistem atau perangkat pengelola yang bisa mengatur, mendata, mengelompokan data pengguna itu sangat dibutuhkan.
+dengan adannya miliaran pengguna internet saat ini,
+sebuah sistem atau perangkat penggelo yang bisa mengatur
+, mendata, mengelompokan data pengguna itu 
+sangat dibutuhkan.
 
-SQL adalah salah satu bahasa program dan aplikasi pengelola data yang telah ada dalam waktu yang lama. meskipun SQl adalah teknologi lama akan tetapi para developer secara terus menerus mengembangkannya.
+SQL adalah bahasa program dan suatu aplikasi
+penggelola data yang telah diandalkan oleh para
+developer dalam waktu yang lama, meskipun SQL 
+adalah teknologi lama akan tetapi para developer
+secara terus menerus mengembangkannya. 
+
+Penggunaan SQL database bisa berada dibanyak sekali 
+bidang. 
+
 
 dalam penulisan SQL, pengguna tidak perlu memperhatikan besar atau kecilnya suatu huruf karena SQL tidak mengunakan 'case sensitiv'.
 Contoh Perintah penting dalam SQL:

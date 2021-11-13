@@ -5,6 +5,11 @@ sebuah sistem atau perangkat penggelo yang bisa mengatur
 , mendata, mengelompokan data pengguna itu 
 sangat dibutuhkan.
 
+Peningkatan pembuatan dan penggunan data meningkat sangat 
+tajam. Untuk membuat suatu decision/pilihan, banyak 
+organisasi membutuhkan orang yang bisa mengelola data 
+( business analsysts, data enginer, dan lain-lain )
+
 SQL adalah bahasa program dan suatu aplikasi
 penggelola data yang telah diandalkan oleh para
 developer dalam waktu yang lama, meskipun SQL 
@@ -22,9 +27,38 @@ baca, manipulasi, mengubah data. Beberapa alsan SQL bisa menjadi popular:
 - Bisa mengakses data yang besar secara langsung dari tempat penyimpanan
 - Jika dibandigkan dengan spreadsheet tools, analisa data lebih mudah dilakukan 
   dalam SQL karena mudah melakukan audit dan replika data
+- SQL itu bagus dalam database language untuk menyimpan data kedalam database 
+- SQL adalah alat yang bagus untuk website seperti PHP, Phython, Java, ASP dan lain-lain 
+  untuk membuat dynamis website
+
+## beberapa point penting dalam rerlational databse 
+1. RDBMS (Relational Databse Management System)
+2. Data Integrity ( Menyimpan data sekali dan menjauhi duplikasi)
+3. SQL Constraints ( Constraints adalah aturan yang dipasangkan kepada table column
+  untuk menyimpan data dan menghindari pengguna untuk menyimpan data yang tidak valid kedalam
+  column)
+4. Better Security (Menetapkan memberikan atau hak kepada pengguna individu. 
+  Mengunakan ini pengguna bisa menyimpan data penting kedalam table menggunakan username
+  dan password)
+5. Database Normalization (Adalah proses untuk menyimpan database dengan efisien. 
+  Tidak perlu menyimpan data yang sama lebih dari satu)
+6. Beberapa type relationships( one to one, one to many, many to many)
+  - One to one relationship: Mengabungkan dua table  -
+  - One to many relationship: membuat foreign key dari parent table ke 
+    child table
+  - Many to many relathionship: membuat relation table baru 
+
+## Dataset 
+
+Cara mudah untuk menganalisa data?
+adalah dengan menjalankan side by side pada dataset!
+
+>> Tambahkan Contoh Dataset
 
 Penggunaan SQL database bisa berada dibanyak sekali 
 bidang. 
+
+
 
 dalam penulisan SQL, pengguna tidak perlu memperhatikan besar atau kecilnya suatu huruf karena SQL tidak mengunakan 'case sensitiv'.
 Contoh Perintah penting dalam SQL:

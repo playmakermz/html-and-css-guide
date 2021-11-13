@@ -1,4 +1,4 @@
-## SQL
+## Introduction SQL
 
 dengan adannya miliaran pengguna internet saat ini,
 sebuah sistem atau perangkat penggelo yang bisa mengatur
@@ -16,6 +16,8 @@ developer dalam waktu yang lama, meskipun SQL
 adalah teknologi lama akan tetapi para developer
 secara terus menerus mengembangkannya. 
 
+## Penjelasan DataBase ( lihat di freecodecamp )
+
 ## Apa itu SQL?
 
 SQL(Structures Query Language)  adalah salah satu bahasa untuk Membuat desain 
@@ -30,6 +32,11 @@ baca, manipulasi, mengubah data. Beberapa alsan SQL bisa menjadi popular:
 - SQL itu bagus dalam database language untuk menyimpan data kedalam database 
 - SQL adalah alat yang bagus untuk website seperti PHP, Phython, Java, ASP dan lain-lain 
   untuk membuat dynamis website
+
+Peringkat SQL dalam penggunaan di dunia data science tools berada di pringkat kedua
+dilansir dari https://research.aimultiple.com/data-science-competition/ 
+(community data science competitions) dalam surveynya berjudul '2020 Data 
+Science and Machine Learning Survey'(https://www.kaggle.com/paultimothymooney/2020-kaggle-data-science-machine-learning-survey)
 
 ## beberapa point penting dalam rerlational databse 
 1. RDBMS (Relational Databse Management System)
@@ -48,6 +55,17 @@ baca, manipulasi, mengubah data. Beberapa alsan SQL bisa menjadi popular:
     child table
   - Many to many relathionship: membuat relation table baru 
 
+## database 
+
+Ada banyak sekali cara untuk mengatur database dan banyak sekali tipe database
+yang didesain untuk tujuan tertentu. Contohnnya: 
+
+Jika kau menggunakan Excel, kau harus sudah terbiasa dengan table, mirip seperti spreadsheet. 
+table memiliki row dan columns. Database tables, harus diatur dengan column, dan setiap column 
+harus memiliki nama unik. 
+
+>> contoh sample table 
+
 ## Dataset 
 
 Cara mudah untuk menganalisa data?
@@ -58,8 +76,13 @@ adalah dengan menjalankan side by side pada dataset!
 Penggunaan SQL database bisa berada dibanyak sekali 
 bidang. 
 
+## SQL process flow
 
+disaat kau menjalankan SQL query pergi ke dalam SQL server. SQL server bekerja untuk 
+mengelola database, dan lain-lain. SQL server memangil database table dan return hasilnya. 
+(https://way2tutorial.com/sql/sql-introduction.php)
 
+## contoh perintah pada sql
 dalam penulisan SQL, pengguna tidak perlu memperhatikan besar atau kecilnya suatu huruf karena SQL tidak mengunakan 'case sensitiv'.
 Contoh Perintah penting dalam SQL:
 - 'SELECT' - ekstrak data dari database

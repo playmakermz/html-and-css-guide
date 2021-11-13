@@ -11,6 +11,11 @@ developer dalam waktu yang lama, meskipun SQL
 adalah teknologi lama akan tetapi para developer
 secara terus menerus mengembangkannya. 
 
+## Apa itu SQL?
+
+SQL(Structures Query Language)
+
+
 Penggunaan SQL database bisa berada dibanyak sekali 
 bidang. 
 
@@ -37,5 +42,10 @@ SQL adalah salah satu bahasa untuk menulis queri
 
 
 
-#### REFRENSI
+## Pranala menarik
 - <https://www.w3schools.com/sql/sql_syntax.asp>
+- https://mode.com/sql-tutorial/introduction-to-sql/
+- https://www.analyticsvidhya.com/blog/2020/07/8-sql-techniques-data-analysis-analytics-data-science/
+- https://www.studytonight.com/dbms/introduction-to-sql.php
+- https://www.sqlshack.com/introduction-to-sql/
+- https://way2tutorial.com/sql/sql-introduction.php

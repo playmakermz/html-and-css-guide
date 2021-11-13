@@ -13,12 +13,18 @@ secara terus menerus mengembangkannya.
 
 ## Apa itu SQL?
 
-SQL(Structures Query Language)
+SQL(Structures Query Language)  adalah salah satu bahasa untuk Membuat desain 
+aturan di dalam relational database. Ini sudah ada sejakl 1970s dan cara umum untuk 
+mengakses data didalam database. fitur yang sering dipakai dalam SQL adalah 
+baca, manipulasi, mengubah data. Beberapa alsan SQL bisa menjadi popular: 
 
+- semantik dan mudah dipahami
+- Bisa mengakses data yang besar secara langsung dari tempat penyimpanan
+- Jika dibandigkan dengan spreadsheet tools, analisa data lebih mudah dilakukan 
+  dalam SQL karena mudah melakukan audit dan replika data
 
 Penggunaan SQL database bisa berada dibanyak sekali 
 bidang. 
-
 
 dalam penulisan SQL, pengguna tidak perlu memperhatikan besar atau kecilnya suatu huruf karena SQL tidak mengunakan 'case sensitiv'.
 Contoh Perintah penting dalam SQL:
@@ -36,7 +42,6 @@ Contoh Perintah penting dalam SQL:
 
 ## kueri 
 kueri adalah cara database berkomunikasi. 
-SQL adalah salah satu bahasa untuk menulis queri
 
 
 

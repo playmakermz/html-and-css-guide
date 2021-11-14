@@ -18,6 +18,18 @@ secara terus menerus mengembangkannya.
 
 ## Penjelasan DataBase ( lihat di freecodecamp )
 
+secara umum database, adalah koleksi dari informasi yang terkait.
+sebagai contoh( buku nomor telphon, list belanja/shopping list, Todo list, 
+Absensi kelas), Database bisa disimpan dimana saja sebagai contoh: 
+- Di atas kertas
+- didalam kepala
+- didalam komputer
+- PowerPoint ini 
+- bagian komen
+
+Kesimpulan: database adalah sebuah koleksi dari informasi terkait dan bisa 
+disimpan dimana saja. 
+
 ## Apa itu SQL?
 
 SQL(Structures Query Language)  adalah salah satu bahasa untuk Membuat desain 
@@ -276,16 +288,12 @@ gabungan dari 2 atau lebih column bisa menjadi composite key juga
 
 <!--menit ke 41:47 -->
 
-## Pranala Menarik
-
-*   https://en.wikipedia.org/wiki/Composite\_key
-*   https://www.kelasexcel.id/2014/09/pengertian-row-column-cell-dan-range-excel.html
-*   https://www.youtube.com/watch?v=HXV3zeQKqGY\&t=1504s
-
-
 
 
 ## Pranala menarik
+*   https://en.wikipedia.org/wiki/Composite\_key
+*   https://www.kelasexcel.id/2014/09/pengertian-row-column-cell-dan-range-excel.html
+*   https://www.youtube.com/watch?v=HXV3zeQKqGY\&t=1504s
 - <https://www.w3schools.com/sql/sql_syntax.asp>
 - https://mode.com/sql-tutorial/introduction-to-sql/
 - https://www.analyticsvidhya.com/blog/2020/07/8-sql-techniques-data-analysis-analytics-data-science/

@@ -104,6 +104,183 @@ Contoh Perintah penting dalam SQL:
 ## kueri 
 kueri adalah cara database berkomunikasi. 
 
+# Databse
+
+Database adalah koleksi informasi, sebagai contoh; nomor handphone, todo list,
+Facebook user base.
+
+Penyimpanan database bisa dimana saja; kertas, didalam otak, computer
+powerpoint, comment section.
+
+Computer is great storing Database.
+
+*   Amazon : harus tetap menyimpan miliaran data, dan bisa diakses dengan cepat
+*   Shopping List: Keeps tracks of consumer products need to be purchased
+
+## Databaes Management System (DBMS)
+
+Special software yang akan membantu pengguna mengelola database.
+Membantu menambahkan, menghapus, mengubah data yang berada di database
+
+## CRUD
+
+Change, Read, Update, dan delete.
+
+## Two type of database
+
+*   Relational Database (SQL)
+    mengatur data menjadi satu atau lebih table. setiap table memiliki columns dan rows.
+    kata kunci khusus mengidentifikasi setiap baris.
+
+*   Non-Relational ( noSQL/ tidak hanya SQL )
+    *   menyimpan kata kunci
+    *   Document (JSON, XML)
+    *   Graphs
+    *   flexibel Tables
+
+## relational Database (SQL)
+
+*   Student Table
+    \*ID   Name    Major
+
+1.  Jack    Biology
+2.  Kate    Sociology
+3.  Claire  English
+4.  Jhon    Chemistry
+
+*   User Table
+
+<!---->
+
+*   Username   Password    Email
+    1.jsmith22    wordpass    ...
+    2.catlover45  apple223    ...
+    3.gamerkid    ...         ...
+    4.giraffe     ...         ...
+
+<!---->
+
+*   Row adalah baris yang melintang horisontal
+    Kanan ke kiri
+
+*   Column adalah baris melintang vertikal, dimulai dari atas ke bawah.
+
+*   Relational Database Management system (RDBMS)
+    membantu pengguna membuat dan mengelola relasi database
+    contoh; mySQL, Oracle, postgreSQL, mariaDB
+
+*   Structured query language (SQL)
+    *   bahasa standart untuk berinteraksi dengan RDBMS
+    *   digunakan untuk menjalankan C.R.U.D operasi.
+    *   digunakan untuk menjelasakan table dan struktur
+    *   SQL code biasannya digunakan dengan satu RDBMS tidak bisa untuk
+        yang lain.
+
+## Non-Relational Databases (noSQL)
+
+*   Non-relational database management system (NRDBMS)
+    membantu pengguna membuat dan mengatur non-relational database
+    contoh; mongoDB, dynamoDB, apache cassandra
+
+*   Implementation specific
+    *   setiap non-relational database masuk kategori ini, tidak ada
+        bahasa standart.
+
+    *   kebanyakan NRDBMS akan mengunakan bahasa program mereka untuk
+        menjalankan CRUD dan administrative operations pada database.
+
+## Database queries
+
+queris adalah permintaan yang dibuat oleh database management system untuk
+informasi spesifik.
+
+dengan semakin complex database tersebut, akan lebih sulit untuk mendapatkan
+sebuah informasi.
+
+google search adalah query
+
+## wrap Up
+
+*   database adalah koleksi informasi
+*   computer bagus dalam menyimpan database
+*   DBMS membuat database lebih mudah diatur dan lebih aman
+*   DBMS memperbolehkan CRUD operasi
+*   rational database dan non-rational database
+
+# Tables and keys
+
+Student id    | name    |   manjor
+\---           | ---     |   ---
+1   | Jack    | Biology
+2   | Kate    | Sociology
+3   | claire  | English
+4   | Jack    | biology
+5   | Mike    | comp. sci
+
+Primary key is important in database table. pastikan primary key adalah informasi
+yang pasti berbeda untuk setiap row. jika dengan contoh diatas maka primary key adalah
+'student id'.
+
+## Natural key number
+
+adalah informasi yang unik untuk setiap orang contohnya adalah nomor KTP.
+
+## Foregein Key
+
+adalah attribute yang bisa kita simpan pada database table. Yang akan menghubungkan
+dengan database table lain.
+
+Ini digunakan untuk menyimpan primary key kedalam row database table lain.
+
+*   employee
+    emp-id  |   name    |   branch-id | super-id
+    \---     |  ----     |   ---  |   ---
+    103     | budi      | 1       | 102
+    101     | alva      | 2       | 103
+    102     | rangga    | 3       | 101
+
+*   Branch
+    branch-id | branch-name   | mgr-id
+    \---       | ---           | ---
+    3         | Bambang        | 102
+    2         | nasi-gorengeng | 101
+    1         | soto           | 103
+
+Foregein key penting untuk menghubungkan atau mendefinisikan hubungan antara tables.
+dengan contoh diatas; column 'branch-id' adalah Foregein key yang akan menghubungkan
+dengan database table bernama 'Branch'.
+
+Didalam contoh diatas. ini juga mendefinisikan siapa supervisor untuk setiap orang,
+102,103,101. budi employee id '103' supervisor id is 102 'rangga'.
+
+## composite key
+
+jika ada primary key yang terdiri dari 2 atau lebih column, biasa disebut sebagai
+composite key. ini digunakan untuk membuat primary key tetap unik, diantara
+banyak data yang memiliki kesamaan.
+
+sebagai contoh; untuk memngidentifikasi setiap murid dibutuhkan nama depan dan
+nama belakang. akan sulit atau tidak mungkin bisa untuk membedakan murid
+jika hanya dari nama depan atau nama belakangnya saja.
+
+Jika ada murid yang memiliki nama depan yang sama dengan murid lain akan sulit
+untuk membedakaanya. Dengan digunakannya composite Key kita bisa mengurangi
+kemungkinan salah mebedakan orang.
+
+Teknik tersebut sangat berguna untuk membedakan setiap data dengan data yang lain.
+didalam suatu sistem database tidak boleh ada kesamaan dari primary key,
+setiap primary key itu harus unik dan berbeda dengan yang lain.
+
+tidak harus primary key saja yang bisa mengunakan composite key.
+gabungan dari 2 atau lebih column bisa menjadi composite key juga
+
+<!--menit ke 41:47 -->
+
+## Pranala Menarik
+
+*   https://en.wikipedia.org/wiki/Composite\_key
+*   https://www.kelasexcel.id/2014/09/pengertian-row-column-cell-dan-range-excel.html
+*   https://www.youtube.com/watch?v=HXV3zeQKqGY\&t=1504s
 
 
 

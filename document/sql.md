@@ -62,7 +62,7 @@ yang didesain untuk tujuan tertentu. Contohnnya:
 
 Jika kau menggunakan Excel, kau harus sudah terbiasa dengan table, mirip seperti spreadsheet. 
 table memiliki row dan columns. Database tables, harus diatur dengan column, dan setiap column 
-harus memiliki nama unik. 
+harus memiliki nama unik(Primary key). 
 
 >> contoh sample table 
 
@@ -96,6 +96,10 @@ Contoh Perintah penting dalam SQL:
 - 'DROP TABLE' - delete table
 - 'CREATE INDEX' - buat index (kata kunci)
 - 'DROP INDEX' - hapus index
+
+## Contoh primary key 
+- Surrogate key adalah primary key yang tidak memiliki Bentuk di dunia nyata
+- natural key adalah primary key yang memiliki bentuk didunia nyata, contohnnya nomor KTP
 
 ## kueri 
 kueri adalah cara database berkomunikasi. 

@@ -294,4 +294,4 @@ gabungan dari 2 atau lebih column bisa menjadi composite key juga
 - https://www.sqlshack.com/introduction-to-sql/
 - https://way2tutorial.com/sql/sql-introduction.php
 - https://aws.amazon.com/id/relational-database/
-
+- http://www.agiledata.org/essays/keys.html

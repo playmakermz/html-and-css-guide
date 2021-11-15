@@ -77,6 +77,7 @@ Change, Read, Update, dan delete.
 ## Relational Database 
 
 *   Student Table
+
 ID | Name  |  Major
 --- | --- | ----
 1. | Jack  |  Biology

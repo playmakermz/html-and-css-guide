@@ -80,10 +80,10 @@ Change, Read, Update, dan delete.
 
 ID | Name  |  Major
 --- | --- | ----
-1. | Jack  |  Biology
-2. | Kate  |  Sociology
-3. | Claire | English
-4. |Jhon   | Chemistry
+1 | Jack  |  Biology
+2 | Kate  |  Sociology
+3 | Claire | English
+4 |Jhon   | Chemistry
 
 * User Table 
 

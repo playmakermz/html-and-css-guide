@@ -296,3 +296,7 @@ gabungan dari 2 atau lebih column bisa menjadi composite key juga
 - https://way2tutorial.com/sql/sql-introduction.php
 - https://aws.amazon.com/id/relational-database/
 - http://www.agiledata.org/essays/keys.html
+- https://www.w3schools.com/sql/sql_examples.asp
+- https://www.codepolitan.com/membuat-database-dan-tabel-di-mysql-5884222be38fa
+- https://www.tutorialspoint.com/sql/sql-rdbms-concepts.htm
+

@@ -299,4 +299,5 @@ gabungan dari 2 atau lebih column bisa menjadi composite key juga
 - https://www.w3schools.com/sql/sql_examples.asp
 - https://www.codepolitan.com/membuat-database-dan-tabel-di-mysql-5884222be38fa
 - https://www.tutorialspoint.com/sql/sql-rdbms-concepts.htm
+- https://www.tutorialspoint.com/sqlite/sqlite_python.htm
 

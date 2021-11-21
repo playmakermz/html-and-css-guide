@@ -1,2 +1,5 @@
 theme: jekyll-theme-midnight
 github: [metadata]
+plugins:
+  - jekyll-relative-links
+

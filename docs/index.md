@@ -11,10 +11,10 @@ Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi deng
 
 ### Table content
 
-- [Mulai HTML](../document/html.md)
-- [Mulai CSS](../document/css.md)
-- [Mulai Javascript](../document/javascript.md)
-- [Mulai SQL](../document/sql.md)
+- [Mulai HTML](../document/html/)
+- [Mulai CSS](../document/css/)
+- [Mulai Javascript](../document/javascript/)
+- [Mulai SQL](../document/sql/)
 
 # Pengenalan Pembelajaran
 

@@ -15,6 +15,7 @@ Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi deng
 - [Mulai CSS](../document/css/)
 - [Mulai Javascript](../document/javascript/)
 - [Mulai SQL](../document/sql/)
+- [test](test/)
 
 # Pengenalan Pembelajaran
 

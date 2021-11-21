@@ -1,6 +1,5 @@
 # Warkop html dan css
 
-![test](test.md)
 ![image](../aset/01.png)
 
 Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah.

@@ -17,8 +17,30 @@ adalah teknologi lama akan tetapi para developer
 secara terus menerus mengembangkannya.
 
 ## Daftar Pustaka
-- [Penjelasan database](#penejelasan-database)
-- [test](#limit)
+1. [Penjelasan database](#penejelasan-database)
+2. [Dataset](#dataset)
+3. [Database Management System](#databaes-management-system-dbms)
+4. [CRUD](crud)
+5. [Two type of database](#two-type-of-database)
+6. [Relational Database](#relational-database)
+7. [Non-Relational Databases](#non-relational-databases-nosql)
+8. [Apa itu SQL?](#apa-itu-sql?)
+9. [SQL process flow](#sql-process-flow)
+10. [contoh perintah pada sql](#contoh-perintah-pada-sql)
+11. [Database queris](#database-queries)
+12. [Type primary key](#type-primary-key)
+13. [Natural Key number](#natural-key-number)
+14. [Surrogate key](#surrogate-key)
+15. [candidate key](#candidate-key)
+16. [alternate key](#alternate-key)
+17. [Foregein key](#foregein-key)
+1. [composite key](#composite-key)
+  2. [Wrap up](#wrap-up)
+1. [Data definition language](#ddl-data-definition-language)
+1. [DML data manipulation language](#dml-data-manipulation-language)
+1. [DCL data control language](#dcl-data-control-language)
+1. [Field or column](#field-or-column-kolom)
+1. [Record or Row](#record-or-row-baris)
 ## Penjelasan Database
 
 secara umum database, adalah koleksi dari informasi yang terkait.

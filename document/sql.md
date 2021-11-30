@@ -16,7 +16,9 @@ developer dalam waktu yang lama, meskipun SQL
 adalah teknologi lama akan tetapi para developer
 secara terus menerus mengembangkannya.
 
-## Penejelasan Database
+## Daftar Pustaka
+- [Penjelasan database](#penejelasan-database)
+## Penjelasan Database
 
 secara umum database, adalah koleksi dari informasi yang terkait.
 sebagai contoh( buku nomor telphon, list belanja/shopping list, Todo list, 

@@ -284,6 +284,166 @@ gabungan dari 2 atau lebih column bisa menjadi composite key juga
 
 *   Column adalah baris melintang vertikal, dimulai dari atas ke bawah.
 
+## DDL (Data Definition Language)
+beberapa contoh
+- CREATE 
+  Membuat Table atau object baru
+- ALTER
+  Memodifikasi database object seperti table 
+- DROP 
+  hapus seluruh table atau objek lain 
+- USE 
+  Digunakan untuk memilih dan mengunakan object 
+
+## DML (Data manipulation Language)
+- SELECT 
+  Mengambil Satu atau lebih kolom. sebagai contoh mengambil 
+  kolom dari table 
+- INSERT 
+  Membuat / memasukan data Record(baris) baru
+- UPDATE 
+  Mengubah object pada database. Sebagai contoh digunakan untuk update table  
+- DELETE 
+  Menghapus object pada datbase 
+
+## DCL (Data control Language)
+- GRANT 
+  Memberikan hak istimewa kepada pengguna 
+- REVOKE 
+  mengambil kembali hak istimewan dari pengguna 
+
+## Field or column (kolom) 
+Field adalah kolom table yang didesain untuk mengelola informasi 
+spesifik untuk record table (ID, name)
+
+## RECORD or ROW (Baris)
+RECORD adalah garis horizontal(lurus) pada table.
+
+## SQL constraint
+Digunakan untuk memberikan aturan secara spesifik data dalam table 
+ini untuk memastikan akurasi dan reliability data dalam table.
+
+###  contoh beberapa constraint: 
+- NOT NULL 
+- UNIQUE
+- PRIMARY KEY 
+- FOREIGN KEY 
+
+contoh format: 
+`CREATE TABLE nama_table(field_name {tipe_data} {constraint});`
+
+## Generate backup database 
+tulis code ini pada terminal, untuk menjalankan aplikasi 
+mysqldump
+`mysqldump -U root -P nama_database > nama_file_backup.sql`
+
+## Restore database 
+1. sebelum restore database, siapkan database kosong
+2. `CREATE DATABASE nama_database`
+3. pada terminal, jalankan perintah beriku ini 
+    `mysql -U root -P nama_database < nama_file_backup.sql`
+
+cara diatas digunakan untuk backup database 
+
+## Untuk melihat isi table 
+`SELECT * FROM nama_table;`
+
+untuk melihat seluruh List dalam melihat data dalam table, 
+nilai ROW dan COLUMN 
+
+nama | harga 
+--- | ---
+soto | 5000 
+rawon | 5000
+
+## Data integrity 
+contoh data integrity pada database 
+- entity integrity 
+- Domain integrity 
+
+## contoh pengambilan data
+`SELECT nama_kolom FROM nama_table;`
+Di gunakan untuk mengambil data dalam nama kolom yang dituju 
+
+## Operator perbandingan 
+`SELECT * FROM purchases
+WHERE price >= 10;
+`
+- a < b   - Mencari a lebih kecil dari b 
+- a <= b  - Mencari lebih kecil atau sama dengan b 
+- a > b   - Mencari a lebih besar dari b 
+- a >= b  - Lebih besar atau sama dengan b 
+
+Contoh 
+`SELECT * FROM nama_database
+WHERE nama_kolom <= '1000';
+/* 1000 adalah data INT */
+`
+Ini digunakan untuk mengambil data INT dibawah 
+1000 
+
+## LIKE 
+digunakan untuk mengambil data yang mirip 
+
+`SELECT * FROM nama_database 
+WHERE nama_kolom LIKE %kunci%;
+`
+Data yang akan diambil akan memiliki kemiripan atau kata kunci 
+'kunci'. Sama seperti `*` adalah whildcard digunakan untuk bypass
+melewati kata kunci sebelumnya atau selanjutnnya sesuai dengan 
+penempatan whildcard. 
+
+Contoh 
+- `name%`
+kata kunci yang dilewati atau bypass adalah setelah dari 
+'name'
+- `%name`
+kata kunci yang dilewati atau bypass adalah sebelum dari 'name'
+- `%name%`
+kata kunci yang dilewati atau bypass adalah sebelum dan sesudah 
+dari 'name'
+
+## Kolom NULL 
+
+record atau row yang tidak menyimpan data, bisa disebut 'NULL'
+
+kolom atau baris tidak menyimpan nilai apapun. maka kolom atau 
+baris adalah NULL.  
+
+## Menampilkan baris yang berisi NULL 
+`SELECT * FROM nama_database
+WHERE nama_kolom IS NULL;
+`
+untuk memilih baris yang berisi 'NULL' atau kosong
+
+`SELECT * FROM nama_database
+WHERE nama_kolom IS NOT NULL;
+`
+untuk mengambil baris yang tidak 'NULL' atau kosong
+
+## AND 
+
+`SELECT * FROM nama_database
+WHERE nama_kolom = 'kata kunci'
+AND nama_kolom = 'kata kunci ke 2';
+`
+digunakan untuk menambah opsi, pengunaanya seperti '&&'
+pada javascript language (if statement). 
+Saat mengunakan 'AND' tidak perlu menulis 'WHERE' dibelakangnnya 
+
+## ORDER BY 
+
+
+## SQL query 
+
+pada akhir sql statement atau sql query, tulis semicolon 
+(;) pada akhir statement. 
+
+queris adalah set instruksi yang diberikan pada RDBMS
+mengenai informasi apa yang mau diambil. 
+
+
+
 ## Pranala menarik
 *   https://en.wikipedia.org/wiki/Composite\_key
 *   https://www.kelasexcel.id/2014/09/pengertian-row-column-cell-dan-range-excel.html

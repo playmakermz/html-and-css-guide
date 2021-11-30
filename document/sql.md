@@ -432,7 +432,27 @@ pada javascript language (if statement).
 Saat mengunakan 'AND' tidak perlu menulis 'WHERE' dibelakangnnya 
 
 ## ORDER BY 
+`SELECT * FROM nama_database
+WHERE nama_kolom = 'kata kunci'
+ORDER BY nama_kolom DESC;
+`
+Jika tanpa 'WHERE'
+`SELECT * FROM nama_database
+ORDER BY nama_kolom DESC;
+`
+Digunakan Untuk mengurutkan data pada kolom yang dipilih sesasu 
+degan METHOD yang dipilih. 
+- ASC ( menaik, dari bawah ke atas) [1,2,3,4,5,6,7,8]
+- DESC (Menurun, dari atas ke bawah) [8,7,6,5,4,3,2,]
 
+## LIMIT 
+menentukan jumlah baris yang akan dikeluarkan sebgai output. 
+Dengan menggunakan 'LIMIT' 
+
+`SELECT * FROM nama_database
+WHERE nama_kolom ='kata kunci'
+LIMIT 5;
+`
 
 ## SQL query 
 
@@ -442,7 +462,23 @@ pada akhir sql statement atau sql query, tulis semicolon
 queris adalah set instruksi yang diberikan pada RDBMS
 mengenai informasi apa yang mau diambil. 
 
-
+## Wrap up Rangkuman
+- `WHERE` digunakan untuk mencari kata kunci yang dituju 
+- `ORDER BY` digunakan untuk membuat atau mengurutkan data 
+- `SELECT` digunakan untuk memilih atau mengambil kolom 
+- `FROM` digunakan untuk mengambil atau memilih table 
+- `USE` digunakan untuk mengambil atau memilih object seperti database
+- `CREATE` digunakan untuk membuat object, seperti database 
+- `LIKE` digunakan untuk mengambil data yang mirip
+  + Format `WHERE nama_kolom LIKE '%nama%'`
+- `IS NULL` digunakan untuk mengambil data kolom yang memiliki nilai 
+  Null atau kosong 
+    + Format `WHERE nama_kolom IS NULL`
+- `AND` digunakan untuk menambahkan opsi pada queri sama seperti di 
+  'if statement' pada programming language
+  + Format `WHERE nama_kolom = 'str' AND nama_kolom = 'STR'`
+- `LIMIT` digunakan untuk membatasi data yang keluar (output)
+  + format `WHERE nama_kolom = 'str' LIMIT 5`
 
 ## Pranala menarik
 *   https://en.wikipedia.org/wiki/Composite\_key

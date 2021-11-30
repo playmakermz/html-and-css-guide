@@ -480,6 +480,8 @@ mengenai informasi apa yang mau diambil.
 - `LIMIT` digunakan untuk membatasi data yang keluar (output)
   + format `WHERE nama_kolom = 'str' LIMIT 5`
 
+
+
 ## Pranala menarik
 *   https://en.wikipedia.org/wiki/Composite\_key
 *   https://www.kelasexcel.id/2014/09/pengertian-row-column-cell-dan-range-excel.html

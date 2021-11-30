@@ -16,7 +16,7 @@ developer dalam waktu yang lama, meskipun SQL
 adalah teknologi lama akan tetapi para developer
 secara terus menerus mengembangkannya.
 
-## Daftar Pustaka
+## Table of content
 1. [Penjelasan database](#penejelasan-database)
 2. [Dataset](#dataset)
 3. [Database Management System](#databaes-management-system-dbms)

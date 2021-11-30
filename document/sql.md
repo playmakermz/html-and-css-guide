@@ -41,6 +41,15 @@ secara terus menerus mengembangkannya.
 1. [DCL data control language](#dcl-data-control-language)
 1. [Field or column](#field-or-column-kolom)
 1. [Record or Row](#record-or-row-baris)
+1. [SQL constraint](#sql-constraint)
+1. [Backup database](#generate-backup-database)
+1. [Restore database](#restore-database)
+1. [Operator perbandingan](#operator-perbandingan)
+1. [LIKE mengambil data yang mirip](#like)
+1. [Baris NULL](#kolom-null)
+1. [ORDER BY](#order-by)
+1. [LIMIT](#limit)
+  2. [Wrap up rangkuman 2](#wrap-up-rangkuman)
 ## Penjelasan Database
 
 secara umum database, adalah koleksi dari informasi yang terkait.

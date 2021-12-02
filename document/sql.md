@@ -515,7 +515,106 @@ mengenai informasi apa yang mau diambil.
 - `LIMIT` digunakan untuk membatasi data yang keluar (output)
   + format `WHERE nama_kolom = 'str' LIMIT 5`
 
+## DROP Table 
+`DROP TABLE table_name;`
 
+digunakan untuk object table yang dituju. 
+Harus hati-hati dengan mengunakan statement tersebut 
+sekalinnya terhapus maka akan hilang selamannya. 
+
+## Insert Into Table
+`
+ISERT INTO nama_table(nama_kolom, nama_kolom) VALUES 
+('value', 'value');
+`
+Pastikan urutan 'value' sudah sesuai dengan urutan kolom yang kita 
+inginkan. 
+
+Jika tidak ditulis urutannnya, maka akan diambil urutan yang 
+sudah ada sebelumnnya didalam table
+
+## Update query
+`
+UPDATE nama_table 
+SET nama_kolom = 'value baru' 
+WHERE nama_kolom = 'value lama';
+`
+atau 
+`
+UPDATE nama_table 
+SET nama_kolom = 'value baru';
+`
+Jika menggunakan cara diatas maka 
+semua data dalam 'nama_kolom' yang dipilih 
+akan berubah semua. 
+
+'UPDATE' dan 'SET' dengan mengunakan statement ini, 
+bisa digunakan untuk mengubah record atau baris yang lama. 
+
+## DELETE query 
+`
+DELETE FROM nama_table
+WHERE nama_kolom = 'value';
+`
+Statement diatas bisa digunakan untuk menghapus 
+record atau baris yang dipilih. 
+
+## GROUP BY 
+`
+SELECT nama_kolom SUM(nilai_kolom) 
+FROM nama_table 
+GROUP BY nama_kolom_number;
+`
+
+`GROUP BY` adalah statement untuk mengatur data yang identik 
+menjadi grup. 
+
+`SUM` adalah statement untuk menghitung hasil kolom numeric yang
+kita pilih. 
+
+Contoh: 
+nama    |   pengeluaran
+---     |   ---
+budi    |   5000
+budi    |   10000
+
+akan menjadi 
+nama    |   SUM(pengeluaran) 
+---     |   ---
+budi    |   15000
+
+- `SUM()` adalah statement yang digunakan untuk menghitung 
+  data dalam kolom yang dipilih. 
+- `AVG()` adalah statement yang digunakan untuk mencari nilai 
+  rata-rata pada kolom
+- `COUNT()` adalah statement yang digunakan untuk mendapatkan 
+  berapa banyak baris, yang sesuai dengan kriteria 
+
+Contoh `COUNT()`:
+`
+SELECT nama, COUNT(harga)
+FROM nama_table 
+WHERE harga <= 10000;
+`
+
+total baris yang akan saya cari adalah harus dibawah dan sama 
+dengan 10000
+
+## DISTINCT
+`DISTINC`
+kata kunci ini digunakan untuk mengilimansi records atau baris yang 
+memiliki value duplikat. 
+
+`
+SELECT DISTINCT nama_kolom
+FROM nama_table 
+ORDER BY nama_kolom; 
+`
+
+Perintah diatas digunakan untuk mengeliminasi records atau 
+baris yang memiliki value duplikat. dan diurutakan, 
+`ORDER BY` Jika tidak kolom method diisi maka akan 
+mengunakan `ASC` secara default. 
 
 ## Pranala menarik
 *   https://en.wikipedia.org/wiki/Composite\_key

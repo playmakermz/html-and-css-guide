@@ -378,6 +378,7 @@ mysqldump
     `mysql -U root -P nama_database < nama_file_backup.sql`
 
 cara diatas digunakan untuk backup database 
+source: https://phoenixnap.com/kb/how-to-backup-restore-a-mysql-database
 
 ## Untuk melihat isi table 
 `SELECT * FROM nama_table;`

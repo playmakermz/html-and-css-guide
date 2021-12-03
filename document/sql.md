@@ -693,6 +693,40 @@ RENAME COLUMN kolom_lama TO nama_baru
 MODIFY nama_kolom VARCHAR(100) AFTER nama_kolom
 MODIFY nama_kolom TEXT FIRST; 
 `
+Break down kata kunci
+- `ALTER TABLE` digunakan untuk memilih table mana yang akan di ubah 
+- `ADD COLUMN` digunakan untuk menambahkan kolom pada table 
+- `DROP COLUMN` digunakan untuk menghapus kolom 
+- `RENAME COLUMN` digunakan untuk mengubah nama kolom 
+- `MODIFY, AFTER, FIRST` digunakan untuk memindahkan urutan kolom 
+
+## Update table 
+`
+UPDATE nama_table 
+SET nama_kolom = 'nilai_baru',
+    nama_kolom = 'nilai_baru2'
+WHERE nama_kolom = 'string';
+`
+Query diatas digunakan untuk mengubah data dalam kolom secara spesifik. 
+Jika tidak menggunakan 'WHERE' maka kesuluruhan data akan diubah. 
+
+## Rename table 
+`
+ALTER TABLE nama_table 
+RENAME TO nama_table_baru;
+`
+
+## Join
+`
+SELECT * FROM nama_table1
+JOIN nama_table2 
+ON nama_table1.kolom_value = nama_table2.kolom_value
+`
+Dengan query diatas kita bisa menghubungkan dua table, 
+dan menempatkannya bersandingan atau bersebelahan dengan 
+statement 'ON' dan '='. Table akan bersebelahan jika 
+value mereka sama. 
+
 
 ## Pranala menarik
 - https://dev.mysql.com/doc/refman/8.0/en/alter-table.html

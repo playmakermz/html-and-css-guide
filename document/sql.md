@@ -616,7 +616,89 @@ baris yang memiliki value duplikat. dan diurutakan,
 `ORDER BY` Jika tidak kolom method diisi maka akan 
 mengunakan `ASC` secara default. 
 
+## Tipe data 
+
+sebagai contoh dalam execl atau aplikasi penyimpananan data
+spreadsheet lainnya. Kita bisa menentukan pada kolom 
+tertentu harus kita isi dengan data berbentuk angka atau 
+huruf. Akan tetapi penggunaan kolom tersebut bisa saja berubah-ubah. 
+
+Dalam SQL jika kolom tersebut dibuat untuk tipe data number, 
+maka seterusnnya akan begitu. Kita bisa memilih tipe data 
+apa untuk kolom yang kita buat sesuai dengan kebutuhan. 
+
+Contoh tipe data pada SQL: 
+
++ Data Integer 
+  + `TINYINT` tipe data ini akan mengambil nilai dari (-128, 127)
+  + `SMALLINT` tipe data ini akan mengambil nilai dari (-32768, 32767)
+  + `MEDIUMINT` tipe data ini akan mengambil nilai dari (-8388608, 8388607)
+  + `INT` tipe data ini akan mengambil nilai dari (-2147483648, 2147483647)
+  + `BIGINT` tipe data ini akan mengambil nilai dari (-9223372036854775808, 9223372036854775807)
+
++ data float 
+  + `FLOAT` adalah tipe data angka yang memiliki bagian desimal di akhir angka 
+  ,atau memiliki bagian desimal di akhir angka, atau memiliki tanda 'titik' yang menandakan 
+  bilangan desimal. Contoh: 0,9 atau 3,14 
+
+  tipe data float cocok digunakan untuk variabel yang berisi angka pecahan, 
+  seperti hasil pembagian dan lain-lain. 
+
+## DECIMAL 
+tipe data number khusus yang ditentukan jumlah precission dan scalennya.
+
+Sebagai contoh: 
+- `DECIMAL(5,2)` bisa menghasilkan output seperti ini '999.99'
+- `DECIMAL(3,1)` output '99.9'
+- `DECIMAL(3)` output '999'
+
+## CHAR and VARCHAR 
+Adalah tipe data untuk menyimpan bentuk 'string',
+Seperti kata, angka, dan bentuk special. 
+
+- `CHAR(size)` ini adalah fixed panjang string.   
+  Jika disimpan disini 10 maka akan ada 10 baris yang tersimpan. 
+  Input: `CHAR(7)`
+  Output: 'namaku '
+
+- `VARCHAR(size)` ini adalah variabel yang lebih bisa otomatis
+  menyesuaikan data yang disimpan. 
+  Input: `VARCHAR(7)`
+  Output: 'namaku'
+
+## Date and Time Data Type 
+tipe data ini digunakan untuk menyipan data berformat 
+waktu. Tanggal, bulan, tahun, dan jam. 
+
+- `DATE` data yang disimpan berformat 'YYYY-MM-DD'
+- `DATETIME` data yang disimpan berformat 'YYYY-MM-DD hh:mm:ss'
+- `YEAR` data yang disimpan mulai dari 1901 ke 2155 dan 0000 
+
+## ENUM 
+Adalah tipe data string yang bisa kite tentukan pilihannya 
+atau opsi. 
+
+`ENUM('opsi1','opsi2')` 
+Contoh: 
+`ENUM('pria','wanita')`
+dalam statement diatas, data yang diperbolehkan masuk adalah 
+data 'pria' atau 'wanita' selain itu akan ditolak oleh sql 
+
+## Mengubah table 
+`
+ALTER TABLE nama_table 
+ADD COLUMN nama_kolom TEXT,
+DROP COLUMN nama_kolom,
+RENAME COLUMN kolom_lama TO nama_baru
+MODIFY nama_kolom VARCHAR(100) AFTER nama_kolom
+MODIFY nama_kolom TEXT FIRST; 
+`
+
 ## Pranala menarik
+- https://dev.mysql.com/doc/refman/8.0/en/alter-table.html
+-   https://stevenpcurtis.medium.com/what-is-a-floating-point-number-6991f2f85a28
+-   https://www.duniailkom.com/mengenal-tipe-data-float-dan-cara-penulisan-float-dalam-php/ 
+-   https://www.youtube.com/watch?v=xYBclb-sYQ4
 *   https://en.wikipedia.org/wiki/Composite\_key
 *   https://www.kelasexcel.id/2014/09/pengertian-row-column-cell-dan-range-excel.html
 *   https://www.youtube.com/watch?v=HXV3zeQKqGY\&t=1504s

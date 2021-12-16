@@ -3,7 +3,8 @@
 1. Pada package.json 
 ```
 {
-  "type": "module"
+  "type": "module" // type ini sudah ditingalkann
+  "type": "commonjs"
 }
 ```
 
@@ -25,3 +26,6 @@ function halo(){
 
 export {halo};
 ```
+
+refrensi: 
+- https://learn.coderslang.com/0021-nodejs-require-is-not-defined-error/

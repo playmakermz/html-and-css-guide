@@ -20,11 +20,10 @@ export {halo};
 
 3. pada im.js // sebagai import module / penerima module 
 ```
-function halo(){
-  console.log('halo');
-}
+import { halo } from './ex.js';
 
-export {halo};
+halo()
+
 ```
 
 refrensi: 

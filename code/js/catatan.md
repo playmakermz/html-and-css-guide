@@ -61,5 +61,7 @@ db.end()
 
 
 refrensi: 
+- https://learn.coderslang.com/0021-nodejs-require-is-not-defined-error/
+- https://exerror.com/uncaught-syntaxerror-cannot-use-import-statement-outside-a-module-when-importing-ecmascript-6/
 - https://www.tutorialsteacher.com/nodejs/nodejs-local-modules
 - https://learn.coderslang.com/0021-nodejs-require-is-not-defined-error/

@@ -26,5 +26,40 @@ halo()
 
 ```
 
+***
+# Cara kedua untuk export module
+dalam cara kedua, pengguna tidak perlu untuk melakukan perubahan pada 'package.json'. Lebih simple
+
+## Ini digunakan untuk export module
+```
+let mysql = require('mysql2');
+
+let main = mysql.createConnection({
+    host: 'localhost',
+    user: 'node',
+    password: 'root'
+});
+
+module.exports = main;
+```
+
+## Ini digunakan untuk import module
+```
+//require {db} from './ex.js';
+let db = require('./ex')
+
+db.connect();
+
+db.query (`SHOW DATABASES;`, function(err, result, field){
+    if (err) throw err;
+    console.log(`Hasil Field: /n`, field);
+    console.log(`Hasil result \n`, result);
+})
+
+db.end()
+```
+
+
 refrensi: 
+- https://www.tutorialsteacher.com/nodejs/nodejs-local-modules
 - https://learn.coderslang.com/0021-nodejs-require-is-not-defined-error/

@@ -1,7 +1,7 @@
 # Warkop html dan css
 
 ![image](aset/01.png)
-
+Lupa
 Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah.
 menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikuti
 seminar atau acara online. dengan peningkatan pengunaan website maka tidak ada salahnya

@@ -23,5 +23,17 @@ libraries yang dapat membantu mempercepat pengembangan code.
 
 Ruby juga digunakan pada DevOps ( Singkatan dari Software development(Dev) dan IT operations(Ops).)
 Bertujuan untuk memperpendek system development life cycle dan menyediakan 
-software yang dapat diandalkan setiap saat )
+software yang dapat diandalkan setiap saat. 
 
+- Automation
+
+
+## Task 
+### Devops tool chain 
+- https://en.wikipedia.org/wiki/DevOps_toolchain 
+- https://en.wikipedia.org/wiki/DevOps 
+
+~~~
+### Source
+- https://www.codecademy.com/resources/blog/should-i-learn-ruby/#:~:text=Ruby%20is%20a%20popular%20language,framework%20called%20Ruby%20on%20Rails.&text=Ruby%20on%20Rails%20makes%20web,of%20time%20setting%20things%20up. 
+- https://en.wikipedia.org/wiki/DevOps 

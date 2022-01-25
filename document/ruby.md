@@ -1,3 +1,5 @@
+# Ruby 
+
 Ruby adalah salah satu bahasa computer yang bisa digunakan secara cross-platfrom 
 Oleh karena itu teman-teman tidak perlu khawatir dengan code yang dibuat. 
 karena akan bisa dijalankan disemua platfrom. 
@@ -27,13 +29,32 @@ software yang dapat diandalkan setiap saat.
 
 - Automation
 
+Ruby adalah salah satu bahasa program yang dapat diandalkan. 
+Developer bisa membuat script untuk melakukan sesuatu secara otomatis. 
+Karena Ruby mudah untuk ditulis, script yang simple dan bisa dikerjakan dengan cepat.
+
+- Web Scraping and crawling
+
+Ruby juga bisa digunakan untuk melakukan crawling pada halaman website. 
+Mengambil data dari element tertentu dan mendownload halaman website secara cepat. 
+Sebagai contoh, kau bisa menggunakan Nokogiri untuk extract 
+structured data dari HTML pada halaman website.
+
+- Data processing 
+
+Ruby language sangat cocok untuk melakukan prosessing data, cleaing, dan 
+fileterin. Ada beberapa fitur yang sudah tersedia dalam ruby, seperti map, 
+reduce, and select. Fungsi ini sangat membantu untuk melakukan pemrosesan data
+
 
 ## Task 
 ### Devops tool chain 
 - https://en.wikipedia.org/wiki/DevOps_toolchain 
 - https://en.wikipedia.org/wiki/DevOps 
 
-~~~
+***
 ### Source
+
 - https://www.codecademy.com/resources/blog/should-i-learn-ruby/#:~:text=Ruby%20is%20a%20popular%20language,framework%20called%20Ruby%20on%20Rails.&text=Ruby%20on%20Rails%20makes%20web,of%20time%20setting%20things%20up. 
+
 - https://en.wikipedia.org/wiki/DevOps 

@@ -1,6 +1,6 @@
 # Warkop html dan css
 
-![image](aset/01.png)
+[image](aset/01.png)
 
 Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah.
 menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikuti
@@ -15,6 +15,7 @@ Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi deng
 - [Mulai CSS](document/css.md)
 - [Mulai Javascript](document/javascript.md)
 - [Mulai SQL](document/sql.md)
+- [Mulai Ruby](document/ruby.md)
 
 # Pengenalan Pembelajaran
 

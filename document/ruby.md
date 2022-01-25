@@ -1,3 +1,6 @@
+## Table of content 
+1. [Ruby](#ruby)
+
 # Ruby 
 
 Ruby adalah salah satu bahasa computer yang bisa digunakan secara cross-platfrom 

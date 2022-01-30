@@ -60,7 +60,7 @@ When you increase the blue box's padding, it will increase the distance (padding
   
 ```
  padding: 40px 20px 20px 40px;
-  // padding-top, padding-right, padding-bottom, and padding-left
+  // Clockwise Notation : padding-top, padding-right, padding-bottom, and padding-left
 ```
 
 ## menggenai margin 

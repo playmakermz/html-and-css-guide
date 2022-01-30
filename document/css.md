@@ -40,10 +40,11 @@ One cool thing about id attributes is that, like classes, you can style them usi
 However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
 
 Here's an example of how you can take your element with the id attribute of cat-photo-element and give it the background color of green. In your style element:
-
+`
 #cat-photo-element {
   background-color: green;
 }
+`
 Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
   
 ## Menggenai padding
@@ -57,6 +58,12 @@ Here, we can see that the blue box and the red box are nested within the yellow 
 
 When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it.
 
+## menggenai margin 
+An element's margin controls the amount of space between an element's border and surrounding elements.
+
+Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has a bigger margin than the blue box, making it appear smaller.
+
+When you increase the blue box's margin, it will increase the distance between its border and surrounding elements.
 
 
 #### Refrensi

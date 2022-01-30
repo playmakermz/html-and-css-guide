@@ -32,8 +32,22 @@ p {color: 'red';}
 3. External CSS
 Link menuju tempat penyimpanan CSS kita, ditulis didalam TAG '<head>'.
 `<link href='style.css' rel='stylesheet'>`
+  
+# Menggenai Id
+  
+One cool thing about id attributes is that, like classes, you can style them using CSS.
+
+However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
+
+Here's an example of how you can take your element with the id attribute of cat-photo-element and give it the background color of green. In your style element:
+
+#cat-photo-element {
+  background-color: green;
+}
+Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
 
 #### Refrensi
 - https://id.wikipedia.org/wiki/Cascading_Style_Sheets
 - https://www.w3schools.com/css/css_howto.asp
+- https://www.freecodecamp.org/
 

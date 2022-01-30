@@ -33,7 +33,7 @@ p {color: 'red';}
 Link menuju tempat penyimpanan CSS kita, ditulis didalam TAG '<head>'.
 `<link href='style.css' rel='stylesheet'>`
   
-# Menggenai Id
+## Menggenai Id
   
 One cool thing about id attributes is that, like classes, you can style them using CSS.
 
@@ -45,6 +45,19 @@ Here's an example of how you can take your element with the id attribute of cat-
   background-color: green;
 }
 Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
+  
+## Menggenai padding
+You may have already noticed this, but all HTML elements are essentially little rectangles.
+
+Three important properties control the space that surrounds each HTML element: padding, border, and margin.
+
+An element's padding controls the amount of space between the element's content and its border.
+
+Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more padding than the blue box.
+
+When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it.
+
+
 
 #### Refrensi
 - https://id.wikipedia.org/wiki/Cascading_Style_Sheets

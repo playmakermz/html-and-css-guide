@@ -69,6 +69,21 @@ An element's margin controls the amount of space between an element's border and
 Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has a bigger margin than the blue box, making it appear smaller.
 
 When you increase the blue box's margin, it will increase the distance between its border and surrounding elements.
+  
+## Attribute selector
+  
+`
+[type='radio'] {
+  margin: 20px 0px 20px 0px;
+}
+`
+ You have been adding id or class attributes to elements that you wish to specifically style. These are known as ID and class selectors. There are other CSS Selectors you can use to select custom groups of elements to style.
+
+Let's bring out CatPhotoApp again to practice using CSS Selectors.
+
+For this challenge, you will use the [attr=value] attribute selector to style the checkboxes in CatPhotoApp. This selector matches and styles elements with a specific attribute value. For example, the below code changes the margins of all elements with the attribute type and a corresponding value of radio:
+
+
 
 
 #### Refrensi

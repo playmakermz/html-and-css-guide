@@ -114,3 +114,4 @@ gv - reselect (select last selected block of text, from visual mode)
 
 ## Reference 
 sopurce: https://vimsheet.com/ 
+- https://vim.rtorr.com/

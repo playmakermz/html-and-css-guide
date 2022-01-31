@@ -1,4 +1,11 @@
 .navbar-main {
     background-color: red;
     color: white;
+    padding: 0.5em;
+    display: flex;
+    box-shadow: 10px 10px;
+}
+
+.navbar-main>a { 
+    padding: 1.5%;
 }

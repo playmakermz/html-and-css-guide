@@ -16,6 +16,7 @@ Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi deng
 - [Mulai Javascript](document/javascript.md)
 - [Mulai SQL](document/sql.md)
 - [Mulai Ruby](document/ruby.md)
+- [Mulai Vim](document/vim.md)
 
 # Pengenalan Pembelajaran
 

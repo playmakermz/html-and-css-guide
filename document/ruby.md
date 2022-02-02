@@ -50,6 +50,21 @@ fileterin. Ada beberapa fitur yang sudah tersedia dalam ruby, seperti map,
 reduce, and select. Fungsi ini sangat membantu untuk melakukan pemrosesan data
 
 
+## Ruby Cheat sheet
+
+Anda bisa membayangkan ruby sebagai laci yang digunakan untuk menyimpan sesuatu.
+
+`myvariabel = 1`
+
+Terdapat banyak sekali tipe data didalam Ruby. 
+- Boolean 
+- Integer
+- float
+- string
+
+
+
+
 ## Task 
 ### Devops tool chain 
 - https://en.wikipedia.org/wiki/DevOps_toolchain 

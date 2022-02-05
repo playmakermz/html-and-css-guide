@@ -62,7 +62,19 @@ Terdapat banyak sekali tipe data didalam Ruby.
 - float
 - string
 
+## Ruby install Rails 
 
+```
+sudo apt-get install libsqlite3-dev
+sudo gem install sqlite3-ruby
+gem list # Check sqlite3 and sqlite3-ruby if is installed
+
+gem install rails
+sudo rails new myapp 
+cd myapp
+bin/rails server # http://localhost:3000
+
+```
 
 
 ## Task 
@@ -73,6 +85,8 @@ Terdapat banyak sekali tipe data didalam Ruby.
 ***
 ### Source
 
+- https://github.com/rails/rails
+- https://stackoverflow.com/questions/17350837/ruby-on-rails-add-gem-sqlite3-to-your-gemfile
 - https://www.codecademy.com/resources/blog/should-i-learn-ruby/#:~:text=Ruby%20is%20a%20popular%20language,framework%20called%20Ruby%20on%20Rails.&text=Ruby%20on%20Rails%20makes%20web,of%20time%20setting%20things%20up. 
 
 - https://en.wikipedia.org/wiki/DevOps 

@@ -77,6 +77,43 @@ bin/rails server # http://localhost:3000
 
 ```
 
+Ruby Basic Syntax
+
+## Print something
+` puts 'Hello World!' `
+
+# Variabel 
+
+Didalam Ruby untuk melakukan deklarasi variabel tidak perlu membuat type secara spesifik ( variabel constant yang tidak bisa dirubah atau variabel normal yang bisa dirubah sewaktu waktu ). Variabel ruby bisa menyimpan semua tipe data (Boolean, float, integer, string dan lain-lain). 
+
+Sebagai contoh:
+- ` nama_variabel = 'Hello world'`
+atau 
+- `namaVariabel ='Hello world'`
+
+Hampir semua fitur didalam ruby adalah object ~Atau memang object semua~ 
+object variabel bisa diubah kapan saja.
+
+sebagai contoh:
+```
+umur_ku = 89 
+# dua tahun kemudian
+umur_ku = 91
+# Hasil yang akan dikeluarkan adalah 91
+# atau bisa menggunakan cara seperti ini
+umurt_ku += 2
+# ini disebut sebagai Operators, hasil yang akan dikeluarkan adalah 89 + 2 
+
+```
+
+Didalam Variabel kita tidak perlu mengatakan tipe data apa yang sedang dipakai, cukup tulis data tersebut dan biarkan system yang akan mencari tau.
+
+Contoh tipe data: 
+- `'ini adalah string'` = tipe data string
+- `383123` = ini adalah tipe data integer 
+- `23.42` = ini adalah tipe data float 
+- `true` = ini adalah tipe data boolean
+
 
 ## Task 
 ### Devops tool chain 

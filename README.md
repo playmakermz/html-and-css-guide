@@ -1,6 +1,6 @@
 # Warkop html dan css
 
-[image](aset/01.png)
+![image](aset/01.png)
 
 Pada saat ini pengunaan website dan permintaan akan suatu website terus bertambah.
 menjadi hal biasa kita mengakses website setiap hari. mencari informasi mengikuti

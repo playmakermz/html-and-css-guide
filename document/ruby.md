@@ -65,6 +65,7 @@ Terdapat banyak sekali tipe data didalam Ruby.
 ## Ruby install Rails 
 
 ```
+sudo apt install ruby-full
 sudo apt-get install libsqlite3-dev
 sudo gem install sqlite3-ruby
 gem list # Check sqlite3 and sqlite3-ruby if is installed

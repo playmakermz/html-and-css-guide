@@ -103,6 +103,7 @@ umur_ku = 91
 # atau bisa menggunakan cara seperti ini
 umurt_ku += 2
 # ini disebut sebagai Operators, hasil yang akan dikeluarkan adalah 89 + 2 
+# cara ini juga bisa digunakan pada string object
 
 ```
 
@@ -114,6 +115,38 @@ Contoh tipe data:
 - `23.42` = ini adalah tipe data float 
 - `true` = ini adalah tipe data boolean
 
+```
+title = 'teks'
+title.upcase # hasikan TEKS secara sementara 
+title.upcase! # hasilkan TEKS secara permanent, tersimpan didalam memory
+title.downcase! 
+```
+
+## Cara melakukan manipulasi string 
+ 
+Metode ini dapat mempermudah pengabungan antara dua atau lebih variabel menjadi satu. ( String interpolation )
+
+```
+nama_makanan = 'nasi goreng'
+jumlah_makanan = '3'
+hasil = '#{nama_makanan} beli #{jumlah_makanan}'
+# output: 'nasi goreng beli 3'
+```
+
+## Menulis variabel Constants
+Metode ini hanya menyerupai constant tidak sama persis. Didalam constant variabel nilai tidak dapat diubah setelah sudah ditulis. 
+
+didalam RUBY anda bisa menulis sebuah variabel yang akan memberikan notifikasi jika ada perubahan pada variabel yang dituju. 
+Contoh penulisan :
+```
+TEST_CONST = 12
+# jika ada perubahan di variabel diatas maka akan ada notifikasi pada terminal
+TEST_CONST = 14 
+# Akan ada notifikasi jika kita mengubah nilai didalam variabel tersebut
+
+```
+cara penulisan: 
+1. Penulisan variabel  harus penuh huruf besar
 
 ## Task 
 ### Devops tool chain 

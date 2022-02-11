@@ -243,8 +243,30 @@ end
 ## Case 
 
 ```
+nilai = 10
+
+case nilai # ini adalah parameter
+
+when 1..100
+  puts 'nilai berada di jarak antara 1 - 100'
+
+end
+```
+
+atau bisa menjalankan ruby case tapa mengisi paramter
 
 ```
+nilai = 10
+when nilai < 10 
+    puts 'nilai kurang dari 10'
+when nilai == 10 
+    puts 'nilai sama dengan 10'
+end
+```
+
+Dengan menggunakan instruksi diatas maka akan dilakukan flow control yang cukup mirip dengan if statement, jika persyarataan terpenuhi maka akan dijalankan. 
+
+
 src : 
 - https://stackoverflow.com/questions/948135/how-to-write-a-switch-statement-in-ruby?rq=1
 - https://www.geeksforgeeks.org/ruby-case-statement/
@@ -261,6 +283,8 @@ src: https://www.rubyguides.com/2019/10/ruby-ternary-operator/#:~:text=What%20is
 ***
 ### Source
 
+- https://stackoverflow.com/questions/948135/how-to-write-a-switch-statement-in-ruby?rq=1
+- https://www.rubyguides.com/2015/10/ruby-case/
 - https://github.com/training-mode/ruby
 - https://github.com/rails/rails
 - https://stackoverflow.com/questions/17350837/ruby-on-rails-add-gem-sqlite3-to-your-gemfile

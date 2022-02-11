@@ -1,8 +1,10 @@
-objA = 'hi'
+nilai = 10
 
-case objA
+case nilai 
 
-when 'hi'
-  puts 'nilai benar'
+when 1..100
+  puts 'nilai berada di jarak antara 1 - 10'
 
 end
+
+

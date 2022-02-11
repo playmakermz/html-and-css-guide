@@ -145,8 +145,57 @@ TEST_CONST = 14
 # Akan ada notifikasi jika kita mengubah nilai didalam variabel tersebut
 
 ```
-cara penulisan: 
-1. Penulisan variabel  harus penuh huruf besar
+Penulisan variabel harus penuh huruf besar
+
+## Control-Flow
+
+Pada penulisan sebuah instruksi terkadang diperlukan untuk menambahkan fungsi atau tindakan untuk mengontrol gimana sebuah instruksi tersebut dilakukan. 
+
+sebagai contoh, mari kita buat sebuah perumpamaan: 
+
+Jika kita ingin pergi ke sekolah, disana terdapat 2 cara untuk menuju ke sekolah 
+1. Kita bisa menggunakan jalur paling dekat ke sekolah akan tetapi jalan raya tersebut banyak lubang
+2. Kita bisa menggunakan jalur paling jauh ke sekolah akan tetapi jalan raya tersebut lebih lancar
+
+Tentu ini adalah sebuah opsi, kedua jalan tersebut dapat menghasilkan sebuah hasil yang sama akan tetapi proses dilakukannya itu berbeda.
+
+** Cara melakukan control flow **
+
+cara melakukannnya adalah dengan menggunakan If statement,
+sebagai contoh:
+
+```
+umur_udin = 17
+
+if umur_udin < 19 
+    puts " udin adalah anak sma"
+else 
+    puts " Udin adalah seorang mahasiswa"
+end
+```
+
+Hasil yang akan dikeluarkan adalah "udin adalah anak sma",
+karena disitu umur udin dibawah 19 
+
+didalam If statement akan dilakukan checking Data tersebut benar atau salah, Seperti contoh diatas, karena umur udin kurang dari 19 maka hasil dari **if** itu benar dan akan dilakukan instruksi selanjutnnya.
+
+Bisa dikatakan jika sebuah persyaratan sudah terpenuhi maka instruksi selanjutnya akan dilakukan. 
+
+dengan menggunakan If statement kita bisa membuat program memiliki sebuah opsi persyaratan khusus sebelum menjalankan instruksi. 
+
+Beberapa symbol untuk melakukan perbandingan nilai 
+
+```
+> # Lebih besar dari 
+< # Kurang dari 
+== # sama besar dengan 
+>= # lebih besar atau sama besar dengan 
+<= # lebih kecil atau sama besar dengan 
+```
+
+Didalam If statement anda bisa menambahkan banyak sekali opsi, **elsif** untuk memberikan program opsi instruksi apa yang akan dilakukan selanjutnnya.
+
+
 
 ## Task 
 ### Devops tool chain 
@@ -156,8 +205,8 @@ cara penulisan:
 ***
 ### Source
 
+- https://github.com/training-mode/ruby
 - https://github.com/rails/rails
 - https://stackoverflow.com/questions/17350837/ruby-on-rails-add-gem-sqlite3-to-your-gemfile
 - https://www.codecademy.com/resources/blog/should-i-learn-ruby/#:~:text=Ruby%20is%20a%20popular%20language,framework%20called%20Ruby%20on%20Rails.&text=Ruby%20on%20Rails%20makes%20web,of%20time%20setting%20things%20up. 
-
 - https://en.wikipedia.org/wiki/DevOps 

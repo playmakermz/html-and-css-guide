@@ -129,8 +129,9 @@ Metode ini dapat mempermudah pengabungan antara dua atau lebih variabel menjadi 
 ```
 nama_makanan = 'nasi goreng'
 jumlah_makanan = '3'
-hasil = '#{nama_makanan} beli #{jumlah_makanan}'
+hasil = "#{nama_makanan} beli #{jumlah_makanan}"
 # output: 'nasi goreng beli 3'
+# Perlu diingat gunakan " bukan '
 ```
 
 ## Menulis variabel Constants
@@ -224,7 +225,33 @@ Contohnya seperti ini
 nilai = 2 + 3
 hasil = a == 5 ? 'jawaban benar' : 'jawaban salah'
 ```
+
+## unless 
+
+adalah cara lain untuk melakukan If statement. Didalam unless yang dipakai 
+adalah nilai yang berisi 'false' atau bisa dikatakan nilai yang tidak memenuhi persyaratan. 
+
+jika didalam if statement maka yang akan dipakai adalah nilai True (nilai yang sudah memenuhi persyaratan), sedangakan 'unless' adalah nilai false ( nilai yang tidak memenuhi persyaratan )
+
+```
+a = 10
+unless a > 30
+  puts "#{a} hasil dari false, karena 10 tidak lebih dari 30"
+end
+```
+
+## Case 
+
+```
+
+```
+src : 
+- https://stackoverflow.com/questions/948135/how-to-write-a-switch-statement-in-ruby?rq=1
+- https://www.geeksforgeeks.org/ruby-case-statement/
+
 src: https://www.rubyguides.com/2019/10/ruby-ternary-operator/#:~:text=What%20is%20a%20ternary%20operator,just%20one%20line%20of%20code.
+
+
 
 ## Task 
 ### Devops tool chain 

@@ -169,6 +169,10 @@ umur_udin = 17
 
 if umur_udin < 19 
     puts " udin adalah anak sma"
+
+elseif umur_udin > 30 
+    puts " udin adalah seorang salah satu karyawan dari F.A.N.G"
+
 else 
     puts " Udin adalah seorang mahasiswa"
 end
@@ -195,7 +199,32 @@ Beberapa symbol untuk melakukan perbandingan nilai
 
 Didalam If statement anda bisa menambahkan banyak sekali opsi, **elsif** untuk memberikan program opsi instruksi apa yang akan dilakukan selanjutnnya.
 
+Cara menulisa if statement dalam satu baris
+```
+IPK = 4
+if IPK == 4 then puts 'Nilai yang memuaskan' else puts 'ayo belajar lebih giat' end
+```
+Atau menggunakan cara ini
+```
+IPK = 4 
+puts IPK == 4 ? 'Nilai bagus' : 'coba lagi'
+# ini adalah Ternary Expression
+```
 
+untuk format penulisannya seperti ini 
+`Kondisi_persyaratan ? true : false`
+1. kondisi persyaratan adalah nilai yang akan di seleksi ( di contoh pertama tadi adalah `IPK == 4` )
+2. symbol `?` adalah syntax untuk mengenali bahwa ini adalah Ternary Expression
+3. kolom `true` akan dijalankan jika persyaratan telah terpenuhi
+4. kolom `:` adalh bagian dari syntax jangan dirubah
+4. kolom `false` akan dijalankan jika persyaratan tidak terpenuhi
+
+Contohnya seperti ini 
+```
+nilai = 2 + 3
+hasil = a == 5 ? 'jawaban benar' : 'jawaban salah'
+```
+src: https://www.rubyguides.com/2019/10/ruby-ternary-operator/#:~:text=What%20is%20a%20ternary%20operator,just%20one%20line%20of%20code.
 
 ## Task 
 ### Devops tool chain 

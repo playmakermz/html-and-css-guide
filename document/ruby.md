@@ -244,19 +244,37 @@ end
 
 ```
 nilai = 10
-
 case nilai # ini adalah parameter
-
-when 1..100
-  puts 'nilai berada di jarak antara 1 - 100'
-
+when 1..9
+  puts 'nilai berada di jarak antara 1 - 9'
+when 10 
+    puts 'nilai sama dengan 10'
+else 
+    puts 'nilai tidak di ketahui'
 end
 ```
+
+** Breakdown code**
+1. `nilai = 10` ini adalah variabel 
+2. `case nilai` "case" adalah syntax untuk menunjukan bahwa ini adalah sitch case, sedangkan nilai adalah variabel 
+3. `when 1..9` disini adalah sebuah persyaratan apakah variabel 'nilai' berada diantara 1-9, jika benar maka instruksi selanjutnya akan dijalankan 
+4. `when 10` disini adalah sebuah persyaratan apakah variabel 'nilai' sama dengan 10, jika benar maka instruksi akan dilanjutkan.
+5. `else` jika tidak ada opsi yang cocok maka akan dijalankan perintah dibawah ini 
+6. `end` ini adalah syntax yang wajib ditulis untuk mengakhiri sitch case 
+
+Sebagai perumpamaan Ruby melakukan analisa perbandingan dengan mengunakan cara:
+1. apakah nilai tersebut berada di dalam list? ( contoh: 1, apakah dia berada di 1-9? ) [1..9]
+2. apakah nilai tersebut sama persis (contoh: 'budi', apakah nilai sama dengan 'budi'?)
+["budi"]
+3. apakah nilai tersebut berbentuk integer atau string (contoh: 'budi', apakah ini string?) 
+[String / Fixnum]
+
 
 atau bisa menjalankan ruby case tapa mengisi paramter
 
 ```
 nilai = 10
+case 
 when nilai < 10 
     puts 'nilai kurang dari 10'
 when nilai == 10 
@@ -266,6 +284,7 @@ end
 
 Dengan menggunakan instruksi diatas maka akan dilakukan flow control yang cukup mirip dengan if statement, jika persyarataan terpenuhi maka akan dijalankan. 
 
+pada switch case diatas, tidak perlu mengisi nilai dari `case`. dengan begitu cara pemakaainnya akan sama dengan if statement
 
 src : 
 - https://stackoverflow.com/questions/948135/how-to-write-a-switch-statement-in-ruby?rq=1
@@ -273,6 +292,19 @@ src :
 
 src: https://www.rubyguides.com/2019/10/ruby-ternary-operator/#:~:text=What%20is%20a%20ternary%20operator,just%20one%20line%20of%20code.
 
+## Loops 
+
+```
+for i in 2..100
+    puts "ini adalah nomor #{i}"
+end
+```
+** Breakdown code **
+1. `for i in 2..100` untuk setiap angka diantara 2-100 
+2. print 'ini adalah nomor #{variabel i}'
+3. akhiri loop
+
+disini perintah akan diulang sebanyak 99 kali
 
 
 ## Task 

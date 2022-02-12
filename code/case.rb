@@ -1,10 +1,5 @@
-nilai = 10
-
-case nilai 
-
-when 1..100
-  puts 'nilai berada di jarak antara 1 - 10'
-
+a = 0
+for i in 2..100
+    a += 1
+    puts "ini adalah nomor #{a}"
 end
-
-

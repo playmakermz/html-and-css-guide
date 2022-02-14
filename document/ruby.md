@@ -311,6 +311,19 @@ end
 
 disini perintah akan diulang sebanyak 99 kali
 
+## While 
+
+```
+var_A = 0
+
+while var_A < 100
+    puts "ini adalah loop ke #{var_A}"
+    var_A += 1 
+
+end 
+```
+
+
 
 ## Task 
 ### Devops tool chain 

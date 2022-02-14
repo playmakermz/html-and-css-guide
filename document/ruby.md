@@ -315,7 +315,6 @@ disini perintah akan diulang sebanyak 99 kali
 
 ```
 var_A = 0
-
 while var_A < 100
     puts "ini adalah loop ke #{var_A}"
     var_A += 1 
@@ -323,7 +322,57 @@ while var_A < 100
 end 
 ```
 
+** Breakdown **
 
+1. `var_A = 0` ini adalah variabel 
+2. `while var_A < 100` selama nilai variabel berada dibawah 100 lakukan 
+3. `puts "ini adalah loop ke #{var_A}"` print string dengan nilai variabel 4. `var_A += 1` tambah 1 kedalam variabel 
+5. `end` ini adalah syntax, sebagai penutup while loop 
+
+didalam code diatas loop akan terus dilakukan hingga 100 kali. 
+setiap kali loop dilakukan program akan melakukan dua instruksi yang sudah disiapkan  
+
+
+## Until 
+
+```
+obj = 100
+
+until obj < 1 
+    puts "ini adalah nomor ke #{obj}"
+    obj -= 1 
+end 
+```
+
+metode ini kurang lebih sama seperti unless statement, jika persyaratan tidak terpenuhi maka jalankan instruksi tersebut.
+
+**Breakdown code**
+1. `obj = 100` adalah variabel 
+2. `until obj < 1` bisa kita ibaratkan sebagai "unless" jika  persyaratan tidak terpenuhi maka jalankan instruksi selanjutnya
+3. `puts` digunakan untuk menampilkan nilai kedalam terminal / konsole 
+4. `end` adalah syntax untuk mengakhiri loop
+
+## Loop 
+
+```
+obj = 0
+
+loop do 
+    obj += 1 
+    puts "obj nilai ke #{obj}"
+
+    if obj == 100 
+        break 
+    end 
+end 
+
+puts "loop berakhir"
+```
+**code breakdown**
+1. `obj` adalah variabel 
+2. `loop do` selama loop masih berjalan maka lakukan instruksi selanjutnya 3. `obj += 1` tambah 1 setiap kali loop 
+4. `if obj == 100` jika nilai obj sama dengan 100 
+5. `break` syntax ini hanya bisa digunakan didalam loop statement, untuk mengakhiri loop yang berjalan
 
 ## Task 
 ### Devops tool chain 

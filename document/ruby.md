@@ -374,6 +374,25 @@ puts "loop berakhir"
 4. `if obj == 100` jika nilai obj sama dengan 100 
 5. `break` syntax ini hanya bisa digunakan didalam loop statement, untuk mengakhiri loop yang berjalan
 
+## next pada loop
+
+```
+abc = 10
+
+for i in 1..10
+  puts "ini adalah nomor ke #{i}"
+  if i == 5
+    puts " ========= ini adalah angka 5"
+    puts " instruksi selanjutnnya akan terlewati"
+    # next digunakan untuk membuat loop kembali ke instruksi pertama loop
+    next
+  end
+
+  puts "ini adalah bagian yang akan terlewati #{i}"
+end
+
+```
+
 ## Task 
 ### Devops tool chain 
 - https://en.wikipedia.org/wiki/DevOps_toolchain 

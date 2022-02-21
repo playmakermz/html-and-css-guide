@@ -11,3 +11,5 @@ for i in 1..10
 
   puts "ini adalah bagian yang akan terlewati #{i}"
 end
+
+

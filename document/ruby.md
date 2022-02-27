@@ -393,6 +393,28 @@ end
 
 ```
 
+## arrays 
+```
+nama_kelas = ['kelas 1', 'kelas 2', 'kelas 3']
+
+puts nama_kelas[0] # kelas 1
+puts nama_kelas[1] # kelas 2
+puts nama_kelas[2] # kelas 3 
+puts nama_kelas[-1] # kelas 3 
+puts nama_kelas[-3] # kelas 1 
+puts nama_kelas.length # 3
+```
+opsi untuk membuat array 
+
+```
+makanan = Array.new(4, 'nasi goreng') # akan ada 4 nasi goreng di list ["nasi goreng", "nasi goreng", "nasi goreng", "nasi goreng"]
+
+minuman = ['jeruk panas', 'Es chocklat']
+minuman.push('Es coffe') # ini akan menambahkan item kedalam list pada bagian akhir 
+minuman << "es gratis" # ini akan menambahkan item kedalam list pada bagian akhir 
+
+```
+
 ## Task 
 ### Devops tool chain 
 - https://en.wikipedia.org/wiki/DevOps_toolchain 

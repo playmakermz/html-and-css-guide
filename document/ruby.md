@@ -415,6 +415,21 @@ minuman << "es gratis" # ini akan menambahkan item kedalam list pada bagian akhi
 
 ```
 
+## Functions
+
+function adalah sebuah block code yang bisa dipanggil kapan saja.
+istilahnnya adalah DRY ( Don't Repeat yourself )
+
+```
+def fungsi(argument)
+    puts "hallo, #{argument}"
+end
+
+fungsi('budi')
+```
+
+
+
 ## Task 
 ### Devops tool chain 
 - https://en.wikipedia.org/wiki/DevOps_toolchain 

@@ -34,7 +34,82 @@ let user = "Budi",
     umur = 25 
 ```
 
+Tidak boleh melakukan declarasi 2 kali dalam satu ruang
 
+```
+let user  = "budi"
+
+let user = "bambang"
+
+// akan muncul SyntaxError
+```
+
+Didalam penamaan variabel, tidak boleh ada angka dipaling depan variabel 
+
+```
+let 01halo = "text"
+
+// akan ada error 
+```
+
+Refrence: https://javascript.info/variables
+
+## If statement 
+### 03 
+
+Dengan if statement kita bisa membuat instruksi yang akan dijalanakan jika persyaratan sudah terpenuhi
+
+```
+let year = 2022
+if (year == 2022) console.log("tahun 2022")
+// Output tahun 2022 
+```
+
+```
+let year = 2022 
+if (year == 2022) {
+    console.log("tahun 2022 ")
+}
+
+// output
+// tahun 2022 
+```
+
+```
+let var_a = 10 
+
+if (var_a == 10){
+    console.log('10')
+} else if (var_a > 10) {
+    console.log('11')
+} else {
+console.log('9')
+}
+```
+
+### Inline if statement(Conditional operator)
+
+```
+let var_a = (2022)
+
+let year = ( var_a == 2022 ) ? "sekarang tahun 2022" : "sekarang bukan 2022"
+
+// true : false 
+// sekarang tahun 2022
+```
+
+```
+let age = 18;
+
+let message = (age < 3) ? 'Hi, baby!' :
+  (age < 18) ? 'Hello!' :
+  (age < 100) ? 'Greetings!' :
+  'What an unusual age!';
+
+console.log(message)
+// Greetings!
+```
+SOurce: https://javascript.info/ifelse
 
 ***
 # Note kedua 

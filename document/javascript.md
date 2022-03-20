@@ -5,6 +5,39 @@ Untuk menjalankan javascript bisa menggunakan:
 1. web browser console 
 2. Terminal linux ( dengan menggunakan 'node' application)
 
+## Comment
+### 01 
+
+Penulisan komentar pada Javascript 
+
+```
+// Menulis komentar satu baris 
+/*
+Penulisan komentar yang terkelompok,
+bisa dua baris ataupun lebih 
+*/ 
+```
+
+## Variabel 
+### 02 
+
+Varibel adalan sebuah fungsi untuk menyimpan data.
+Beberapa cara declarasi variabel 
+```
+var_a = 10
+let var_b = 10
+const var_c = 10 
+```
+
+```
+let user = "Budi",
+    umur = 25 
+```
+
+
+
+***
+# Note kedua 
 ## install node 
 
 installing node js in linux. `sudo pacman -S node`

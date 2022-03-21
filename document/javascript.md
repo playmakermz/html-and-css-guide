@@ -5,6 +5,26 @@ Untuk menjalankan javascript bisa menggunakan:
 1. web browser console 
 2. Terminal linux ( dengan menggunakan 'node' application)
 
+“ECMAScript is a standard.”
+
+“JavaScript is a standard.”
+
+“ECMAScript is a specification.”
+
+“JavaScript is an implementation of the ECMAScript standard.”
+
+“ECMAScript is standardized JavaScript.”
+
+“ECMAScript is a language.”
+
+“JavaScript is a dialect of ECMAScript.”
+
+“ECMAScript is JavaScript.”
+
+JavaScript engines are commonly found in web browsers, including V8 in Chrome, SpiderMonkey in Firefox, and Chakra in Edge. Each engine is like a language module for its application, allowing it to support a certain subset of the JavaScript language.
+
+source: https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
+
 ## Comment
 ### 01 
 

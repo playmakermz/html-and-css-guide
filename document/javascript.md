@@ -119,6 +119,9 @@ let budi = "nama siswa"
 let var_a = `halo ${budi}`
 ```
 
+src: https://www.freecodecamp.org/news/javascript-switch-case-js-switch-statement-example/
+(case statement)
+
 ***
 # Note kedua 
 ## install node 

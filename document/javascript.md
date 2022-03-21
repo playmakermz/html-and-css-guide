@@ -111,6 +111,14 @@ console.log(message)
 ```
 SOurce: https://javascript.info/ifelse
 
+## Menambahkan variabel kedalam string (Template litteral)
+### 04
+
+```
+let budi = "nama siswa"
+let var_a = `halo ${budi}`
+```
+
 ***
 # Note kedua 
 ## install node 

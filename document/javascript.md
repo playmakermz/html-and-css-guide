@@ -187,6 +187,85 @@ do {
 
 ```
 
+## While statement 
+### 07 
+
+```
+while (condition)
+{statement}
+```
+
+```
+let n = 0;
+let x = 0;
+while (n < 3) {
+  n++;
+  x += n;
+}
+```
+
+```
+let main = true
+let value = 0
+while (main) {
+  value += 1
+  if (value == 5){
+    console.log('end')
+    main = false}
+}
+```
+
+## Labeled statement 
+### 08
+dengan labeled statement kita bisa menutup loop kita tuju dengan lebih spesifik.
+
+tidak harus menggunakan "break", kita juga bisa gunakan "continue" untuk restart loop dari awal lagi 
+
+contoh:
+```
+let x = 0;
+let z = 0;
+labelCancelLoops: while (true) {
+  console.log('Outer loops: ' + x);
+  x += 1;
+  z = 1;
+  while (true) {
+    console.log('Inner loops: ' + z);
+    z += 1;
+    if (z === 10 && x === 10) {
+      break labelCancelLoops;
+    } else if (z === 10) {
+      break;
+    }
+  }
+}
+
+```
+
+## For in 
+
+```
+let makanan = ['nasi', 'tahu', 'tempe']
+
+for (let i in makanan ){
+  console.log(i)
+}
+
+// 0 1 2 
+```
+
+## for of 
+```
+let makanan = ['nasi', 'tahu', 'tempe']
+
+for (let i of makanan ){
+  console.log(i)
+}
+
+// nasi tahu tempe
+```
+
+source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration?retiredLocale=id
 
 ***
 # Note kedua 

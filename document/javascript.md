@@ -142,6 +142,52 @@ let var_a = `halo ${budi}`
 src: https://www.freecodecamp.org/news/javascript-switch-case-js-switch-statement-example/
 (case statement)
 
+## Loops and iteration 
+### 05
+
+Loop dapat membuat sebuah instruksi yang berulang.
+
+```
+for (let langkah = 0; langkah < 5; langkah++){
+    console.log('berjalan satu langkah')
+}
+```
+
+#### For structure
+```
+for ([initialExpression]; [conditionExpression]; [incrementExpression])
+  statement
+
+```
+
+1. "initialExpression" biasannya sebagai loop counter (jumlah loop)
+2. "conditionExpression" adalah requirement dalam if statement ( jika memenuhi persyaratan maka akan dijalanakan )
+3. "statement" `{...}`
+4. Setelah dijalankan instruksi selanjutnya. dilakukan increment pada literal
+5. kembali ke step conditionExpression
+
+## do...while
+### 06
+
+```
+do {statement}
+while (condition);
+```
+
+Jika condition itu "true" maka statement akan terus dijalankan.
+
+sebagai contoh
+
+```
+let i = 0;
+do {
+  i += 1;
+  console.log(i);
+} while (i < 5);
+
+```
+
+
 ***
 # Note kedua 
 ## install node 

@@ -9,3 +9,7 @@ for (let i = 0; i <= length; i++ ){
     x = y
     y = sum
 }
+
+
+// https://id.wikihow.com/Menghitung-Deret-Fibonacci
+// https://www.javatpoint.com/python-print-the-fibonacci-sequence

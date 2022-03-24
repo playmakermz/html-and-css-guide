@@ -355,6 +355,80 @@ Function starting with…
 
 SRC: https://javascript.info/function-basics
 
+## Get the last element in array
+### 13
+
+```
+let abc = [1,2,3,4,5]
+console.log(abc[abc.length - 1])
+// 5
+```
+atau dengan `slice()`
+
+```
+let abc = [1,2,3,4,5]
+console.log(abc.slice(-1))
+// 5
+```
+
+refrence: https://flexiple.com/get-last-array-element-javascript/
+
+```
+let abc = [1,2,3,4,5]
+console.log(Math.max(...abc))
+// akan mengambil nilai terbesar yaitu: 5
+```
+
+refrence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/max?retiredLocale=id
+
+
+## Function expressions
+
+cara lain untuk membuat function yaitu dengan function expression. 
+Membantu kita untuk membuat sebuah fungsi didalam expressions
+
+```
+let myFunction = function(){
+    console.log('hello')
+}
+```
+
+**function expression vs function declaration**
+src: https://javascript.info/function-expressions
+
+**Memasukan function declaration kedalam variabel**
+
+```
+function hai(){
+    console.log('hai')
+}
+
+let var_a = hai()
+
+var_a() // hai 
+hai() // hai
+```
+
+## Callback function 
+
+```
+function konsole(argument){
+    console.log(argument)
+}
+
+function myCal(x, y, tampilkan){
+    let sum = x + y
+    // memanggil function konsole
+    tampilkan(sum)
+}
+
+myCal(2, 2, konsole)
+// 4
+// kita menggunkan function dari konsole
+```
+refrence: https://www.w3schools.com/js/js_callback.asp
+refrence: https://javascript.info/function-expressions
+
 
 
 

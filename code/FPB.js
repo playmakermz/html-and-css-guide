@@ -26,20 +26,15 @@ class FPB{
         hasil.push(i)
       }
     }
-
+    console.log(hasil)
     jawaban = Math.max(...hasil)
     return jawaban
   }// akhir function
 }// akhir class
 
-obj = new FPB(30, 15)
+obj = new FPB(60, 96)
 console.log(obj.hasil())
 
-/*
-      for (let i of hasil){
-      //console.log(this.x, this.y)
-      //console.log(hasil)
-      if (i !== this.x && i !== this.y){
-        jawaban.push(i)
-      }
-*/
+
+// 12
+// test https://matematikamudah10.blogspot.com/2019/05/contoh-soal-fpb-dan-penyelesaiannya.htmlhttps://matematikamudah10.blogspot.com/2019/05/contoh-soal-fpb-dan-penyelesaiannya.html

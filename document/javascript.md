@@ -267,6 +267,97 @@ for (let i of makanan ){
 
 source: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Loops_and_iteration?retiredLocale=id
 
+## Convert a string to number 
+### 09 
+
+1. `parseInt()`
+
+```
+myString = '140'
+// 140 
+
+a = 34.22
+// 34
+```
+
+2. `Number()`
+
+```
+Number("10");          // 10 
+Number(" 10  ");       // 10
+Number("10.33");       // 10.33
+```
+
+src: https://dev.to/sanchithasr/7-ways-to-convert-a-string-to-number-in-javascript-4l
+
+
+
+## Function 
+### 10
+
+```
+function namaFungsi(){
+    console.log('halo')
+}
+```
+
+```
+namaFungsi()
+```
+
+Dengan menggunakan Function kita bisa menggunakan block code tersebut kapan saja 
+
+**Local variabel**
+```
+function myFunction(){
+    let var_a = "hello"
+}
+```
+
+## Parameters
+### 11
+
+```
+function myFunction(nama){
+    console.log(nama)
+}
+```
+
+**Parameter default**
+```
+function myFunction(nama = "budi"){
+    console.log(nama)
+    // budi
+}
+```
+
+## Return value 
+### 12
+```
+function myName(a,b){
+    return a + b
+}
+```
+return digunakan untuk menggembalikan nilai 
+
+Functions are actions. So their name is usually a verb. It should be brief, as accurate as possible and describe what the function does, so that someone reading the code gets an indication of what the function does.
+
+It is a widespread practice to start a function with a verbal prefix which vaguely describes the action. There must be an agreement within the team on the meaning of the prefixes.
+
+For instance, functions that start with "show" usually show something.
+
+Function starting with…
+
+"get…" – return a value,
+"calc…" – calculate something,
+"create…" – create something,
+"check…" – check something and return a boolean, etc.
+
+SRC: https://javascript.info/function-basics
+
+
+
+
 ***
 # Note kedua 
 ## install node 

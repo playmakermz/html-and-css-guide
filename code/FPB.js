@@ -27,19 +27,19 @@ class FPB{
       }
     }
 
-    for (let i of hasil){
-      if (i !== this.x && i !== this.y){
-        jawaban.push(i)
-      }
-    }
-
-
-    jawaban = jawaban[jawaban.length - 1];
-    console.log(jawaban)
+    jawaban = Math.max(...hasil)
+    return jawaban
   }// akhir function
 }// akhir class
 
-obj = new FPB(12, 18)
+obj = new FPB(30, 15)
 console.log(obj.hasil())
 
-
+/*
+      for (let i of hasil){
+      //console.log(this.x, this.y)
+      //console.log(hasil)
+      if (i !== this.x && i !== this.y){
+        jawaban.push(i)
+      }
+*/

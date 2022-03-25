@@ -454,6 +454,16 @@ abc('halo', 'budi', 'nice')
 // nice
 ```
 
+```
+function efg(...My){
+  for (i in My){
+    console.log(My[i])
+  }
+}
+
+console.log(efg('h','i', 'o'))
+```
+
 
 
 

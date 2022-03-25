@@ -429,6 +429,23 @@ myCal(2, 2, konsole)
 refrence: https://www.w3schools.com/js/js_callback.asp
 refrence: https://javascript.info/function-expressions
 
+## Rest parameters
+src: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
+
+```
+function abc(...My){
+  for (i of My){
+    console.log(i)
+  }
+}
+
+abc('halo', 'budi', 'nice')
+
+// halo
+// budi 
+// nice
+```
+
 
 
 

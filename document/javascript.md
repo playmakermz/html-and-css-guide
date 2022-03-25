@@ -409,6 +409,14 @@ var_a() // hai
 hai() // hai
 ```
 
+## Function arrow 
+
+```
+let myFunction = () => {
+    console.log('hallo')
+}
+```
+
 ## Callback function 
 
 ```

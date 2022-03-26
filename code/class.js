@@ -1,12 +1,9 @@
-class User {
-    name = "budi" // property
-
-    Hi(){ console.log(`selamat datang ${name}`) }
+class MyClass {
+ 	myFunct(){
+      console.log('hai')
+      }
 }
 
-let abc = new User().name
+let budi = new MyClass()
 
-console.log(abc)
-
-
-
+console.log(budi.myFunct())

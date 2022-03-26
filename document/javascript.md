@@ -509,7 +509,32 @@ budi.welcome();
 
 ## What is a class?
 > a class is a kind of function
+
+Dikutip dari Petanikode
+
+- class adalah rancangan atau blue print dari sebuah objek
+- Object dalam pemrograman adalah sebuah variabel yang merupakan instance dari class
+- instance bisa diartikan sebagai wujud dari class 
+- class berisi definisi variabel dan fungsi yang menggambarkan sebuah objek
+
 https://javascript.info/class
+
+Contoh, bayangkan sebuah rumah, didalamnya ada TV, Kursi, Sofa dan alat- alat lainnya. Dalam PBO, rumah adalah class, sedangkan TV, Kursi, Sofa adalah instance.
+
+src: https://id.quora.com/Dalam-pemrograman-apa-maksud-instance-dari-sebuah-objek
+
+From stackoverflow https://stackoverflow.com/questions/2885385/what-is-the-difference-between-an-instance-and-an-object
+
+> Answered By Yuval Karmi 
+Excellent question.
+
+I'll explain it in the simplest way possible: Say you have 5 apples in your basket. Each of those apples is an object of type Apple, which has some characteristics (i.e. big, round, grows on trees).
+
+In programming terms, you can have a class called Apple, which has variables size:big, shape:round, habitat:grows on trees. To have 5 apples in your basket, you need to instantiate 5 apples. Apple apple1, Apple apple2, Apple apple3 etc....
+
+Alternatively: Objects are the definitions of something, instances are the physical things.
+
+Does this make sense?
 
 ```
 class User {

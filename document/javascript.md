@@ -525,6 +525,8 @@ src: https://id.quora.com/Dalam-pemrograman-apa-maksud-instance-dari-sebuah-obje
 
 From stackoverflow https://stackoverflow.com/questions/2885385/what-is-the-difference-between-an-instance-and-an-object
 
+Intinya **instance** adalah variabel yang bertugas sebagai object, object satu dan yang lainnya itu berbeda
+
 > Answered By Yuval Karmi 
 Excellent question.
 

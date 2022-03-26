@@ -487,6 +487,128 @@ myFunct.functName() // halo
 myFunct.name() // dunia
 ```
 
+## Class Syntax 
+
+```
+class User {
+
+constructor(name){
+    this.name = name;
+}
+
+welcome(){
+    console.log(`selamat datang kembali ${this.name}`)
+}}
+
+
+let budi = new User("budi") // new object is created
+
+budi.welcome();
+```
+
+
+## What is a class?
+> a class is a kind of function
+https://javascript.info/class
+
+```
+class User {
+    constructor(name) {this.name = name;}
+    welcome() { console.log(`Selamat datang ${this.name}`) }
+}
+
+console.log(typeof User) // function
+```
+
+## Class Expression
+
+sama seperti function class juga bisa dimasukan kedalam expression(variabel)
+
+```
+let User = class {
+    Hi(){ console.log('halo dunia') }
+}
+
+new User().Hi() // ini works
+// halo dunia
+
+```
+
+kit juga bisa memasukan class kedalam function
+
+```
+function makeClass(abc) {
+
+    return class {
+    Hi() {
+    console.log(abc)
+    }
+}
+}
+
+let budi = makeClass(" selamat datang budi")
+
+new budi().Hi() // selamat datang budi
+
+
+```
+
+## Getters / setters
+
+```
+class User {
+
+  constructor(name){
+    this.name = name;
+  }
+
+  get name() {
+    return this._name
+  }
+
+  set name(value){
+    if (value.length < 4){
+      console.log('the name is to short')
+      return
+    }
+    this._name = value
+  }
+
+}
+
+
+let budi = new User('budi')
+console.log(budi.name)
+
+```
+
+## Computed names
+```
+class User {
+
+    ['say'+'Hi'](){
+        console.log('halo dunia')
+    }
+}
+
+new User().sayHi()
+```
+
+## Class fields
+class property
+
+```
+class User {
+    name = "budi" // property
+
+    Hi(){ console.log(`selamat datang ${name}`) }
+}
+
+let abc = new User().name
+
+console.log(abc)
+
+```
 
 
 

@@ -465,6 +465,31 @@ console.log(efg('h','i', 'o'))
 ```
 
 
+## object notation
+src: https://stackoverflow.com/questions/4908378/javascript-array-of-functions
+
+```
+let myFunct = {
+
+functName : function(){
+    console.log('halo')
+},
+
+name: () => {
+    console.log('dunia')
+}
+
+}
+
+
+myFunct.functName() // halo 
+
+myFunct.name() // dunia
+```
+
+
+
+
 
 
 ***

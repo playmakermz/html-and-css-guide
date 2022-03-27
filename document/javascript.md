@@ -637,6 +637,58 @@ console.log(abc)
 
 ```
 
+## Class inheritance
+
+```
+class NamaBarang{
+    constructor(name, price){this.name = name, this.price = price}
+
+    showPrice(){console.log(this.price)}
+}
+
+class NamaMakanan extends NamaBarang{
+    showName(){console.log(this.name)}
+
+    result(){this.showName(); super.showPrice();}
+
+}
+
+let nasiGoreng = new NamaMakanan('nasi goreng', 15)
+
+nasiGoreng.result()
+
+// nasi goreng
+// 15
+
+```
+
+- `this` ini gunakan untuk menggambil method child
+- `super` ini digunakan untuk menggambil constructor parent, jika kita ingin melakukan perubahan pada constructor harus ada super()\
+
+contoh: akan terjadi error jika kita tidak pakai super
+```
+class Animal {
+    constructor(name){
+        this.speed = 0;
+        this.name = name;
+    }
+}
+
+class Rabit extends Animal {
+    constructor(name, earLength){
+        super()
+        this.name = "white rabbit";
+        this.earLength = earLength
+        console.log(`halo ini adalah ${this.name}`)
+    }
+}
+
+let rabbit = new Rabit("black rabit", 10)
+
+console.log()
+```
+
+
 
 
 

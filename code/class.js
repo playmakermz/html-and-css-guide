@@ -1,9 +1,20 @@
-class MyClass {
- 	myFunct(){
-      console.log('hai')
-      }
+class Animal {
+    constructor(name){
+        this.speed = 0;
+        this.name = name;
+    }
 }
 
-let budi = new MyClass()
+class Rabit extends Animal {
+    constructor(name, earLength){
+        super()
+        this.name = "white rabbit";
+        this.earLength = earLength
+        console.log(`halo ini adalah ${this.name}`)
+    }
+}
 
-console.log(budi.myFunct())
+let rabbit = new Rabit("black rabit", 10)
+
+console.log()
+

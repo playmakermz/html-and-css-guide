@@ -664,6 +664,7 @@ nasiGoreng.result()
 
 - `this` ini gunakan untuk menggambil method child
 - `super` ini digunakan untuk menggambil constructor parent, jika kita ingin melakukan perubahan pada constructor harus ada super()\
+- `super` scope dari super adalah untuk property pada parent saja, sebagai contoh code diatas akan error jika `this` diubah ke super
 
 contoh: akan terjadi error jika kita tidak pakai super
 ```
@@ -687,6 +688,45 @@ let rabbit = new Rabit("black rabit", 10)
 
 console.log()
 ```
+
+## 
+
+```
+class Barang {
+    constructor(name, price){
+        this.name = name
+        this.price = price
+    }
+}
+
+class Makanan extends Barang{
+    constructor(name, price, level){
+        /* super(name, price)
+         *Kita bisa memakai cara ini sebagai alternatif yang dibawah
+            untuk menggambil constructor parent, jadi tidak perlu this.name.
+         */
+        super()
+        this.name = name
+        this.price = price
+        this.level = level
+    }
+
+    result(){
+        return `
+nama makanan : ${this.name}
+harga makanan : ${this.price}
+tingkat pedas : ${this.level}
+        `
+    }
+}
+
+let bakmie = new Makanan('bakmie', 15, 10)
+
+console.log(bakmie.result())
+```
+jika kita ingin melakukan perubahan pada constructor di inheritance class pastikan declarasikan `super()`
+
+dan juga jangan lupa untuk argumentnya ditulis ulang juga, jika masih dipakai
 
 
 

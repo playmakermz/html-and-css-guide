@@ -1,31 +1,30 @@
-class Barang {
-    constructor(name, price){
+class Pekerja{
+    constructor(name, age, experience){
         this.name = name
-        this.price = price
+        this.age = age
+        this.experience = experience
+    }
+
+    kemampuan(){
+        if (this.experience >= 2){
+            return "profesional"
+        }
+        else if(this.experience < 2){
+            return "biasa"
+        }
+    }
+
+    show(){
+        console.log(`
+        ${this.name} adalah pekerja ${this.kemampuan()}
+        Berumur ${this.age}
+        `)
     }
 }
 
-class Makanan extends Barang{
-    constructor(name, price, level){
-        /* super(name, price)
-         *Kita bisa memakai cara ini sebagai alternatif yang dibawah
-            untuk menggambil constructor parent, jadi tidak perlu this.name.
-         */
-        super()
-        this.name = name
-        this.price = price
-        this.level = level
-    }
+let budi =  new Pekerja('budi', 30, 4)
+budi.show()
 
-    result(){
-        return `
-nama makanan : ${this.name}
-harga makanan : ${this.price}
-tingkat pedas : ${this.level}
-        `
-    }
-}
 
-let bakmie = new Makanan('bakmie', 15, 10)
-
-console.log(bakmie.result())
+let bambang = new Pekerja('bambang', 40, 7)
+bambang.show()

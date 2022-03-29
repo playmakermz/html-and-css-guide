@@ -728,6 +728,84 @@ jika kita ingin melakukan perubahan pada constructor di inheritance class pastik
 
 dan juga jangan lupa untuk argumentnya ditulis ulang juga, jika masih dipakai
 
+## Inheritance 
+
+Ini adalah suatu konsep didalam OOP (object oriented programming) untuk membantu kita membuat sebuah class atau blueprint yang memiliki karakteristik yang sama antara satu dan yang lainnya.
+
+Sebagai gambaran:
+ada blueprint untuk kendaraan, kendaran tersebut memiliki ciri-ciri 
+ada pintu dan roda 4 
+
+kita bisa membuat sebuah instruksi baru yang memiliki ciri-ciri diatas dengan melakukan inheritance. 
+
+ada blueprint yang berasal dari blueprint diatas bernama "mobil kecil",
+ada ciri-ciri baru yaitu ukurannya tidak lebih dari 4 meter
+
+dan juga ada blueprint mobil yang berukuran lebih dari 4 meter.
+
+Kesimpulan: inheritance digunakan untuk membuat sebuah model blueprint yang sama, tanpa harus buat buat dari awal 
+
+```
+class Kendaraan{
+    constructor(nama, pintu, warna){
+        this.nama = nama
+        this.pintu = pintu
+        this.warna = warna
+    }
+
+    show(){
+        return `ini adalah kendaraan roda empat`
+    }
+}
+
+class MobilKecil extends Kendaraan{
+    show(){
+        return `
+        ini adalah kendaraan kecil
+        memiliki ${this.pintu} pintu dan berwarna ${this.warna}
+        `
+    }
+}
+
+class MobilBesar extends Kendaraan{
+    show(){
+        return `
+        ini adalah kendaran besar
+        memiliki ${this.pintu} pintu dan berwarna ${this.warna}
+        `
+    }
+}
+
+
+let abc = new MobilKecil('abc', 4, 'putih')
+console.log(abc.show())
+
+
+let abcBesar = new MobilBesar(`abc Besar`, 4, 'hitam')
+console.log(abcBesar.show())
+```
+
+## Encapsulation programming
+
+adalah sebuah metode pendekatan dalam pembuatan sebuah program agar function maupun variabel tidak bertabrakan antara satu dan yang lainnya.
+
+Misalkan kita ingin membuat sebuah program yang besar, dengan teknik encapulasi kita bisa memastikan bahwa tidak ada variabel atau fungsi duplikat didalam program yang akan menyebabkan error. 
+
+Karena encapulasi itu akan memberikan batasan scope untuk variabel dan function. 
+
+**Carannya**
+ Kita bisa menulis functi ataupun variabel didalam suatu class. 
+ Maka variabel atau function tersebut hanya bisa dijalankan didalam class tersebut saja. Dengan begitu bisa dipastikan jika kita menulis nama variabel atau fungsi yang sama tidak akan terjadi error
+
+kita juga bisa melakukan encapulasi didalam class yaitu dengan menggunakan function scope. variabel yang didalam function hanya bisa dipakai dan dijalankan didalam function tersebut saja
+
+
+Kesimpulan: ini adalah pendekatan untuk memastikan tidak ada variabel atau function duplikat yang akan menghasilkan bug.
+
+Karena diprogram yang bersekala besar itu akan mengakibatkan bug yang tidak terlihat
+
+src: https://www.youtube.com/watch?v=sNKKxc4QHqA&list=PLxvooGgpi4NeugSB4Pk546MXTPmGqPdc4&index=6
+
 
 
 

@@ -662,6 +662,7 @@ nasiGoreng.result()
 
 ```
 
+- `constructor` digunakan untuk menggambil argument seperti halnya function. Karena function itu sudah built in constructor sedangkan class tidak
 - `this` ini gunakan untuk menggambil method child
 - `this` juga digunakan untuk menggambil property didalam class
 - `super` ini digunakan untuk menggambil constructor parent, jika kita ingin melakukan perubahan pada constructor harus ada super()\

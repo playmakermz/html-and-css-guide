@@ -1,4 +1,8 @@
-let var_a = true == 0
-let var_b = false == 1
+class name{
+    constructor(a,b){
+        console.log(a,b)
+    }
+}
 
-console.log(var_b + var_a)
+
+let test = new name('budi', 'setiawan')

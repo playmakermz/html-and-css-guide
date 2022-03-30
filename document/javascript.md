@@ -663,6 +663,7 @@ nasiGoreng.result()
 ```
 
 - `this` ini gunakan untuk menggambil method child
+- `this` juga digunakan untuk menggambil property didalam class
 - `super` ini digunakan untuk menggambil constructor parent, jika kita ingin melakukan perubahan pada constructor harus ada super()\
 - `super` scope dari super adalah untuk property pada parent saja, sebagai contoh code diatas akan error jika `this` diubah ke super
 

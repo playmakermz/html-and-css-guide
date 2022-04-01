@@ -988,6 +988,11 @@ let name = require('./ex')
 console.log(name)
 ```
 
+Src: 
+- https://www.freecodecamp.org/news/node-module-exports-explained-with-javascript-export-function-examples/
+- https://www.sitepoint.com/understanding-module-exports-exports-node-js/
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export?retiredLocale=id
+
 ## Callback function 
 
 Disini kita menggunakan function sebagai argumentnya. 

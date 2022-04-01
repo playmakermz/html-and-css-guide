@@ -1,8 +1,7 @@
-class name{
-    constructor(a,b){
-        console.log(a,b)
-    }
-}
+let a = true == 1
+let b = false == 0
 
 
-let test = new name('budi', 'setiawan')
+console.log(a + b)
+
+

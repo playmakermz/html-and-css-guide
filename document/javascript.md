@@ -809,8 +809,202 @@ Karena diprogram yang bersekala besar itu akan mengakibatkan bug yang tidak terl
 src: https://www.youtube.com/watch?v=sNKKxc4QHqA&list=PLxvooGgpi4NeugSB4Pk546MXTPmGqPdc4&index=6
 
 
+## For each()
+
+Method forEach ini digunakan untuk memanggil nilai didalam secara berurutan
+
+```
+let abc = ['rangga', 'wahyu', 'atmoko']
+
+abc.forEach(item => console.log(item))
+```
+
+atau 
+
+```
+let abc = ['rangga', 'wahyu', 'atmoko']
+
+abc.forEach((item) => {console.log(item)})
+
+```
+
+Atau 
+
+```
+function setList(name){
+    console.log(name)
+}
+
+let var_a = ['budi', 'bambang', 'bagus']
+
+var_a.forEach(setList)
+```
+
+src: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
+
+## Array find 
+
+untuk mendapatkan satu nilai yang sesuai permintaan
+
+```
+let varA = [4,6,8,3,5]
+
+let result = varA.find(item => item > 6)
+
+console.log(result)
+```
+
+atau 
+
+```
+function test(arg) {
+    return arg > 6
+}
+
+let varA = [4,6,8,3,5]
+
+let result = varA.find(test)
+
+console.log(result)
+
+```
+
+## filter
+
+menggambil semua nilai yang sesuai dengan permintaan 
+
+```
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result = words.filter(word => word.length > 6);
+
+console.log(result);
+// expected output: Array ["exuberant", "destruction", "present"]
+```
+
+atau 
+
+```
+function test(arg){
+    return arg > 6
+}
+
+let varA = [1,4,5,6,8,8,4,9,7]
+
+let result = varA.filter(test)
+
+console.log(result)
+
+```
+
+## Map 
+
+Melakukan perhitungan atau menggelolah data didalam array
+
+src: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
+
+```
+const array1 = [1, 4, 9, 16];
+
+// pass a function to map
+const map1 = array1.map(x => x * 2);
+
+console.log(map1);
+// expected output: Array [2, 8, 18, 32]
+
+```
+
+atau 
+
+```
+function test(arg){
+    return arg * 2
+}
+
+let varA = [1,2,3,4,5]
+
+let result = varA.map(test)
+
+console.log(result)
 
 
+```
+
+## export dan require 
+
+> ex.js 
+```
+let name = "budi"
+let age = 28
+
+exports.name = name
+exports.age = age
+```
+
+> im.js 
+```
+let user = require('./ex')
+
+console.log(user.name, user.age)
+```
+
+Sekarang untuk banyak paket 
+
+> ex.js 
+```
+let name = 'budi'
+let age = 28
+
+exports.name = name
+exports.age = age
+```
+
+> im.js 
+```
+const {name, age} = require('./ex')
+
+console.log(name, age)
+```
+
+## Module exports 
+
+> ex.js 
+
+```
+let user = 'budi'
+let age = 28
+
+module.exports = user
+module.exports = age
+module.exports = "ini bagian terakhir"
+```
+
+ini digunakan untuk menggambil satu exports saja, yaitu bagian terakhir
+
+> im.js 
+```
+let name = require('./ex')
+
+console.log(name)
+```
+
+## Callback function 
+
+Disini kita menggunakan function sebagai argumentnya. 
+Tidak perlu ada penulisan "()" pada nama function yang dijadikan argument
+
+```
+function test(arg){
+    return arg * 2
+}
+
+let varA = [1,2,3,4,5]
+
+let result = varA.map(test)
+
+console.log(result)
+
+```
 
 
 ***

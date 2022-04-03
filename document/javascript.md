@@ -1,5 +1,40 @@
 # Javascript 
 
+## Table of content
+- [comment](#01)
+- [Variabel](#02)
+- [if statement](#03)
+- [Menambahkan variabel ke template string](#04)
+- [loops and iteration](#05)
+- [do..while](#06)
+- [while statement](#07)
+- [Labeled statement](#08)
+- [Conver a string to into number](#09)
+- [function](#10)
+- [parameters](#11)
+- [return value](#12)
+- [get the last element in array](#13)
+- [function expression](#14)
+- [function arrow](#15)
+- [callback function](#16)
+- [rest parameters](#17)
+- [object notation](#18)
+- [class syntax](#19)
+- [what is a class](#20)
+- [class expression](#21)
+- [Getters / stters](#22)
+- [computed names](#23)
+- [class fields](#24)
+- [class inheritance](#25)
+- [inheritance](#26)
+- [encapsulation programming](#27)
+- [For each](#28)
+- [Array find](#29)
+- [filter](#30)
+- [map](#31)
+- [exports and require](#32)
+- [Module exports](#33)
+
 file format untuk javascript adalah .js, 
 Untuk menjalankan javascript bisa menggunakan:
 1. web browser console 
@@ -421,6 +456,8 @@ let myFunction = () => {
 
 ## Callback function 
 ### 16
+
+Sebuah konsep untuk memasukan fungsi kedalam argument
 
 ```
 function konsole(argument){

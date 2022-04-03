@@ -383,6 +383,7 @@ refrence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Glob
 
 
 ## Function expressions
+### 14
 
 cara lain untuk membuat function yaitu dengan function expression. 
 Membantu kita untuk membuat sebuah fungsi didalam expressions
@@ -410,6 +411,7 @@ hai() // hai
 ```
 
 ## Function arrow 
+### 15
 
 ```
 let myFunction = () => {
@@ -418,6 +420,7 @@ let myFunction = () => {
 ```
 
 ## Callback function 
+### 16
 
 ```
 function konsole(argument){
@@ -438,6 +441,7 @@ refrence: https://www.w3schools.com/js/js_callback.asp
 refrence: https://javascript.info/function-expressions
 
 ## Rest parameters
+### 17
 src: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters
 
 ```
@@ -466,6 +470,7 @@ console.log(efg('h','i', 'o'))
 
 
 ## object notation
+### 18
 src: https://stackoverflow.com/questions/4908378/javascript-array-of-functions
 
 ```
@@ -488,6 +493,7 @@ myFunct.name() // dunia
 ```
 
 ## Class Syntax 
+### 19
 
 ```
 class User {
@@ -508,6 +514,7 @@ budi.welcome();
 
 
 ## What is a class?
+### 20
 > a class is a kind of function
 
 Dikutip dari Petanikode
@@ -548,6 +555,7 @@ console.log(typeof User) // function
 ```
 
 ## Class Expression
+### 21
 
 sama seperti function class juga bisa dimasukan kedalam expression(variabel)
 
@@ -581,6 +589,7 @@ new budi().Hi() // selamat datang budi
 ```
 
 ## Getters / setters
+### 22
 
 ```
 class User {
@@ -610,6 +619,7 @@ console.log(budi.name)
 ```
 
 ## Computed names
+### 23
 ```
 class User {
 
@@ -622,6 +632,7 @@ new User().sayHi()
 ```
 
 ## Class fields
+### 24
 class property
 
 ```
@@ -638,6 +649,7 @@ console.log(abc)
 ```
 
 ## Class inheritance
+### 25
 
 ```
 class NamaBarang{
@@ -731,6 +743,7 @@ jika kita ingin melakukan perubahan pada constructor di inheritance class pastik
 dan juga jangan lupa untuk argumentnya ditulis ulang juga, jika masih dipakai
 
 ## Inheritance 
+### 26
 
 Ini adalah suatu konsep didalam OOP (object oriented programming) untuk membantu kita membuat sebuah class atau blueprint yang memiliki karakteristik yang sama antara satu dan yang lainnya.
 
@@ -788,6 +801,7 @@ console.log(abcBesar.show())
 ```
 
 ## Encapsulation programming
+### 27
 
 adalah sebuah metode pendekatan dalam pembuatan sebuah program agar function maupun variabel tidak bertabrakan antara satu dan yang lainnya.
 
@@ -810,6 +824,7 @@ src: https://www.youtube.com/watch?v=sNKKxc4QHqA&list=PLxvooGgpi4NeugSB4Pk546MXT
 
 
 ## For each()
+### 28
 
 Method forEach ini digunakan untuk memanggil nilai didalam secara berurutan
 
@@ -843,6 +858,7 @@ var_a.forEach(setList)
 src: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
 ## Array find 
+### 29
 
 untuk mendapatkan satu nilai yang sesuai permintaan
 
@@ -870,6 +886,7 @@ console.log(result)
 ```
 
 ## filter
+### 30
 
 menggambil semua nilai yang sesuai dengan permintaan 
 
@@ -898,6 +915,8 @@ console.log(result)
 ```
 
 ## Map 
+### 31
+
 
 Melakukan perhitungan atau menggelolah data didalam array
 
@@ -931,6 +950,7 @@ console.log(result)
 ```
 
 ## export dan require 
+### 32
 
 > ex.js 
 ```
@@ -967,6 +987,7 @@ console.log(name, age)
 ```
 
 ## Module exports 
+### 33
 
 > ex.js 
 
@@ -994,6 +1015,7 @@ Src:
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export?retiredLocale=id
 
 ## Callback function 
+### 34
 
 Disini kita menggunakan function sebagai argumentnya. 
 Tidak perlu ada penulisan "()" pada nama function yang dijadikan argument

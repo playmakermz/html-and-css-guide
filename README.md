@@ -9,7 +9,6 @@ jika kita belajar untuk membuat website. meskipun tidak untuk dijual tapi untuk 
 
 Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia. Penyedia website bisa dari perorangan, kelompok atau organisasi. suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan jaringan yang menghubungkan sisi client dengan sisi server.
 
-loremipsum
 
 <a href="">
 
@@ -21,6 +20,7 @@ loremipsum
 - [Mulai SQL](document/sql.md)
 - [Mulai Ruby](document/ruby.md)
 - [Mulai Vim](document/vim.md)
+- [Mulai Python](document/python.md)
 
 # Pengenalan Pembelajaran
 

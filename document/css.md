@@ -30,7 +30,7 @@ p {color: 'red';}
 </head>
 ```
 3. External CSS
-Link menuju tempat penyimpanan CSS kita, ditulis didalam TAG '<head>'.
+Link menuju tempat penyimpanan CSS kita, ditulis didalam TAG `<head>`.
 `<link href='style.css' rel='stylesheet'>`
   
 ## Menggenai Id
@@ -83,6 +83,54 @@ Let's bring out CatPhotoApp again to practice using CSS Selectors.
 
 For this challenge, you will use the [attr=value] attribute selector to style the checkboxes in CatPhotoApp. This selector matches and styles elements with a specific attribute value. For example, the below code changes the margins of all elements with the attribute type and a corresponding value of radio:
 
+
+## CSS Box Model 
+
+Didalam Sebuah Element HTMl itu terdiri dari:
+- Content - Adalah area utama dimana jika kita menuliskan suatu text, text tersbut berada didalam contetn
+- Padding - Adalah area kosong yang menjadi jarak antara content dengan border / bagian tepi element 
+- Border - Adalah bagian tepi dari  suatu element. Berada diantara padding dan margin 
+- Margin - adalah bagian luar dari border. Yang memberi jarak antara element satu dengan yang lainnya
+
+## Box-sizing:border-box
+
+Pada dasarnya box model mengunakan  perhitungan nilai width x height pada element sperti berikut
+```
+Width = width + left padding + right padding + left border + right border
+
+Height = height + top padding + bottom padding + top border + bottom border
+```
+src: https://medium.com/@elelvyra/learn-css-box-model-dan-box-sizing-6b19a367478d#:~:text=Box%20sizing%20adalah%20properti%20yang,width%20dan%20height%20suatu%20elemen.
+
+Mari kita coba untuk membuat box model terlebih dahulu, dengan width 200 px, height 200px, padding kanan-kiri 20px, padding atas-bawah 20px, border kanan-kiri 20px, dan border atas-bawah 20px.
+
+mari kita hitung dengan cara diatas
+```
+width = 200 + 10 + 10 + 10 + 10 = 240
+height = 200 + 10 + 10 + 10 + 10 = 240
+```
+Total width adalah 240 dan juga height nya. Ada cara jika kita ingin menghasilkan 200px tersebut adalah keseluruhan dari 
+width dan height, yaitu menambahkan property `box-sizing: border-box;`. **border-sizing** akan mengatur agar lebar atau tinggi dari element tersebut sesuai dengan ukuran width dan height yang sudah ada. 
+
+Mari kita lihat ukuran total pada gambar sebelum box-sizing.
+
+![Sebelum box sizing](../aset/box-sizing-before.png)
+
+Jika semisal Kita menambahkan property box sizing seperti code dibawah
+```
+div.main {
+        width: 200px;
+        height: 200px;
+        background-color: green;
+        padding: 10px;
+        border: 10px solid black; 
+        box-sizing: border-box;
+      }
+```
+
+hasilnya akan menjadi 
+
+![setelah boxsizing](../aset/box-sizing-after.png)
 
 
 

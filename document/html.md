@@ -73,6 +73,63 @@ Dalam SRC secara online, URL memiliki dua tipe:
     Contoh: saya mengunakan link gambar yang berada di wikipedia untuk menjadi sampul halaman website blogspot saya 
 - Relative URL - adalah link yang image / data yang sudah ada di dalam website kita sendiri
 
+## Penggunaan CSS
+- **inline** - dengan menggunakan `style` attribute didadalam element HTML
+- **Internal**  - dengan menggunakan element `<style>` didalam `<head>`
+- **External** - dengan menggunakan element `<link>` pada `<head>` untuk merujuk ke source file css
+
+```
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styles.css"> <!-- Exsternal CSS -->
+
+  <style> <!-- Internal CSS -->
+    body {background-color: powderblue;}
+    h1   {color: blue;}
+    p    {color: red;}
+  </style>
+
+</head>
+<body>
+
+<h1 style="color:blue;">This is a heading</h1> <!-- Inline CSS-->
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+    ```
+
+## Border 
+
+Border adalah bagian tepi dari element. Dengan menggunakan property border kita bisa menampilkan gari tepi element dan 
+melakukan pengubahan pada tampilan border. 
+
+```
+border: 1px solid red;
+```
+
+## HTML BLock dan inline Element
+
+Pada HTML terdapat berabagai macam display value kita akan melihat yang paling sering digunakan yaitu: Block, dan inline
+
+**Block-level Elements**
+
+block level element akan selalu membuat baris baru setelah kita declarasi. Block level element akan menggambil penuh 
+width/lebar yang tersedia. Ketinggian border dari Block level adalah berdasarkan content yang dimiliki. Contoh dari block level element `<p>` dan `<div>`
+
+**Inline Elements**
+
+Inline element tidak akan membuat baris baru seperti block level. Lebar dari inline element akan sama dengan content yang ada didalamannya, Oleh karena itu kita tidak bisa menggatur **width dan Height** dari element yang memeiliki inline. Contoh inline element `<em>`, `<span>`, dan `<strong>`
+
+**inline-block**
+
+Selain dari block dan inline, ada juga inline-block. Element yang memiliki display inline-block bisa kita atur "width" dan "height" mereka. Secara mudahnnya ini adalah pergabungan antara block dan inline. 
+
+**display: none**
+
+Jika kita menambahkan property ini pada element, maka elemnt tersebut akan menghilang dari halaman website. 
+
 
 ## Element CheatSheet
 
@@ -84,7 +141,7 @@ a | `<a href="#"> ` | Link
 img | `<img src="#" alt="text">` | Image 
 hr | `<hr>` | Horizontal Rule, memberikan gari luru secara horizontal
 br | `<br>` | Sebagai line break
-pre | <pre> this is line </pre> | akan menghasilkan fixed text, sama persis dengan content yang didalamnya. jarak tulisan tidak akan diataur oleh komputer
+pre | `<pre> this is line </pre>` | akan menghasilkan fixed text, sama persis dengan content yang didalamnya. jarak tulisan tidak akan diataur oleh komputer
 
 
 ## attribute Cheatsheet
@@ -97,6 +154,8 @@ attribute | Description
 `alt="this is text"` | Biasannya digunakan untuk element "img", jika gambar gagal dimunculkan text ini akan muncul 
 `style="#"` | Digunakan untuk  menambahkan style pada element, dengan css 
 `title="this is title"` | Ini akan memunculkan pop-up kecil saat anda mengarahkan mouse ke element tersebut
+`class="class_name"` | ini adalah untuk pengelompokan untuk diberi instruksi dari css ke element tersebut
+`id="id_name"` | ini adalah pengelompokan untuk diberi instruksi dari css ke element tersebut, dan juga hyperlink 
 
 
 
@@ -111,3 +170,5 @@ attribute | Description
 <https://www.internetingishard.com/> <br>
 <https://github.com/Asabeneh/30-Days-Of-HTML> <br>
 <https://www.w3schools.com/html/>
+- https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/ 
+- https://www.internetingishard.com/html-and-css/css-box-model/

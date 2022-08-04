@@ -74,7 +74,7 @@ Dalam SRC secara online, URL memiliki dua tipe:
 - Relative URL - adalah link yang image / data yang sudah ada di dalam website kita sendiri
 
 
-## CheatSheet
+## Element CheatSheet
 
 Tag | Element | Description
 --- | --- | --- |
@@ -87,7 +87,7 @@ br | `<br>` | Sebagai line break
 pre | <pre> this is line </pre> | akan menghasilkan fixed text, sama persis dengan content yang didalamnya. jarak tulisan tidak akan diataur oleh komputer
 
 
-
+## attribute Cheatsheet
 attribute | Description 
 --- | --- 
 `href="#"` | Digunakan untuk menambahkan hyperlink / path ke sumber tujuan

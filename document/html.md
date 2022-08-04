@@ -39,10 +39,40 @@ Mari kita pahami sedikit.
 Html element dimulai dari tag pertama, beberapa content, dan diakhiri dengan tag penutup.
 Html **element** adalah segala yang berada diantara tag pembuka dan  penutup.
 
+**nested HTML  Elment** adalah sebuah element yang memiliki element lain didalam nya. 
+Contoh: 
+```
+<body>
+
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+</body>
+```
+
 > Untuk beberapa element, terkadang dipanggil sebagai empty element "<br>" karena tidak memiliki content dan tag penutup 
+
+HTML tidak melakukan "CaseSensitive", Anda bisa menggunakan huruf besar atau kecil sesuka hati, tetapi usahakan untuk 
+consistent, agar code terlihat rapih.
 
 Pada structur page HTML, semua yang berada didalam "<body>" akan ditampilkan pada halaman browser. Sedangkan 
 semua content yang berada didalam element "<title>" akan muncul pada browser title
+
+## HTML attribute
+
+Semua element HTML bisa memiliki attribute, untuk memberikan instruksi tambahan atau informasi tambahan. 
+- Attribute selalu ditambahkan pada tag pembuka 
+- attribute biasannya ber format `attribute_name = "value"`
+Contoh attribute pada HTML
+```
+<img src="img_mountain.jpg" alt="this is himalaya mountain">
+```
+
+Dalam SRC secara online, URL memiliki dua tipe:
+- Absolute URL - adalah link yang didapatkan dari platfrom hosted atau website yang bukan milik kita
+    Contoh: saya mengunakan link gambar yang berada di wikipedia untuk menjadi sampul halaman website blogspot saya 
+- Relative URL - adalah link yang image / data yang sudah ada di dalam website kita sendiri
+
 
 ## CheatSheet
 
@@ -50,6 +80,24 @@ Tag | Element | Description
 --- | --- | --- |
 h1 - h6 | `<h1> ... </h1>` | Heading 
 p | `<p> ... </p>` | Paragraph
+a | `<a href="#"> ` | Link
+img | `<img src="#" alt="text">` | Image 
+hr | `<hr>` | Horizontal Rule, memberikan gari luru secara horizontal
+br | `<br>` | Sebagai line break
+pre | <pre> this is line </pre> | akan menghasilkan fixed text, sama persis dengan content yang didalamnya. jarak tulisan tidak akan diataur oleh komputer
+
+
+
+attribute | Description 
+--- | --- 
+`href="#"` | Digunakan untuk menambahkan hyperlink / path ke sumber tujuan
+`src="#"`  | Digunakan untuk memberi tau hyperlink / path yang menuju sumbur gambar
+`width="#"` | Menujukan ukuran Lebar
+`height=#` | menujukan ukuran tinggi
+`alt="this is text"` | Biasannya digunakan untuk element "img", jika gambar gagal dimunculkan text ini akan muncul 
+`style="#"` | Digunakan untuk  menambahkan style pada element, dengan css 
+`title="this is title"` | Ini akan memunculkan pop-up kecil saat anda mengarahkan mouse ke element tersebut
+
 
 
 

@@ -47,6 +47,7 @@ semua content yang berada didalam element "<title>" akan muncul pada browser tit
 ## CheatSheet
 
 Tag | Element | Description
+--- | --- | --- |
 h1 - h6 | `<h1> ... </h1>` | Heading 
 p | `<p> ... </p>` | Paragraph
 

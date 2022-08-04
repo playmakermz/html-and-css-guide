@@ -34,6 +34,24 @@ Mari kita pahami sedikit.
 - `<p> </p>` TAG ini digunakan untuk menulis paragraph biasa didalam document.
 
 
+## Apa itu HTML Element?
+
+Html element dimulai dari tag pertama, beberapa content, dan diakhiri dengan tag penutup.
+Html **element** adalah segala yang berada diantara tag pembuka dan  penutup.
+
+> Untuk beberapa element, terkadang dipanggil sebagai empty element "<br>" karena tidak memiliki content dan tag penutup 
+
+Pada structur page HTML, semua yang berada didalam "<body>" akan ditampilkan pada halaman browser. Sedangkan 
+semua content yang berada didalam element "<title>" akan muncul pada browser title
+
+## CheatSheet
+
+Tag | Element | Description
+h1 - h6 | `<h1> ... </h1>` | Heading 
+p | `<p> ... </p>` | Paragraph
+
+
+
 #### Refrensi 
 - https://id.wikipedia.org/wiki/HTML
 - https://www.w3schools.com/tags/tag_doctype.asp

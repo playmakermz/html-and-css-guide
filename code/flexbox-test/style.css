@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+   display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+}
+
+.menu {
+  border: 1px solid #fff;  /* For debugging */
+  width: 900px;
+  /* height: 50px; */
+  display: flex;
+  justify-content: space-between;
+  /* Space-between akan memberikan jarak antar element, tidak termasuk border */
+  /* space-around akan memberikan jarak antar element dan border  */
+    /* align-items: center; */
+}
+
+.links{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.login {
+    margin-left: 20px;
+}
+

@@ -117,6 +117,7 @@ Mari kita lihat ukuran total pada gambar sebelum box-sizing.
 ![Sebelum box sizing](../aset/box-sizing-before.png)
 
 Jika semisal Kita menambahkan property box sizing seperti code dibawah
+
 ```
 div.main {
         width: 200px;
@@ -128,14 +129,102 @@ div.main {
       }
 ```
 
-hasilnya akan menjadi 
+hasilnya akan menjadi Seperti gambar dibawah. `box-sizing: border-box` akan membuat komputer mengatur secara otomatis pembagian dari width dan height untuk membuat hasil total tidak lebih dari yang sudah dideklarasi kan
 
 ![setelah boxsizing](../aset/box-sizing-after.png)
 
+## CSS float
 
+Untuk source code bisa dilihat disini: https://replit.com/@SayaManusia/CSS-Floats#index.html
+
+Float adalah property css yang dapat membantu anda untuk mengatur agar element bisa bergerak secara horizontal.
+Float tidak hanya untuk mengatur arah gerak element, float akan membuat element disekitarnya bisa berada didalam area element float, tidak bergerak dibawah dari element float 
+
+Seperti pada digambar dibawah ini. Kotak kecil berwana merah memiliki property float, tetpai kotak kuning besar tidak memiliki float. Maka kotak kuning besar akan berjalan dibawah kotak merah. 
+
+![float test](../aset/float test.png)
+
+
+Ada tiga value float yang sering dipakai: 
+1. right
+2. left 
+3. none, Akan menggubah ke tempat default 
+
+cara penggunaan `float: left;`
+
+dan ada tiga cara yang biasaanya digunakan untuk memindahkan element
+
+1. `float: left;` untuk memindahkan ke area kiri
+2. `margin: 0 auto;` Untuk memindahkan ke area tengah
+3. `float: right;` untuk memindahkan ke area kanan 
+
+## HTML document Tree 
+http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html#:~:text=Parent%20and%20Child,element%20in%20the%20document%20tree.
+
+
+## Flexbox
+
+Untuk melihat source code kecil menggenai flexbox: 
+[flexbox src](../code/flexbox-test)
+
+Flexbox  memiliki kemiripan dengan float, tetapi disini kita bisa mengatur penuh tata letak element. Mulai dari Posisi, urutan, garis arah dan ukuran dari element. 
+
+Untuk memahami penggunaan dari float dan flexbox. Flexbox memiliki fungsi yang lebih lengkap daripada float, flex akan bisa bekerja jika ada minimal "parent", "child" element. Flexbox sangat disarankan jika ingin mengatur bagian yang besar pada website. 
+
+Sedangkan float akan dipakai pada element kecil pada halaman website, yang tidak memerlukan fungsi kompleks. 
+
+Istillah bagian kecil float pada halaman  website adalah **Magaine-style  layouts**
+istilah bagian besar yang ditanggani oleh flexbox adalah  **overall page structure**
+src: https://www.internetingishard.com/html-and-css/flexbox/
+
+Pada Flexbox ada dua tipe box yang perlu kita pahami, yaitu "flex container" dan "flex items". element HTML yang ada didalam element container itu disebut sebagai item. Kita bisa mengatur setiap item secara individu, tetapi sebagian besar tergantung dengan container untuk mengaturnya bagaimana. 
+
+Untuk menggunakan flexbox, kita harus menambahkan property `display: flex;` kedalam container, karena jika tidak maka semua property flexbox tidak akan dibaca oleh komputer. 
+
+FLex vontainer hanya memperhatikan posisi element yang berada di satu level dibawahnya ( element didalam dari container adalah item ). Container tidak akan mengatur element yang berada didalam item.
+
+Untuk melakukan customisasi pada element pada  bidang horizontal, kita akan memakai property `justify-content` 
+ini akan membantu untuk memindahkan element, dan mengatur jarak antar item. 
+
+value yang bisa dipilah pada property justify-content:
+
+- Center  - akan membuat element berada di tengah
+- Flex-start - akan memindahkan element ke bagian kiri 
+- Flex-end - akan memindahkan element kebagian kanan 
+- Space-between akan memberikan jarak antar element saja, tidak termasuk border
+- space-around akan memberikan jarak antar element dan border 
+
+
+Untuk mengelompokan element pada flexbox, kita cukup buat flexbox lagi didalam container, seperti code dibawah ini
+```
+
+<div class='menu-container'> <!-- This is main container-->
+        <div class='menu'> <!--  This is second container-->
+            
+            <div class='date'>Aug 14, 2016</div> <!-- Item 01-->
+            <div class='links'>                  <!-- Item 02 -->
+                <div class='signup'>Sign Up</div> 
+                <div class='login'>Login</div>
+            </div>
+        
+        </div>
+    </div>
+```
+
+![flexbox kelompom](../aset/flexbox-kelompok.png)
+
+Flexbox juga dapat mengatur pergerakan elementdalam bidang  vertikal, dengan menggunakan property `align-items`.
+
+Beberapa value yang terdapat pada alig-items:
+
+- Center - mengatur posisi item ke tengah 
+- flex-start - akan mengatur element ke bagian atas container 
+- flex-end - akan mengatur elemet ke bagian bawah container 
+- stretch- akan mengatur element menjadi memanjang kebawah
 
 #### Refrensi
 - https://id.wikipedia.org/wiki/Cascading_Style_Sheets
 - https://www.w3schools.com/css/css_howto.asp
 - https://www.freecodecamp.org/
+
 

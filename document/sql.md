@@ -64,12 +64,28 @@ Absensi kelas), Database bisa disimpan dimana saja sebagai contoh:
 Ada banyak sekali cara untuk mengatur database dan banyak sekali tipe database
 yang didesain untuk tujuan tertentu. Contohnnya:
 
-Jika kau menggunakan Excel, kau harus sudah terbiasa dengan table, mirip seperti spreadsheet.
+Jika anda menggunakan Excel, anda harus sudah terbiasa dengan table, mirip seperti spreadsheet.
 table memiliki row dan columns. Database tables, harus diatur dengan column, dan setiap column
 harus memiliki nama unik(Primary key).
 
 Kesimpulan: database adalah sebuah koleksi dari informasi terkait dan bisa 
 disimpan dimana saja. 
+
+**Beberapa istilah pada table:**
+- Field - adalah nama kolom pada table, yang berbentuk horizontal 
+- Record - adalah kelompok data pada satu baris, yang memiliki hubungan.
+
+Contoh table, Field, dan records :
+nama murid | jurusan 
+--- | --- |
+Budi | IPA 
+ucup | IPA 
+ranti | IPS 
+rangga | Bahasa 
+
+**Field** adalah "nama murid", dan "jurusan"
+
+**Record** adalah "Budi", dan "IPA". Satu kelompook data yang berhubungan.
 
 ## Instalasi Mysql in windows subsystem for linux (WSL)
 

@@ -71,15 +71,83 @@ harus memiliki nama unik(Primary key).
 Kesimpulan: database adalah sebuah koleksi dari informasi terkait dan bisa 
 disimpan dimana saja. 
 
+## Instalasi Mysql in windows subsystem for linux (WSL)
+
+Source: https://docs.microsoft.com/en-us/windows/wsl/tutorials/wsl-database 
+
+1. Buka terminal WSL ( pada instruksi ini memakai ubuntu )
+2. Usahakan membiasakan `sudo apt update`
+3. Setelah berhasil updatem install MySQL dengan `sudo apt install mysql-server`
+4. Untuk memastikan versi dari sql, `mysql --version`
+
+Jika ingin membuat sql server untuk produksi lakukan secure installation. `sudo mysql_secure_installation`
+
+Biasannya disaat kita menghidupkan komputer mysql akan berada di status belum berjalan, untuk membuat my sql server bisa berjalan gunakan `sudo /etc/init.d/mysql start`.
+
+Cara untuk membuka mysql melalui terminal `sudo mysql`.
+
+
+**Penting jika anda bertemu hal yang sperti ini saat secure installation**
+` ... Failed! Error: SET PASSWORD has no significance for user 'root'@'localhost' as the authentication method used doesn't store authentication data in the MySQL server. Please consider using ALTER USER instead if you want to change authentication parameters.`
+
+Ini adalah instruksi penanganan dari https://askubuntu.com/questions/1406395/mysql-root-password-setup-error :
+
+1. Keluar dari pesan error tersebut. 
+2. `sudo mysql` masuk ke mysql 
+3. `ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password by 'my-secret-password';` lakukan alter user, untuk merubah password
+4. `exit;` keluar mysql 
+5. `sudo mysql_secure_installation` masuk kembali ke secure installation
+6. `mysql -u <your username> -p `
+
+## Cara untuk input data kedalam DATABASE 
+
+Langkah pertaman untuk melakukan inputing data disini adalah dengan masukan kedalam applikasi mysql terlebih dahulu. Setelah masuk kedalam mysql dengan terminal akan muncul pesan seperti ini
+
+```
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 13
+Server version: 8.0.30-0ubuntu0.20.04.2 (Ubuntu)
+
+Copyright (c) 2000, 2022, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> ^C
+```
+
+untuk mengetahui list database yang ada didalam mysql, ketik ini `SHOW DATABASES;`
+
+
 ## Dataset
 
 Cara mudah untuk menganalisa data?
 adalah dengan menjalankan side by side pada dataset!
 
->> Tambahkan Contoh Dataset
+Dataset adalah sekumpulan data yang tersruktur, yang data mempermudahkan manusia untuk membaca dan menanalisa data dengan jumlah yang banyak. Dataset biasannyaberbentuk dalam tabel, yang terdiri dari baris dan kolom. 
 
-Penggunaan SQL database bisa berada dibanyak sekali
-bidang.
+Dengan cara penggunaan baris dan kolomyang tepat, dataset akan mempermudah kita dalam melihat hubungan dari setiap data.
+
+Misalkan dataset harga barang dibawah ini 
+
+Nama Barang | Harga Barang | Barang Yang Terjual
+--- |--- | --- |
+Kaos kaki | 5000 | 20
+Spatu | 35000 | 25 
+sandal | 10000 | 10 
+Tali spatu | 10000 | 5
+
+Sekarang akan saya coba jelaskan perbedaan data, dataset, dan database 
+
+Mari kitabuat perumpamaan, data adalah lembar kertas pada buku. Dataset adalah kumpulan lembaran kertas yaitu buku. Sedangkan Database adalah Lemari/rak buku.
+
+- Data adalah serpihan informasi
+- Dataset adalah Tempat dimana data dikumpulkan 
+- Database adalah Wadah yang akan menyimpan kumpulan dataset
+
 
 ## Databaes Management System (DBMS)
 

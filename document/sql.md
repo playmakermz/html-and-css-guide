@@ -127,8 +127,38 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 mysql> ^C
 ```
 
-untuk mengetahui list database yang ada didalam mysql, ketik ini `SHOW DATABASES;`
+Dalam penggunaan command pada sql, biasannya tidak 'case-senssitive', jadi teman-teman bisa menggunakan huruf besar maupun kecil. Tetapi Sangat dianjurkan menggunakan huruf besar untuk menandai bahwa itu adalah command pada sql. 
+Pada Variabel seperti nama database, tabel dan lain-lain SQL akan melakukan case-senssitive. Jangan lupa untuk mengakhiri setiap perintah sql dengan titik koma `;`
 
+
+** COntoh Beberapa tahapan yang dilakukan**
+
+- untuk mengetahui list database yang ada didalam mysql, ketik `SHOW DATABASES;`
+- Untuk membuat database baru, ketik `CREATE DATABASE school;`
+- untuk memilih database, ketik `USE school;`
+- Untuk membuat table baru didalam database, ketik 
+    ```
+    CREATE TABLE student (
+    id INT unsigned NOT NULL AUTO_INCREMENT,
+    name VARCHAR(200)  NOT NULL, 
+    major VARCHAR(150) NOT NULL,
+    PRIMARY KEY (id)
+    );
+    ```
+    Untuk lebih lengkapnya menggenai "Data Types", dan "primaryKey" bisa dilihat pada bagian bawah. 
+- Untuk melihat list table yang ada, ketik `SHOW TABLES;`
+- Untuk melihat informasi column didalam table, ketik `DESCRIBE student;`
+- Untuk menambahkan records atau data kedalam table, ketik 
+    ```
+    INSERT INTO student ( name, major ) VALUES 
+    ( 'budi', 'IPA' ),
+    ( 'ucup', 'IPS' ),
+    ( 'ranti', 'IPS' ),
+    ( 'rangga', 'Bahasa' );
+    ```    
+- Mengambil records dari dalam table, ketik `SELECT * FROM student;`
+
+SRC: https://dev.mysql.com/doc/mysql-getting-started/en/
 
 ## Dataset
 

@@ -131,7 +131,7 @@ Dalam penggunaan command pada sql, biasannya tidak 'case-senssitive', jadi teman
 Pada Variabel seperti nama database, tabel dan lain-lain SQL akan melakukan case-senssitive. Jangan lupa untuk mengakhiri setiap perintah sql dengan titik koma `;`
 
 
-** COntoh Beberapa tahapan yang dilakukan**
+**Contoh Beberapa tahapan yang dilakukan**
 
 - untuk mengetahui list database yang ada didalam mysql, ketik `SHOW DATABASES;`
 - Untuk membuat database baru, ketik `CREATE DATABASE school;`

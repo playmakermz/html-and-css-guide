@@ -99,6 +99,14 @@ Ini adalah instruksi penanganan dari https://askubuntu.com/questions/1406395/mys
 5. `sudo mysql_secure_installation` masuk kembali ke secure installation
 6. `mysql -u <your username> -p `
 
+
+## Cara Untuk mengetahui USER dan host yang sudah terdaftar pada mysql 
+
+Sumber: http://mysql.phi-integration.com/administrasi-mysql/melihat-daftar-user 
+
+1. Masuk kedalam mysql terlebih dahulu 
+2. ketik `SELECT User, Host from mysql.user;`
+
 ## Cara untuk input data kedalam DATABASE 
 
 Langkah pertaman untuk melakukan inputing data disini adalah dengan masukan kedalam applikasi mysql terlebih dahulu. Setelah masuk kedalam mysql dengan terminal akan muncul pesan seperti ini

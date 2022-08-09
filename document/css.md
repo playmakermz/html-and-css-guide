@@ -32,6 +32,15 @@ p {color: 'red';}
 3. External CSS
 Link menuju tempat penyimpanan CSS kita, ditulis didalam TAG `<head>`.
 `<link href='style.css' rel='stylesheet'>`
+
+## CSS Property 
+```
+p {
+    color: red;
+}
+```
+
+Pada kode diatas, "p" adalah element selector atau disebut selector. Sedangkan "color" adalah property. property adalah yang memberikan instruksi bagian mana dari selector tersebut berubah secara visual. 
   
 ## Menggenai Id
   

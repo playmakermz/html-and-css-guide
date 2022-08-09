@@ -37,7 +37,7 @@ Mari kita pahami sedikit.
 ## Apa itu HTML Element?
 
 Html element dimulai dari tag pertama, beberapa content, dan diakhiri dengan tag penutup.
-Html **element** adalah segala yang berada diantara tag pembuka dan  penutup.
+Html **element** adalah semua yang berada dari tag pembuka dan penutup.
 
 **nested HTML  Elment** adalah sebuah element yang memiliki element lain didalam nya. 
 Contoh: 

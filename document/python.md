@@ -439,7 +439,6 @@ Beberapa tipe data yang ada:
     
 # Python guide
 
-# Data structure
 
 ## Perbedaan dari cache dan database
 
@@ -545,6 +544,7 @@ in, not in
 is, not in
 
 ```
+
 
 ## Expressions
 
@@ -672,6 +672,36 @@ def name_function():
 - [ ]  function
 - [ ]  list, tuple, sets, dictionaries
 
+## List 
+`[1, 2, 'halo']`
+
+list disini memiliki banyak sekali manfaat. Yang dapat membantu kita menyimpan data secara ter urut.
+
+## Dictionary 
+```
+{
+'name' : 'rangga',
+'age' : 20,
+'major' : 'sains'
+}
+```
+Dictionary tidak terurut seperti list, tetapi berbentuk `key:value`
+
+## Tuple
+```
+('nasi padang', 'nasi goreng', 'nasi rawon')
+```
+Tuple sama seperti list, tetapi kita tidak bisa menggubah isinya setelah berhasil dibuat.
+
+## Set 
+```
+{'kucing', 'anjing', 'katak', 'katak'}
+```
+Kita tidak bisa melakukan indexing pada set, dan data pada set tidak dapat dirubah. Tetapi data bisa datambahkan dan dikurangi
+
+Kelebihan utama set adalah menghilangkan duplikasi pada data. Data yang terduplikasi akan ditampilkan satu pada set 
+
+SRC: https://www.programiz.com/python-programming/list
 ## Source
 
 - [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)

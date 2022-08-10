@@ -562,6 +562,36 @@ if a==3 else 2
 
 ```
 
+SRC: https://www.petanikode.com/statement-vs-expression/ 
+
+- Statement - adalah bagian yang mengerjakan sesuatu 
+- Expression - adalah bagian yang menghasilkan nilai 
+
+Contoh statement = loop, if, declare variabel dan lain-lain 
+contoh code 
+```
+if True: # ini adalah statement
+    nilai = 2 + 3 # nilai adalah statement, dan 2 + 3 adlah expression
+    print(nilai) # "print" adalah statement
+```
+print bisa menjadi expresssion jika dimasukan kedalam variabel. 
+
+ada dua cara yang dapat dipakai untuk membedakan statement atau bukan.
+Coba masukan command tersebut kadalam variabel. Jika bisa dimasukan ke variabel maka itu termasuk expresssion, jika tidak maka itu statement. 
+
+contoh expression 
+```
+nilaiA = eval("1 + 1")
+nilaiB = eval()
+```
+
+```
+value = 10 
+requirement = 'my apple is 10' if value < 10 else 'my apple not 10'
+```
+
+SRC: https://www.petanikode.com/statement-vs-expression/
+
 ## Python syntatic sugar
 
 cara lain untuk menulis expression / stattements cara cepat

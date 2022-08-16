@@ -439,7 +439,6 @@ Beberapa tipe data yang ada:
     
 # Python guide
 
-# Data structure
 
 ## Perbedaan dari cache dan database
 
@@ -546,6 +545,7 @@ is, not in
 
 ```
 
+
 ## Expressions
 
 Expression adalah evaluasi dari python interpreter, value atau sequnce dengan melakukan operation ( aritmatik/ conditional / lambda function ). Mereka
@@ -561,6 +561,36 @@ if a==3 else 2
 	lambda x:x**2
 
 ```
+
+SRC: https://www.petanikode.com/statement-vs-expression/ 
+
+- Statement - adalah bagian yang mengerjakan sesuatu 
+- Expression - adalah bagian yang menghasilkan nilai 
+
+Contoh statement = loop, if, declare variabel dan lain-lain 
+contoh code 
+```
+if True: # ini adalah statement
+    nilai = 2 + 3 # nilai adalah statement, dan 2 + 3 adlah expression
+    print(nilai) # "print" adalah statement
+```
+print bisa menjadi expresssion jika dimasukan kedalam variabel. 
+
+ada dua cara yang dapat dipakai untuk membedakan statement atau bukan.
+Coba masukan command tersebut kadalam variabel. Jika bisa dimasukan ke variabel maka itu termasuk expresssion, jika tidak maka itu statement. 
+
+contoh expression 
+```
+nilaiA = eval("1 + 1")
+nilaiB = eval()
+```
+
+```
+value = 10 
+requirement = 'my apple is 10' if value < 10 else 'my apple not 10'
+```
+
+SRC: https://www.petanikode.com/statement-vs-expression/
 
 ## Python syntatic sugar
 
@@ -642,6 +672,36 @@ def name_function():
 - [ ]  function
 - [ ]  list, tuple, sets, dictionaries
 
+## List 
+`[1, 2, 'halo']`
+
+list disini memiliki banyak sekali manfaat. Yang dapat membantu kita menyimpan data secara ter urut.
+
+## Dictionary 
+```
+{
+'name' : 'rangga',
+'age' : 20,
+'major' : 'sains'
+}
+```
+Dictionary tidak terurut seperti list, tetapi berbentuk `key:value`
+
+## Tuple
+```
+('nasi padang', 'nasi goreng', 'nasi rawon')
+```
+Tuple sama seperti list, tetapi kita tidak bisa menggubah isinya setelah berhasil dibuat.
+
+## Set 
+```
+{'kucing', 'anjing', 'katak', 'katak'}
+```
+Kita tidak bisa melakukan indexing pada set, dan data pada set tidak dapat dirubah. Tetapi data bisa datambahkan dan dikurangi
+
+Kelebihan utama set adalah menghilangkan duplikasi pada data. Data yang terduplikasi akan ditampilkan satu pada set 
+
+SRC: https://www.programiz.com/python-programming/list
 ## Source
 
 - [https://docs.python.org/3/tutorial/](https://docs.python.org/3/tutorial/)

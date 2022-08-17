@@ -215,14 +215,14 @@ clausa "where" digunakan untuk melakukan filtering, hanya yang sesuai persyratan
 ```
 UPDATE nama_table
 SET column1 = value1, column2 = value2
-WHERE condition
+WHERE condition;
 ```
 
 Statement "update" adauntuk melakukan perubahan pada records yang telah ada
 
 ## SQL DELETE statement 
 ```
-DELERE FROM nama_table WHERE conditon;
+DELETE FROM nama_table WHERE conditon;
 ```
 statement "delete" ada untuk menghapus record yang telah ada 
 

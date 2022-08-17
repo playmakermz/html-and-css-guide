@@ -202,6 +202,61 @@ Mari kitabuat perumpamaan, data adalah lembar kertas pada buku. Dataset adalah k
 - Dataset adalah Tempat dimana data dikumpulkan 
 - Database adalah Wadah yang akan menyimpan kumpulan dataset
 
+## SQL where 
+```
+SELECT column1, column2 
+FROM nama_table 
+WHERE column1 = 'requirement';
+```
+
+clausa "where" digunakan untuk melakukan filtering, hanya yang sesuai persyratan yang akan diambil. 
+
+## SQL UPDATE statement 
+```
+UPDATE nama_table
+SET column1 = value1, column2 = value2
+WHERE condition
+```
+
+Statement "update" adauntuk melakukan perubahan pada records yang telah ada
+
+## SQL DELETE statement 
+```
+DELERE FROM nama_table WHERE conditon;
+```
+statement "delete" ada untuk menghapus record yang telah ada 
+
+## ALTER table 
+```
+ALTER TABLE nama_table 
+    ADD COLUMN nama_column TEXT,
+    DROP COLUMN nama,
+    RENAME COLUMN nama to nama_baru, 
+    MODIFY nama VARCHAR(100) AFTER nama_column,
+    MODIFY nama VARCHAR(100) FIRST;
+```
+Beberapa contoh statement untuk altering table
+
+## Menambahkan / menghapus unique constraint 
+```
+ALTER TABLE nama_table 
+    ADD CONSTRAINT column_unique UNIQUE (nama_column);
+```
+"ADD CONSTRAIN" ini adalah untuk menambahkan kata kunci, agar kita bisa dengan mudah jika ingin menghapusnya nanti.
+"UNIQUE" Akan memastikan bahwa semua value yang masuk berbeda denganyang lain. 
+
+```
+ALTER TABLE nama_table 
+    DROP CONSTRAINT column_unique;
+```
+Perintah diatas untuk menghapus constraint unique 
+
+## Menambhkan FOREIGN KEY 
+```
+ALTER TABLE nama_column
+    ADD CONSTRAINT fk_nama_column 
+    FOREIGN KEY (nama_column) REFERENCES nama_column(id);
+```
 
 ## Databaes Management System (DBMS)
 
@@ -848,6 +903,15 @@ Dengan query diatas kita bisa menghubungkan dua table,
 dan menempatkannya bersandingan atau bersebelahan dengan 
 statement 'ON' dan '='. Table akan bersebelahan jika 
 value mereka sama. 
+
+## SHOW CREATE TABLE nama_table 
+`SHOW CREATE TABLE nama_table` Perintah ini akan menunjukan secara penuh detail menggenai query sql yang masuk dalam pembuatan table.
+
+## DESCRIBE nama_table
+`DESCRIBE nama_table` akan menujukan field,type dan lain-lain yaitu informasi dasar pada table tersebut
+
+## Note kecil 
+Contoh data modeling adalah relational databases
 
 
 ## Pranala menarik

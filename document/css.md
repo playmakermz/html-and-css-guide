@@ -208,12 +208,12 @@ Untuk mengelompokan element pada flexbox, kita cukup buat flexbox lagi didalam c
 ```
 
 <div class='menu-container'> <!-- This is main container-->
-        <div class='menu'> <!--  This is second container-->
+        <div class='menu'> 
             
-            <div class='date'>Aug 14, 2016</div> <!-- Item 01-->
-            <div class='links'>                  <!-- Item 02 -->
-                <div class='signup'>Sign Up</div> 
-                <div class='login'>Login</div>
+            <div class='date'>Aug 14, 2016</div>    <!-- main container item -->
+            <div class='links'>                     <!-- This is second container -->
+                <div class='signup'>Sign Up</div>   <!-- second container item -->
+                <div class='login'>Login</div>      <!-- second container item -->
             </div>
         
         </div>

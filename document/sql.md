@@ -568,6 +568,9 @@ nama | harga
 soto | 5000 
 rawon | 5000
 
+## SQL Date Types 
+`DATE` - Format YYYY-MM-DD
+
 ## Data integrity 
 contoh data integrity pada database 
 - entity integrity 

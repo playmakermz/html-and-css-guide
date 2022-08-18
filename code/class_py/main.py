@@ -27,7 +27,7 @@ class player(char):
 
 
     def skill02(self, arg):
-        print(f'{self.name} menyerang menggunakan Blade of chaos dengan atk {self.atk + 10}, dan speed {self.speed}')
+        print(f'{self.name} menyerang menggunakan Balrog dengan atk {self.atk + 10}, dan speed {self.speed}')
         self.atk = 20
         arg.attacked(self)
         self.atk = 10
@@ -38,21 +38,21 @@ class enemy(char):
     pass
 
 
-kratos = player('kratos', 100, 10, 5)
-zeus = enemy('Zeus', 250, 20, 2)
+dante = player('Dante', 100, 10, 5)
+vergil = enemy('Vergil', 100, 10, 20)
 
 
 while True:
 
-    kratos.skill01(zeus)
-    zeus.skill01(kratos)
+    dante.skill01(vergil)
+    vergil.skill01(dante)
 
-    if kratos.hp <= 0:
-        print('\n ====================================== Kratos END ===============')
+    if dante.hp <= 0:
+        print('\n ====================================== Dante END ===============')
         break
-    elif zeus.hp <= 0:
-        print('\n ======================================= Zeus END ================')
+    elif vergil.hp <= 0:
+        print('\n ======================================= Vergil END ================')
         break
 
-    kratos.skill02(zeus)
+    dante.skill02(vergil)
     print('\n')

@@ -4,6 +4,50 @@
 
 HTML ( HyperText Markup Language )  adalah suatu instruksi untuk menulis document agar bisa ditampilkan ke dalam web browser. web browser akan mengambil file HTML dari penyimpanan local dan akan diubah menjadi halaman website.
 
+Dalam Pembuatan website terdapat setidaknya 3 komponen Pembangun:
+
+- Kerangka tubuh: HTML
+- Fungsi Tubuh: JavaScript
+- Bagian paling luar tubuh : CSS
+
+Secara garis besar kita dapat bayangkan HTML adalah bagian yang akan menjadi penompang dari text dan gambar, JavaScript adalah bagian yang menghasilkan suatu respon akan sesuatu, dan CSS adalah bagian yang akan mengatur tampilan mereka.
+
+## Agar dapat menguasai 
+
+Dalam penggunaan html, css terdapat opsi untuk menggunakan framework untuk mempercepat proses pembuatan. 
+bagi yang baru mulai belajar diharapkan jangan terlalu mengandalkan framework dalam pembuatan halaman website karena itu akan menghasilkan kebiasaan yang buruk dalam problem solving (Programing Unpas).
+
+Contoh mudahnya: Dalam matematika terdapat banyak trick cepat dalam penyelesaian suatu masalah, akan tetapi itu tidak baik karena jika ketemu masalah yang berbeda akan menjadi sulit nanti.
+
+Bagi yang masih belum tau Framework. Framework adalah adalah bentuk pondasi yang telah jadi dalam membangun sistem. 
+Dengan framework kita tidak perlu membangun sistem sepenuhnya dari awal (https://www.codecademy.com/resources/blog/what-is-a-framework/#:~:text=A%20framework%20is%20a%20structure,you%27re%20building%20a%20house.).
+
+Selain itu kita juga harus berani mencoba dan berlatih dalam pembuatan website. Sebuah kesalahan dalam berusaha adalah hal yang mutlak tidak ada yang bisa lari dari itu. Oleh karena itu jika ingin menguasai Pembuatan website maka harus berani mencoba.
+
+## Peralatan membantu
+
+Dalam Pemrograman seperti website diperlukan alat untuk membantu pembuatan website. Alat tersebut terkadang berbentuk sabagai hardware maupun software.
+
+Tetapi perlu kita wajib pahami adalah sebuah alat hanyalah alat, yang terpenting adalah brainware yang akan menggunakan alat tersebut. 
+
+Contoh software yang sering digunakan adalah:
+- Vscode
+- Atom text editor
+- Notepad ++
+
+Software Browser:
+- Google Chrome
+- Opera
+- Mozila Firefox
+
+Hardware Pendukung:
+- Monitor dengan minimal resolusi 1920 * 1080
+- 2 Monitor untuk mempermudah pengerjaan
+
+Dalam pengerjaan halaman website alangkah baiknya untuk membuka halaman website dan text editor secara continue. Setiap kali kita telah melakukan perubahan bisa langsung di lihat hasilnya di web browser. 
+
+## Proses pembuatan 
+
 Fitur HTML:
 1. Menulis text
 1. Memberikan ukuran dan ketebalan kedalam text
@@ -130,6 +174,45 @@ Selain dari block dan inline, ada juga inline-block. Element yang memiliki displ
 
 Jika kita menambahkan property ini pada element, maka elemnt tersebut akan menghilang dari halaman website. 
 
+## Penulisan Unordered List
+
+Dengan Menggunakan Element "<ul>" sebagai container dan element "<li>" sebagai item kita bisa membuat Unordered list sama seperti dengan yang ada di microsoft word 
+
+```
+<h1> Judul </h1>
+
+<ul>
+
+<li> List item 1 </li> 
+<li> list item 2 </li>
+
+</ul>
+```
+
+## Penulisan Ordered List 
+
+Dengan penulisan ber-urut. itu sama membuat list dengan angka secara otomatis.
+
+"<ol>" adalah sebagai container dan "<li>" sebagai element untuk item
+
+```
+<h1> Judul </h1>
+
+<ol>
+    <li> Item 1 </li>
+    <li> item 2 </li>
+<ol>
+```
+
+## Font style 
+
+- Menulis dengan huruf tebal
+    ```
+    <
+    ```
+
+***
+# Cheatsheet Area 
 
 ## Element CheatSheet
 
@@ -172,3 +255,4 @@ attribute | Description
 <https://www.w3schools.com/html/>
 - https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/ 
 - https://www.internetingishard.com/html-and-css/css-box-model/
+- https://www.internetingishard.com/html-and-css/

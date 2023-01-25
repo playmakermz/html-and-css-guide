@@ -302,6 +302,12 @@ attribute | Description
 `class="class_name"` | ini adalah untuk pengelompokan untuk diberi instruksi dari css ke element tersebut
 `id="id_name"` | ini adalah pengelompokan untuk diberi instruksi dari css ke element tersebut, dan juga hyperlink 
 
+***
+# Latihan HTML
+- Menghubungkan file CSS ke dalam document HTML
+ [Latihan 1 HTML](latihan/html01.md)
+- 
+
 
 
 

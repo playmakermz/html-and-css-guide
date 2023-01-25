@@ -305,7 +305,7 @@ attribute | Description
 ***
 # Latihan HTML
 - Menghubungkan file CSS ke dalam document HTML
- [Latihan 1 HTML](latihan/html01.md)
+ [Latihan 1 HTML](../latihan/html01.md)
 - 
 
 

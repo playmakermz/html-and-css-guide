@@ -45,3 +45,9 @@ Perlu diperhatikan, element link tersebut harus berada di dalam container `<head
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 ```
+
+## Kesimpulan
+- Buat file HTML
+- Buat file CSS
+- Panggil file css kedalam document HTML.
+- lakukan improvisasi hingga terlihat bahwa file css dapat terbukti terhubung dengan document.

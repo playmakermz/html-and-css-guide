@@ -202,7 +202,7 @@ Konsep ini sangat penting untuk mempermudah kita menyusun kerangka html yang leb
 
 ## Penulisan Unordered List
 
-Dengan Menggunakan Element "<ul>" sebagai container dan element "<li>" sebagai item kita bisa membuat Unordered list sama seperti dengan yang ada di microsoft word 
+Dengan Menggunakan Element `<ul>` sebagai container dan element `<li>` sebagai item kita bisa membuat Unordered list sama seperti dengan yang ada di microsoft word 
 
 ```
 <h1> Judul </h1>
@@ -219,7 +219,7 @@ Dengan Menggunakan Element "<ul>" sebagai container dan element "<li>" sebagai i
 
 Dengan penulisan ber-urut. itu sama membuat list dengan angka secara otomatis.
 
-"<ol>" adalah sebagai container dan "<li>" sebagai element untuk item
+`<ol>` adalah sebagai container dan `<li>` sebagai element untuk item
 
 ```
 <h1> Judul </h1>

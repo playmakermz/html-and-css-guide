@@ -117,6 +117,13 @@ Dalam SRC secara online, URL memiliki dua tipe:
     Contoh: saya mengunakan link gambar yang berada di wikipedia untuk menjadi sampul halaman website blogspot saya 
 - Relative URL - adalah link yang image / data yang sudah ada di dalam website kita sendiri
 
+#### BreakDown Struktur link
+``` https://github.com/playmakermz/warkop-website/blob/main/document/html.md ```
+
+- Schema : "https://"
+- Domain : "github.com"
+- Path   : "/playmakermz/warkop-website/blob/main/document/html.md"
+
 ## Penggunaan CSS
 - **inline** - dengan menggunakan `style` attribute didadalam element HTML
 - **Internal**  - dengan menggunakan element `<style>` didalam `<head>`
@@ -173,6 +180,22 @@ Selain dari block dan inline, ada juga inline-block. Element yang memiliki displ
 **display: none**
 
 Jika kita menambahkan property ini pada element, maka elemnt tersebut akan menghilang dari halaman website. 
+
+## Pohon keluarga pada document HTML
+
+Pada pembuatan halaman website, alangkah baiknya untuk bisa memahami struktur pohon keluarga document. 
+
+Konsep ini sangat penting untuk mempermudah kita menyusun kerangka html yang lebih kompleks (http://web.simmons.edu/~grabiner/comm244/weekfour/document-tree.html).
+
+```<body>
+
+<div id="content"> <!-- parent -->
+    <ul>  <!-- child -->
+        <li> item 1 </li> <!-- sibling from on e parent -->
+        <li> item 2 </li> <!-- sibling -->
+    </ul>
+</div>
+```
 
 ***
 # CheatSheet Area 
@@ -239,13 +262,31 @@ Dengan penulisan ber-urut. itu sama membuat list dengan angka secara otomatis.
 
 Tag | Element | Description
 --- | --- | --- |
-h1 - h6 | `<h1> ... </h1>` | Heading 
-p | `<p> ... </p>` | Paragraph
-a | `<a href="#"> ` | Link
+h1 - h6 | `<h1> judul </h1>` | Heading 
+p | `<p> paragraf </p>` | Paragraph
+a | ```<a href="#">``` | Link `
 img | `<img src="#" alt="text">` | Image 
 hr | `<hr>` | Horizontal Rule, memberikan gari luru secara horizontal
 br | `<br>` | Sebagai line break
 pre | `<pre> this is line </pre>` | akan menghasilkan fixed text, sama persis dengan content yang didalamnya. jarak tulisan tidak akan diataur oleh komputer
+
+## Menambahkan gambar pada document.
+
+Gambar berformat adalah object yang berada di luar document. Untuk menambahkan gambar ke document kita bisa panggil mereka melalui path yang tepat. Path bisa berasal dari internal source ataupun external source.
+
+Contoh menambahkan gambar dari sumber internal.
+```
+<!-- <img src=''/> -->
+<img src='folder/gambar.jpg'/>
+
+<!-- atau mendefinisikan lebar default -->
+<img src='folder/gambar.jpg' width='100'/>
+
+<!-- text pengganti gambar jika gambar tidak berhasil di render -->
+<img src='folder/gambar.jpg' alt='ini gambar'/>
+```
+
+Pada dasarnya jika kita memanggil gambar, maka ukuran tinggi dan panjang akan diambil dari sumber aslinya.
 
 
 ## attribute Cheatsheet

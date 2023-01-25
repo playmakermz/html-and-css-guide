@@ -174,6 +174,9 @@ Selain dari block dan inline, ada juga inline-block. Element yang memiliki displ
 
 Jika kita menambahkan property ini pada element, maka elemnt tersebut akan menghilang dari halaman website. 
 
+***
+# CheatSheet Area 
+
 ## Penulisan Unordered List
 
 Dengan Menggunakan Element "<ul>" sebagai container dan element "<li>" sebagai item kita bisa membuat Unordered list sama seperti dengan yang ada di microsoft word 
@@ -208,11 +211,29 @@ Dengan penulisan ber-urut. itu sama membuat list dengan angka secara otomatis.
 
 - Menulis dengan huruf tebal
     ```
-    <
+    <strong> Text akan lebih tebal <strong>
     ```
 
-***
-# Cheatsheet Area 
+- Menulis Huruf miring
+    ```
+    <i> Huruf garis miring </i>
+    ```
+- Menulis Paragraf 
+    ```
+    <p> Ini adalah Paragraf </p>
+    ```
+- Menulis Judul atau heading
+    ```
+    <h1> Judul terbesar </h1>
+    <h2> Judul ke dua </h2>
+    ```
+- Garis Horizontal
+    ```
+    <hr/>
+    <!-- Atau tanpa menggunakan garis miring -->
+    <hr>
+    ```
+
 
 ## Element CheatSheet
 

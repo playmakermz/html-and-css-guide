@@ -2,6 +2,7 @@
 
 Cascading Style Sheet (CSS) merupakan instruksi penulisan untuk mengatur tata letak dan penampilan document HTML. Dengan adannya Bantuan CSS sebagai pengelola tampilan dari document akan sangat mempermudah penulis menciptakan karyanya. 
 
+
 Beberapa Fitur CSS:
 1. Mengubah warna text maupun background
 1. Mengubah ukuran gambar atau text
@@ -9,12 +10,8 @@ Beberapa Fitur CSS:
 1. Mengatur penempatan object
 1. Memberikan border
 
-#### Contoh code CSS
-`p { color: red; }`
-- `p` CSS akan mengambil object bernama 'p' dari HTML.
-- `color` membuat fungsi untuk memilih warna. jika tidak ada 'color' maka warna yang dipakai adalah default.
-- `red` memilih warna merah.
 
+## Cara menghubungkan css dengan document html
 Ada tiga cara untuk menghubungkan CSS kedalam document HTML:
 1. Inline Style Sheet
 Menulis code CSS tepat didalam object yang dituju.
@@ -33,6 +30,7 @@ p {color: 'red';}
 Link menuju tempat penyimpanan CSS kita, ditulis didalam TAG `<head>`.
 `<link href='style.css' rel='stylesheet'>`
 
+
 ## CSS Property 
 ```
 p {
@@ -43,54 +41,74 @@ p {
 Pada kode diatas, "p" adalah element selector atau disebut selector. Sedangkan "color" adalah property. property adalah yang memberikan instruksi bagian mana dari selector tersebut berubah secara visual. 
   
 ## Menggenai Id
-  
-One cool thing about id attributes is that, like classes, you can style them using CSS.
 
-However, an id is not reusable and should only be applied to one element. An id also has a higher specificity (importance) than a class so if both are applied to the same element and have conflicting styles, the styles of the id will be applied.
+Konsep dari attribute id itu sama dengan attribute class, kita dapat menlakukan perubahan pada tampilan mereka.
 
-Here's an example of how you can take your element with the id attribute of cat-photo-element and give it the background color of green. In your style element:
+Tetapi jika ada id dan class yang memiliki style berlawanan maka, style dari id yang akan dipakai.
+
+
+Dibawah ini adalah contoh mendifinisikan id pada css, dan melakukan pengaturan style:
 `
-#cat-photo-element {
-  background-color: green;
+#div-main {
+  background-color: white;
 }
 `
-Note that inside your style element, you always reference classes by putting a . in front of their names. You always reference ids by putting a # in front of their names.
-  
+
 ## Menggenai padding
-You may have already noticed this, but all HTML elements are essentially little rectangles.
 
-Three important properties control the space that surrounds each HTML element: padding, border, and margin.
 
-An element's padding controls the amount of space between the element's content and its border.
+pada pengaturan ukuran element terdapat setidaknya tiga property dasar: padding, border, dan margin.
 
-Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has more padding than the blue box.
+Kita mulai dari padding, padding adalah jarak dari content didalam element ke bagian border.
+` padding: 1px 1px 1px 1px;`
 
-When you increase the blue box's padding, it will increase the distance (padding) between the text and the border around it.
-  
+Border adalah batas luar dari content. Kita dapat melihat border, dengan mendefinisikan border ke dalam element tersebut. 
+``` border: 1px solid red; ```
+
+Sedangkan margin adalah jarak antara element satu dengan yang lainnya.
+`margin: 1px 1px 1px 1px;`
+
+Dibawah ini adalah format untuk value padding dan margin:
+
 ```
  padding: 40px 20px 20px 40px;
-  // Clockwise Notation : padding-top, padding-right, padding-bottom, and padding-left
+  // Format penempatan : padding-top, padding-right, padding-bottom, and padding-left
+
 ```
 
-## menggenai margin 
-An element's margin controls the amount of space between an element's border and surrounding elements.
+## CSS Selectors
 
-Here, we can see that the blue box and the red box are nested within the yellow box. Note that the red box has a bigger margin than the blue box, making it appear smaller.
+Untuk mempermudah kita dalam melakukan configurasi tampilan halaman, kita bisa mengunakan fungsi *CSS Selector*. 
 
-When you increase the blue box's margin, it will increase the distance between its border and surrounding elements.
-  
+Dimana kita sebagai brainware / developer, cukup mendefinisikan nama element di dalam style css, lalu melakukan configurasi disana.
+
+Sebagai perumpamaan: 
+Terdapat sebuah perumahan yang beriisi banyak blok dan setiap blok memiliki aturan pewarnaan bangunan sendiri-sendiri.
+Sebagai contoh blok A terdiri dari bangunan yang memiliki dominan warna merah, sedangkan blok B terdiri dari bangunan yang memiliki dominan warna biru.
+
+Disini adalah pertanyaan nya!
+
+Terdapat seorang kurir yang bertanya kepada kita, Seperti apa penanda bangunan untuk blok B?
+
+Jawaban:
+
+a. kita menjawab dengan memberitahui warna dominan pada blok B.
+b. Kita menjawab dengan memberitau blok B berada di dekat blok A.
+
+Penyelesaian:
+Jika jawaban kita adalah a. maka itu benar.
+Karena konsep dari css selector adalah menuliskan alamat tujuan dari element yang kita tuju (https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Selectors?retiredLocale=id).
+
 ## Attribute selector
   
 `
-[type='radio'] {
+/*ini akan mendefinisikan alamat yang didalam attribute class terdapat kata "link" */
+
+[class~="link"] {
   margin: 20px 0px 20px 0px;
 }
 `
- You have been adding id or class attributes to elements that you wish to specifically style. These are known as ID and class selectors. There are other CSS Selectors you can use to select custom groups of elements to style.
 
-Let's bring out CatPhotoApp again to practice using CSS Selectors.
-
-For this challenge, you will use the [attr=value] attribute selector to style the checkboxes in CatPhotoApp. This selector matches and styles elements with a specific attribute value. For example, the below code changes the margins of all elements with the attribute type and a corresponding value of radio:
 
 
 ## CSS Box Model 
@@ -230,6 +248,15 @@ Beberapa value yang terdapat pada alig-items:
 - flex-start - akan mengatur element ke bagian atas container 
 - flex-end - akan mengatur elemet ke bagian bawah container 
 - stretch- akan mengatur element menjadi memanjang kebawah
+
+***
+# Cheatsheet area
+#### Contoh code CSS
+`p { color: red; }`
+- `p` CSS akan mengambil object bernama 'p' dari HTML.
+- `color` membuat fungsi untuk memilih warna. jika tidak ada 'color' maka warna yang dipakai adalah default.
+- `red` memilih warna merah.
+
 
 #### Refrensi
 - https://id.wikipedia.org/wiki/Cascading_Style_Sheets

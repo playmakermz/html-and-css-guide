@@ -46,6 +46,38 @@ Hardware Pendukung:
 
 Dalam pengerjaan halaman website alangkah baiknya untuk membuka halaman website dan text editor secara continue. Setiap kali kita telah melakukan perubahan bisa langsung di lihat hasilnya di web browser. 
 
+## Structur HTML
+
+Dalam pembuatan style document website, terdapat suatu structur yang paling populer.
+
+SRC: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+
+- Header:
+Adalah garis besar yang berada di tempat paling atas document. Biasannya berisi dengan logo dan menu.
+
+- Navigation Bar: 
+adalah bagian yang berfungsi untuk menjadi peta petunjuk pada website. Biasannya berbentuk menu yang menyediakan fitur dan layanan website tersebut. 
+
+## Table pada HTML
+
+## Form pada html
+
+## Pentingnya semantic pada html
+
+Semantic element pada HTML digunakan untuk memberikan makna pada content yang dimiliki.
+Fungsi utama adalah untuk memberi tau developer dan user pemahaman lebih mengenai fungsi conten dan tujuannya. Selain itu semantic pada website akan dapat meningkatkan hasil Search Engine Optimization(SEO). 
+
+Contoh Element Semantic https://www.petanikode.com/html-semantik/:
+- `<article>`
+- `<aside>`
+- `<details>`
+- `<figcaption>`
+- `<figure>`
+- `<footer>`
+- `<main>`
+- `<nav>`
+
+
 ## Proses pembuatan 
 
 Fitur HTML:

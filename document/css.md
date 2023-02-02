@@ -2,7 +2,6 @@
 
 Cascading Style Sheet (CSS) merupakan instruksi penulisan untuk mengatur tata letak dan penampilan document HTML. Dengan adannya Bantuan CSS sebagai pengelola tampilan dari document akan sangat mempermudah penulis menciptakan karyanya. 
 
-
 Beberapa Fitur CSS:
 1. Mengubah warna text maupun background
 1. Mengubah ukuran gambar atau text
@@ -10,6 +9,8 @@ Beberapa Fitur CSS:
 1. Mengatur penempatan object
 1. Memberikan border
 
+## Mengenal CSS syntax
+CSS snytax merujuk kepada format aturan dalam pembuatan style. CSS Syntax berisi deklarasi, properties, dan Selector
 
 ## Cara menghubungkan css dengan document html
 Ada tiga cara untuk menghubungkan CSS kedalam document HTML:
@@ -248,6 +249,26 @@ Beberapa value yang terdapat pada alig-items:
 - flex-start - akan mengatur element ke bagian atas container 
 - flex-end - akan mengatur elemet ke bagian bawah container 
 - stretch- akan mengatur element menjadi memanjang kebawah
+
+
+## CSS Grid
+
+CSS grid adalah suatu sistem layout dua dimensi pada website, sama seperti flexbox. 
+
+Sistem layout design berfungsi untuk mengontrol pergerakan, ukuran, dan penempatan pada element. Dengan CSS grid kita dapat membuat aturan dalam penempatan element di dalam website.
+
+Penggunaan yang baik untuk grid adalah untuk mengatur bagian kecil pada website. Sedangkan element induk yang mencakup element kecil-kecil dikonfigurasi oleh Flexbox.
+
+## CSS transform and transition
+Adalah suatu protokol untuk melakukan perubahan secara visual yang terdapat pada element web. Kedua transformasi tersebut melakukan bentuk animasi tanpa harus menggunakan javascript.
+
+- CSS Transform
+fungsi ini digunakan untuk memanipulasi bentuk visual dari element, dengan cara mengubah posisi, ukuran, rotasi, dan persepktif. Sebagai contoh element akan berotasi sesuai dengan berapa derajat yang diinginkan. 
+
+- CSS Transition
+fungsi ini akan membantu dalam melakukan perubahan kondisi dari element. anda juga dapat menjelaskan detail seberapa cepat durasi effek, dan sebagainnya. 
+contoh efek transition adalah mengubah ukuran visual dari element.
+Referensi: https://www.w3schools.com/css/css3_transitions.asp
 
 ***
 # Cheatsheet area

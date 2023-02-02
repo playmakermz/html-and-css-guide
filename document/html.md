@@ -58,7 +58,35 @@ Adalah garis besar yang berada di tempat paling atas document. Biasannya berisi 
 - Navigation Bar: 
 adalah bagian yang berfungsi untuk menjadi peta petunjuk pada website. Biasannya berbentuk menu yang menyediakan fitur dan layanan website tersebut. 
 
+- main content: 
+
+Adalah bagian paling penting dalam sebuah website, yang berisi mengenai layanan atau topic yang dibahas pada website. 
+
+Sebagai contoh: pada youtube main content adalah bagian dimana kita melihat video yang sedang berjalan.
+
+- Sidebar :
+
+Adalah bagian yang berisi informasi tambahan ataupun pilihan layanan lainnya. Biasannya sidebar berada di sebelah main content.
+
+Sebagai contoh: pada youtube sidebar adalah bagian kanan video. Sidebar tersebut berisi pilihan video lainnya yang bisa kita tonton.
+
+- footer:
+
+Biasannya footer berupa garis paling bawah didalam halaman website. Footer berisi mengenai informasi kepimilikan dan informasi kontak dari pemilik website. 
+
 ## Table pada HTML
+
+NIM | Name | Major
+--- | ---  | --- 
+0123 | Rangga | Bahasa inggris
+0124 | Wahyu | Sistem Informasi
+0125 | Atmoko | Pendidikan matematika
+
+Diatas adalah contoh dari table. Didalam table terdapat kolom dan baris. 
+
+Kolom adalah bagian content yang vertical dari atas ke bawah, Contoh: Nim, Name, Major. 
+
+Baris adalah bagian conten yang horizontal lurus ke kanan, Contoh: rangga, wahyu, atmoko.
 
 ## Form pada html
 

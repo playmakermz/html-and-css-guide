@@ -88,6 +88,36 @@ Kolom adalah bagian content yang vertical dari atas ke bawah, Contoh: Nim, Name,
 
 Baris adalah bagian conten yang horizontal lurus ke kanan, Contoh: rangga, wahyu, atmoko.
 
+COntoh code table pada HTML
+
+```
+<table>
+    <tr> 
+        <td> NIM </td>
+        <td> Name </td>
+        <td> Major </td>
+    </tr>
+
+    <tr>
+        <td> 0123 </td>
+        <td> Rangga </td>
+        <td> Bahasa INggris </td>
+    </tr>
+
+    <tr> 
+        <td> 0124 </td>
+        <td> wahyu </td>
+        <td> Sistem Informasi </td>
+    </tr>
+
+    <tr> 
+        <td> 0125 </td>
+        <td> Atmoko </td>
+        <td> Pendidikan Matematika </td>
+    </tr>
+</table>
+```
+
 ## Form pada html
 
 ## Pentingnya semantic pada html

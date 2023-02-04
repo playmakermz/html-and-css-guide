@@ -405,7 +405,14 @@ Masuk ke file latihan html 01 di repository ini: [panduan menghubungkan document
 # Latihan HTML
 - Menghubungkan file CSS ke dalam document HTML
  [Latihan 1 HTML](../latihan/html01.md)
-- 
+- Membuat Halaman website berisi puisi 
+- Membuat Standart Template Website
+- Membuat website dengan image sebagai navbar
+- Membuat website dengan grid
+- Membuat website dengan Flexbox
+- Membuat website dengan grid dan flexbox
+- Membuat landing page website makanan
+- Membuat portofolio pribadi
 
 
 

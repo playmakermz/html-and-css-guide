@@ -406,11 +406,11 @@ Masuk ke file latihan html 01 di repository ini: [panduan menghubungkan document
 - Menghubungkan file CSS ke dalam document HTML
  [Latihan 1 HTML](../latihan/html01.md)
 - Membuat Halaman website berisi puisi 
+- Membuat table 
 - Membuat Standart Template Website
-- Membuat website dengan image sebagai navbar
+- Latihan penggunaan box model
 - Membuat website dengan grid
 - Membuat website dengan Flexbox
-- Membuat website dengan grid dan flexbox
 - Membuat landing page website makanan
 - Membuat portofolio pribadi
 

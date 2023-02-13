@@ -12,15 +12,62 @@ Sebelum kita mulai mempelajari mengenai penggunaan Grid, kita harus paham mengge
 
     Untuk menggunakan fungsi layout Grid kita harus mendefinisikan Container terlebih dahulu. 
 
-    ```
-    <div class="Container">
-<div class="item"></div>
-<div class="item"></div>
-<div class="item"></div>
-<div class="item"></div>
+```
+<main class="container">
 
-</div>
-    ```
+<!-- Masukan item di area container -->
+
+</main>
+
+```
+
+- Grid Item:
+    Setelah mendefinisikan container. Buat dan masukan element item kedalam conteiner tersebut.
+    Di bawah ini adalah contoh element yang akan kita masukan kedalam container.
+
+```
+        <div class="item item-c">
+            <p>1</p>
+        </div>
+        <div class="item">
+            <p>2</p>
+        </div>
+        <div class="item">
+            <p>3</p>
+        </div>
+
+```
+
+- Gunakan CSS Untuk mengaktifkan layout "Grid"
+
+    Kita Bisa menggunakan eksternal atau internal CSS untuk melakukan modifikasi. Di contoh ini kita menggunakan Internal CSS.
+
+```
+.container {
+display: grid; /* Wajib ada */
+
+grid-template-columns: auto auto auto; /*Digunakan untuk mebuat kolom pada grid */
+
+gap: 10px; /* Digunak untuk mengatur jarak antara baris dan kolom pada grid */
+
+}
+
+.item {
+border: 1px solid red;
+}
+```
+
+- Jika ingin mengatur panjang dan lebar kolom (Perhatian)
+
+Selain mengatur tata letak, grid juga digunakan untuk mengatur lebar style dari element.
+
+```
+.item-c {
+            grid-column-start:1 ;
+            grid-column-end: 3;
+        }
+```
+
 
 - Contoh Full code:
 [Masuk ke File HTML](./test-grid.html)

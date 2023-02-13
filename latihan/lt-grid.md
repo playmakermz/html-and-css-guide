@@ -22,6 +22,9 @@ Sebelum kita mulai mempelajari mengenai penggunaan Grid, kita harus paham mengge
 </div>
     ```
 
+- Contoh Full code:
+[Masuk ke File HTML](./test-grid.html)
+
 ## Pengaturan luas dan jarak dengan grid
 
 [contoh aturan grid](../aset/at-grid-01.jpg)
@@ -33,10 +36,13 @@ Sebagai contoh gambar diatas terdapat garis berwarna merah dan biru. Garis merah
 
 Kotak berwna "grey" tersebut adalah contoh element jika berada di dalam "grida".
 
-Break down dari gambar di atas:
+Breakdown dari gambar di atas:
 - Terdapat 3 kolom, dan 4 garis kolom (Garis warna Biru)
 - Terdapat 4 baris / row, dan 5 garis baris (row line) (Garis warna merah)
 
+Contoh grid Dengan pengaturan layout kolom dan baris.
+
+[contoh](../aset/ex-grid01.png)
 
 
 

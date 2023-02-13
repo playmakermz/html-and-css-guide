@@ -409,7 +409,7 @@ Masuk ke file latihan html 01 di repository ini: [panduan menghubungkan document
 - Membuat table 
 - Membuat Standart Template Website [contoh](../code/latihan-html/index-LT-03.html)
 - Latihan penggunaan box model [Latihan 2 HTML](../latihan/html02.md)
-- Membuat website dengan grid
+- Membuat website dengan grid [Latihan_3](../latihan/lt-grid.md)
 - Membuat website dengan Flexbox
 - Membuat landing page website makanan
 - Membuat portofolio pribadi

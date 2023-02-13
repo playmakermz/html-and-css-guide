@@ -22,6 +22,23 @@ Sebelum kita mulai mempelajari mengenai penggunaan Grid, kita harus paham mengge
 </div>
     ```
 
+## Pengaturan luas dan jarak dengan grid
+
+[contoh aturan grid](../aset/at-grid-01.jpg)
+
+Didalam mengatur layout pada grid kita harus benar-benar memahami penempatan garis.
+Karena garis tersebut akan jadi nilai yang menjadi acuan sistem dalam mengatur layout.
+
+Sebagai contoh gambar diatas terdapat garis berwarna merah dan biru. Garis merah digunakan untuk melambangkan "Baris / row", Sedangkan garis biru melambangkan "Kolom / column".
+
+Kotak berwna "grey" tersebut adalah contoh element jika berada di dalam "grida".
+
+Break down dari gambar di atas:
+- Terdapat 3 kolom, dan 4 garis kolom (Garis warna Biru)
+- Terdapat 4 baris / row, dan 5 garis baris (row line) (Garis warna merah)
+
+
+
 
 
 ***

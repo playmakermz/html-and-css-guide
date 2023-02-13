@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HomPage</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: lightgrey;
+            color: white;
+            padding: 10px;
+        }
+
+        .item {
+            border: 1px solid white;
+            background-color: grey;
+            text-align: center;
+        }
+
+        .item-c {
+            grid-column-start:1 ;
+            grid-column-end: 3;
+
+            grid-row-start: 2;
+                grid-row-end: 4;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <div class="item">
+            <p>Cell 1</p>
+        </div>
+        <div class="item">
+            <p>Cell 2</p>
+        </div>
+        <div class="item">
+            <p>Cell 3</p>
+        </div>
+
+
+        <div class="item item-c">
+            <p>1</p>
+        </div>
+        <div class="item">
+            <p>2</p>
+        </div>
+        <div class="item">
+            <p>3</p>
+        </div>
+
+        <div class="item">
+            <p>1</p>
+        </div>
+        <div class="item">
+            <p>2</p>
+        </div>
+        <div class="item">
+            <p>3</p>
+        </div>
+
+
+
+
+    </main>
+</body>
+
+</html>

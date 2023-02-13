@@ -74,7 +74,7 @@ Selain mengatur tata letak, grid juga digunakan untuk mengatur lebar style dari 
 
 ## Pengaturan luas dan jarak dengan grid
 
-[contoh aturan grid](../aset/at-grid-01.jpg)
+![contoh aturan grid](../aset/at-grid-01.jpg)
 
 Didalam mengatur layout pada grid kita harus benar-benar memahami penempatan garis.
 Karena garis tersebut akan jadi nilai yang menjadi acuan sistem dalam mengatur layout.
@@ -89,7 +89,7 @@ Breakdown dari gambar di atas:
 
 Contoh grid Dengan pengaturan layout kolom dan baris.
 
-[contoh](../aset/ex-grid01.png)
+![contoh](../aset/ex-grid01.png)
 
 
 

@@ -87,6 +87,26 @@ Breakdown dari gambar di atas:
 - Terdapat 3 kolom, dan 4 garis kolom (Garis warna Biru)
 - Terdapat 4 baris / row, dan 5 garis baris (row line) (Garis warna merah)
 
+- Kotak persegi panjang memanjang ke kanan. 
+Adalah hasil dari code
+
+```
+grid-column-start: 2;
+grid-column-end: 4;
+
+```
+
+    Yang berfungsi untuk mengatur lebar dari element tersebut. Dimulai dari garis kolom (Garis Warna Biru) ke 2 hingga ke garis kolom ke 4.
+
+- Kotak yang memiliki tinggi pada bagian bawah kiri. Memiliki code
+
+```
+grid-row-start: 3;
+grid-row-end: 5;
+```
+
+yang berfungsi untuk mengatur tingggi dari style element. Sebagai mana pada contoh tinggi element dimulai dari garis baris(row)(garis warna merah) ke 3 hingga row ke 5.
+
 Contoh grid Dengan pengaturan layout kolom dan baris.
 
 ![contoh](../aset/ex-grid01.png)

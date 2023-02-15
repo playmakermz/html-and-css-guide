@@ -10,3 +10,7 @@ CSS atau Cascading Style Sheets adalah teknologi fundamental yang digunakan pada
 Struktur dari css terdiri dari:
 - Selector, Adalah target alamat dari element HTML
 - Declaration, adalah definisi / protokol untuk pengaturan tampilan pada element tersebut. 
+
+CSS Juga menyediakan sebuah sistem untuk memberikan kebebasan kepada developer untuk menampilkan fitur yang sesuai dengan ukuran device. Sebagai contoh, untuk Handphone akan memiliki layout yang berbeda dengan apa yang ada pada komputer. Fitur ini disebut sebagai "CSS media queries" yang akan jadi fondasi pada halaman website responsif.
+
+

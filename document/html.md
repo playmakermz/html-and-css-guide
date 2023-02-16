@@ -406,7 +406,7 @@ Masuk ke file latihan html 01 di repository ini: [panduan menghubungkan document
 - Menghubungkan file CSS ke dalam document HTML
  [Latihan 1 HTML](../latihan/html01.md)
 - Membuat Halaman website berisi puisi [Latihan Puisi](../latihan/lt-puisi.md)
-- Latihan Float 
+- Latihan Float [latihan float](../latihan/lt-float.md)
 - Membuat Standart Template Website [Latihan Standart](../latihan/lt-standart-web.md)
 - Latihan penggunaan box model [Latihan 2 HTML](../latihan/html02.md)
 - Membuat website dengan grid [Latihan_3](../latihan/lt-grid.md)

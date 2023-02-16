@@ -14,5 +14,9 @@ Untuk menyelesaikan masalah tersebut kita bisa menggunakan teknik "clearfix" unt
 Contoh dan referensi: 
 (https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clearfix2)
 
+Secara Garis besar CSS float akan sangat dapat membantu kita dalam beberapa kondisi. Tetapi sebagai developer kita juga harus menggunakannya dengan teliti agar kekurangan dari float tidak menjadi halangan. 
+Setiap fitur akan memiliki kekurangan dan kelebihan itu adalah hal yang pasti, dan harus kita belajar pertimbangkan.
+
+
 
 

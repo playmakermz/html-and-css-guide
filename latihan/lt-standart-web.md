@@ -43,8 +43,8 @@ yang akan jadi fondasi pada halaman website responsif.
 
 - header 
 - navbar 
-- main -
-- aside -
+- main 
+- aside 
 - footer
 
 Pada panduan kali ini element main dan aside akan dimasukan kedalam satu container untuk mempermudah pengaturan tampilan selanjutnnya.(Saran dari author, untuk setiap element tersebut diberi tanda "comment"
@@ -115,6 +115,12 @@ Menambahkan konten kedalam element main
 
 6. Menambahkan kontent kedalam sidebar
 
+Sebelum menambahkan kotent tambahkan class terlebih dahulu untuk sidebar. 
+```
+class="main-area-right"
+```
+Tambahkan kotent kedalam sidebar
+
 ```
 <p>
 Sit cumque iure nostrum omnis nihil nisi Provident perspiciatis rerum sapiente ullam quaerat? Maiores itaque culpa ipsam similique mollitia, quae At quis necessitatibus vitae eos ipsam Molestiae nesciunt eum magnam!
@@ -141,9 +147,11 @@ Untuk selector Kita bisa gunakan metode selector seperti ini `.class1 .class2`. 
 9. Buat Selector untuk element "body".dengan Declaration seperti dibawah ini
 
 ```
+body {  
 box-sizing: border-box;
             margin: 0px;
             padding: 0px;
+            }
 ```
 **BreakDown**:
 - box-sizing - Akan digunakan untuk memaksa agar lebar dan tinggi element sesuai dengan permintaan, tanpa ada tambahan dari padding, dll.Untuk lebih jelas bisa dilihat lagi pada chapter HTML[Click okay](.. / document / html.md) 
@@ -153,12 +161,14 @@ box-sizing: border-box;
 
 10. Mengatur Desain header.
 ```
-padding: 0px;
+header {
+            padding: 0px;
             background-color: Black;
             Padding: 0px;
             color: white;
             text-align: center;
             height: 50px;
+        }
 ```
 **Breakdown** 
 - Background-color - sesuai namannya digunakan untuk mengatur warna backgroud dari element
@@ -169,24 +179,30 @@ padding: 0px;
 11. mengatur agar element h1 tidak membuat jarak dengan element diatasnnya.
 
 ```
-margin: 0px;
+header h1 {
+            margin: 0px;
+        }
 ```
 
 12. Mengatur desain pada navbar 
 ```
-padding: 0px;
+nav {
+            padding: 0px;
             margin: 0px;
             background-color: grey;
             padding: 0px;
             height: 30px;
+        }
 ```
 
 13. Mengatur element "ul" (list) agar sesuai dengan navbar.
 
 ```
-list-style-type: none;
+nav ul {
+            list-style-type: none;
             margin: 0;
             padding: 0;
+        }
 ```
 
 14. Mengatur item untuk menjadi menu button pada navbar.
@@ -194,33 +210,55 @@ list-style-type: none;
 ```
 /*Contoh untuk mendapatkan alamat selector */
 /* nav ul li {} */
-display: inline;
+
+nav ul li {
+            display: inline;
             color: white;
             margin: 0px 2% 0px 2%;
+        }
 ```
 
 - display - disini digunakan untuk menggubah dari "block" ke "inline"
 
 15. Mengatur warna link pada navbar 
 ```
-color: white;
+nav a {
+            color: white;
+        }
 ```
 
-16. Mengatur untuk "main-parent" dan disiapkan untuk float element. 
+16. Mengatur untuk "main-parent" dan disiapkan untuk kontent utama. 
 
 ```
-float: left;
+.main-parent {
             padding: 1%;
 height: 20%;
             width: 100%;
+        }
 ```
+
+161. Mennambahkan clearfix agar ketinggian dari container tidak collapse
+
+```
+/* Menggunakan Clearfix agar container tidak collapse */
+        .clearfix:after {
+            content: "";
+                clear: both;
+                    display: table;
+        }
+```
+
+- clear - digunakan untuk mengembalikan flow pada element menjadi kembali normal. Karena perlu diingat pemakaian float akan mengubah flow element.
+
 
 17. Mengatur layout dan jarak pada element main. Mengatur element "main"
 
 ```
-box-sizing: border-box;
+main {
+            box-sizing: border-box;
             float: left;
             width: 80%;
+        }
 ```
 
 **Breakdown**
@@ -228,24 +266,21 @@ box-sizing: border-box;
 
 18. Mengatur layout dan jarak pada element aside. 
 ```
-box-sizing: border-box;
+aside {
+            box-sizing: border-box;
             width: 20%;
             float: right;
+        }
 ```
 
-19. Mengatur pengembalian flow dan kepada footer. 
+19. Mengatur Area footer agar terlihat formal 
 ```
 footer {
-            clear: both;
-            Height: 7%;
+            padding: 10px;
             background-color: Black;
             color: white;
         }
 ```
-
-**Breakdown** 
-- clear - digunakan untuk mengembalikan flow pada element menjadi kembali normal. Karena perlu diingat pemakaian float akan mengubah flow element.
-
 
 ## COntoh lengkap 
 [script lengkap](../code/latihan-html/index-LT-03.html)

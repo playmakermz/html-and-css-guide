@@ -17,6 +17,12 @@ Contoh dan referensi:
 Secara Garis besar CSS float akan sangat dapat membantu kita dalam beberapa kondisi. Tetapi sebagai developer kita juga harus menggunakannya dengan teliti agar kekurangan dari float tidak menjadi halangan. 
 Setiap fitur akan memiliki kekurangan dan kelebihan itu adalah hal yang pasti, dan harus kita belajar pertimbangkan.
 
+## Persyaratan 
+
+- Memiliki dua float 
+- Dua float berada didalam main 
+- Menggunakan teknik "clearfix" untuk memperbaiki "container collapse"
+
 ## Instruksi 
 
 1. Buat Fondasi halaman website
@@ -37,7 +43,94 @@ Setiap fitur akan memiliki kekurangan dan kelebihan itu adalah hal yang pasti, d
 
 ```
 
-2. Masukan 
+2. Buat class main untuk meyimpan dua float
+
+```
+<main class="clearfix">
+
+
+</main>
+
+```
+
+3. Float bagian kiri disimpan ke main 
+
+```
+<div class="main-text">
+
+            Float Left
+
+            Adipisicing quia consequatur magnam repellat et voluptatibus sequi Perspiciatis
+            commodi cum adipisci asperiores vero. Modi soluta molestiae veritatis
+            praesentium nulla modi pariatur veritatis Quas eveniet veritatis excepturi
+            velit modi alias!
+
+        </div>
+```
+
+4. Float bagian kanan disimpan ke main, dan pastikan berada dibawah "main-text"
+
+```
+ <div class="side-text">
+
+            Float Right
+
+            Adipisicing deserunt voluptatibus nisi est suscipit! Nulla unde temporibus sequi
+            id officia, distinctio Maiores corporis placeat unde quos iste maxime
+            laudantium Suscipit unde adipisci atque et deleniti animi ullam minus.
+
+        </div>
+```
+
+5. Mengatur padding pada element main dengan internal css.
+
+```
+main {
+            padding: 10px;
+        }
+```
+
+*Breakdown* :
+- Padding - untuk memberikan jarak dari border ke content
+
+6. Mengggunakan clearfik teknik untuk memperbaiki "height" dari container. 
+```
+/* clear float */
+        .clearfix:active {
+            content: "";
+            clear: both;
+            display: table;
+        }
+```
+Reference (https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clearfix2)
+
+7. Mengatur element "main-text" menjadi element float.
+```
+ /* Pengaturan Float */
+        .main-text {
+            box-sizing: border-box;
+            float: left;
+                width: 60%;
+                    border: 1px solid red;
+        }
+```
+
+*Breakdown* : 
+- box-sizing - digunakan untuk memastikan ukuran element sesuai dengan yang didefinisikan yaitu "60%"
+- float - digunakan untuk menempatkan element sesuai dengan arah yang dipilih. 
+- width - mengatur lebar dari element 
+- border - menampilkan border dari element
+
+
+8. Mengatur element "side-text" menjadi element float. 
+```
+.side-text {
+            box-sizing: border-box;
+                float: right;
+                width: 40%;
+                    border: 1px solid blue;
+        }
+```
 
 
 ## Source Code 

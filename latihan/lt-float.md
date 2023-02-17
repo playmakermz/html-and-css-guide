@@ -20,3 +20,5 @@ Setiap fitur akan memiliki kekurangan dan kelebihan itu adalah hal yang pasti, d
 
 
 
+## Referensi 
+- https://css-tricks.com/all-about-floats/

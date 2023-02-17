@@ -17,8 +17,32 @@ Contoh dan referensi:
 Secara Garis besar CSS float akan sangat dapat membantu kita dalam beberapa kondisi. Tetapi sebagai developer kita juga harus menggunakannya dengan teliti agar kekurangan dari float tidak menjadi halangan. 
 Setiap fitur akan memiliki kekurangan dan kelebihan itu adalah hal yang pasti, dan harus kita belajar pertimbangkan.
 
+## Instruksi 
+
+1. Buat Fondasi halaman website
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+
+```
+
+2. Masukan 
+
 
 ## Source Code 
+
+Contoh Lengkap
 
 [Source Code](../code/latihan-html/index-LT-float.html)
 

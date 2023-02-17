@@ -18,6 +18,9 @@ Secara Garis besar CSS float akan sangat dapat membantu kita dalam beberapa kond
 Setiap fitur akan memiliki kekurangan dan kelebihan itu adalah hal yang pasti, dan harus kita belajar pertimbangkan.
 
 
+## Source Code 
+
+[Source Code](../code/latihan-html/index-LT-float.html)
 
 
 ## Referensi 

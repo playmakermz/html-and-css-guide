@@ -68,10 +68,6 @@ Selain mengatur tata letak, grid juga digunakan untuk mengatur lebar style dari 
         }
 ```
 
-
-- Contoh Full code:
-[Masuk ke File HTML](./test-grid.html)
-
 ## Pengaturan luas dan jarak dengan grid
 
 ![contoh aturan grid](../aset/at-grid-01.jpg)
@@ -109,8 +105,111 @@ yang berfungsi untuk mengatur tingggi dari style element. Sebagai mana pada cont
 
 Contoh grid Dengan pengaturan layout kolom dan baris.
 
+
 ![contoh](../aset/ex-grid01.png)
 
+## Contoh instruksi 
+
+1. Buat fondasi HTML 
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+2. Buat container untuk grid 
+
+```
+<main class="container">
+
+</main>
+```
+
+3. Masukan Item untuk diatur, Dan menyiapkan class untuk dilakukan pengaturan lebar dengan grid. 
+
+```
+<div class="item">
+            <p>Cell 1</p>
+        </div>
+        <div class="item">
+            <p>Cell 2</p>
+        </div>
+        <div class="item">
+            <p>Cell 3</p>
+        </div>
+
+
+        <div class="item item-c">
+            <p>1</p>
+        </div>
+        <div class="item">
+            <p>2</p>
+        </div>
+        <div class="item">
+            <p>3</p>
+        </div>
+
+        <div class="item">
+            <p>1</p>
+        </div>
+        <div class="item">
+            <p>2</p>
+        </div>
+        <div class="item">
+            <p>3</p>
+        </div>
+
+```
+
+5. Pada Element "style" kita akan megaktifkan dan mengatur bagaimana grid berfungsi. 
+
+```
+.container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 10px;
+            background-color: lightgrey;
+            color: white;
+            padding: 10px;
+        }
+```
+
+6. Mengatur tampilan item.
+```
+.item {
+            border: 1px solid white;
+            background-color: grey;
+            text-align: center;
+        }
+```
+
+7. Mengatur lebar dan tinggi pada "item-c" dengan grid.
+```
+.item-c {
+            grid-column-start:1 ;
+            grid-column-end: 3;
+
+            grid-row-start: 2;
+                grid-row-end: 4;
+        }
+```
+
+
+
+- Contoh Full code:
+[Masuk ke File HTML](./test-grid.html)
 
 
 

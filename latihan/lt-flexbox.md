@@ -77,7 +77,7 @@ Salah satu kelebihan dari flexbox adalah kemampuan untuk membuat dan mengatur la
 </div>
 ```
 
-** CSS Phase ** 
+**CSS Phase** 
 
 1. Pastikan element body dan element lainnya memiliki standart format tanpa padding, dan margin.
 
@@ -88,15 +88,62 @@ Salah satu kelebihan dari flexbox adalah kemampuan untuk membuat dan mengatur la
   box-sizing: border-box;
 }
 ```
-** Breakdown :**
+**Breakdown**
 box-sizing - digunakan untuk memastikan agar lebar dan tinggi element sesuai dengan permintaan. 
 
-2. mengatur 
+2. mengatur "main-container". Mengaktifkan flexbox dan mengatur tampilan
 
+```
+.menu-container {
+            display: flex;
+            justify-content: center;
+            color: #fff;
+            background-color: #5995DA;
+            /* Blue */
+            padding: 20px 0;
+        }
+```
+**Breakdown** 
+- display flex - digunakan untuk mengaktifkan flexbox pada container. 
+- justify-content center - disini digunakan untuk mengatur letak item yang berada didalam container. 
 
+3. Mengatur flexbox dan tampilan pada container "menu"
+
+```
+.menu {
+            border: 1px solid #fff;
+            /* For debugging */
+            width: 900px;
+            /* height: 50px; */
+            display: flex;
+            justify-content: space-between;
+            /* Space-between akan memberikan jarak antar element, tidak termasuk border */
+            /* space-around akan memberikan jarak antar element dan border  */
+            /* align-items: center; */
+        }
+```
+
+- Space-between akan memberikan jarak antar element, tidak termasuk border.
+- space-around akan memberikan jarak antar element dan border
+
+4. pada element link diubah menjadi display flex. Dengan begitu item didalamnnya akan berubah menjadi display "inline".
+
+```
+.links {
+            display: flex;
+            /* border: 1px solid red; */
+        }
+```
+
+5. mengatur jarak pada element "login"
+```
+.login {
+            margin-left: 20px;
+        }
+```
 
 
 
 
 ## Contoh Source code 
-[Click Source Code](../code/flexbox-test)
+[Click Source Code](../code/flexbox-test/index.html)

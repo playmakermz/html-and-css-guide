@@ -27,6 +27,76 @@ Salah satu kelebihan dari flexbox adalah kemampuan untuk membuat dan mengatur la
 
 ## Instruksi 
 
+1. Buat fondasi dari halaman website.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+
+    <style>
+
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
+```
+
+2. Buat element container untuk flexbox nanti.
+
+```
+<div class="menu-container">
+
+</div>
+```
+
+3. Buat element container ke dua untuk flexbox. 
+
+```
+<div class="menu">
+
+
+</div>
+```
+
+4. Buat element child dan salash satu sibling adalah container 
+
+```
+<div class='date'>Aug 14, 2016</div>
+            <!-- 02 item -->
+            <div class='links'>
+                <!-- 03 container & 02 item -->
+                <div class='signup'>Sign Up</div>
+                <!-- item 03 -->
+                <div class='login'>Login</div>
+                <!-- item 03 -->
+</div>
+```
+
+** CSS Phase ** 
+
+1. Pastikan element body dan element lainnya memiliki standart format tanpa padding, dan margin.
+
+```
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+```
+** Breakdown :**
+box-sizing - digunakan untuk memastikan agar lebar dan tinggi element sesuai dengan permintaan. 
+
+2. mengatur 
+
+
+
+
+
 
 ## Contoh Source code 
 [Click Source Code](../code/flexbox-test)

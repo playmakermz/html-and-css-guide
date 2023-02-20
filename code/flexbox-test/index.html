@@ -4,16 +4,58 @@
 <head>
     <meta charset='UTF-8' />
     <title>Some Web Page</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-container {
+   display: flex;
+  justify-content: center;
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+}
+
+.menu {
+  border: 1px solid #fff;  /* For debugging */
+  width: 900px;
+  /* height: 50px; */
+  display: flex;
+  justify-content: space-between;
+  /* Space-between akan memberikan jarak antar element, tidak termasuk border */
+  /* space-around akan memberikan jarak antar element dan border  */
+    /* align-items: center; */
+}
+
+.links{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.login {
+    margin-left: 20px;
+}
+    </style>
 </head>
 
 <body>
-    <div class='menu-container'>                        <!-- 01 container -->
-        <div class='menu'>                              <!-- 02 container & 01 item -->
-            <div class='date'>Aug 14, 2016</div>        <!-- 02 item -->
-            <div class='links'>                         <!-- 03 container & 02 item -->
-                <div class='signup'>Sign Up</div>       <!-- item 03 -->
-                <div class='login'>Login</div>          <!-- item 03 -->
+    <div class='menu-container'>
+        <!-- 01 container -->
+        <div class='menu'>
+            <!-- 02 container & 01 item -->
+            <div class='date'>Aug 14, 2016</div>
+            <!-- 02 item -->
+            <div class='links'>
+                <!-- 03 container & 02 item -->
+                <div class='signup'>Sign Up</div>
+                <!-- item 03 -->
+                <div class='login'>Login</div>
+                <!-- item 03 -->
             </div>
         </div>
     </div>

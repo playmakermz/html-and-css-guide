@@ -10,7 +10,6 @@ jika kita belajar untuk membuat website. meskipun tidak untuk dijual tapi untuk 
 Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi dengan informasi atau data yang disedikan oleh penyedia. Penyedia website bisa dari perorangan, kelompok atau organisasi. suatu website biasannya ditempatkan pada suatu webserver dan untuk mengaksesnya dibutuhkan jaringan yang menghubungkan sisi client dengan sisi server.
 
 
-<a href="">
 
 ### Table content
 
@@ -21,6 +20,7 @@ Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi deng
 - [Mulai Ruby](document/ruby.md)
 - [Mulai Vim](document/vim.md)
 - [Mulai Python](document/python.md)
+- [Mulai Git](document/git.md)
 
 # Pengenalan Pembelajaran
 

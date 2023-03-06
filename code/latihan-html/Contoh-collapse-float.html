@@ -9,13 +9,25 @@
 
 
 .main-wrap {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
 }
 
 main {
     border: 1px solid green;
     padding: 10px;
 }
+
+
+/* clearfix */
+
+
+main:after {
+    content: "";
+        clear: both;
+            display: table;
+
+}
+
 
 .main-left {
     height: 50px;
@@ -43,6 +55,10 @@ Ini adalah untuk bagian kiri
 
 <div class="main-right">
 Ini adalah untuk bagian kanan
+</div>
+<div class="main-right-st">
+    <!-- kalau tidak ikut float left, maka ikut right -->
+ini ikut
 </div>
 
     </main>

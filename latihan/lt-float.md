@@ -96,13 +96,38 @@ main {
 6. Mengggunakan clearfik teknik untuk memperbaiki "height" dari container. 
 ```
 /* clear float */
-        .clearfix:active {
+        .clearfix:after {
             content: "";
             clear: both;
             display: table;
         }
 ```
 Reference (https://www.w3schools.com/css/tryit.asp?filename=trycss_layout_clearfix2)
+
+- Property "content" akan digunakan untuk menambahkan kontent tambahan, setelah kontent utama yang kita tulis secara manual
+- Property "display:table" "display" digunakan untuk mengatur tampilan sebuah elemen. Pada selector di atas, nilai dari properti "display" adalah "table", artinya elemen akan ditampilkan seperti tabel pada halaman web.
+
+**Contoh dari property content**
+```
+<h2>Paperback Best Sellers</h2>
+<ol>
+  <li>Political Thriller</li>
+  <li class="new-entry">Halloween Stories</li>
+  <li>My Biography</li>
+  <li class="new-entry">Vampire Romance</li>
+</ol>
+```
+Dengan style 
+```
+.new-entry::after {
+  content: " New!"; /* The leading space creates separation
+                       between the added content and the
+                       rest of the content */
+  color: red;
+}
+```
+
+contoh langsung: https://developer.mozilla.org/en-US/docs/Web/CSS/content#targeting_classes
 
 7. Mengatur element "main-text" menjadi element float.
 ```

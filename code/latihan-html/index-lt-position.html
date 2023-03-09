@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Homepage </title>
+
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+.rel-post {
+    border: 1px solid red;
+        margin: 50px 0 0 0;
+}
+
+.package {
+    display: inline-block;
+        width: 100px;
+            height: 100px;
+                background-color: brown;
+                color: white;
+}
+
+.rp-rel {
+    position: relative;
+        background-color: black;
+            top: 30px;
+}
+
+
+.rp-abs {
+    position: absolute;
+        background-color: green;
+            top: 30px;
+}
+
+/* example 2 */ 
+
+.ex-fs {
+    margin: 100px 0 0 0;
+    width: auto;
+        height: 100px;
+            overflow: scroll;
+}
+
+.ex-fixed {
+    background-color: blue;
+        position: fixed;
+            color: white;
+}
+
+.ex-sticky {
+    background-color: brown;
+        position: sticky;
+            top: 0px;
+                color: white;
+}
+
+
+
+    </style>
+</head>
+<body>
+
+
+
+    <!-- untuk relative position --> 
+    <div class="rel-post">
+<div class="package"> I am normal </div>
+<div class="package rp-rel"> I am relative </div>
+<div class="package rp-abs"> I am absolute </div>
+<div class="package"> I am normal </div>
+    </div>
+
+    <!-- 
+        Penjelasan menggenai relative dan absolute
+
+Relative property bisa kita gunakan untuk mengatur penempatan element sesuai dengan koordinat yang kita inginkan. Relative position tidak akan menghilangkan element tersbut dari flow website. Secara simple, tempat tinggal relative element masih ada, dan tidak akan dipakai oleh element lainnya. 
+
+Sedangkan Property absolute akan kehilangan tempat dia tinggal dan tempat tinggal dari absolute element akan dipakai oleh element lainnya. 
+Fungsi absolute hampir sama dengan relative. Perbedaan ada di mana acuan koordinasi mereka. 
+
+Relativ position akan menggunakan container sebagai acuan awal untuk koordinasi tempat. 
+
+Absolute position akan menggunakan element body sebagai acuan awal.
+
+seperti pada contoh.
+
+    -->
+
+    <!-- Fixed dan sticky -->
+
+    <div class="ex-fs">
+
+<div class="ex">
+
+    <span class="ex-fixed">
+I am Fixed
+    </span>
+
+    Lorem totam quas labore nostrum quasi Accusantium eligendi error blanditiis labore nemo, magnam! Consectetur id quod eius distinctio possimus consequuntur! Ipsa ipsum assumenda reiciendis itaque voluptatibus corrupti Facere nobis quidem
+
+    <span class="ex-sticky">
+I am Sticky 
+    </span>
+
+    Consectetur molestias odit facilis obcaecati est? Alias fugit praesentium animi veritatis voluptatum reiciendis tempora Pariatur atque hic nisi aspernatur tempora? Repellat sequi eos quidem tempora hic autem fugiat commodi. Aspernatur Adipisicing illo natus amet sequi eius Sint mollitia enim recusandae architecto id sequi Perferendis ipsum nulla similique aliquam iste Eum quae voluptatem laudantium excepturi natus! Omnis voluptate dicta ex aspernatur Amet numquam dolorem rem facilis esse
+    Temporibus quidem obcaecati labore ullam placeat accusantium Eaque quisquam cum consectetur rem rerum. Illum minus praesentium in quod quas. Eaque dolor est sint <deleniti></deleniti>
+Consectetur in expedita repudiandae quo a? Adipisci veritatis vero magnam perferendis ullam repellat! Libero vitae quod itaque possimus laudantium error, quod? Id voluptatibus soluta eligendi repudiandae reprehenderit voluptas Optio blanditiis?
+</div>
+
+    </div>
+    
+
+</body>
+</html>

@@ -20,7 +20,7 @@ Contoh `<p style='color:red;'> </p>`
 2. Embedded Style sheet
 Menulis code CSS didalam TAG HEAD.
 contoh:
-```html
+```
 <head>
 <style>
 p {color: 'red';}
@@ -72,10 +72,11 @@ Sedangkan margin adalah jarak antara element satu dengan yang lainnya.
 Dibawah ini adalah format untuk value padding dan margin:
 
 ```
- padding: 40px 20px 20px 40px;
+padding: 40px 20px 20px 40px;
   // Format penempatan : padding-top, padding-right, padding-bottom, and padding-left
-
 ```
+
+``````
 
 ## CSS Selectors
 
@@ -121,6 +122,13 @@ Didalam Sebuah Element HTMl itu terdiri dari:
 - Margin - adalah bagian luar dari border. Yang memberi jarak antara element satu dengan yang lainnya
 
 ## Box-sizing:border-box
+
+"box-sizing: border-box" adalah salah satu properti css yang dapat digunakan untuk mengatur box model dalam suatu element HTML. Secara simple "border-box" adalah digunakan untuk memastikan tinggi dan lebar dari element sesuai dengan keingginan kita. 
+
+Cerita:
+- Pada dasarnya element akan memiliki tipe "box-sizing: content-box", yang dimana ukuran element akan dihitung berdasarkan ukuran kontent ditambah padding dan border, Sehingga jika kita menambahkan padding atau border ukuran total element akan membesar. 
+
+- Jika "box-sizing: border-box" mereka akan mengatur agar ukuran lebar dan tinggi sesuai dengan spesifikasi yang sudah kita tulis.
 
 Pada dasarnya box model mengunakan  perhitungan nilai width x height pada element sperti berikut
 ```

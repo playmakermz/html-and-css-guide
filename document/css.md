@@ -71,12 +71,9 @@ Sedangkan margin adalah jarak antara element satu dengan yang lainnya.
 
 Dibawah ini adalah format untuk value padding dan margin:
 
-```
-padding: 40px 20px 20px 40px;
-  // Format penempatan : padding-top, padding-right, padding-bottom, and padding-left
-```
+```padding: 40px 20px 20px 40px;
+  // Format penempatan : padding-top, padding-right, padding-bottom, and padding-left```
 
-``````
 
 ## CSS Selectors
 

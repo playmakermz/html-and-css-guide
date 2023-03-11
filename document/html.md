@@ -411,7 +411,7 @@ Masuk ke file latihan html 01 di repository ini: [panduan menghubungkan document
 - Latihan penggunaan box model [Latihan 2 HTML](../latihan/html02.md)
 - Membuat website dengan grid [Latihan_3](../latihan/lt-grid.md)
 - Membuat website dengan Flexbox [Flexbox](../latihan/lt-flexbox.md)
-- Contoh CSS position [Contoh CSS](../code/latihan-html/index-lt-position.html)
+- Contoh CSS position [Contoh CSS](../latihan/lt-css-position.md)
 - Membuat landing page website makanan
 - Membuat portofolio pribadi
 

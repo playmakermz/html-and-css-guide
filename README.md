@@ -21,6 +21,7 @@ Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi deng
 - [Mulai Vim](document/vim.md)
 - [Mulai Python](document/python.md)
 - [Mulai Git](document/git.md)
+- [Mulai_React](document/react.md)
 
 # Pengenalan Pembelajaran
 

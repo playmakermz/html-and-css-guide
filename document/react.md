@@ -50,6 +50,41 @@ ReactDOM.render(element, document.getElementById('root'));
 
 ```
 
+### mengatur style dari JSX
+```
+import React from 'react';
+
+function MyComponent() {
+  return (
+    <div className="my-class">
+      <h1>Hello, world!</h1>
+      <p>This is my component.</p>
+    </div>
+  );
+}
+```
+Penggunaan "className" adalah bentuk reserved dari "class" attribute pada html. 
+
+### Untuk tag element yang tidak memiliki kontent
+```
+import React from 'react';
+
+function MyComponent() {
+  return (
+    <div className="my-class">
+      <h1>Hello, world!</h1>
+      <br /> 
+      <hr />
+      <p>This is my component.</p>
+    </div>
+  );
+}
+```
+
+yang awalnya seperti ini `<br/>` kita tulis menjadi `<br />`
+
+
+
 ## Referensi:
 
 - https://www.niagahoster.co.id/blog/react-js-adalah/?gclid=Cj0KCQiAx6ugBhCcARIsAGNmMbi_g36zJkerxEangrozL6QmcfFd7ZZwtxXRiqvmDhPGnGX4Jt_rrM0aAtnGEALw_wcB

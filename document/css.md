@@ -20,6 +20,7 @@ Contoh `<p style='color:red;'> </p>`
 2. Embedded Style sheet
 Menulis code CSS didalam TAG HEAD.
 contoh:
+
 ```
 <head>
 <style>
@@ -49,11 +50,11 @@ Tetapi jika ada id dan class yang memiliki style berlawanan maka, style dari id 
 
 
 Dibawah ini adalah contoh mendifinisikan id pada css, dan melakukan pengaturan style:
-`
+```
 #div-main {
   background-color: white;
 }
-`
+```
 
 ## Menggenai padding
 
@@ -61,18 +62,20 @@ Dibawah ini adalah contoh mendifinisikan id pada css, dan melakukan pengaturan s
 pada pengaturan ukuran element terdapat setidaknya tiga property dasar: padding, border, dan margin.
 
 Kita mulai dari padding, padding adalah jarak dari content didalam element ke bagian border.
-` padding: 1px 1px 1px 1px;`
+``` padding: 1px 1px 1px 1px;```
 
 Border adalah batas luar dari content. Kita dapat melihat border, dengan mendefinisikan border ke dalam element tersebut. 
 ``` border: 1px solid red; ```
 
 Sedangkan margin adalah jarak antara element satu dengan yang lainnya.
-`margin: 1px 1px 1px 1px;`
+```margin: 1px 1px 1px 1px;```
 
 Dibawah ini adalah format untuk value padding dan margin:
 
-```padding: 40px 20px 20px 40px;
-  // Format penempatan : padding-top, padding-right, padding-bottom, and padding-left```
+```
+padding: 40px 20px 20px 40px;
+  // Format penempatan : padding-top, padding-right, padding-bottom, and padding-left
+```
 
 
 ## CSS Selectors
@@ -100,13 +103,13 @@ Karena konsep dari css selector adalah menuliskan alamat tujuan dari element yan
 
 ## Attribute selector
   
-`
+```
 /*ini akan mendefinisikan alamat yang didalam attribute class terdapat kata "link" */
 
 [class~="link"] {
   margin: 20px 0px 20px 0px;
 }
-`
+```
 
 
 

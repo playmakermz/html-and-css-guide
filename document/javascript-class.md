@@ -11,13 +11,80 @@ Dengan class kita bisa mengatur sebuah project code yang besar dengan lebih effi
 
 ### Method 
 
-### Paramether 
+Method pada javascript adalah sebuah function yang berada didalam object. 
+Method memiliki kemampuan untuk mengakses method lain atau properties yang ada didalam object. Method dan function itu sama, yang membedakan adalah cara pemanggilan. Function bisa dipanggil secara langsung, sedangkan method harus dipanggil melalui object 
 
-### Argument 
+```
+const person = {
+  name: "John",
+  age: 30,
+  greet: function() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+};
+
+person.greet(); // Output: Hello, my name is John and I am 30 years old.
+
+```
+
+### Paramether and argument 
+
+Pada javscript paramter adalah sebuah nilai yang digunakan oleh function sebagai pintu masuk (input data). Disaat kita membuat function parameter adalah variabel yang kita tulis diantara kurung buka dan kurung tutup. 
+
+Sedangkan Argument adalah nilai asli yang akan dimasukan dan diproses oleh function. 
+
+
+example:
+```
+function greet(name) {
+  console.log(`Hello, ${name}!`);
+}
+
+greet("John"); // Output: Hello, John!
+
+```
+
+- 'name' pada function adalah parameter 
+- "John" nilai asli ini adalah argument
+
+
+### Private and public Properties
+
+pada dasarnnya semua properties dari object adalah berbentuk public, yang berarti mereka bisa dimodifikasi dan digunakan dari luar object tersebut. Tetapi kita juga bisa membuat sebuah properties menjadi private pada javascript menggunakan method. 
+
+Membuat private properties dengan method. 
+1. Declarasi sebuah variabel didalam method
+2. Variabel tersebut hanya akan bisa diakses dari method itu saja
+
+Contoh: 
+```
+function Person(age) {
+  let myName = 'budi'; // private property
+
+  this.getAge = function() {
+    return age; // public method
+  };
+
+  this.getName = function() {
+    return myName; // private method
+  };
+}
+
+console.log(myName); // error in this line
+```
+
+Seperti pada kode diatas, jika kita mencoba mengakses private variabel seperti itu maka akan terjadi error.
+
+
+
+
 
 ### instance 
 
-### 
+### Constructor
+
+### Super 
+
 
 
 
@@ -81,3 +148,8 @@ dog.makeSound();
 OOP dan garbage collection itu berbeda. 
 Garbage collection digunakan untuk membersihkan penggunaan memory dari aplikasi yang tidak berjalan.
 
+
+
+## Reference:
+- ChatGPT
+- Freecodecamp 

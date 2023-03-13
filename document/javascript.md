@@ -1252,3 +1252,14 @@ let salah = false
 ```
 ## Array
 
+
+***
+## Additional note 
+- [javascript class](../document/javascript-class.md)
+
+***
+## Reference:
+- internet is hard 
+- freecodecamp 
+- mozzila
+- chatgpt

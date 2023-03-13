@@ -76,10 +76,123 @@ console.log(myName); // error in this line
 Seperti pada kode diatas, jika kita mencoba mengakses private variabel seperti itu maka akan terjadi error.
 
 
+### instance (blue print)
+
+### Object (litterlay object)
+
+Pada javasscript, object adalah sebuah koleksi dari data dan fungsi yang berhubungan, yang biasannya berbentuk seperti pasangan attribute-nilai ( ini seperti property dan value pada css ). Data bisa berbentuk string, numbers, arrays, atau bahkan object lain. Object adalah bagian penting pada javscript, yang akan dapat membantu teman-teman membuat representasi dari bagian code yang complex. Object tersebut memiliki kelibahan encapsulation dan inheritance. 
 
 
+pada javascript terdapat setidaknnya 5 cara untuk membuat sebuah object:
 
-### instance 
+- Object Literal syntax
+
+contoh object literal syntax
+```
+// creating an object using object literal syntax
+const person = {
+  name: "John",
+  age: 30,
+  address: {
+    street: "123 Main St",
+    city: "New York",
+    state: "NY"
+  },
+  sayHello: function() {
+    console.log(`Hello, my name is ${this.name}!`);
+  }
+};
+
+// accessing object properties and calling methods
+console.log(person.name); // output: "John"
+console.log(person.address.city); // output: "New York"
+person.sayHello(); // output: "Hello, my name is John!"
+```
+
+- Constructor function syntax
+
+```
+// Define a constructor function for creating person objects
+function Person(firstName, lastName, age) {
+  this.firstName = firstName;
+  this.lastName = lastName;
+  this.age = age;
+  
+  // A method of the Person object
+  this.greet = function() {
+    console.log(`Hello, my name is ${this.firstName} ${this.lastName} and I am ${this.age} years old.`);
+  };
+}
+
+// Use the constructor function to create a new person object
+let john = new Person("John", "Doe", 30);
+
+// Call the greet method of the person object
+john.greet(); // Output: "Hello, my name is John Doe and I am 30 years old."
+```
+
+- ES6 Class syntax
+
+```
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+const john = new Person('John', 30);
+john.greet(); // output: "Hello, my name is John and I am 30 years old."
+
+```
+
+- Object.create() method
+
+```
+// Define a person object
+const person = {
+  greeting: 'Hello!',
+  sayHello() {
+    console.log(this.greeting);
+  }
+};
+
+// Create a new object using the person object as its prototype
+const john = Object.create(person);
+
+// Add a new property to the john object
+john.name = 'John';
+
+// Call the sayHello method on the john object
+john.sayHello(); // Output: Hello!
+```
+
+- Factory function pattern.
+
+```
+function createPerson(name, age) {
+  return {
+    name: name,
+    age: age,
+    greet: function() {
+      console.log('Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.');
+    }
+  };
+}
+
+// create new person objects using the factory function
+let person1 = createPerson('John', 30);
+let person2 = createPerson('Jane', 25);
+
+// call the greet method on each person object
+person1.greet(); // output: Hello, my name is John and I am 30 years old.
+person2.greet(); // output: Hello, my name is Jane and I am 25 years old.
+
+```
 
 ### Constructor
 
@@ -153,3 +266,4 @@ Garbage collection digunakan untuk membersihkan penggunaan memory dari aplikasi 
 ## Reference:
 - ChatGPT
 - Freecodecamp 
+- https://en.wikipedia.org/wiki/Name%E2%80%93value_pair

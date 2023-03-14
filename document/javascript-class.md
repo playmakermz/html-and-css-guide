@@ -78,14 +78,41 @@ Seperti pada kode diatas, jika kita mencoba mengakses private variabel seperti i
 
 ### instance (blue print)
 
-### Object (litterlay object)
+Dalam konsep Object Oriented Programming ada sebuah konsep yang bernama Blue print, yang dimana disaat kita membuat class pada javascript, class code tersebut adalah blue print. 
+
+Buat apa Blue print?
+
+Blue print digunakan untuk membuat object yang serupa dengan cepat. 
+Kita bisa bayangkan bahwasannya blue print adalah sebuah cetakan kue, dengan cetakan kue kita bisa membuat banyak kue yang memiliki bentuk serupa tetapi memiliki banyak pilihan rasa dengan cepat. Itu adalah perumpamaan dari blueprint.
+
+Class yang kita buat pada object Oriented Programming disebut sebagai blueprint, sedangkan variabel yang memiliki class didalamannya disebut sebagai "instance" dan class itu sendiri adalah object 
+
+```
+// Define a class / blueprint
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+}
+
+// Create an instance of the class
+const person1 = new Person('John', 30);
+
+// Access the properties of the instance
+console.log(person1.name); // Output: John
+console.log(person1.age); // Output: 30
+
+```
+
+### Object
 
 Pada javasscript, object adalah sebuah koleksi dari data dan fungsi yang berhubungan, yang biasannya berbentuk seperti pasangan attribute-nilai ( ini seperti property dan value pada css ). Data bisa berbentuk string, numbers, arrays, atau bahkan object lain. Object adalah bagian penting pada javscript, yang akan dapat membantu teman-teman membuat representasi dari bagian code yang complex. Object tersebut memiliki kelibahan encapsulation dan inheritance. 
 
 
 pada javascript terdapat setidaknnya 5 cara untuk membuat sebuah object:
 
-- Object Literal syntax
+- Object Literal syntax ( object )
 
 contoh object literal syntax
 ```
@@ -109,7 +136,7 @@ console.log(person.address.city); // output: "New York"
 person.sayHello(); // output: "Hello, my name is John!"
 ```
 
-- Constructor function syntax
+- Constructor function syntax ( object )
 
 ```
 // Define a constructor function for creating person objects
@@ -131,7 +158,7 @@ let john = new Person("John", "Doe", 30);
 john.greet(); // Output: "Hello, my name is John Doe and I am 30 years old."
 ```
 
-- ES6 Class syntax
+- ES6 Class syntax ( instance )
 
 ```
 class Person {
@@ -150,7 +177,7 @@ john.greet(); // output: "Hello, my name is John and I am 30 years old."
 
 ```
 
-- Object.create() method
+- Object.create() method (instance )
 
 ```
 // Define a person object
@@ -195,6 +222,7 @@ person2.greet(); // output: Hello, my name is Jane and I am 25 years old.
 ```
 
 ### Constructor
+
 
 ### Super 
 
@@ -267,3 +295,8 @@ Garbage collection digunakan untuk membersihkan penggunaan memory dari aplikasi 
 - ChatGPT
 - Freecodecamp 
 - https://en.wikipedia.org/wiki/Name%E2%80%93value_pair
+- https://javascript.info/class 
+- https://eloquentjavascript.net/06_object.html 
+- https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Classes_in_JavaScript
+
+- https://stackoverflow.com/questions/2885385/what-is-the-difference-between-an-instance-and-an-object ( difference between instance and object talk )

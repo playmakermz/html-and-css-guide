@@ -223,8 +223,95 @@ person2.greet(); // output: Hello, my name is Jane and I am 25 years old.
 
 ### Constructor
 
+Pada Javascript "constructor" adalah sebuah function yang digunakan untuk membuat object yang akan dibuat oleh kata kunci 'new'. Ini adalah sebuah function special, karena mereka adalah sama dengan nama class itu sendiri, dan akan dipanggil secara otomatis saat instance dibuat.
+
+Constructor biasaannya digunakan untuk membuat nilai awal dari properti object. Dengan kata lain "constructor" adalah cara kita untuk membuat instance berdasarkan blueprint atau class yang ada, dan memastikan setiap instance yang dibuat memiliki bentuk awal properti dan method yang sama dengan blue print. 
+
+- Contoh Constructor Dengan ES6 class 
+```
+class Person {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+  }
+}
+
+const john = new Person('John', 30);
+john.sayHello(); // Output: Hello, my name is John and I am 30 years old.
+```
+
+- Contoh constructor dengan function 
+```
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+  this.sayHello = function() {
+    console.log('Hello, my name is ' + this.name + ' and I am ' + this.age + ' years old.');
+  };
+}
+
+// Create a new Person object using the constructor function
+const john = new Person('John', 30);
+
+// Call the sayHello method on the john object
+john.sayHello(); // Output: Hello, my name is John and I am 30 years old.
+
+```
+
+### this 
+
+Pada Javascript class, 'this' akan merujuk pada bagian instance properti dari class. Dengan begitu kita bisa memanggil properti tersebut dari mana saja selama berada didalam class.
+
+```
+class Person {
+  constructor(name) {
+    this.name = name;
+  }
+
+  sayHello() {
+    console.log(`Hello, my name is ${this.name}.`);
+  }
+}
+
+const person = new Person('John');
+person.sayHello(); // Output: Hello, my name is John.
+
+```
+
 
 ### Super 
+
+Pada Javascript 'super' digunakan untuk memmangil method dari parent class ke subclass yang ingin melakukan perubahan pada method yang sebelumnnya.  Dengan super subclass dapat memiliki aksess dan memanggil method dari parent.
+
+```
+class Animal {
+  constructor(name) {
+    this.name = name;
+  }
+
+  speak() {
+    console.log(`${this.name} makes a noise.`);
+  }
+}
+
+class Dog extends Animal {
+  constructor(name) {
+    super(name); // calls the parent class constructor and passes in the name argument
+  }
+
+  speak() {
+    super.speak(); // calls the parent class's speak method
+    console.log(`${this.name} barks.`);
+  }
+}
+
+const dog = new Dog('Rufus');
+dog.speak(); // Output: Rufus makes a noise. Rufus barks.
+```
 
 
 

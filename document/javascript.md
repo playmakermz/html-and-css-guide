@@ -60,6 +60,16 @@ JavaScript engines are commonly found in web browsers, including V8 in Chrome, S
 
 source: https://www.freecodecamp.org/news/whats-the-difference-between-javascript-and-ecmascript-cba48c73a2b5/
 
+## Paradigma programming 
+
+Ada beberapa paradigma pemrograman yang berbeda, masing-masing memiliki ciri khas dan cara pandang yang berbeda dalam mengatasi masalah. Berikut adalah beberapa paradigma pemrograman yang umum:
+
+Paradigma Pemrograman Prosedural: pendekatan yang fokus pada urutan instruksi yang dilakukan pada data.
+
+Paradigma Pemrograman Fungsional: pendekatan yang lebih fokus pada fungsi, atau bagaimana data dimanipulasi dan diproses dalam program.
+
+Paradigma Pemrograman Berorientasi Objek: pendekatan yang mengorganisir program dalam objek yang terdiri dari data dan metode yang dapat memanipulasi data tersebut.
+
 ## Comment
 ### 01 
 

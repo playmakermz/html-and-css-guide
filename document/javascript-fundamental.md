@@ -21,5 +21,53 @@ Beberapa Bentuk API:
 - Operating System API: Adalah penghubung antara operating system dan software agar mereka bisa menggunakan resource computer system.  Contohnya adalah data dari docs dihubungkan dengan printer. 
 - Library API: Ini adalah API yang berada didalam library software dan dapat memberikan akses untuk menggunakan library function dan feature. Contoh React API, Dengan React library kita bisa membuat user interface dengan mudah. API tersebut menyediakan set komponent dan method dalam membuat dan melakukan management pada Element UI.
 
-## 
+## Variabel 
 
+Javascript adalah salah satu baha pemrogramman yang dynamic, dengan kata lain variabel bisa menyimpan berbagai macam data type dengan mudah. Oleh karena itu javascript dikatakan sebagai bahasa yang flexibel, namun kita juga harus berhati-hati dalam penggunaan variabel tersebut.
+
+Pada awal dari javascript, cara untuk melakukan deklarasi variabel hanya bisa dilakukan dengan "var", setelah berkembang mucul "let", dan sekarang pada ES6 ditambahkan "const". 
+
+Contoh deklarasi variabel 
+
+```
+var x = 10
+let y = '10'
+const = 'string'
+```
+Data didalam var dan let dapat kita ubah sesuai dengan kebutuhan, Sedangkan const data tidak dapat dirubah. 
+
+## Data Type 
+
+Javascript support banyak tipe data, yang didalamnnya:
+
+- String: Digunakan sebagai representasi dari text dan ditandai dengan tanda kutip.
+- Number: Digunakan sebagai representasi dari nilai numeric.
+- Booleans: Digunakan sebagai representasi nilai benar atau salah. 
+- Null: Digunakahn sebagai representasi dari bentuk kosong. 
+- Undefined: digunakan untuk tipe data yang tidak dikenali.
+- Objects: digunakan sebagai representasi dari collection data yang berhubgan dengan data atau function.
+- Array: Digunakan sebagai representasi dari koleksi data dalam bentuk list.
+- Symbol: Sebagai representasi dari penanda unique 
+
+
+```
+let myString = 'Hello, world!'; // a string
+let myNumber = 42; // a number
+let myBoolean = true; // a boolean
+let myNull = null; // null
+let myUndefined; // undefined
+let myObject = { name: 'John', age: 30 }; // an object
+let myArray = [1, 2, 3, 4, 5]; // an array
+let mySymbol = Symbol('foo'); // a symbol
+```
+
+Mencari tau tipe data gunakan function `typeof`.
+```
+typeof myNumber;
+```
+
+Mencari tau apa itu adalah array
+```
+let a = [1,2,3];
+a instanceof array // true
+```

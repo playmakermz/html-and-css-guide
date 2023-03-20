@@ -71,3 +71,45 @@ Mencari tau apa itu adalah array
 let a = [1,2,3];
 a instanceof array // true
 ```
+
+## Operator 
+
+Javascript Menyediakan beberapa tipe operator yang dapat membantu kita dalam melakukan berbagai macam operasi data. Operator adalah simbol yang menjadi representasi dari suatu kalkulasi. 
+
+Bebrapa tipe operator pada Javascript:
+- Addition (+)
+- Subtraction (-)
+- Multiplication (*)
+- Division (/)
+- Remainder (%)
+
+
+```
+let x = 5;
+let y = 10;
+let z = x + y; // z equals 15
+```
+
+comparison operator di javascript:
+Equal to (==)
+Not equal to (!=)
+Strict equal to (===)
+Strict not equal to (!==)
+Greater than (>)
+Less than (<)
+- Greater than or equal to `(>=)`
+- Less than or equal to '(<=)'
+
+
+
+## Expression 
+
+```
+let x = 5
+let y = 10 
+
+let z = x + y 
+let i = (x * y) - x 
+```
+
+Expression adalah kombinasi dari operator dan nilai, yang akan menghasilkan suatu nilai yang baru.

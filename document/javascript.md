@@ -1267,6 +1267,7 @@ let salah = false
 ## Additional note 
 - [javascript class](../document/javascript-class.md)
 - [javascript-array](../document/javascript-array.md)
+- [JavaScript fundamental](../document/javascript-fundamental.md)
 
 ***
 ## Reference:

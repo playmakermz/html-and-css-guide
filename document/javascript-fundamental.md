@@ -1,5 +1,19 @@
 # Fundamental concept of Javascript
 
+- Nodejs 
+- NPM
+- Data type 
+- variabel
+- Expression
+- comment
+- operator
+- if statement
+- array
+- loop
+- function 
+- object
+- export import 
+
 ## Node js
 
 Node.js adalah salah satu open-source, cross-platform, back-end Javascript runtime einvronment yang dapat membantu kita untuk membuat aplikasi bagian server dengan Javascript. Node js Dibangun pada 2009 oleh Ryan Dahl, Node.js Sekarang mendapatkan kepopuleran karena diantara para developer merasa architecture dan aplikasi ini sangat mudah digunakan dan menjadi support dalam pengembangan aplikasi. 
@@ -81,7 +95,7 @@ Bebrapa tipe operator pada Javascript:
 - Subtraction (-)
 - Multiplication (*)
 - Division (/)
-- Remainder (%)
+- Modulus (%)
 
 
 ```

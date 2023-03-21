@@ -170,3 +170,51 @@ else {
 }
 ```
 
+
+Didalam "condition" kita bisa menambahkan comparison agar bisa menjadi persyaratan true and false. 
+
+
+comparison operator di javascript:
+- Equal to (==)
+- Not equal to (!=)
+- Strict equal to (===)
+- Strict not equal to (!==)
+- Greater than '>'
+- Less than `<`
+- Greater than or equal to `>=`
+- Less than or equal to `<=`
+
+
+Setelah condition kita juga bisa mengatur agar ada dua "condition" yang harus dipenuhi agar bisa menjadi true. 
+
+Contoh logical operator untuk melakukan combinasi:
+- && : digunakan untuk menjadikan dua condition harus terpenuhi agar menghasilkan true. 
+- || : akah menghasilkan true jika salah satu dari 2 "condition" terpenuhi. 
+- !  : akan merubah hasil nilai dari condition menjadi bentuk boolean yang sebaliknnya.
+
+
+Contoh logical operator not (!)
+```
+x = false
+
+if (!x) {
+    console.log('X adalah ' + x + 'tetapi menjadi true karena  !')
+}
+
+else {
+    console.log('Ini adalah laporan dari blok else')
+}
+
+```
+
+Kesimpulan:
+If statement adalah sebuah fungsi yang dapat digunakan untuk membuat program menggambil suatu pilihan tertentu sesuai dengan hasil boolean yang dihasilkan oleh "condition".
+
+
+## Loop
+
+
+
+## Reference: 
+- https://www.golinuxcloud.com/javascript-if-not/ 
+- https://www.w3schools.com/js/js_comparisons.asp

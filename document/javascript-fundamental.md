@@ -105,14 +105,14 @@ let z = x + y; // z equals 15
 ```
 
 comparison operator di javascript:
-Equal to (==)
-Not equal to (!=)
-Strict equal to (===)
-Strict not equal to (!==)
-Greater than (>)
-Less than (<)
-- Greater than or equal to `(>=)`
-- Less than or equal to '(<=)'
+- Equal to (==)
+- Not equal to (!=)
+- Strict equal to (===)
+- Strict not equal to (!==)
+- Greater than '>'
+- Less than `<`
+- Greater than or equal to `>=`
+- Less than or equal to `<=`
 
 
 
@@ -127,3 +127,46 @@ let i = (x * y) - x
 ```
 
 Expression adalah kombinasi dari operator dan nilai, yang akan menghasilkan suatu nilai yang baru.
+
+## if statement
+
+If statement adalah fondasi kontrol struktur dalam pemrogramman yang dapat membantu kita dalam melakukan ekseskusi program. If statement digunakan untuk membuka suatu pilihan didalam algoritma, Jika hasil eksekusi adalah true maka akan diamnil jalan 1, jika hasil eksekusiadalah false maka diambil jalan terakhir. 
+
+Format dari if statement
+```
+if (condition) {
+    // execute prompt
+}
+```
+
+If statement bekerja dengan cara memastikan apakah "condition" tersebut bernilai true atau tidak. Jika "condition" bernilai true maka akan di eksekusi pada blok if, Jika "condition" bernilai false maka akan di eksekusi pada blok lainnya. 
+
+Contoh format dengan blok lainnya.
+```
+if (condition) {
+ // execute prompt
+}
+
+else {
+ // execute prompt
+}
+```
+Jika "condition" adalah false maka blok "else" akan di eksekusi.
+
+Pada if statement kita bisa menambahkan blok lagi untuk membuat sistem if statement yang lebih complex. 
+
+Contoh if statement yang lebih complex:
+```
+if (condition) {
+    // execute prompt
+}
+
+else if (condition02) {
+    // execute prompt
+}
+
+else {
+
+}
+```
+

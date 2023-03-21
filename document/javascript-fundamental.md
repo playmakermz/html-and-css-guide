@@ -50,6 +50,28 @@ const = 'string'
 ```
 Data didalam var dan let dapat kita ubah sesuai dengan kebutuhan, Sedangkan const data tidak dapat dirubah. 
 
+Perbedaan dari var dan let:
+
+- Var memiliki function scope. 
+- let memiliki block scope.
+
+Contoh code error untuk var 
+```
+function loop (par) {
+    for (var i = 0; i < 4 ; i++) {
+        console.log(par[i])
+    }
+
+    console.log('ini adalah dari var' + i)
+}
+
+let ar = [1,2,3]
+
+loop(ar)
+```
+
+
+
 ## Data Type 
 
 Javascript support banyak tipe data, yang didalamnnya:
@@ -212,6 +234,67 @@ If statement adalah sebuah fungsi yang dapat digunakan untuk membuat program men
 
 
 ## Loop
+
+Loops adalah komponent penting dalam program, dengan loop kita bisa membuat program itu selalu berjalan hingga akhirnya dimatikan. Ada beberapa tipe loop: for, while, dan do-while. Setiap tipe loop memiliki cara pengerjaannya sendiri-sendiri, tetapi mereka semua memiliki tujuan yang sama yaitu melakukan penggulanggan pada blok code. 
+
+Tipe loop yang paling sering digunakan adalah bentuk for loop. Yang terdiri dari tiga bagian:
+Initialization, condition, dan increment. Contoh code:
+
+```
+for (Initialization; condition; increment) {
+    // execute prompt
+}
+```
+
+Initialization adalah bagian dimana kita menentukan nilai awal ( initial value for loop counter ). Condition adalah persyaratan yang harus dipenuhi agar loop bisa bergerak. Bagian increment adalah tempat dimana kita menghitung sudah berapa banyak putaran pada loop. 
+
+contoh code for loop:
+```
+for (let i = 1; i <=5; i++){
+    console.log(i)
+}
+```
+
+Tipe loop selanjutnnya adalah while loop. While loop memiliki bentuk yang lebih simple yaitu hanya berisi condition yang spesifik saja. Contoh code:
+
+```
+while (condition) {
+    // execute prompt
+}
+```
+
+Kita bisa membuat loop yang serupa dengan formloop diatas dengan cara:
+```
+let i = 1 
+
+while (i <= 5){
+    console.log(i)
+    i++
+}
+```
+
+Sedangkan bentuk loop terakhir yaitu do-while, yaitu dimana loop akan berjalan terlebih dahulu lalu akan dilakukan check pada condition, jika sesuai dengan condition maka loop akan dijalankan lagi. Bentuk do-while menyerupai while loop. 
+
+
+Format do-while 
+```
+do {
+    // execute prompt
+}
+while (condition)
+```
+
+Contoh code do-while 
+```
+let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
+```
+
+
 
 
 

@@ -30,6 +30,50 @@ myArray.push(6);
 push(), pop(), shift(), unshift(), splice(), concat(), slice(), join(), reverse(), sort(),
 ```
 
+## array of objects
+
+array of object termasuk dalam salah satu bentuk cara penyimpanan data ( relation data ) pada variabel. Yang dimana setiap element didalam array tersebut adalah object yang berisi propertie dan value. 
+
+contoh code:
+
+```
+let students = [
+  { name: 'Alice', age: 20, major: 'Computer Science' },
+  { name: 'Bob', age: 22, major: 'Mathematics' },
+  { name: 'Charlie', age: 21, major: 'Chemistry' }
+];
+```
+
+- object adalah ini {}
+- contoh properti, "name"
+- contoh value, "alice"
+
+Kita bisa akses setiap properti dari individu pada object dengan cara:
+
+- `students[0].name`
+- `students[0]['name']`
+
+Kita juga bisa mengakses semua properti pada array dengan loop:
+
+```
+students.forEach(function(student) {
+  console.log(student.name + ' is ' + student.age + ' years old.');
+});
+```
+
+Nilai didalam array of object bisa kita rubah dengan cara:
+```
+students[0].name = 'Budi'
+```
+
+
+**bentuk simple dari array of object**
+```
+let dataDiri = {nama: 'budi', hobby: 'memasak'}
+
+dataDiri.nama // Untuk menampilkan value pada properti "nama"
+```
+
 ## map()
 
 Pada Javascript "array map()" method dapat digunakan untuk membuat array baru dengan menambahkan function didalamnnya. "map()" method adalah suatu function yang dapat menerima callback function sebagai argument. Callback function yang menjadi argument akan dipanggil pada setiap element didalam array, dan itu akan menghasilkan 'return' value yang akan menjadi array baru saat sudah selesai.

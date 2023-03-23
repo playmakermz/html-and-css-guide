@@ -313,6 +313,35 @@ const dog = new Dog('Rufus');
 dog.speak(); // Output: Rufus makes a noise. Rufus barks.
 ```
 
+Contoh code lainnya: 
+
+```
+class Animal {
+    constructor(name) {
+        this.name = name;
+    }
+
+    speak() {
+        console.log(`${this.name} bersuara`)
+    }
+}
+
+class Dog extends Animal {
+    constructor(name, makanan){
+        super(name) // jika ini dihapus 
+        this.makanan = makanan
+
+    }
+
+    speak() {
+        console.log(`${this.name} barks`)
+    }
+}
+
+const dog = new Dog('bagus', 'whiskase');
+dog.speak();
+```
+
 
 
 

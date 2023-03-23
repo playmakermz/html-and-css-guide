@@ -107,6 +107,10 @@ console.log(person1.age); // Output: 30
 
 ### Object
 
+Konsep Object pada javascript itu sangat penting (dikutip dari: https://towardsdatascience.com/everything-about-javascript-object-part-1-854025d71fea ). Hampir seluruh code yang kita pakai pada javscript adalah berbentuk object, dan setidaknya ada 6 code yang bukan object yaitu: null, undefined, strings, numbers, boolean, dan symbols. Code pada javscript yang bukan object disebut sebagai tipe primitif ( primitive types ). 
+
+
+
 Pada javasscript, object adalah sebuah koleksi dari data dan fungsi yang berhubungan, yang biasannya berbentuk seperti pasangan attribute-nilai ( ini seperti property dan value pada css ). Data bisa berbentuk string, numbers, arrays, atau bahkan object lain. Object adalah bagian penting pada javscript, yang akan dapat membantu teman-teman membuat representasi dari bagian code yang complex. Object tersebut memiliki kelibahan encapsulation dan inheritance. 
 
 
@@ -328,7 +332,7 @@ class Animal {
 
 class Dog extends Animal {
     constructor(name, makanan){
-        super(name) // jika ini dihapus 
+        super(name) // jika ini dihapus maka akan terjadi error
         this.makanan = makanan
 
     }
@@ -342,6 +346,7 @@ const dog = new Dog('bagus', 'whiskase');
 dog.speak();
 ```
 
+perintah "super" akan membantu jika kita melakukan perubahan data pada class parent. Tanpa "super" kita tidak dapat melakukan perubahan pada method dari class parent. 
 
 
 

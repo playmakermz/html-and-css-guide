@@ -27,6 +27,57 @@ person.greet(); // Output: Hello, my name is John and I am 30 years old.
 
 ```
 
+## Function 
+
+Function dan parameter itu sama. Yang membedakan mereka adalah dimana mereka diletakan. Function yang berada didalam class itu disebut sebagai method. 
+
+Ada beberapa cara untuk menulis function pada javascript: 
+
+- Function Declaration: 
+
+```
+function tambah (x, y) {
+    return x + y
+}
+```
+
+- Function Expression: 
+```
+const tambah = function(x,y) {
+    return x + y
+}
+```
+
+- Arrow function: 
+```
+const tambah = (x, y) => x + y
+```
+
+- Constructor function: 
+```
+const tambah = function(x, y) {
+    this.x = x 
+    this.y = y 
+}
+
+const penambahan = new tambah(10, 20) // 30
+```
+constructor function akan membuat object baru setiap kali kita menggunakan "new"
+
+## Return 
+
+```
+function addNumbers(a, b) {
+  return a + b;
+}
+
+const result = addNumbers(5, 3); // result will be 8
+
+```
+
+Secara sederhana perintah "return" akan menghasilkan suatu nilai jika function tersebut kita panggil.
+
+
 ### Paramether and argument 
 
 Pada javscript paramter adalah sebuah nilai yang digunakan oleh function sebagai pintu masuk (input data). Disaat kita membuat function parameter adalah variabel yang kita tulis diantara kurung buka dan kurung tutup. 

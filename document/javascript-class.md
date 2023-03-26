@@ -20,6 +20,7 @@ const person = {
   age: 30,
   greet: function() {
     console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+console.log(`-----------------------------------------------------------------------`)
   }
 };
 
@@ -336,6 +337,45 @@ const person = new Person('John');
 person.sayHello(); // Output: Hello, my name is John.
 
 ```
+
+## new
+
+kata kunci new yang digunakan pada javascript digunakan untuk membuat instance dari object. Disaat kita menggunakan new maka properti dari object tersebut juga akan di replika. 
+
+contoh code: 
+```
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+const john = new Person('John', 30);
+console.log(john.name); // Output: John
+console.log(john.age); // Output: 30
+```
+
+atau contoh code dengan ES6 
+```
+class Car {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+
+  getDetails() {
+    return `${this.make} ${this.model} (${this.year})`;
+  }
+}
+
+const myCar = new Car('Honda', 'Civic', 2021);
+console.log(myCar.getDetails()); // Output: Honda Civic (2021)
+```
+
+fungsi new dibekerja dengan "this". Tanpa kata kunci "this" untuk properti maka kita tidak bisa menggunakan new. 
+
+Dengan new kita dapat membuat banyak object yang memiliki ciri-ciri yang serupa. 
+
 
 
 ### Super 

@@ -1348,6 +1348,12 @@ Break down:
 
 - Set akan bekerja saat instance sudah terbuat dan memiliki parameter. Mereka hanya akan aktif jika Melakukan perubahan pada properti yang ada
 
+- Pola pengerjaan mereka setelah instance telah dibuat dan dilakukan perubahan adalah, Argument pertama-tama akan diolah pada set dan akan dikirim kepada get untuk menyimpan data tersebut, dan menampilkan data jika dipanggil 
+
+- Get Bekerja juga sebagai argument function. Mereka adalah function tetapi sebenarnnya adalah argument, oleh karena itu tidak ada () pada akhir pemanggilan. 
+- Didalam get tidak boleh ada parameter 
+
+
 ***
 ## Additional note 
 - [javascript class](../document/javascript-class.md)

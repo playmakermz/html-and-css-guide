@@ -1260,8 +1260,93 @@ let float = 123.123
 let betul = true
 let salah = false
 ```
-## Array
 
+## Get And Setter 
+
+```
+class budiFamily {
+
+    constructor(namaDepan, namaBelakang) {
+        this._firstName = namaDepan
+        this._lastName = namaBelakang
+    }
+
+    get firstName() {
+        console.log('aku dari get masuk urutan ke ... dengan ' + this._firstName)
+        return this._firstName
+    }
+
+    set firstName(parameter) {
+
+console.log('aku dari set  masuk urutan ke ... dengan ' + this._firstName)
+        if (parameter != "budi") {
+            throw new Error('First Name must be budi!')
+        }
+
+        this._firstName = parameter
+
+    }
+
+}
+
+let anakBudi = new budiFamily("budi", 'toni')
+console.log(anakBudi.firstName) // Ini akan mengakses get firstname
+console.log(anakBudi._firstName) // ini akan mengakses _firstName langsung
+console.log(anakBudi.lastName) // Undefined
+// anakBudi.firstName = 'wahyu'
+
+// Set Disini akan bekerja saat kita melakukan perubahan pada properti
+// anakBudi.firstName = "wahyu"
+
+```
+Atau Pada code dibawah ini: 
+
+```
+class budiFamily {
+
+    constructor(namaDepan, namaBelakang) {
+        this._firstName = namaDepan
+        this._lastName = namaBelakang
+    }
+
+    get firstName() {
+        if (this._firstName != 'budi') {
+            throw new Error('Parameter default harus Budi!')
+        }
+        return this._firstName
+    }
+
+    set firstName(parameter) {
+        if (parameter != "budi") {
+            throw new Error('Nilai yang dirubah juga harus budi!')
+        }
+
+        this._firstName = parameter
+
+    }
+
+}
+
+let anakBudi = new budiFamily("budi", 'toni')
+
+console.log(anakBudi.firstName) // Ini akan mengakses get firstname
+console.log(anakBudi._firstName) // ini akan mengakses _firstName langsung
+
+anakBudi.firstName = "wahyu" // Maka akan terjadi error dari set 
+
+let anakOmBudi = new budiFamily('rangga', 'wahyu')
+// Maka akan terjadi error dari get
+
+```
+
+Note: 
+
+Pada code diatas bercerita tentang keluarga budi. Dengan Semua keturunan harus memiliki nama awalan Wajib budi.
+
+Break down:
+- Get Bekerja saat awal kita membuat instance. Mereka akan melakukan pengecekan pada argument yang dimasukan.
+
+- Set akan bekerja saat instance sudah terbuat dan memiliki parameter. Mereka hanya akan aktif jika Melakukan perubahan pada properti yang ada
 
 ***
 ## Additional note 
@@ -1275,3 +1360,4 @@ let salah = false
 - freecodecamp 
 - mozzila
 - chatgpt
+- https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get (get dan set)

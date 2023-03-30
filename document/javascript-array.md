@@ -129,9 +129,20 @@ console.log(personNames); // Output: ['Alice', 'Bob', 'Charlie']
 
 ```
 
+## Fillter 
+
+```
+let arrayUmur = [20, 18, 17, 16, 21, 23]
+
+let pemilikKTP = arrayUmur.filter(function(param){ return param >= 18  }  )
+
+console.log(pemilikKTP)
+```
 
 
 
 
 ## Reference:
 - https://www.freecodecamp.org/news/javascript-array-of-objects-tutorial-how-to-create-update-and-loop-through-objects-using-js-array-methods/
+
+- https://www.w3schools.com/jsref/jsref_filter.asp

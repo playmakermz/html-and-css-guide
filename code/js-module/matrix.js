@@ -2,7 +2,7 @@ const ndarray = require('ndarray')
 
 // Buat dua matrix ukuran 2x2
 const A = ndarray([1, 2, 3, 4], [2, 2])
-const B = ndarray([5, 6, 7, 8], [2, 2])
+const B = ndarray([5, 6, 7, 8], [2, 2]) // arg1:baris, arg2: kolom
 
 // pada ndarray buat matrix kosong ukuran 2x2 sebagai penampung data nanti
 const C = ndarray(new Float64Array(4), [2, 2])

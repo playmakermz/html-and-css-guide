@@ -431,3 +431,4 @@ Masuk ke file latihan html 01 di repository ini: [panduan menghubungkan document
 - https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/ 
 - https://www.internetingishard.com/html-and-css/css-box-model/
 - https://www.internetingishard.com/html-and-css/
+- https://bigshans.github.io/post/css-box/ [ css box model ]

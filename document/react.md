@@ -38,7 +38,7 @@ atau
 
 Ref: https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-add-comments-in-jsx/301376
 
-### Menimpa element lama 
+### Menimpa element lama | Render 
 Menimpa element lama dengan element dari react 
 ```
 import React from 'react';
@@ -50,7 +50,7 @@ ReactDOM.render(element, document.getElementById('root'));
 
 ```
 
-### mengatur style dari JSX
+### mengatur style dari JSX | Menambahkan class
 ```
 import React from 'react';
 
@@ -65,7 +65,7 @@ function MyComponent() {
 ```
 Penggunaan "className" adalah bentuk reserved dari "class" attribute pada html. 
 
-### Untuk tag element yang tidak memiliki kontent
+### Untuk tag element yang tidak memiliki kontent | satu tag
 ```
 import React from 'react';
 
@@ -81,8 +81,15 @@ function MyComponent() {
 }
 ```
 
-yang awalnya seperti ini `<br/>` kita tulis menjadi `<br />`
+yang awalnya seperti ini `<br>` kita tulis menjadi `<br />`
 
+
+<!-- 
+Check list:
+
+- Buat React Component, menggunakan "class" dan extends "React.Component"
+
+-->
 
 
 ## Referensi:

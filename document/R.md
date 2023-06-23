@@ -103,5 +103,7 @@ Qtr1 | Qtr2 | Qtr3 | Qtr4
 --- | --- | --- | ---
 -11 | -10 | -9 | -8 
 
+![image](https://github.com/playmakermz/warkop-website/assets/60807663/ae55eafa-aaa5-447c-953f-2f059103dce9)
+
 
 

@@ -300,5 +300,33 @@ main = bquote("Fungsi Kepadatan Distribusi Normal Standar, " ~ mu == .(mu) ~ ", 
 )
 ```
 
+## Contoh while dan for loop pada R 
+
+```
+sum <- 0
+while (TRUE ) {
+for (i in 1:10) {
+sum <- sum + i
+}
+if ( sum >= 110 ) {
+Tugas 3 Komputer 1 4
+break
+}
+}
+print(sum)
+```
+
+## contoh for loop, untuk menghasilkan nilai genap 
+
+```
+Nilai_genap <- c()
+for (i in 1:10) {
+if (i %% 2 == 0) {
+Nilai_genap <- c(Nilai_genap, i)
+}
+}
+print(Nilai_genap)
+```
+
 # Referensi:
 - https://www.geeksforgeeks.org/calculate-square-root-of-a-number-in-r-language-sqrt-function/

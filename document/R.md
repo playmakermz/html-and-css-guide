@@ -259,5 +259,21 @@ xlab = "X",
 ylab = "Y")
 ```
 
+## Mengambil data matriks dari file txt 
+
+```
+scanMatriks <- scan("data2.txt") # ambil data dari file
+hasil <- matrix(scanMatriks, nrow = 4, ncol = 10, byrow = TRUE) # masukan variabel ke matriks
+print(hasil) # tampilkan ke terminal
+```
+
+## Membaca data CSV 
+
+```
+Data <- read.csv("penjualan.csv", header=TRUE)
+View(Data)
+print(Data)
+```
+
 # Referensi:
 - https://www.geeksforgeeks.org/calculate-square-root-of-a-number-in-r-language-sqrt-function/

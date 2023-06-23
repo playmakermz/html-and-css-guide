@@ -240,6 +240,7 @@ N4
 ```
 
 ## Membuat box container dengan ukuran yang berbeda-beda 
+![image](https://github.com/playmakermz/warkop-website/assets/60807663/204301a2-b692-432b-9f26-a42fe89889c6)
 
 ```
 # Disini mengatur tinggi dengan "nrow" dan mengatur lebar "ncolumn"
@@ -248,6 +249,8 @@ layout.show(4)
 ```
 
 ## Membuat graf
+
+![image](https://github.com/playmakermz/warkop-website/assets/60807663/05af3724-23b7-4544-82fd-9805a19b1c94)
 
 ```
 x <- c(2,1,2,4,1,2,3,4,2,3,1)

@@ -105,5 +105,49 @@ Qtr1 | Qtr2 | Qtr3 | Qtr4
 
 ![image](https://github.com/playmakermz/warkop-website/assets/60807663/ae55eafa-aaa5-447c-953f-2f059103dce9)
 
+## ls pat
+code 1: `ls(pat="y")`
+
+---
+
+kode ls() pada R dapat kita gunakan untuk mencari object pada einvronment (script) yang sedang berjalan saat ini. Berfungsi untuk membantu kita mencari tau, apakah nama object tersebut sudah ada yang memakai atau belum.
+
+Parameter `pat="y"` ini digunakan untuk mencari tau apakah ada object yang memiliki huruf "y" pada nama mereka.
+
+Sebagai contoh dengan code diatas, kita akan mendapatkan list dari object yang telah kita buat sebelumnnya.
+
+![image](https://user-images.githubusercontent.com/60807663/234479345-ce45cbe3-dd35-4f73-9af3-dbd1876bd3a8.png)
+
+
+code 2: `for (i in 1:30) {print(i)}`
+
+---
+![image](https://user-images.githubusercontent.com/60807663/234479737-336e7aa9-a8be-4849-8b6c-a5a8221fbcb6.png)
+
+Kode diatas digunakan untuk melakukan loop yang akan berjalan dari 1 hingga 30. Dengan menampilkan nilai "i".
+
+Sedangkan nilai "i" itu sendiri adalah loop counter, maka nilai 1 hingga 30 akan ditampilkan secara terpisah dan satu persatu.
+
+"i" tersebut digunakan sebagai iteration, atau loop counter.
+
+code 3: `setwd("C:\B")`
+
+---
+
+pada kode `setwd("C:\B")`, terdapat kesalah pada penulisan backslah(\), Karena pada R penempatan dan 1 backslah(\) memiliki makna dan kegunaan spesial. Oleh karena itu perlu ada tambahan backslah agar bisa dibaca sebagai path.
+
+Kode yang diharapkan `setwd("C:\\B")`. Kode ini berfungsi untuk berpindah directori pada R language. Fungsinya hampir sama dengan `dir` pada CMD windows, atau `ls` pada linux terminal.
+
+Dibawah ini adalah contoh setwd pada linux chromebook saya
+```
+setwd("/home/yukina")
+
+list.files()
+```
+
+Hasilnya:
+
+![image](https://user-images.githubusercontent.com/60807663/234482474-61f571b7-5e5d-4621-89b4-af634ef34bd4.png)
+
 
 

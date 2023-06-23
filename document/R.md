@@ -201,7 +201,8 @@ dari matriks
 
 menjadi 
 
-- insert image
+![image](https://github.com/playmakermz/warkop-website/assets/60807663/09b4fe53-cdcd-4404-9f90-87fb9a2a9c9b)
+
 
 
 ## Matriks transpose code

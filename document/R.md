@@ -105,6 +105,33 @@ Qtr1 | Qtr2 | Qtr3 | Qtr4
 
 ![image](https://github.com/playmakermz/warkop-website/assets/60807663/ae55eafa-aaa5-447c-953f-2f059103dce9)
 
+#### Contoh tabel
+
+```
+# Build date column
+Jan <- c("", 21)
+Feb <- c(10, 22)
+Mar <- c(11, 23)
+Apr <- c(12, 24)
+May <- c(13, 25)
+Jun <- c(14, 26)
+Jul <- c(15, 27)
+Aug <- c(16, 28)
+Sep <- c(17, 29)
+Oct <- c(18, 30)
+Nov <- c(19, "")
+Dec <- c(20, "")
+
+# Manage column, and convert to dataframe
+dataset <- data.frame(Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec)
+
+# Memberikan label baris dari dataset yang telah ada
+rownames(dataset) <- c("2020", "2021")
+
+# print dataframe into terminal
+print(dataset)
+```
+
 ## ls pat
 code 1: `ls(pat="y")`
 
@@ -150,4 +177,66 @@ Hasilnya:
 ![image](https://user-images.githubusercontent.com/60807663/234482474-61f571b7-5e5d-4621-89b4-af634ef34bd4.png)
 
 
+## Melakukan perhitungan gaussian ellimination.
 
+```
+# deklarasi matriks M
+M <- matrix(c(9, 2, 8, 3, 0, 10, 7, 6, 0, 0, 10, 9, 0, 0, 0, 12), nrow = 4, ncol = 4, byrow =
+# deklrarasi matriks identitas I
+I <- matrix(c(1, 0, 0, 0, 0, 1, 0, 0, 0, 0,1 ,0 ,0 ,0, 0, 1), nrow = 4, ncol = 4, byrow = TRUE
+# Operasi perkalian matriks ini akan menghasilkan matriks yang sama dengan matriks awal
+hasil <- M %*% I
+# tampilkan hasil
+print(hasil)
+```
+
+dari matriks 
+
+```
+9 2 8 3
+0 10 7 6
+0 0 10 9
+0 0 0 12
+```
+
+menjadi 
+
+- insert image
+
+
+## Matriks transpose code
+
+```
+# deklarasi matriks M
+M <- matrix(c(9, 2, 8, 3, 0, 10, 7, 6, 0, 0, 10, 9, 0, 0, 0, 12), nrow = 4, ncol = 4, byrow =
+# Operasi perkalian matriks ini akan menghasilkan matriks yang sama dengan matriks awal
+hasil <- t(M)
+# tampilkan hasil
+print(hasil)
+```
+
+## Matriks inverse 
+
+```
+# deklarasi matriks M
+M <- matrix(c(9, 2, 8, 3, 0, 10, 7, 6, 0, 0, 10, 9, 0, 0, 0, 12), nrow = 4, ncol = 4, byrow =
+# Operasi perkalian matriks ini akan menghasilkan matriks yang sama dengan matriks awal
+hasil <- solve(M)
+# tampilkan hasil
+print(hasil)
+```
+
+## Penjumlahan pada matriks N 
+```
+## Deklrasi matriks N
+N <- matrix(c(2, 1, 8, 6, 7, 2), nrow = 2, byrow = TRUE)
+# matriks d
+e <- matrix(c(0, 0, 0, 0, 6, 3), nrow =2, byrow = TRUE)
+# Hasil
+N4 <- N + e
+# print N
+N4
+```
+
+# Referensi:
+- https://www.geeksforgeeks.org/calculate-square-root-of-a-number-in-r-language-sqrt-function/

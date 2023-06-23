@@ -263,6 +263,7 @@ ylab = "Y")
 ```
 
 ## Mengambil data matriks dari file txt 
+![image](https://github.com/playmakermz/warkop-website/assets/60807663/cc6f3ff9-3174-4799-94c6-c7c0ef8bafee)
 
 ```
 scanMatriks <- scan("data2.txt") # ambil data dari file

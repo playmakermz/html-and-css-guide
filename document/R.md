@@ -279,5 +279,23 @@ View(Data)
 print(Data)
 ```
 
+## Membuat plot distribusi
+
+```
+x <- seq(-1, 1, length.out = 100) # Rentang nilai x dari -1 sampai 1 dengan 100 data
+# Menghitung kepadatan distribusi Normal Standar untuk setiap nilai x
+y <- dnorm(x)
+mu <- 0 # Nilai mu
+sigma <- 1 # Nilai sigma
+Diskusi 7 Komputer 1 4
+# Mengatur Ukuran dari plot tersebut.
+par(mar = c(12, 4, 12, 2) ) # Mengatur margin (bottom, left, top, right)
+# Membuat plot
+plot(x, y, type = "l", lwd = 2, col = "gray",
+xlab = "", ylab = "Kepadatan",
+main = bquote("Fungsi Kepadatan Distribusi Normal Standar, " ~ mu == .(mu) ~ ", " ~ sigma == .(sigma))
+)
+```
+
 # Referensi:
 - https://www.geeksforgeeks.org/calculate-square-root-of-a-number-in-r-language-sqrt-function/

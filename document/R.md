@@ -281,6 +281,9 @@ print(Data)
 
 ## Membuat plot distribusi
 
+![image](https://github.com/playmakermz/warkop-website/assets/60807663/a7bd5df4-c43e-4599-9aed-b4f0c0c1f4b0)
+
+
 ```
 x <- seq(-1, 1, length.out = 100) # Rentang nilai x dari -1 sampai 1 dengan 100 data
 # Menghitung kepadatan distribusi Normal Standar untuk setiap nilai x

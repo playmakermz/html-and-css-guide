@@ -256,10 +256,10 @@ layout.show(4)
 x <- c(2,1,2,4,1,2,3,4,2,3,1)
 y <- c(4,3,4,4,3,4,5,4,4,5,3)
 sunflowerplot(x,
-y,
-main = "Diskusi 5",
-xlab = "X",
-ylab = "Y")
+    y,
+    main = "Diskusi 5",
+    xlab = "X",
+    ylab = "Y")
 ```
 
 ## Mengambil data matriks dari file txt 
@@ -286,13 +286,15 @@ print(Data)
 
 ```
 x <- seq(-1, 1, length.out = 100) # Rentang nilai x dari -1 sampai 1 dengan 100 data
+
 # Menghitung kepadatan distribusi Normal Standar untuk setiap nilai x
 y <- dnorm(x)
 mu <- 0 # Nilai mu
 sigma <- 1 # Nilai sigma
-Diskusi 7 Komputer 1 4
+
 # Mengatur Ukuran dari plot tersebut.
 par(mar = c(12, 4, 12, 2) ) # Mengatur margin (bottom, left, top, right)
+
 # Membuat plot
 plot(x, y, type = "l", lwd = 2, col = "gray",
 xlab = "", ylab = "Kepadatan",
@@ -305,13 +307,12 @@ main = bquote("Fungsi Kepadatan Distribusi Normal Standar, " ~ mu == .(mu) ~ ", 
 ```
 sum <- 0
 while (TRUE ) {
-for (i in 1:10) {
-sum <- sum + i
-}
-if ( sum >= 110 ) {
-Tugas 3 Komputer 1 4
-break
-}
+    for (i in 1:10) {
+        sum <- sum + i
+    }
+    if ( sum >= 110 ) {
+        break
+    }
 }
 print(sum)
 ```
@@ -320,10 +321,10 @@ print(sum)
 
 ```
 Nilai_genap <- c()
-for (i in 1:10) {
-if (i %% 2 == 0) {
-Nilai_genap <- c(Nilai_genap, i)
-}
+    for (i in 1:10) {
+        if (i %% 2 == 0) {
+            Nilai_genap <- c(Nilai_genap, i)
+        }
 }
 print(Nilai_genap)
 ```

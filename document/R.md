@@ -239,5 +239,25 @@ N4 <- N + e
 N4
 ```
 
+## Membuat box container dengan ukuran yang berbeda-beda 
+
+```
+# Disini mengatur tinggi dengan "nrow" dan mengatur lebar "ncolumn"
+layout(matrix(c(1, 2,2, 3,3, 4), nrow = 3, ncol = 2), heights = c(1,2))
+layout.show(4)
+```
+
+## Membuat graf
+
+```
+x <- c(2,1,2,4,1,2,3,4,2,3,1)
+y <- c(4,3,4,4,3,4,5,4,4,5,3)
+sunflowerplot(x,
+y,
+main = "Diskusi 5",
+xlab = "X",
+ylab = "Y")
+```
+
 # Referensi:
 - https://www.geeksforgeeks.org/calculate-square-root-of-a-number-in-r-language-sqrt-function/

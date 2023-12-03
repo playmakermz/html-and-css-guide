@@ -23,6 +23,7 @@ Website berisi halaman atau sekumpulan halaman yang saling terhubung berisi deng
 - [Mulai Git](document/git.md)
 - [Mulai_React](document/react.md)
 - [Mulai R](document/R.md)
+- [Mulai Bahasa Jawa](document/java.md)
 
 # Pengenalan Pembelajaran
 

@@ -28,7 +28,7 @@ public class start { // Java run start
 // java start
 ```
 
-### hasil breakdown 
+> hasil breakdown 
 
 Tentu, berikut adalah penjelasan untuk setiap baris kode tersebut:
 
@@ -48,8 +48,68 @@ Tentu, berikut adalah penjelasan untuk setiap baris kode tersebut:
 
 // java start: Komentar yang menunjukkan perintah untuk menjalankan program Java yang telah dikompilasi.
 
+> point penting
+
+```
+public class start { // Java run start
+    public static void main(String[] args) {
+        // Membuat variabel integer dengan nama 'angka' dan memberinya nilai 7
+        int nilai = 1945; // variabel "nilai"
+```
+
+
+
 
 ---
 
 
+## array satu dimensi 
 
+Tentu, saya akan menjelaskan setiap baris dari kode Java yang Anda berikan:
+
+```java
+public class start { // Mendeklarasikan kelas dengan nama "start"
+    public static void main(String[] args) { // Metode utama yang akan dijalankan oleh JVM (Java Virtual Machine)
+        // Membuat variabel array
+        int[] arraySatu = {12,10,40}; // Inisialisasi array "arraySatu" dengan tiga elemen: 12, 10, dan 40
+
+        // Menampilkan nilai variabel ke dalam terminal
+        System.out.print("Array: ["); // Mencetak teks "Array: [" tanpa baris baru di akhir
+        for (int i = 0; i < arraySatu.length; i++) { // Perulangan for untuk mengakses setiap elemen array
+            System.out.print(arraySatu[i]); // Mencetak elemen saat ini dari array "arraySatu"
+            if (i < arraySatu.length - 1) { // Jika ini bukan elemen terakhir dari array,
+                System.out.print(", "); // maka cetak koma dan spasi
+            }
+        }
+        System.out.println("]"); // Mencetak tanda kurung tutup "]" dan baris baru
+    }
+}
+```
+
+> breakdown
+
+- `public class start`: Ini mendeklarasikan kelas dengan nama `start`. Di Java, setiap file harus memiliki setidaknya satu kelas, dan nama kelas harus sama dengan nama file jika kelas tersebut adalah kelas publik.
+- `public static void main(String[] args)`: Ini adalah metode `main` yang merupakan titik masuk dari setiap aplikasi Java. `String[] args` adalah parameter yang digunakan untuk menerima argumen baris perintah saat menjalankan program.
+- `int[] arraySatu = {12,10,40};`: Ini mendeklarasikan dan menginisialisasi sebuah array integer bernama `arraySatu` dengan tiga nilai: 12, 10, dan 40.
+- `System.out.print("Array: [");`: Ini mencetak string `"Array: ["` ke konsol tanpa menambahkan baris baru di akhir.
+- `for (int i = 0; i < arraySatu.length; i++)`: Ini adalah perulangan `for` yang digunakan untuk mengiterasi melalui setiap elemen dari array `arraySatu`.
+- `System.out.print(arraySatu[i]);`: Ini mencetak elemen saat ini dari array `arraySatu` ke konsol.
+- `if (i < arraySatu.length - 1)`: Ini adalah kondisi yang memeriksa apakah elemen saat ini bukan elemen terakhir dari array. Jika tidak, maka cetak koma dan spasi.
+- `System.out.println("]");`: Ini mencetak tanda kurung tutup `"]"` dan menambahkan baris baru di akhir.
+
+Perintah `// javac start.Java` digunakan untuk mengkompilasi file `start.Java` dan `// java start` digunakan untuk menjalankan kelas `start` yang telah dikompilasi. Pastikan bahwa nama file dan nama kelas sesuai, dan perhatikan bahwa Java peka terhadap huruf besar/kecil, jadi `start.Java` harus ditulis sebagai `start.java`.
+
+
+> point penting 
+
+```
+int[] arraySatu = {12,10,40}; // Inisialisasi array "arraySatu" dengan tiga elemen: 12, 10, dan 40
+
+        // Menampilkan nilai variabel ke dalam terminal
+        System.out.print("Array: ["); // Mencetak teks "Array: [" tanpa baris baru di akhir
+        for (int i = 0; i < arraySatu.length; i++) { // Perulangan for untuk mengakses setiap elemen array
+            System.out.print(arraySatu[i]); // Mencetak elemen saat ini dari array "arraySatu"
+            if (i < arraySatu.length - 1) { // Jika ini bukan elemen terakhir dari array,
+                System.out.print(", "); // maka cetak koma dan spasi
+            }
+```

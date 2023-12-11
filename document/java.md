@@ -113,3 +113,53 @@ int[] arraySatu = {12,10,40}; // Inisialisasi array "arraySatu" dengan tiga elem
                 System.out.print(", "); // maka cetak koma dan spasi
             }
 ```
+
+--- 
+
+## array matriks 3x3
+
+Tentu saja, berikut adalah penjelasan untuk setiap baris kode Java yang Anda berikan:
+
+```java
+public class start { // Mendeklarasikan kelas dengan nama "start"
+    public static void main(String[] args) { // Metode utama yang akan dijalankan oleh JVM (Java Virtual Machine)
+        // Matriks array, variabel arrayDua
+        int[][] arrayDua = {
+            {12, 10, 40}, // Baris pertama dari matriks array
+            {13, 11, 41}, // Baris kedua dari matriks array
+            {14, 12, 42}  // Baris ketiga dari matriks array
+        }; // Inisialisasi array dua dimensi "arrayDua" dengan nilai-nilai yang diberikan
+
+        // Menampilkan isi array dua dimensi ke dalam terminal, secara manual
+        for (int i = 0; i < 3; i++) { // Loop luar untuk baris
+            for (int j = 0; j < 3; j++) { // Loop dalam untuk kolom
+                System.out.print(arrayDua[i][j] + " "); // Mencetak elemen array dua dimensi
+            }
+            System.out.println(); // Mencetak baris baru setelah setiap baris dari matriks
+        }
+    }
+}
+```
+
+> breakdown 
+- `public class start`: Ini mendeklarasikan kelas dengan nama `start`. Di Java, setiap file harus memiliki setidaknya satu kelas, dan nama kelas harus sama dengan nama file jika kelas tersebut adalah kelas publik.
+- `public static void main(String[] args)`: Ini adalah metode `main` yang merupakan titik masuk dari setiap aplikasi Java. `String[] args` adalah parameter yang digunakan untuk menerima argumen baris perintah saat menjalankan program.
+- `int[][] arrayDua = {...};`: Ini mendeklarasikan dan menginisialisasi sebuah array dua dimensi integer bernama `arrayDua` dengan tiga baris dan tiga kolom, diisi dengan nilai-nilai yang diberikan.
+- `for (int i = 0; i < 3; i++)`: Ini adalah loop luar yang digunakan untuk mengiterasi melalui setiap baris dari array `arrayDua`.
+- `for (int j = 0; j < 3; j++)`: Ini adalah loop dalam yang digunakan untuk mengiterasi melalui setiap kolom dalam baris saat ini dari array `arrayDua`.
+- `System.out.print(arrayDua[i][j] + " ");`: Ini mencetak elemen saat ini dari array `arrayDua` ditambah dengan spasi ke konsol.
+- `System.out.println();`: Ini mencetak baris baru ke konsol, yang menyebabkan output dari baris berikutnya dari array `arrayDua` akan dimulai dari baris baru.
+
+Perintah `// javac start.Java` digunakan untuk mengkompilasi file `start.Java` dan `// java start` digunakan untuk menjalankan kelas `start` yang telah dikompilasi. Pastikan bahwa nama file dan nama kelas sesuai, dan perhatikan bahwa Java peka terhadap huruf besar/kecil, jadi `start.Java` harus ditulis sebagai `start.java`.
+
+> point penting 
+
+```
+        int[][] arrayDua = {
+            {12, 10, 40}, // Baris pertama dari matriks array
+            {13, 11, 41}, // Baris kedua dari matriks array
+            {14, 12, 42}  // Baris ketiga dari matriks array
+        }; // Inisialisasi array dua dimensi "arrayDua" dengan nilai-nilai yang diberikan
+
+
+```

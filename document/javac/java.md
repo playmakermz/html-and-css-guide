@@ -160,6 +160,9 @@ Perintah `// javac start.Java` digunakan untuk mengkompilasi file `start.Java` d
             {13, 11, 41}, // Baris kedua dari matriks array
             {14, 12, 42}  // Baris ketiga dari matriks array
         }; // Inisialisasi array dua dimensi "arrayDua" dengan nilai-nilai yang diberikan
-
-
 ```
+
+## Topic lanjutan 
+
+- [Fundamental](./java-01.md)
+

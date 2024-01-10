@@ -57,6 +57,15 @@ myNumber = 15;     // Changing the value of the variable
 --- 
 ### String 
 
+```
+public class Main {
+  public static void main(String[] args) {
+    String name = "John";
+    name = "Bukan John"; // menimpa data sebelumnya
+    System.out.println("Hallo" + name); // text dan variabel
+  }
+}
+```
 
 --- 
 ### integer 
@@ -72,6 +81,19 @@ myNumber = 15;     // Changing the value of the variable
 --- 
 ### Boolean 
 
+```
+public class Main {
+  public static void main(String[] args) {
+    boolean isJavaFun = true;
+    boolean isFishTasty = false;
+    System.out.println(isJavaFun);
+    System.out.println(isFishTasty);
+
+    System.out.println(isJavaFun == true);
+    // simple if statement
+  }
+}
+```
 ---
 ### comment 
 
@@ -87,3 +109,8 @@ myNumber = 15;     // Changing the value of the variable
 --- 
 ### loop
 
+
+---
+# Reference
+
+- https://www.w3schools.com/java/java_examples.asp (fundamental command) 

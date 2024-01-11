@@ -70,13 +70,63 @@ public class Main {
 --- 
 ### integer 
 
+```
+public class Main {
+  public static void main(String[] args) {
+    int myNum = 100000;
+    System.out.println(myNum);
+  }
+}
 
+```
+
+
+
+--- 
+### Switch
+
+```
+public class Main {
+  public static void main(String[] args) {
+    int day = 4;
+    switch (day) {
+      case 6:
+        System.out.println("Today is Saturday");
+        break;
+      case 7:
+        System.out.println("Today is Sunday");
+        break;
+      default:
+        System.out.println("Looking forward to the Weekend");
+    }
+  }
+}
+
+```
 --- 
 ### float 
 
 
 ---
 ### Array 
+
+```
+public class Main {
+  public static void main(String[] args) {
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    // Create array cars
+    cars[0] = "Opel";
+    // overwrite index 0 from arrays cars
+    System.out.println(cars[0]);
+
+    for (String i : cars) {
+      System.out.println(i);
+    }
+    // print each item on array
+  }
+}
+
+```
 
 --- 
 ### Boolean 
@@ -96,6 +146,20 @@ public class Main {
 ```
 ---
 ### comment 
+
+```
+public class Main {
+  public static void main(String[] args) {
+    // This is single line a comment
+
+    /* The code below will print the words Hello World
+    to the screen, and it is amazing */
+    
+    System.out.println("Hello World");
+  }
+}
+
+```
 
 ---
 ### Expression 
@@ -123,6 +187,68 @@ public class Main {
 
 --- 
 ### loop
+
+- while loop 
+
+```
+public class Main {
+  public static void main(String[] args) {
+    int i = 0;
+    while (i < 5) {
+      System.out.println(i);
+      i++;
+    }  
+  }
+}
+
+```
+
+- For loop 
+```
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 5; i++) {
+      System.out.println(i);
+
+    String[] cars = {"Volvo", "BMW", "Ford", "Mazda"};
+    for (String i : cars) {
+      System.out.println(i);
+    }  
+  }
+}
+
+```
+
+- break a loop 
+
+```
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        break;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+
+```
+
+- continue a loop
+
+```
+public class Main {
+  public static void main(String[] args) {
+    for (int i = 0; i < 10; i++) {
+      if (i == 4) {
+        continue;
+      }
+      System.out.println(i);
+    }  
+  }
+}
+```
 
 
 ---

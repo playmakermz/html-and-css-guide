@@ -165,4 +165,5 @@ Perintah `// javac start.Java` digunakan untuk mengkompilasi file `start.Java` d
 ## Topic lanjutan 
 
 - [Fundamental](./fundamental-java.md)
+- [Array](./array-java.md)
 

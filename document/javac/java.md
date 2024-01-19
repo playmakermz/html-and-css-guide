@@ -1,7 +1,14 @@
 # Mari Belajar Bahasa Jawa ( java language )
 
 
+## instalasi java debian terminal
 
+```
+sudo apt update
+sudo apt install default-jre default-jdk
+```
+
+Ref: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04
 
 ## point penting pada java 
 - jangan lupa semicolon pada setiap perintah

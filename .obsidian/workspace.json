@@ -1,0 +1,151 @@
+{
+  "main": {
+    "id": "22007951face1fa3",
+    "type": "split",
+    "children": [
+      {
+        "id": "7bb0a3b8aacf035a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6f3a966b7a8b4fbb",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "document/git.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "d40dea38a41a7a79",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a65c7894440ec3a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d11773a5f84b0106",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "b402f8e1354639fd",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "3616395be95c982a",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f8f4800b740056b7",
+    "type": "split",
+    "children": [
+      {
+        "id": "f8aebc39c5cba59f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "efdbaaf67dbef659",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "document/git.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "10761ce3a6d0d5b7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "document/git.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "732b9e0e848fc376",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "b0a64e3f59e245f8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "document/git.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "6f3a966b7a8b4fbb",
+  "lastOpenFiles": []
+}

@@ -11,8 +11,12 @@
             "id": "6f3a966b7a8b4fbb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "document/html.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -81,6 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "document/html.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -97,6 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "document/html.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -118,7 +124,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "document/html.md"
+              }
             }
           }
         ]
@@ -140,6 +148,8 @@
   },
   "active": "6f3a966b7a8b4fbb",
   "lastOpenFiles": [
+    "latihan/lt-css-position.md",
+    "latihan/html01.md",
     "Untitled.canvas",
     "2024-02-02.md",
     "document/git.md"

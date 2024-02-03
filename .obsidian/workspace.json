@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "document/html.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "document/html.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "document/html.md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "document/html.md"
+                "file": "README.md"
               }
             }
           }
@@ -148,10 +148,24 @@
   },
   "active": "6f3a966b7a8b4fbb",
   "lastOpenFiles": [
-    "latihan/lt-css-position.md",
+    "backupme.sh",
+    "document/css.md",
+    "document/html.md",
+    "document/git.md",
+    "document/R.md",
+    "document/ruby.md",
+    "document/vim.md",
+    "document/super-basic-math.md",
+    "document/job.md",
     "latihan/html01.md",
+    "latihan/lt-puisi.md",
+    "latihan/lt-grid.md",
+    "latihan/lt-float.md",
+    "latihan/lt-flexbox.md",
+    "latihan/lt-css-position.md",
+    "document/javac/fundamental-java.md",
+    "document/javac/array-java.md",
     "Untitled.canvas",
-    "2024-02-02.md",
-    "document/git.md"
+    "2024-02-02.md"
   ]
 }

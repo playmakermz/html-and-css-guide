@@ -161,7 +161,7 @@ Perintah `// javac start.Java` digunakan untuk mengkompilasi file `start.Java` d
 
 > point penting 
 
-```
+```java
         int[][] arrayDua = {
             {12, 10, 40}, // Baris pertama dari matriks array
             {13, 11, 41}, // Baris kedua dari matriks array

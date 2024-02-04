@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "document/job.md",
+                "file": "document/pythond/Fundamental.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "document/job.md",
+                "file": "document/pythond/Fundamental.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "document/job.md",
+                "file": "document/pythond/Fundamental.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "document/job.md"
+                "file": "document/pythond/Fundamental.md"
               }
             }
           }
@@ -148,6 +148,9 @@
   },
   "active": "a1605e6a8e2e84c4",
   "lastOpenFiles": [
+    "document/job.md",
+    "document/pythond/Fundamental.md",
+    "document/pythond",
     "document/javac/java.md",
     "README.md",
     "backupme.sh",
@@ -158,7 +161,6 @@
     "document/ruby.md",
     "document/vim.md",
     "document/super-basic-math.md",
-    "document/job.md",
     "latihan/html01.md",
     "latihan/lt-puisi.md",
     "latihan/lt-grid.md",

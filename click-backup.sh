@@ -1,5 +1,5 @@
 #! /usr/bin/bash
-git pull --no-commit
+git pull --no-rebase
 git add .
 git commit -am "obsidian Push: `date +'%m-%d'` "
 git push

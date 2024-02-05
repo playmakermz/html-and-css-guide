@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "92ee96f5aaf44bd6",
+        "id": "7bb0a3b8aacf035a",
         "type": "tabs",
         "children": [
           {
-            "id": "a1605e6a8e2e84c4",
+            "id": "6f3a966b7a8b4fbb",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -69,7 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
     "id": "f8f4800b740056b7",
@@ -146,30 +146,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a1605e6a8e2e84c4",
+  "active": "6f3a966b7a8b4fbb",
   "lastOpenFiles": [
-    "document/job.md",
-    "document/pythond/Fundamental.md",
-    "document/pythond",
-    "document/javac/java.md",
-    "README.md",
-    "backupme.sh",
-    "document/css.md",
-    "document/html.md",
-    "document/git.md",
-    "document/R.md",
-    "document/ruby.md",
     "document/vim.md",
-    "document/super-basic-math.md",
-    "latihan/html01.md",
-    "latihan/lt-puisi.md",
-    "latihan/lt-grid.md",
-    "latihan/lt-float.md",
-    "latihan/lt-flexbox.md",
+    "document/pythond/Fundamental.md",
+    "document/html.md",
+    "document/pythond",
+    "click-backup.sh",
     "latihan/lt-css-position.md",
-    "document/javac/fundamental-java.md",
-    "document/javac/array-java.md",
+    "latihan/html01.md",
     "Untitled.canvas",
-    "2024-02-02.md"
+    "2024-02-02.md",
+    "document/git.md"
   ]
 }

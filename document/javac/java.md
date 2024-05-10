@@ -17,6 +17,8 @@ javac namafile.java
 java namafile
 ```
 
+ref: https://www.javatpoint.com/how-to-compile-and-run-java-program
+
 ## point penting pada java 
 - jangan lupa semicolon pada setiap perintah
 

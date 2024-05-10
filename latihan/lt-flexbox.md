@@ -147,3 +147,7 @@ box-sizing - digunakan untuk memastikan agar lebar dan tinggi element sesuai den
 
 ## Contoh Source code 
 [Click Source Code](../code/flexbox-test/index.html)
+
+
+## Reference
+- https://internetingishard.netlify.app/html-and-css/flexbox/

@@ -165,6 +165,15 @@ div.main {
       }
 ```
 
+Intinya:
+```
+box-sizing: border-box;
+
+/* berbeda dengan */
+
+box-sizing: content-box;
+```
+
 hasilnya akan menjadi Seperti gambar dibawah. `box-sizing: border-box` akan membuat komputer mengatur secara otomatis pembagian dari width dan height untuk membuat hasil total tidak lebih dari yang sudah dideklarasi kan
 
 ![setelah boxsizing](../aset/box-sizing-after.png)

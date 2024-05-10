@@ -10,6 +10,13 @@ sudo apt install default-jre default-jdk
 
 Ref: https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04
 
+## Compile and run
+
+```
+javac namafile.java
+java namafile
+```
+
 ## point penting pada java 
 - jangan lupa semicolon pada setiap perintah
 

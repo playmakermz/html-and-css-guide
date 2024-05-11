@@ -338,6 +338,16 @@ person.sayHello(); // Output: Hello, my name is John.
 
 ```
 
+contoh:
+
+```
+this.namaku = nama
+
+// bisa dilakukan 
+
+```
+
+
 ## new
 
 kata kunci new yang digunakan pada javascript digunakan untuk membuat instance dari object. Disaat kita menggunakan new maka properti dari object tersebut juga akan di replika. 

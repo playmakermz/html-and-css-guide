@@ -65,6 +65,9 @@ function MyComponent() {
 ```
 Penggunaan "className" adalah bentuk reserved dari "class" attribute pada html. 
 
+pada render JSX hanya diperbolehkan untuk mengirim satu element.
+**tidak boleh ada banyak container!**.
+
 ### Untuk tag element yang tidak memiliki kontent | satu tag
 ```
 import React from 'react';
@@ -83,6 +86,30 @@ function MyComponent() {
 
 yang awalnya seperti ini `<br>` kita tulis menjadi `<br />`
 
+### Contoh lain dengan class
+
+```
+// Import React from ''
+import React from 'react';
+
+// lakukan inheritance dari component
+class App extends React.Component {
+  render () {
+    return (
+      <h1>React Berjalan</h1>
+    );
+  }
+}
+
+export default App;
+
+```
+
+## Menulis komentar pada JSX
+
+```
+{/* Ini adalah Komentar  */}
+```
 
 <!-- 
 Check list:

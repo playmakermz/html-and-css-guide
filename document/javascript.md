@@ -1360,6 +1360,7 @@ Break down:
 - [javascript-array](../document/javascript-array.md)
 - [JavaScript fundamental](../document/javascript-fundamental.md)
 - [Javascript synchronous (then, catch, finally)]()
+- [AJAX]()
 
 ***
 ## Reference:

@@ -152,8 +152,8 @@ box-sizing - digunakan untuk memastikan agar lebar dan tinggi element sesuai den
 - `align-items: [ flex-start, center, flex-end, stretch ]; ` // Sama seperti justify content, tetapi digunakan untuk mengatur secara vertikal.
 - `flex-wrap: wrap;`  // digunakan untuk memastikan element pada container tidak keluar dari batas. dengan kata lain bisa merapikan element otomatis.
 - `flex-direction: [ column, row, row-reverse, column-reverse ];` // default yang dipakai adalah horizontal. dengan property ini kita bisa mengubah menjadi row ( vertikal )
-- `flex: 1;` // digunakan untuk mengatur lebar dari element. < Yang bisa pakai: child element! >
-- `align-self: [ auto | flex-start | flex-end | center | baseline | stretch ];` // Untuk mengatur penempatan pada element spesifik. < Yang bisa pakai: child element! >
+- `flex: 1;` // digunakan untuk mengatur lebar dari element. < **Yang bisa pakai: child element!** >
+- `align-self: [ auto | flex-start | flex-end | center | baseline | stretch ];` // Untuk mengatur penempatan pada element spesifik. < **Yang bisa pakai: child element!** >
 
 
 ## Contoh Source code 

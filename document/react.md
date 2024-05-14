@@ -50,6 +50,38 @@ ReactDOM.render(element, document.getElementById('root'));
 
 ```
 
+### Penempatan dari JSX 
+
+JSX hanya ditempatkan pada bagian "return".
+
+atau jika ingin membuat code Javascript, maka mereka harus tetap berada pada bagian method "render()."
+
+```
+
+// Import React from ''
+import React from 'react';
+
+let text = "Halo dunia ini"
+
+// lakukan inheritance dari component
+class App extends React.Component {
+  render () {
+    return (
+      <h1> {text} </h1>
+    );
+  }
+}
+
+export default App;
+
+```
+
+untuk melakukan export code Javascript kedalam JSX, bisa dilakukan dengan cara tersebut. aturan variabel tetap pada method render().
+
+```
+{ namaVariabel }
+```
+
 ### mengatur style dari JSX | Menambahkan class
 ```
 import React from 'react';
@@ -89,6 +121,7 @@ yang awalnya seperti ini `<br>` kita tulis menjadi `<br />`
 ### Contoh lain dengan class
 
 ```
+
 // Import React from ''
 import React from 'react';
 
@@ -105,14 +138,205 @@ export default App;
 
 ```
 
-## Menulis komentar pada JSX
+### Menulis komentar pada JSX
 
 ```
 {/* Ini adalah Komentar  */}
 ```
 
+### Memasukan attribute DOM kedalam JSX 
+
+```
+import React from 'react';
+
+class App extends React.Component {
+
+render(){
+return (
+
+<div> 
+
+<h1>test button</h1>
+
+<button onClick={()=> {console.log('halo terminal')}}> click me! </button>
+
+
+</div>
+)
+}
+}
+```
+
+### Tool pada React 
+- event = Adalah bentuk interaksi dari JSX kepada user. ini memiliki contoh seperti interaksi `onClick()` pada script.
+
+- state = state adalah nilai yang dapat kita ubah berdasarkan adaannya tindakan dari user.
+
+contoh deklarasi state.
+```
+\\ Class React.Component {
+
+constructor(props){
+super(props);
+this.state = {name:'Nama Ku'}
+}
+
+}
+```
+
+**Contoh deklarasi state, didalam JSX**
+```
+// Import React from ''
+import React from 'react';
+
+// lakukan inheritance dari component
+class App extends React.Component {
+
+
+constructor(props){
+super(props);
+this.state = {name:'Nama Ku'}
+}
+
+  render () {
+    return (
+      <h1>Selamat Datang {this.state.name}!</h1>
+    );
+  }
+}
+
+export default App;
+```
+
+### Melakukan update pada state 
+
+state tidak bisa dilakukan perubahan secara langsung, seperti dua contoh dibawah ini. 
+
+```
+this.state = {name: 'udin'} // tidak bisa 
+
+this.state.name = 'udin' // tidak bisa 
+```
+
+**cara mengubah state adalah dengan** `setState`
+
+```
+this.setState({name:'udin'})
+```
+
+### Cara memperbarui state 
+
+```
+// Import React from ''
+import React from 'react';
+
+// lakukan inheritance dari component
+class App extends React.Component {
+
+
+constructor(props){
+super(props);
+this.state = {name:'Nama Ku'}
+}
+
+  render () {
+    return (
+
+<h1>Hello, namaku adalah {this.state.name}!</h1> {/* <===== ini akan berubah sesuai dengan state saat ini!!!*/}
+
+    <button onClick={() => {this.setState({name:'udin'})}}> namaku udin!! </button>
+    );
+  }
+}
+
+export default App;
+
+```
+
+pada method render, terdapat event ( onclick ), dan state. 
+code diatas adalah untuk mengubah nilai state awal menjadi apa yang kita ingin kan.
+
+
+### cara lain untuk melakukan perubahan state 
+
+```
+// Import React from ''
+import React from 'react';
+
+// lakukan inheritance dari component
+class App extends React.Component {
+
+
+constructor(props){
+super(props);
+this.state = {name:'Nama Ku'}
+}
+
+fuctClick(arg) {
+    this.setState({name: arg})
+}
+
+  render () {
+    return (
+
+<h1>Hello, namaku adalah {this.state.name}!</h1> {/* <===== ini akan berubah sesuai dengan state saat ini!!!*/}
+
+    <button onClick={() => {this.fuctClick('udin')}}> udin </button>
+    );
+  }
+}
+
+export default App;
+
+```
+
+
+### Wrap up 01 ( aturan state diatas )
+
+```
+import React from 'react';
+
+class App extends React.Component {
+
+constructor(props) {
+super(props){
+this.state = {nama:'makanan'} // Tahap 1. deklarasi state 
+
+}}
+
+handleClick(arg) {
+this.setState({nama: arg}) // Tahap 3. Melakukan perubahan!!
+}
+
+render() {
+return (
+<div> 
+<h1> Makanan yang kusuka adalah {this.state.nama} </h1>
+{/*<====== Tahap 2. menampilkan state */}
+
+
+<button onClick={() => {this.handleClick('Soto Ayam')}}> suka soto ayam </button>
+{/* <========= Tahap 3 Melakukan perubahan */}
+
+</div>
+)}
+
+
+}
+
+```
+
+Tahapan:
+1. Deklarasi state pada constructor. Contoh `nama:'value'`
+2. Menampilkan set. Contoh `{this.state.nama}`
+3. Melakukan perubahan dengan onClick dan `setState`
+
+
 <!-- 
-Check list:
+Todo List:
+
+
+- buat instalasi react local computer
 
 - Buat React Component, menggunakan "class" dan extends "React.Component"
 

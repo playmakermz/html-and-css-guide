@@ -332,6 +332,41 @@ Tahapan:
 3. Melakukan perubahan dengan onClick dan `setState`
 
 
+### Urutan alur menampilkan React 
+
+- App.js (JSX) => akan diberikan kepada 
+- index.js => code JSX akan proses disini ( mengalami perubahan  )
+- index.html => tujuan akhir, code JSX akan ditimpa disini. 
+
+**Contoh process**
+```
+// App.js 
+
+class App extends React.component {
+render(){
+return (
+<div>
+<h1>Hello World</h1>
+</div>
+
+
+)
+}
+}
+
+// index.js  ( Tahap kedua )
+
+import App from './components/App'
+ReactDOM.render(<App />, document.getElementById('root'))
+
+
+// index.html ( tahap terakhir )
+<body>
+<div id="root"></div>
+</body>
+
+```
+
 <!-- 
 Todo List:
 

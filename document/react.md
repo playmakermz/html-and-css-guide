@@ -367,6 +367,65 @@ ReactDOM.render(<App />, document.getElementById('root'))
 
 ```
 
+
+### Memasukan css kedalam JSX 
+
+```
+render(){
+return (
+
+<div>
+<h1 className="title">Hello World</h1>
+<h2 className="sub title"> Hello juga </h2>
+</div>
+
+)
+}
+```
+
+- Cara penulisan attribute class berbeda dengan pada HTML biasa.
+
+
+### Membuat component baru 
+
+
+**boleh 2 atau lebih component selain App.js**
+
+- Tahap Pertama, Pembuatan component baru. pada folder App.js 
+    ```
+import React from 'react';
+
+class ekstra extends React.Component {
+render() {
+return (
+<div className='exstra-container'>
+<p> ini berasal dari component extra </p>
+</div>
+)
+}
+}
+
+// Export component 
+export default ekstra;
+    ```
+
+- tahap kedua 
+
+    ```
+import React from 'react'
+import ekstra from './ekstra'
+class App extends React.Component {
+render(){
+return(
+<div>
+<ekstra /> {/* <=== Tag ini berasal dari component baru */}
+</div>
+
+)
+}
+}
+    ```
+
 <!-- 
 Todo List:
 

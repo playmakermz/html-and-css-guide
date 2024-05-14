@@ -313,22 +313,28 @@ Adalah teknologi atau tool yang akan membantu kita membuat skenario khusus pada 
 contoh code 
 
 ```
-@media screen (min-width: 400px) and (max-width: 500px) {
+@media (min-width: 400px) and (max-width: 500px) {
   body {
     background-color: purple;
   }
 
 /* ============= */
-@media screen and (min-width: 400px) {
-background-color: blue;
+@media (min-width: 400px) {
+
+body {
+background-color: red;
+}
 
 }
 
 
 /* ============= */
 
-@media screen and (max-width: 600px){
-background-color: red;
+@media (max-width: 600px){
+
+body {
+background-color: purple;
+}
 }
 
 /* ============= */

@@ -300,9 +300,46 @@ Referensi: https://www.w3schools.com/css/css3_transitions.asp
 - `red` memilih warna merah.
 
 
+### CSS media Query 
+
+Adalah teknologi atau tool yang akan membantu kita membuat skenario khusus pada device tertentu.
+
+- `min-width`: Jika yang digunakan adalah ini, maka semua device yang telah melebihi batas minimal akan dilakukan perubahan. 
+
+- `max-width`: jika yang digunakan adalah ini, maka semua device yang lebih kecil dari batas maksimal akan dilakukan perubahan 
+
+- `(min-width) and (max-width)`: Jika yang digunakan adalah ini maka hanya device yang telah melewati batas minimal, dan tidak melebihi batas maksimal akan mengalami perubahan. 
+
+contoh code 
+
+```
+@media screen (min-width: 400px) and (max-width: 500px) {
+  body {
+    background-color: purple;
+  }
+
+/* ============= */
+@media screen and (min-width: 400px) {
+background-color: blue;
+
+}
+
+
+/* ============= */
+
+@media screen and (max-width: 600px){
+background-color: red;
+}
+
+/* ============= */
+
+
+```
+
+
 #### Refrensi
 - https://id.wikipedia.org/wiki/Cascading_Style_Sheets
 - https://www.w3schools.com/css/css_howto.asp
 - https://www.freecodecamp.org/
-
+- https://css-tricks.com/a-complete-guide-to-css-media-queries/ (media query)
 

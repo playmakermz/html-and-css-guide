@@ -393,6 +393,7 @@ return (
 
 - Tahap Pertama, Pembuatan component baru. pada folder App.js 
     ```
+//file: ekstra.js 
 import React from 'react';
 
 class ekstra extends React.Component {
@@ -412,6 +413,7 @@ export default ekstra;
 - tahap kedua 
 
     ```
+// File: App.js
 import React from 'react'
 import ekstra from './ekstra'
 class App extends React.Component {
@@ -425,6 +427,119 @@ return(
 }
 }
     ```
+
+catatan kecil, component dapat digunakan berkali-kali.
+
+### cara untuk melakukan perubahan pada component JSX 
+
+```
+// file App.js
+import React from 'react'
+import ekstra from './ekstra'
+class App extends React.Component {
+render(){
+return(
+<div>
+
+<ekstra 
+nama="udin"
+
+/> 
+
+
+<ekstra
+nama="budi"
+
+/>
+
+
+</div>
+
+)
+}
+}
+```
+
+- pada `<ekstra />` kita dapat menambahkan **props** didalamnya yang akan membantu dalam melakukan perubahan secara spesifik.
+
+Setelah melakukan perubahan pada `App.js` dilanjutkan pada `ekstra.js`
+
+```
+// ekstra.js 
+
+import React from 'react';
+
+class ekstra extends React.Component {
+render() {
+return (
+
+<div className='exstra-container'>
+<p> ini berasal dari component extra 
+
+dan ini adalah namaku {this.props.nama}
+
+</p>
+
+
+</div>
+)
+}
+}
+
+// Export component 
+export default ekstra;
+ 
+
+```
+
+### Cara membuat component secara otomatis
+
+dibawah ini adalah contoh membuat component otomatis. semisal terdapat list, maka component yang akan dibuat akan menyesuaikan dengan berapa banyak item pada list.
+
+
+```
+// file App.js
+import React from 'react'
+import ekstra from './ekstra'
+class App extends React.Component {
+render(){
+
+let namaPeserta = [
+{name: 'udin'},
+{name: 'budi'},
+]
+
+return(
+<div>
+
+{namaPeserta.map((item) =>{
+
+return (
+
+<ekstra
+nama={item.name}
+
+/>
+
+)
+}
+) {/*<== bagian akhir dari map method */}
+}
+
+
+</div>
+
+)
+}
+}
+
+```
+
+Pada code diatas kita membuat code didalam JSX untuk membuat sebuah loop yang akan membuat component `<ekstra />` sebanyak item pada list yang diberikan.
+
+ini bisa dilakukan dengan bantuan `map` method.
+
+
 
 <!-- 
 Todo List:

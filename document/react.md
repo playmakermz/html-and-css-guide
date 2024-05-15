@@ -392,7 +392,7 @@ return (
 **boleh 2 atau lebih component selain App.js**
 
 - Tahap Pertama, Pembuatan component baru. pada folder App.js 
-    ```
+```
 //file: ekstra.js 
 import React from 'react';
 
@@ -408,11 +408,11 @@ return (
 
 // Export component 
 export default ekstra;
-    ```
+```
 
 - tahap kedua 
 
-    ```
+```
 // File: App.js
 import React from 'react'
 import ekstra from './ekstra'
@@ -426,7 +426,7 @@ return(
 )
 }
 }
-    ```
+```
 
 catatan kecil, component dapat digunakan berkali-kali.
 

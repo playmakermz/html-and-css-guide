@@ -388,7 +388,7 @@ return (
 ***
 
 
-### Membuat component baru 
+# Membuat component baru 
 
 
 **boleh 2 atau lebih component selain App.js**

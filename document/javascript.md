@@ -1261,6 +1261,29 @@ let betul = true
 let salah = false
 ```
 
+## undefined vs null 
+
+```
+let a
+typeof a // undefined
+
+let c = undefined // entah bagaimana dilarang pada komunitas!! https://www.geeksforgeeks.org/undefined-vs-null-in-javascript/
+
+let b = null
+typeof b // null
+
+null == undefined // True ( mereka mempresentasikan konsep yang sama )
+null === undefined // False ( tipe nilai mereka berbeda )
+```
+
+- Undefined
+  - adalah bentuk kosong sepenuhnya. Semisal declarasi variabel tetapi tidak ada nilai dialamnya
+
+- null
+    - adalah nilai yang bisa kita masukan kedalam variabel, yang menjadi representasi area nilai belum terisi
+ 
+ref: https://www.geeksforgeeks.org/undefined-vs-null-in-javascript/
+
 ## Get And Setter 
 
 ```

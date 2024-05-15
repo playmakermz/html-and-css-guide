@@ -385,6 +385,8 @@ return (
 
 - Cara penulisan attribute class berbeda dengan pada HTML biasa.
 
+***
+
 
 ### Membuat component baru 
 
@@ -392,6 +394,8 @@ return (
 **boleh 2 atau lebih component selain App.js**
 
 - Tahap Pertama, Pembuatan component baru. pada folder App.js 
+
+
 ```
 //file: ekstra.js 
 import React from 'react';
@@ -411,6 +415,8 @@ export default ekstra;
 ```
 
 - tahap kedua 
+
+
 
 ```
 // File: App.js

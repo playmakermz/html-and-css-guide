@@ -557,6 +557,8 @@ Todo List:
 
 -->
 
+## Catatan tambahan
+- [Membuat banyak content](./react02.md)
 
 ## Referensi:
 

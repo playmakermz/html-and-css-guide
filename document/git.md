@@ -19,3 +19,13 @@ Beberapa command line git yang paling sering digunakan:
 Git juga dilengkapi fitur untuk melakukan pull request (untuk melakukan kolaborasi dengan orang lain) dan code reviews (melihat / membadingkan code). Dengan mode ini kita akan lebih mudah untuk bekerja dengan orang lain.
 
 Secara garis besar git adalah alat yang sangat bermanfaat untuk kita secara jangka panjang. 
+
+
+<!-- 
+Todo list 
+- https://www.simplilearn.com/git-rebase-vs-merge-article#:~:text=Git%20merge%20keeps%20the%20commit,more%20organized%2C%20linear%20project%20history.
+- Buat satu repository, satu lakukan editing langsung, satunya editing manual
+- Manual jangan pull, hinga editing repo selesai 
+
+-->
+

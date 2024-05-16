@@ -17,16 +17,16 @@ import React from 'react';
 
 class Item01 extends React.Component {
 
-render(){
-return(
+    render(){
+        return(
 
-<div>
+        <div>
 
-<h1> Halo aku adalah item 01 </h1>
-<p> buah {this.props.name} rasanya adalah {this.props.rasa} </p>
-{/* <===== Paragraph memiliki hubungan dengan item02 === */}
+        <h1> Halo aku adalah item 01 </h1>
+        <p> buah {this.props.name} rasanya adalah {this.props.rasa} </p>
+        {/* <===== Paragraph memiliki hubungan dengan item02 === */}
 
-</div>
+        </div>
 
 )
 }
@@ -52,36 +52,35 @@ import Item01 from './Item01'
 
 class Item02 extends React.Component {
 
-render(){
-let buahArr = 
-[
-{name: 'semangka', rasa:'manis'},
-{name: 'jeruk', rasa:'asam'}
-]
+    render(){
+        let buahArr = 
+            [
+            {name: 'semangka', rasa:'manis'},
+            {name: 'jeruk', rasa:'asam'}
+            ]
 
 
-return(
+        return(
 
-<div>
-<h3> halo ini list dari component item02 </h3>
+            <div>
+            <h3> halo ini list dari component item02 </h3>
 
-{/* <====== Ini adalah component item01 */}
+            {/* <====== Ini adalah component item01 */}
 
-{buahArr.map( =>{
+            {buahArr.map( (buahArr)=>{
 
-return (
+                return (
 
-<Item01 
-<p> name={buahArr.name} </p>
-<p> rasa={buahArr.rasa} </p>
-/>
-)
+                    <Item01 
+                    <p> name={buahArr.name} </p>
+                    <p> rasa={buahArr.rasa} </p>
+                    />
 
-}
-)}
+                    )}
+            )}
 
 
-</div>
+            </div>
 
 )
 }

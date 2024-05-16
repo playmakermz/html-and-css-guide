@@ -152,18 +152,18 @@ import React from 'react';
 class App extends React.Component {
 
 render(){
-return (
+    return (
 
-<div> 
+        <div> 
 
-<h1>test button</h1>
+            <h1>test button</h1>
 
-<button onClick={()=> {console.log('halo terminal')}}> click me! </button>
+            <button onClick={()=> {console.log('halo terminal')}}> click me! </button>
 
 
-</div>
-)
-}
+        </div>
+            )
+        }
 }
 ```
 
@@ -177,9 +177,9 @@ contoh deklarasi state.
 \\ Class React.Component {
 
 constructor(props){
-super(props);
-this.state = {name:'Nama Ku'}
-}
+    super(props);
+    this.state = {name:'Nama Ku'}
+                }
 
 }
 ```
@@ -194,14 +194,14 @@ class App extends React.Component {
 
 
 constructor(props){
-super(props);
-this.state = {name:'Nama Ku'}
-}
+    super(props);
+    this.state = {name:'Nama Ku'}
+    }
 
   render () {
     return (
       <h1>Selamat Datang {this.state.name}!</h1>
-    );
+        );
   }
 }
 
@@ -235,16 +235,16 @@ class App extends React.Component {
 
 
 constructor(props){
-super(props);
-this.state = {name:'Nama Ku'}
+    super(props);
+    this.state = {name:'Nama Ku'}
 }
 
   render () {
     return (
 
-<h1>Hello, namaku adalah {this.state.name}!</h1> {/* <===== ini akan berubah sesuai dengan state saat ini!!!*/}
+        <h1>Hello, namaku adalah {this.state.name}!</h1> {/* <===== ini akan berubah sesuai dengan state saat ini!!!*/}
 
-    <button onClick={() => {this.setState({name:'udin'})}}> namaku udin!! </button>
+        <button onClick={() => {this.setState({name:'udin'})}}> namaku udin!! </button>
     );
   }
 }
@@ -267,21 +267,21 @@ import React from 'react';
 class App extends React.Component {
 
 
-constructor(props){
-super(props);
-this.state = {name:'Nama Ku'}
-}
+    constructor(props){
+        super(props);
+        this.state = {name:'Nama Ku'}
+    }
 
-fuctClick(arg) {
-    this.setState({name: arg})
-}
+    fuctClick(arg) {
+        this.setState({name: arg})
+    }
 
-  render () {
-    return (
+    render () {
+        return (
 
-<h1>Hello, namaku adalah {this.state.name}!</h1> {/* <===== ini akan berubah sesuai dengan state saat ini!!!*/}
+            <h1>Hello, namaku adalah {this.state.name}!</h1> {/* <===== ini akan berubah sesuai dengan state saat ini!!!*/}
 
-    <button onClick={() => {this.fuctClick('udin')}}> udin </button>
+            <button onClick={() => {this.fuctClick('udin')}}> udin </button>
     );
   }
 }
@@ -298,27 +298,27 @@ import React from 'react';
 
 class App extends React.Component {
 
-constructor(props) {
-super(props){
-this.state = {nama:'makanan'} // Tahap 1. deklarasi state 
+    constructor(props) {
+        super(props){
+        this.state = {nama:'makanan'} // Tahap 1. deklarasi state 
 
 }}
 
-handleClick(arg) {
-this.setState({nama: arg}) // Tahap 3. Melakukan perubahan!!
+    handleClick(arg) {
+        this.setState({nama: arg}) // Tahap 3. Melakukan perubahan!!
 }
 
-render() {
-return (
-<div> 
-<h1> Makanan yang kusuka adalah {this.state.nama} </h1>
-{/*<====== Tahap 2. menampilkan state */}
+    render() {
+        return (
+            <div> 
+                <h1> Makanan yang kusuka adalah {this.state.nama} </h1>
+                {/*<====== Tahap 2. menampilkan state */}
 
 
-<button onClick={() => {this.handleClick('Soto Ayam')}}> suka soto ayam </button>
-{/* <========= Tahap 3 Melakukan perubahan */}
+                <button onClick={() => {this.handleClick('Soto Ayam')}}> suka soto ayam </button>
+                {/* <========= Tahap 3 Melakukan perubahan */}
 
-</div>
+            </div>
 )}
 
 
@@ -343,11 +343,11 @@ Tahapan:
 // App.js 
 
 class App extends React.component {
-render(){
-return (
-<div>
-<h1>Hello World</h1>
-</div>
+    render(){
+        return (
+            <div>
+            <h1>Hello World</h1>
+            </div>
 
 
 )
@@ -362,7 +362,7 @@ ReactDOM.render(<App />, document.getElementById('root'))
 
 // index.html ( tahap terakhir )
 <body>
-<div id="root"></div>
+    <div id="root"></div>
 </body>
 
 ```
@@ -372,12 +372,12 @@ ReactDOM.render(<App />, document.getElementById('root'))
 
 ```
 render(){
-return (
+    return (
 
-<div>
-<h1 className="title">Hello World</h1>
-<h2 className="sub title"> Hello juga </h2>
-</div>
+        <div>
+            <h1 className="title">Hello World</h1>
+            <h2 className="sub title"> Hello juga </h2>
+        </div>
 
 )
 }
@@ -401,11 +401,11 @@ return (
 import React from 'react';
 
 class ekstra extends React.Component {
-render() {
-return (
-<div className='exstra-container'>
-<p> ini berasal dari component extra </p>
-</div>
+    render() {
+        return (
+            <div className='exstra-container'>
+                <p> ini berasal dari component extra </p>
+            </div>
 )
 }
 }
@@ -422,12 +422,13 @@ export default ekstra;
 // File: App.js
 import React from 'react'
 import ekstra from './ekstra'
+
 class App extends React.Component {
-render(){
-return(
-<div>
-<ekstra /> {/* <=== Tag ini berasal dari component baru */}
-</div>
+    render(){
+        return(
+            <div>
+                <ekstra /> {/* <=== Tag ini berasal dari component baru */}
+            </div>
 
 )
 }
@@ -442,24 +443,25 @@ catatan kecil, component dapat digunakan berkali-kali.
 // file App.js
 import React from 'react'
 import ekstra from './ekstra'
+
 class App extends React.Component {
-render(){
-return(
-<div>
+    render(){
+        return(
+        <div>
 
-<ekstra 
-nama="udin"
+            <ekstra 
+                nama="udin"
 
-/> 
-
-
-<ekstra
-nama="budi"
-
-/>
+            /> 
 
 
-</div>
+            <ekstra
+                nama="budi"
+
+            />
+
+
+    </div>
 
 )
 }
@@ -476,18 +478,18 @@ Setelah melakukan perubahan pada `App.js` dilanjutkan pada `ekstra.js`
 import React from 'react';
 
 class ekstra extends React.Component {
-render() {
-return (
+    render() {
+        return (
 
-<div className='exstra-container'>
-<p> ini berasal dari component extra 
+            <div className='exstra-container'>
+            <p> ini berasal dari component extra 
 
-dan ini adalah namaku {this.props.nama}
+            dan ini adalah namaku {this.props.nama}
 
-</p>
+            </p>
 
 
-</div>
+        </div>
 )
 }
 }
@@ -507,28 +509,28 @@ dibawah ini adalah contoh membuat component otomatis. semisal terdapat list, mak
 // file App.js
 import React from 'react'
 import ekstra from './ekstra'
+
 class App extends React.Component {
-render(){
+    render(){
 
-let namaPeserta = [
-{name: 'udin'},
-{name: 'budi'},
-]
+        let namaPeserta = [
+        {name: 'udin'},
+        {name: 'budi'},
+        ]
 
-return(
-<div>
+    return(
+        <div>
 
-{namaPeserta.map((item) =>{
+        {namaPeserta.map((item) =>{
 
-return (
+            return (
 
-<ekstra
-nama={item.name}
+                <ekstra
+                nama={item.name}
+                />
 
-/>
-
-)
-}
+                    )
+        }
 ) {/*<== bagian akhir dari map method */}
 }
 
@@ -553,7 +555,6 @@ Todo List:
 
 - buat instalasi react local computer
 
-- Buat React Component, menggunakan "class" dan extends "React.Component"
 
 -->
 

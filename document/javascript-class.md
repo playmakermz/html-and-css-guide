@@ -139,6 +139,12 @@ Kita bisa bayangkan bahwasannya blue print adalah sebuah cetakan kue, dengan cet
 
 Class yang kita buat pada object Oriented Programming disebut sebagai blueprint, sedangkan variabel yang memiliki class didalamannya disebut sebagai "instance" dan class itu sendiri adalah object 
 
+
+- **Instance** adalah hasil 
+- **object** adalah awal 
+
+Perumpamaan: Di atas meja terdapat 5 apel ( instance ), setiap apel memiliki ukuran dan bentuk yang berbeda-beda.
+
 ```
 // Define a class / blueprint
 class Person {
@@ -168,7 +174,7 @@ Pada javasscript, object adalah sebuah koleksi dari data dan fungsi yang berhubu
 
 pada javascript terdapat setidaknnya 5 cara untuk membuat sebuah object:
 
-- Object Literal syntax ( object )
+- Object Literal syntax ( object ) 
 
 contoh object literal syntax
 ```
@@ -192,7 +198,7 @@ console.log(person.address.city); // output: "New York"
 person.sayHello(); // output: "Hello, my name is John!"
 ```
 
-- Constructor function syntax ( object )
+- Constructor function syntax ( object )  
 
 ```
 // Define a constructor function for creating person objects

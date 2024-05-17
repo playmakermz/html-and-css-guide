@@ -337,7 +337,7 @@ src: https://dev.to/sanchithasr/7-ways-to-convert-a-string-to-number-in-javascri
 
 
 
-## Function 
+## Function  | ES5
 ### 10
 
 ```
@@ -358,6 +358,14 @@ function myFunction(){
     let var_a = "hello"
 }
 ```
+
+**catatan tambahan function** 
+
+Ekspression function dan function biasa telah ada dari versi 'ES5', function versi 'ES6' adalah penambahan arrow function. 
+
+Pada node js, mereka akan mengutamakan function, oleh karena itu jika kita pangil function lalu tulis function tersebut pada baris terakhir, mereka akan terpangil normal. **Hanya berlaku pada function normal**
+
+ref: https://medium.com/@zac_heisey/es5-vs-es6-functions-cb51536002ee
 
 ## Parameters
 ### 11
@@ -1176,7 +1184,7 @@ ketik `node` didalam terminal
 _ * _ // 36
 ```
 
-## Membuat function 
+## Membuat function  | ES5
 ```
 function tambah(a,b){
   return a + b

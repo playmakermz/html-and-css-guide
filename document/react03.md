@@ -20,10 +20,16 @@ class ItemAdd extends React.Component {
         this.setState({isItemOpen: true})
 }
 
+// Method dibawah adalah untuk menghilangkan element item
+    handleClickClose(){
+        this.setState({isItemOpen: false})
+}
+
 
     render(){
 
         let itemParag;
+
         if(this.state.isItemOpen){ // <===== adalah tempat JSX dan condition
             itemParag = ( {/* <==== harus ada '()' ini adalah JSX area */}
                 <p> Halo saya adalah paragraph interactive </p>
@@ -36,7 +42,13 @@ class ItemAdd extends React.Component {
             <p> saya adalah static </p>
             {itemParag}
 
-            <button onClick={() => {this.handleClick()}}>
+            <button onClick={() => {this.handleClick()}} title="Open"/>
+
+            {/* <=== button ini untuk open */}
+
+            <button onClick={() => {this.handleClickClose()}} title="close" />
+
+            {/* <=== button ini untuk close */}
         )
 }
 
@@ -61,6 +73,7 @@ export default ItemAdd;
 - pada `render(){ return(...) }` bagian return tambahkan code JSX `{itemParag}` 
 - buat button onClick untuk memangil `{this.handleClick()}` 
 - lakukan export pada baris terakhir untuk class yang sudah dibuat.
+- BUath method `handleClickClose` untuk menutup element
 
 
 

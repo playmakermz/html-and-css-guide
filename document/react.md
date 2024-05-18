@@ -562,6 +562,7 @@ Todo List:
 - [Membuat banyak content](./react02.md)
 - [Membuat element interaktive](./react03.md)
 - [instalasi react](./react-install.md)
+- [membuat formulir interactive](./react-formulir.md)
 
 ## Referensi:
 

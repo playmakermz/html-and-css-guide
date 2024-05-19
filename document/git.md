@@ -53,10 +53,18 @@ halo saya dari branch belakang apa bisa
 
 ## Perbedaan Rebase dan Merge
 
+- `git pull --rebase` adalah fungsi rebase
+- `git pull --no-rebase` adalah fungsi merge
+
 Rebase | Merge
 --- | ---
 Mereka akan menulis ulang history | Mereka akan menyimpan history
 Sangat disarankan untuk menyelesaikan masalah private | sangat disarankan untuk menyelesaikan masalah public
+
+Kapan mereka harus digunakan?
+
+- Terkadang pada open source mereka menambahkan aturan khusus untuk collaborator. untuk menggunakan `rebase` agar mendapatkan git linear clean history
+- Terkadang pada project yang membutuhkan banyak collaborator akan membutuhkan git merge.
 
 ## Cara manual alternative repot dari Rebase
 

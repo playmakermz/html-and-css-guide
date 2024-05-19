@@ -14,7 +14,9 @@ Beberapa command line git yang paling sering digunakan:
 - `git push` upload repository git ke internet. 
 - `git pull` mendownload perubahan dari repository yang berada dari luar 
 - `git branch` membuat "branch" baru, dan beberapa hal tentang branch 
-- `git merge` menggabungkan branch 1 dan yang lainnya 
+- `git merge` menggabungkan branch 1 dan yang lainnya
+
+  > Merge is best used when the target branch is supposed to be shared.
 
 Git juga dilengkapi fitur untuk melakukan pull request (untuk melakukan kolaborasi dengan orang lain) dan code reviews (melihat / membadingkan code). Dengan mode ini kita akan lebih mudah untuk bekerja dengan orang lain.
 

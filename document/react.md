@@ -230,6 +230,7 @@ Todo List:
 ## Contoh project
 - [Membuat button menambahkan element](./project-react/add-component.md)
 - [Membuat konsep counter](./project-react/counter.md)
+- [membuat element muncul dan hilang](./project-react/add-delete.md)
 
 ## Referensi:
 

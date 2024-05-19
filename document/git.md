@@ -21,6 +21,21 @@ Git juga dilengkapi fitur untuk melakukan pull request (untuk melakukan kolabora
 Secara garis besar git adalah alat yang sangat bermanfaat untuk kita secara jangka panjang. 
 
 
+## Mengenai Rebase
+
+Jika terdapat dua perubahan, semisal pada local dan repository.
+
+terdapat conflict history dimana bagian repository telah berada pada versi selanjutnya, sedangkan bagian local tertinggal.
+
+Kita bisa menggunakan perintah
+```
+git add .
+git commit -am 'new'
+git pull --rebase 
+```
+dimana selama tidak terdapat conflict pada baris code, antara bagian baru dan lama maka masalah akan dapat diselesaikan dengan sangata mudah.
+
+
 <!-- 
 Todo list 
 - https://www.simplilearn.com/git-rebase-vs-merge-article#:~:text=Git%20merge%20keeps%20the%20commit,more%20organized%2C%20linear%20project%20history.
@@ -29,3 +44,5 @@ Todo list
 
 -->
 
+### Reference
+- https://www.simplilearn.com/git-rebase-vs-merge-article#:~:text=Git%20merge%20keeps%20the%20commit,more%20organized%2C%20linear%20project%20history.

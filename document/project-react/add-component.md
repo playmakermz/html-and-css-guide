@@ -1,5 +1,10 @@
 # Membuat Button untuk melakukan penambahan element
 
+## Tujuan
+
+Membuat dua button, dimana setiap button memiliki value yang dapat mengubah text element diatas.
+
+## Tahapan
 - masuk ke folder src `App.js`
 - Buat component baru
 - Buat object 
@@ -9,6 +14,7 @@
 - buat `render()` dan `return()` untuk bagian JSX
 - buat fungsi `onClick` untuk mengirim permintaan kepada `handleClick()`
 - `export default` untuk component baru yang kita buat
+- Masukan JSX `Item00` pada file `App.js` dan render
 
 
 ```Javascript

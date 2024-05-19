@@ -472,6 +472,16 @@ let myFunction = () => {
 }
 ```
 
+Arrow function diatas bisa dijalankan seperti fungsi biasa, tetapi untuk yang dibawah ini adalah coditional, artinya pada konsep tertentu saja bisa berjalan.
+
+Mereka tidak bisa dijalankan karena tidak dipanggil.
+
+```
+() => {return 'halo'}
+```
+
+Ref: https://www.freecodecamp.org/news/javascript-arrow-functions-in-depth/#:~:text=The%20arrow%20function%20syntax%20offers,not%20bound%20to%20the%20function.
+
 ## Callback function 
 ### 16
 
@@ -1458,7 +1468,7 @@ function getDetails({ name: name, size: size, address: {city} }) {
     console.log(abc)
 }
 
-getDetails(emp)
+getDetails(buah)
 
 
 ```

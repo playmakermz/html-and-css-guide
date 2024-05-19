@@ -565,6 +565,68 @@ console.log(math({a:1, b:2}))
 - Menambahkan value dengan `math({a:1, b:2}))`
 
 
+**Contoh Lain Array**
+
+```
+// Array dengan setiap item memiliki relasi
+let buahDetail = ['Appel', 'Manis']
+
+// Function dibuat untuk mengambil buahDetail
+// Dengan konsep parameter Destructuring
+
+function dapDetail ([nama, rasa]) {
+    console.log(`Nama buah: ${nama}, rasanya ${rasa}`)
+}
+
+dapDetail(buahDetail)
+```
+
+**Contoh lain dengan array of object**
+
+```
+let buah = {
+    name: 'Appel',
+    id: 1211,
+    size: 'kecil'
+}
+
+// Parmeter yang digunakan adalah alias, 
+// merujuk pada property array
+
+function getDetails({name: nama, size: ukuran}) {
+    console.log(`Nama buah ${nama} ukuran ${ukuran}`)
+}
+
+getDetails(buah)
+```
+
+**Contoh lain, array of object didalam array**
+
+```
+let buah = {
+    name: 'Appel',
+    id: 1211,
+    size: 'kecil',
+    address: {
+        city: 'malang',
+        code: 123
+    }
+}
+
+// Memasukan object kedalam destructured
+// untuk mengakses address.city
+
+function getDetails({ name: name, size: size, address: {city} }) {
+    let abc = `Nama buah ${name}, ukuran ${size}, dari kota: ${city}`
+    console.log(abc)
+}
+
+getDetails(emp)
+
+
+```
+
+Ref: https://www.geeksforgeeks.org/parameter-destructuring/
 
 <!-- 
 Todo List:

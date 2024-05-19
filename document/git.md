@@ -87,3 +87,5 @@ Todo list
 
 ### Reference
 - https://www.simplilearn.com/git-rebase-vs-merge-article#:~:text=Git%20merge%20keeps%20the%20commit,more%20organized%2C%20linear%20project%20history.
+
+- https://binarysiddhant.hashnode.dev/demystifying-git-pull-rebase-and-git-pull-no-rebase

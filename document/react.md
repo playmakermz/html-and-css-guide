@@ -565,6 +565,10 @@ Todo List:
 - [instalasi react](./react-install.md)
 - [membuat formulir interactive](./react-formulir.md)
 
+
+## Contoh project
+- [Membuat button menambahkan element](./project-react/add-component.md)
+
 ## Referensi:
 
 - https://www.niagahoster.co.id/blog/react-js-adalah/?gclid=Cj0KCQiAx6ugBhCcARIsAGNmMbi_g36zJkerxEangrozL6QmcfFd7ZZwtxXRiqvmDhPGnGX4Jt_rrM0aAtnGEALw_wcB

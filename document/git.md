@@ -39,7 +39,9 @@ dimana selama tidak terdapat conflict pada baris code, antara bagian baru dan la
 
 ## Mengenai Rebase ( Jika terdapat conflict pada baris )
 
-mereka akan secara otomatis akan memberikan tanda seperti ini. dimana terdapat informasi bagian head (Repository) dan local diberi tanda pada file yang kita upload.
+mereka akan secara otomatis akan memberikan tanda seperti ini. dimana terdapat informasi bagian head (Repository) dan local diberi tanda pada file yang kita upload. 
+
+Semisal pada baris ke 20, terdapat dua versi code. Terdapat yang baru dan lama.
 
 ```
 <<<<<<< HEAD
@@ -48,6 +50,23 @@ halo saya mau conflict disini
 halo saya dari branch belakang apa bisa
 >>>>>>> ca838f0 (conf)
 ```
+
+## Perbedaan Rebase dan Merge
+
+Rebase | Merge
+--- | ---
+Mereka akan menulis ulang history | Mereka akan menyimpan history
+Sangat disarankan untuk menyelesaikan masalah private | sangat disarankan untuk menyelesaikan masalah public
+
+## Cara manual alternative repot dari Rebase
+
+Semisal terdapat conflict antara local dan repository.
+kita bisa lakukan
+
+- copy code yang kita rasa penting dari locale
+- masukan code tersebut secara manual kedalam repository
+- hapus keseluruhan code
+- lalu clone code dari repository
 
 
 <!-- 

@@ -35,6 +35,18 @@ git pull --rebase
 ```
 dimana selama tidak terdapat conflict pada baris code, antara bagian baru dan lama maka masalah akan dapat diselesaikan dengan sangata mudah.
 
+## Mengenai Rebase ( Jika terdapat conflict pada baris )
+
+mereka akan secara otomatis akan memberikan tanda seperti ini. dimana terdapat informasi bagian head (Repository) dan local diberi tanda pada file yang kita upload.
+
+```
+<<<<<<< HEAD
+halo saya mau conflict disini
+=======
+halo saya dari branch belakang apa bisa
+>>>>>>> ca838f0 (conf)
+```
+
 
 <!-- 
 Todo list 

@@ -548,6 +548,23 @@ Pada code diatas kita membuat code didalam JSX untuk membuat sebuah loop yang ak
 ini bisa dilakukan dengan bantuan `map` method.
 
 
+## Destructuring Array parameter
+
+Tujuan adalah menggunakan value pada array sebagai parameter.
+
+```
+function math({a,b}) {
+    console.log({a})
+    return a + b 
+}
+
+console.log(math({a:1, b:2}))
+```
+
+- Parmeter dibuat dengan `{}`
+- Menambahkan value dengan `math({a:1, b:2}))`
+
+
 
 <!-- 
 Todo List:

@@ -60,6 +60,7 @@ Rebase | Merge
 --- | ---
 Mereka akan menulis ulang history | Mereka akan menyimpan history
 Sangat disarankan untuk menyelesaikan masalah private | sangat disarankan untuk menyelesaikan masalah public
+conflict pada satu branch yang sama | conflict pada branch yang berbeda
 
 Kapan mereka harus digunakan?
 

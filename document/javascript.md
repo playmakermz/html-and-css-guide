@@ -1468,7 +1468,7 @@ let buah = {
     size: 'kecil'
 }
 
-// Parmeter yang digunakan adalah alias, 
+// Parmeter yang digunakan adalah alias, bisa pakai alias atau tidak
 // merujuk pada property array
 
 function getDetails({name: nama, size: ukuran}) {

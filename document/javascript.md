@@ -1257,6 +1257,12 @@ let nama = readline.question('Nama anda?')
 // ambil input dari console
 ```
 
+cara download module readline-sync adalah dengan
+```
+npm install readline-sync
+```
+Ref: https://medium.com/@quinnfeng26276/getting-started-with-readline-sync-building-command-line-applications-in-node-js-81fa3bbaa237
+
 ## Check tipe data 
 ```
 let a = 3

@@ -1,6 +1,12 @@
 # Membuat Form Lengkap
 
-Tujuan adalah membuat element, dan hanya terdapat satu tombol untuk mengatur kapan dibuka dan ditutup.
+Tujuan membuat form yang memiliki fitur lengkap
+
+- Menerima input real time
+- Membuka menutup form berdasarkan interaksi user
+- Memiliki button untuk mengirim form
+- Tidak boleh form kosong, jika kosong kita akan memberikan pesan secara manual
+- Menirima hasil akhir dari form, dan menampilkan didepan layar
 
 ## Code
 
@@ -10,36 +16,66 @@ import React from 'react';
 class Item01 extends React.Component {
     constructor(props){
         super(props)
-        this.state = {Form: true}
+        this.state = {
+            Form: true,
+            email: '',
+            emailError: false,
+        } // Representasi Form itu sendiri
     }
 
     handleClick(){
         if (this.state.Form){
-            this.setState({Form: false})
+            this.setState({Form: false}) // Jika Form sudah masuk maka close form
         }
         else{
-            this.setState({Form: true})
+            this.setState({Form: true}) // Jika form sudah 'submit' maka tutup!!
         }
     }
 
-    render(){
-        let abc;
+    handleChange(even){
+        let inputEmail = even.target.value // Mengambil nilai dari form real time
+        let testEmail = inputEmail === '' // Melakukan check apakah sudah terisi atau belum
+        this.setState({
+            email: inputEmail, // masukan value ke state.email
+            emailError: testEmail, 
+        })
+    }
 
-        if (this.state.Form){
+    render(){
+        let notif; // Variabel untuk notif
+
+        if(this.state.emailError) { // If statemen untuk notif
+            notif = (
+                <div style={{color: 'red'}}>
+                    Email harus Ada!
+                </div>
+            )
+        }
+
+        let abc; // 'abc' adalah untuk menyimpan elemen form
+
+        if (this.state.Form){ // tampilkan form pada awalan
             abc = (
                 <form onSubmit={() => {this.handleClick()}}>
                     <h1>Ini adalah formulir (Form: True)</h1>
-                    <input />
+
+                    <input
+                    title='Email'
+                    type='email' {/* Harus email*/}
+                    value={this.state.email} {/* Tempat state.email ditampilkan */}
+                    onChange={(event) => {this.handleChange(event)}}
+                    />
+                    {notif}
 
                     <input type='submit' value='kirim'/>
                 </form>
             )
         }
 
-        else{
+        else{ // close form jika sudah selesai
             abc = (
                 <div>
-                    Selamat Form yang kamu tulis sudah Terkirim!!
+                    Selamat Form yang kamu tulis sudah Terkirim!!, {this.state.email}
                 </div>
             )
         }
@@ -48,7 +84,7 @@ class Item01 extends React.Component {
             <div>
                 {abc}
 
-                <button onClick={() => {this.handleClick()}}> Test </button>
+                <button onClick={() => {this.handleClick()}}> Ambil form ulang</button>
             </div>
         )
     }
@@ -70,7 +106,7 @@ export default Item01
 ## Detail tahapan (Abstract)
 - masuk ke folder src `App.js`
 - Buat component baru
-- Buat object
+- Buat object 
 - Buat property dengan `state`
 - buat `handleClick()` untuk menerima perintah
 - gunakan `setState` untuk melakukan perubahan pada `state ` awal

@@ -1143,6 +1143,35 @@ let name = require('./ex')
 console.log(name)
 ```
 
+### Export module class
+
+```
+// Export.js
+
+class Math{
+    constructor(a,b){
+        this.x = a,
+        this.y = b,
+    }
+
+    Tampilkan {
+        console.log(this.x + this.y)
+}
+}
+
+module.exports = Math
+```
+
+```
+// Import.js
+let Math = require('./Export')
+
+let abc = new Math(1,2)
+
+abc.Tampilkan()
+
+```
+
 Src: 
 - https://www.freecodecamp.org/news/node-module-exports-explained-with-javascript-export-function-examples/
 - https://www.sitepoint.com/understanding-module-exports-exports-node-js/

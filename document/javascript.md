@@ -1172,6 +1172,8 @@ abc.Tampilkan()
 
 ```
 
+[Detail Catatan](https://github.com/playmakermz/warkop-website/blob/main/code/js-import/catatan.md)
+
 Src: 
 - https://www.freecodecamp.org/news/node-module-exports-explained-with-javascript-export-function-examples/
 - https://www.sitepoint.com/understanding-module-exports-exports-node-js/

@@ -79,6 +79,51 @@ Tidak ada error, tetapi kita tidak juga mendapatkan output yang diharapkan.
 
 karena function `tampilkan()`telah selesai melakukan proses terlebih dahulu sebelum proses dari `math()`. Mereka berjalan secara bersamaan.
 
+**dengan mengunakan promise** kita bisa menyelesaikan masalah tersebut. 
+
+```
+function tampilkan(data) {
+    console.log(data)
+}
+
+function proses(a,b){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(a + b)
+        }, 1000)
+    })
+}
+
+proses(1,1)
+
+.then(
+        (result) => {console.log(result)},
+        (error) => {console.log(error)}
+    )
+```
+
+**atau ditulis seperti ini**
+
+```
+function tampilkan(data) {
+    console.log(data)
+}
+
+function proses(a,b){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(a + b)
+        }, 1000)
+    })
+}
+
+
+proses(1, 2).then(
+        (result) => {console.log(result)},
+        (error) => {console.log(error)}
+    )
+```
+
 
 ## promise code (sukses)
 
@@ -123,3 +168,6 @@ promise.then(
 )
 ```
 
+
+### Reference 
+- https://javascript.info/promise-basics

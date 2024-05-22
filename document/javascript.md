@@ -1517,7 +1517,7 @@ Ref: https://www.geeksforgeeks.org/parameter-destructuring/
 - [javascript class](../document/javascript-class.md)
 - [javascript-array](../document/javascript-array.md)
 - [JavaScript fundamental](../document/javascript-fundamental.md)
-- [Javascript synchronous](../document/project-react/asyc.md)
+- [Javascript synchronous](../document/project-react/async.md)
 - [AJAX](../document/ajax.md)
 
 

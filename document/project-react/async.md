@@ -187,7 +187,7 @@ ref: https://javascript.info/promise-basics
 
 **contoh lainnya:**
 
-[Asyc code](../code/asyc.js)
+[Asyc code](../../code/asyc.js)
 
 ### Reference 
 - https://javascript.info/promise-basics

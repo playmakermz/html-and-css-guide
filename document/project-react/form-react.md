@@ -61,8 +61,8 @@ class Item01 extends React.Component {
 
                     <input
                     title='Email'
-                    type='email' {/* Harus email*/}
-                    value={this.state.email} {/* Tempat state.email ditampilkan */}
+                    type='email' 
+                    value={this.state.email} 
                     onChange={(event) => {this.handleChange(event)}}
                     />
                     {notif}

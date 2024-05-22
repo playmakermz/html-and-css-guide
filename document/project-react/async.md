@@ -119,7 +119,7 @@ function proses(a,b){
 
 
 proses(1, 2).then(
-        (result) => {console.log(result)},
+        (result) => {tampilkan(result},
         (error) => {console.log(error)}
     )
 ```

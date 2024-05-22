@@ -188,6 +188,7 @@ ref: https://javascript.info/promise-basics
 **contoh lainnya:**
 
 [Asyc code](../../code/asyc.js)
+[class and Promise](../../code/jsPro/classPromise.js)
 
 ### Reference 
 - https://javascript.info/promise-basics

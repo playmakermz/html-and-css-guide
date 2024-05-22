@@ -169,6 +169,22 @@ abc.tampilkan()
 
 ```
 
+## contoh ES module untuk module luar
+**Readline-sync**
+
+```
+import buah from './ts.js'
+import Readline from 'readline-sync'
+
+
+let abc = new buah()
+
+let aa = Readline.question('hi')
+
+abc.tampilkan()
+
+```
+
 refrensi: 
 - [new reference](https://dev.to/lico/how-to-import-and-export-in-commonjs-and-es-modules-43m1)
 - https://learn.coderslang.com/0021-nodejs-require-is-not-defined-error/

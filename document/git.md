@@ -23,6 +23,39 @@ Git juga dilengkapi fitur untuk melakukan pull request (untuk melakukan kolabora
 Secara garis besar git adalah alat yang sangat bermanfaat untuk kita secara jangka panjang. 
 
 
+## Git dan github 
+
+Git adalah suatu version control system yang dirancang untuk menangani berbagai macam bentuk project. Pengembangan awal pada tahun 2005 oleh Linus Torvalds, Git menjadi titik awal dalam version control pada source code.
+
+Git dapat membantu kita untuk melacak perubahan pada "source code", dan bisa membantu kita untuk kembali pada versi sebelumnya jika dibuthkan.
+Ini adalah fungsi yang sangat dibutuhkan oleh para developer untuk membantu mereka mengerjakan semua pekerjaan dengan sangat efektif. 
+
+Pada sisi lain terdapat github yang menjadi sistem berbasis hosting untuk project-project "source code". Github dimulai pada tahun 20008, github menjadi salah satu platfrom hosting yang sangat reliable untuk melakukan colaborasi dengan banyak project, penyelesaian masalah, dan mengelolah code.
+
+Pada github, terdapat fitur "Pull Request" dimana kita sebagai user bisa melakukan collaborasi, dan akan menunggu hasil collaborasi diterima oleh owner. Oleh karena fitur tersebut, colaborasi pada github bisa memiliki aturan sesuai dengan apa yang kita ingin kan. 
+
+
+
+## Mengenai savepoint
+
+Konsep sederhana dari Git adalah savePoint. 
+
+Dimana pada suatu game, kita bisa melakukan savepoint untuk menyimpan progress kita, dan kita bisa kembali ke save point sebelumnya jika character yang kita gunakan kalah, atau alasan lainnya. 
+
+Konsep pada git juga sama seperti itu.
+
+dengan, kita bisa melihat "history" atau id savepoint sebelumnya.
+```
+git log
+```
+
+dengan, kita bisa berpindah ke savepoint sebelumnya. 
+```
+git checkout [commit_id] # Manual 
+git checkout master # atau main, untuk kembali ke savepoint paling baru
+```
+
+
 ## Mengenai Rebase
 
 Jika terdapat dua perubahan, semisal pada local dan repository.

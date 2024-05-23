@@ -93,6 +93,26 @@ class Item01 extends React.Component {
 export default Item01
 ```
 
+### App
+```
+import logo from './logo.svg';
+import './App.css';
+import Item01 from './item01'
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <Item01 />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
 
 ## Breakdown code
 

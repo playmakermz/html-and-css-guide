@@ -10,3 +10,5 @@
 - https://github.com/iamspruce/create-a-todo-app-with-React [ Source Code ]
 - https://create-a-todo-app-with-react.vercel.app/ [Output]
 - https://vercel.com/new?filter=next.js [ Deploy ]
+
+- https://stackblitz.com/edit/simple-react-todo-example-qevigz-hyjxhf?file=index.js [Simple react todo]

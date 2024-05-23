@@ -106,6 +106,14 @@ Kenapa RAM memiliki kecepatan transfer data yang luar biasa, RAM bekerja paling 
 Prosesnya pembeli membuat permintaan, permintaan diambil, chef mengelola makanan, makanan disajikan, Jika si pembeli masih meminta permintaan, proses akan dilanjutkan hingga akhir, sebagai catatan pembeli itu adalah kita, yaitu yang meminta permintaan.
 
 
+### Mengenai SSH 
+
+Secure Shell (SSH), adalah salah satu protokol jaringan dengan nomor port 22. SSH digunakan untuk melakukan komunkiasi dengan server dengan aman, SSH akan melakukan enkripsi kepada data yang terkirim, sehingga data tersebut tidak dapat mudah dibaca.
+
+SSH bekerja dengan client-server. Dimana client menghubungi server SSH untuk melakukan pekerjaan disana. Pekerjaan bisa bermacam-macam, control kepada terminal, file copy, dan lain-lain. 
+
+
+
 #### Refrensi
 - Beberapa buka yang pernah saya baca, tapi lupa namanya
 - alva jonathan / <https://www.instagram.com/lucky_n00b.oc/?hl=id>

@@ -2,14 +2,14 @@
 
 Kita juga bisa menggunakan `map()` untuk menampilkan list dari item yang kita inginkan.
 
-```
+```Javascript
 import React, { useState } from 'react'
 
-function App() {
+function Item00() {
     let [todos, setTodos] = useState([
-{id: 1, name:'appel'},
-{id: 2, name:'manggo'},
-{id: 3, name:'banana'},
+        {id: 1, name:'appel'},
+        {id: 2, name:'manggo'},
+        {id: 3, name:'banana'},
 ]) // ini adalah state
 
 return (
@@ -22,7 +22,7 @@ return (
 )
 }
 
-export default App
+export default Item00
 ```
 
 mengenai `{todo.id}` ini adalah aturan wajib pada react jika kita ingin menampilkan banyak item melalui array. akan terjadi error jika kita tidak menggunakanya.

@@ -26,3 +26,7 @@ export default Item00
 ```
 
 mengenai `{todo.id}` ini adalah aturan wajib pada react jika kita ingin menampilkan banyak item melalui array. akan terjadi error jika kita tidak menggunakanya.
+
+
+## Update terakhir pada bagian 
+Membuat component component baru

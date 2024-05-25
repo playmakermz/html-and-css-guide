@@ -111,6 +111,8 @@ SELECT * FROM pasien;
 END
 ```
 
+Setelah itu `CALL transaksi` gunakan yang paling baru
+
 ## SAVEPOINT 
 
 ```

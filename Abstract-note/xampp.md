@@ -170,5 +170,47 @@ klik menu designer → kemudian klik show / hide table list
 
 buat relasi antara tabel, seperti contoh Gambar 28.
 
+Contoh Trigger code 
 
-<!-- ========= Progress sampai hal 24 ============== -->
+```
+DELIMITER $$
+CREATE TRIGGER tg_jual AFTER INSERT
+ON transaksi_obat
+FOR EACH ROW
+BEGIN
+UPDATE obat SET stok = stok - new.jumlah
+WHERE id_obat=new.id_obat;
+END $$
+DELIMITER ;
+```
+
+Contoh Trigger alternative dengan menu PHPmyadmin 
+
+- Pilih menu 'triggers'
+- 'add trigger'
+- isi dengan 
+
+```
+UPDATE obat SET stok = stok - new.jumlah
+WHERE id_obat=new.id_obat;
+```
+- go 
+
+
+untuk mencoba trigger anda bisa masukan code dibawah kedalam tabel rumah sakit. 
+
+```
+INSERT INTO `transaksi_obat`
+(`id_transaksi`, `id_pasien`, `id_obat`, `jumlah`, `total_harga`)
+VALUES (NULL, '1', '2', '5', '0');
+```
+
+maka data akan stok akan mengalami perubahab 
+
+
+## Tahap selanjutnya adalah export dan import sampai hal 39. 
+
+
+## Tahapn selanjutnya adalah replikasi database 
+
+<!-- ========= Progress sampai hal 40 ============== -->

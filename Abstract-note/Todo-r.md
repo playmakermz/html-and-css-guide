@@ -311,4 +311,63 @@ return(
 - kita kirim identitas element secara spesifik dengan cara, `todo.id` agar diolah lagi pada function selanjutnya.
 
 
+***
+# Memberikan fungsi function 
+***
 
+disini memiliki tujuan untuk membuat button, dimana disaat button tersebut click() maka item spesifik akan dihapus. 
+
+```
+// item00.js 
+// function Item00 
+// Buat function, didalam function Item00. 
+// buat function todoDelete(todoId)
+
+
+function todoDelete(todoId){
+    let abc = todos.filter((todoIt) => {
+        return todoMt.id !== todoId
+    })
+    setTodos(abc)
+        // todoId menerima parameter dari onclick, dan todoIt adalah pemangilan berkala dari filter
+        // filter sama seperti map, dimana dia juga melakukan loop. untuk memastikan semua telah sesuai
+        // https://www.digitalocean.com/community/tutorials/js-filter-array-method
+    }
+
+return (
+<div>
+    <h1> Ini adsalh list item </h1>
+<Item01 todos={todos} toggleCo={toggleCo} todoDelete={todoDelete}/>
+    </div>
+)
+```
+
+- `todoDelete` adalah function baru yang kita buat, kita kirim semua function ke file `item01.js`
+
+
+Selanjutnya buat file 
+
+```Javascript
+// item01.js 
+// simpan code seperti ini, function Todos return 
+
+<div>
+          {todos.map((todo) => {
+            let itemSp = (
+                <div className="inCh">
+
+                <input type="checkbox"  className=""
+                onChange={() => toggleCo(todo.id) }
+                />
+            <p key={todo.id} style={staUp(todo)}>{todo.name}</p>
+
+              <button onClick={() => todoDelete(todo.id)}>X</button>
+              {/* ================= function baru =============== */}
+
+          </div>
+          )
+            return itemSp})}
+        </div>
+```
+
+- `button` dengan fungsi `onClick()`

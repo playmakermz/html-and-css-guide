@@ -6,8 +6,8 @@ Disini terdapat 4 component:
 
 - App: Component utama, yang akan menjadi halaman utama website (pembungkus semua component didalamnya).
 - TodoForm: component yang berisikan formulir untuk memasukan input data.
-- Todos: adalah component yang membungkus hasil dari formulir yaitun `TodoItem`
-- TodoItem: adalah hasil dari input pada `TodoForm`
+- Todos / item01: adalah component yang membungkus hasil dari formulir yaitun `TodoItem`
+- TodoItem / item00: adalah hasil dari input pada `TodoForm`
 
 
 ### Mengenai component
@@ -20,7 +20,7 @@ untuk pembuatan component bisa mengunakan function, agar mengurangi kemungkinan 
 
 Contoh React component dengan function 
 
-```
+```Javascript
 import React, {useState} from 'react';
 
 function App(){
@@ -90,7 +90,7 @@ mengenai `{todo.id}` ini adalah aturan wajib pada react jika kita ingin menampil
 ## Membuat component yang bisa menenrima data 
 
 Jadi pada kasus ini, kita akan membuat:
-- component yang akan mengirim data 
+- component yang akan mengirim data dari file yang berbeda
 - component yang akan menrima data, dan menjalankan map. 
 
 
@@ -147,6 +147,8 @@ export default Todos
 
 Pada code diatas kita menerima parameter yang dikirim dengan function, lalu kita gunakan sebagai array map.
 
+***
+## Chapter 2.1
 ***
 # Melakukan update pada Todo 
 
@@ -256,7 +258,7 @@ dengan fungsi function  adalah:
 
 
 tahpan pertama pada file `item00.js`
-```
+```Javascript
 // item00.js 
 // function Item00 
 
@@ -291,7 +293,7 @@ return (
 
 
 pada file `item01.js`
-```
+```Javascript
 //item01.js 
 
 function Todos({todos, toggleCo}){

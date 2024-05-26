@@ -146,3 +146,107 @@ export default Todos
 ```
 
 Pada code diatas kita menerima parameter yang dikirim dengan function, lalu kita gunakan sebagai array map.
+
+***
+# Melakukan update pada Todo 
+
+dengan tujuan adalah :
+- Memberikan indikasi perbedaan tampilan element jika `true atau false`
+- Menghapus Todo 
+- Menambahkan Todo 
+
+
+## Memberikan indikasi tambahan kepada element 
+
+pada contoh dibawah kita akan memberikan indikasi tambahan jika element memiliki salah satu property state true dan false. 
+
+yaitu jika true maka element akan dicoret, jika tidak maka normal. 
+
+Tahap pertama 
+```Javascript
+//item00.js
+let [todos, setTodos] = useState([
+        {id: 1, name:'appel', completed:true},
+        {id: 2, name:'manggo', completed:true},
+        {id: 3, name:'banana', completed:true},
+]) // ini adalah state update 'setTodos'
+```
+Kita akan menambahkan property baru kepada array. 
+
+selanjutnya pada file `item01.js`
+
+```
+// item01.js
+function staUp(todo){
+    if (todo.completed === true) {
+      return { textDecoration: 'line-through' }
+    } else {
+      return { textDecoration: 'none' }
+    }
+}
+```
+
+kita akan membuat function didalam function.
+dimana function ini akan menerima parameter dari `style={staUp(todo)}`. 
+
+karena pada dasarnya `todo` disitu adalah iteration, yang membawa value spesifik dari setiap item yang dijalankan oleh map(). 
+
+bisa dilihat pada code dibawah 
+
+```Javascript
+//item01.js 
+// function Todos 
+
+return (
+        <div>
+          {todos.map((todo) => {
+            return <p key={todo.id} style={staUp(todo)}>{todo.name}</p>})}
+        </div>
+      )
+```
+
+seperti yang dapat dilihat pada code diatas:
+
+- `map()` dengan iteration `todo` membawa identitas item secara spesifik. 
+- `style={staUp(todo)}` disini kita akan memangil function untuk menentukan pengaturan css. 
+- jika `todo.completed === true` maka akan dipakai aturan yang sudah kita buat 
+- sedangkan `todo` disini adalah iteration yang bisa kirim untuk memberikan informasi kepada function `staUp()`
+
+## Menambahkan checkbox dan interactive 
+
+untuk menambahkan checkbox dan mengatur agar 2 element berbeda bisa sejajar kita lakukan seperti ini. 
+
+pada `./index.css`
+```
+.inCh {
+  display: flex;
+}
+```
+
+pada `item01.js`
+
+```Javascript
+// item01.js 
+// return untuk function Todos()
+
+return (
+        <div>
+          {todos.map((todo) => {
+            let itemSp = (
+                <div className="inCh">
+                <input type="checkbox"  className=""/>
+            <p key={todo.id} style={staUp(todo)}>{todo.name}</p>
+          </div>
+          )
+            return itemSp})}
+        </div>
+      )
+
+```
+
+kita jadikan satu input element dan p, dengan flexbox untuk mematikan mereka sejajar.
+
+
+
+
+

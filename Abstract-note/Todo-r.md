@@ -87,8 +87,62 @@ export default Item00
 
 mengenai `{todo.id}` ini adalah aturan wajib pada react jika kita ingin menampilkan banyak item melalui array. akan terjadi error jika kita tidak menggunakanya.
 
+## Membuat component yang bisa menenrima data 
 
-## Update terakhir pada bagian 
-Membuat component component baru
+Jadi pada kasus ini, kita akan membuat:
+- component yang akan mengirim data 
+- component yang akan menrima data, dan menjalankan map. 
 
 
+file pertama 
+```Javascript
+// item00.js 
+
+// Item00 akan menjadi bagian alternative dari App.js. semua perubahan ada disini
+// pada pembelajaran dia adalah App.js dan TodoItem.js
+import React, { useState } from 'react'
+import Item01 from './item01'
+
+function Item00() {
+    let [todos, setTodos] = useState([
+        {id: 1, name:'appel'},
+        {id: 2, name:'manggo'},
+        {id: 3, name:'banana'},
+]) // ini adalah state update 'setTodos'
+
+return (
+<div>
+    <h1> Ini adsalh list item </h1>
+   <Item01 todos={todos}/>
+
+    </div>
+)
+}
+
+export default Item00
+```
+
+pada code diatas, kita dapat mengirim data kepada file `Item01`. Dimana kita mengirim dengan cara `todos={todos}`
+
+- `todos=` adalah representasi dari 
+- `{todos}` adalah representasi dari
+
+### File selanjutnya 
+
+```Javascript
+// item01.js
+// Item todos, mereka yang akan menampilkan item satu demi satu
+// pada pembelajaran ini adalah Todos.js
+
+function Todos({todos}) {
+    return (
+        <div>
+          {todos.map((todo) => {return <p key={todo.id}>{todo.name}</p>})}
+        </div>
+      )
+}
+
+export default Todos
+```
+
+Pada code diatas kita menerima parameter yang dikirim dengan function, lalu kita gunakan sebagai array map.

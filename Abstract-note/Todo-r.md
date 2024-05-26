@@ -247,6 +247,66 @@ return (
 kita jadikan satu input element dan p, dengan flexbox untuk mematikan mereka sejajar.
 
 
+tahapan selanjutnya kita akan membuat function yang bisa kita gunakan jika checkbox dijalankan.
+
+dengan fungsi function  adalah: 
+- Bisa menerima parameter dari file lain 
+- bisa melakukan perubahan pada property didalamnya.
+
+
+
+tahpan pertama pada file `item00.js`
+```
+// item00.js 
+// function Item00 
+
+function toggleCo(todoId) {
+        let abc = todos.map((todo) => {
+            if (todo.id === todoId){
+                todo.completed = !todo.completed
+            }
+            return todo
+        })
+
+        setTodos(abc)
+    }
+
+return (
+<div>
+    <h1> Ini adsalh list item </h1>
+   <Item01 todos={todos} toggleCo={toggleCo}/>
+        
+    </div>
+)
+```
+
+- kita menambahkan function didalam function.
+- pada function tersebut kita memangil array map untuk melakukan perubahan. dengan alur seperti daibawah ini 
+- kita mendapatkan `todo.id` untuk element secara spesifik, 
+- setelah itu, kita lakukan gunakan map() untuk mencari informasi detail dari item yang kita gunakan. 
+- jika sudah ketemu, maka ubah boolean dari property `completed`
+- setelah itu, pada akhir map() kita kembalikan hasil dari todo yang telah kita ubah.
+- dan hasil dari seluruh perubahan pada map() akan diverfikasi oleh `setTodos()` dan menjadi permanent.
+- untuk mengirim function kepada component lain, kita gunakan `toggleCo={toggleCo}`
+
+
+pada file `item01.js`
+```
+//item01.js 
+
+function Todos({todos, toggleCo}){
+
+return(
+<input type="checkbox"  className=""
+                onChange={() => toggleCo(todo.id) }
+                />
+)
+}
+```
+- pada function `Todos` kita masukan parameter baru `toggleCo`
+- kita lakukan perubahan pada "input" element. dimana kita tambahkan 
+- `onChange{() => toggleCo()}` untuk memangil method dari file `item00.js`
+- kita kirim identitas element secara spesifik dengan cara, `todo.id` agar diolah lagi pada function selanjutnya.
 
 
 

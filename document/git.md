@@ -120,6 +120,27 @@ Todo list
 
 -->
 
+***
+#Uji coba Merge
+***
+- Buat satu repo kosong
+- clone repo
+- buat branch baru `git branch [branch-name]`
+- pindah branch `git checkout [branch-name]`
+- lakukan perubahan data, semisal pada README.md
+- push branch baru tersebut, jika error tambahkan `git push --set-upstream origin [branch-name]`
+- kembali ke branch `main`, dan check apakah terdapat perubahan atau belum (locale)
+- jika belum ada perubahan, lakukan `git merge [branch-name]` maka akan melakukan update
+- lalu `push` bracnh main
+
+
+## Uji coba kedua
+menyelesaikan masalah merge, 
+
+- pada branch main, lakukan perubahan pada file README
+- pada [branch-name] lakukan perubahan pada file yang sama
+- lakukan pull request dari branch baru, dan lihat cara penyelesaian nya.
+
 ### Reference
 - https://www.simplilearn.com/git-rebase-vs-merge-article#:~:text=Git%20merge%20keeps%20the%20commit,more%20organized%2C%20linear%20project%20history.
 

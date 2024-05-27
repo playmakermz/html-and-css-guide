@@ -8,11 +8,36 @@ Tujuan adalah membuat banyak component, dan digabungkan menjadi satu pada App.js
 
 
 
+### Tahapan 00 
+```Js
+import logo from './logo.svg';
+import './App.css';
+import Item02 from './item02';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        
+
+        <Item02 />
+      </header>
+    </div>
+  );
+}
+
+export default App;
+```
+
+
+
 ### Tahapan 01 
 
+Tujuan adalah untuk membuat component yang akan terus dipanggil pada loop `map()`. maka file `item01.js` akan terus dipanggil.
 
-```
-// Item01.js
+```Javascript
+// item01.js
 import React from 'react';
 
 class Item01 extends React.Component {
@@ -44,11 +69,11 @@ export default Item01;
 
 ### Tahap 02
 
-Membuat Component `item02` yang berfungsi untuk mengabungkan `item01` dan `item02`.
+Membuat Component `item02` yang berfungsi untuk memanggil `item01` dan menjadi wadah dari loop `map()`
 
-```
+```Js
 import React from 'react';
-import Item01 from './Item01'
+import Item01 from './item01'
 
 class Item02 extends React.Component {
 
@@ -67,13 +92,13 @@ class Item02 extends React.Component {
 
             {/* <====== Ini adalah component item01 */}
 
-            {buahArr.map( (buahArr)=>{
+            {buahArr.map( (buaharr)=>{
 
                 return (
 
                     <Item01 
-                    <p> name={buahArr.name} </p>
-                    <p> rasa={buahArr.rasa} </p>
+                     name={buaharr.name} 
+                     rasa={buaharr.rasa} 
                     />
 
                     )}
@@ -86,6 +111,6 @@ class Item02 extends React.Component {
 }
 }
 
-
+export default Item02
 ```
 

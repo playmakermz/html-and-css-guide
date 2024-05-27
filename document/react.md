@@ -237,6 +237,7 @@ Todo List:
 -->
 
 ## Catatan tambahan
+- [Membuat component sederhana](./project-react/single-comp.md)
 - [Membuat banyak content](./react02.md)
 - [Membuat element interaktive](./react03.md)
 - [instalasi react](./react-install.md)

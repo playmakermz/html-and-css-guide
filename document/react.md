@@ -1,6 +1,9 @@
 # React Js
 
+
 ReactJs adalah salah satu open-source library Javascript yang digunakan untuk membuat user interface (UI) pada halaman website dan aplikasi mobile. ReactJS dibuat dan dibangun oleh Facebook dan ReactJS cukup populer di antara developer.
+
+beberapa contoh pengguna react adalah Netflix, Airbnb, dan uber. 
 
 ReactJS Library menggunakan bentuk virtual dari DOM (Document Object Model) yang membantu kita untuk membuat representasi ringan dari DOM asli dan secara tidak langsung mengantikan DOM manual, untuk menjadi proses update UI lebih efisien.
 
@@ -37,6 +40,20 @@ atau
 `const csx = (<ul> <li>ini </li> {/*Ini komment*/}  <li>ini </li>   </ul>  )`
 
 Ref: https://forum.freecodecamp.org/t/freecodecamp-challenge-guide-add-comments-in-jsx/301376
+
+### membuat component 
+
+**komponent React** adalah suatu blok code dasar dari aplikasi React. komponen adalah sebuah potongan kode yang dapat kita gunakan kemabali yang mewakili bagian dari UI. komponen dapat berupa sebuah element sederhana, atau bentuk yang lebih complex. 
+
+Manfaat komponen react: 
+
+- Modularitas: komponen React adalah suatu bagian kecil dari keseluruhan UI. Ini akan sangat memudahkan kita untuk melakukan pemeliharaan code kedepannya. 
+- Dapat digunakan kembali, sama seperti konsep function 
+- Enkapsulasi: semua variabel didalam komponen, hanya bisa diakses oleh komponen tersebut, dan tidak akan mempengaruhi komponen lain. 
+
+Terdapat dua bentuk componentL:
+- function component 
+- Class component
 
 ### Menimpa element lama | Render 
 Menimpa element lama dengan element dari react 

@@ -10,6 +10,7 @@ Tujuan adalah membuat banyak component, dan digabungkan menjadi satu pada App.js
 
 ### Tahapan 00 
 ```Js
+// App.js
 import logo from './logo.svg';
 import './App.css';
 import Item02 from './item02';
@@ -72,6 +73,7 @@ export default Item01;
 Membuat Component `item02` yang berfungsi untuk memanggil `item01` dan menjadi wadah dari loop `map()`
 
 ```Js
+// item02.js
 import React from 'react';
 import Item01 from './item01'
 

@@ -93,13 +93,38 @@ Breakdown code:
 
 membuat file `item01.js` yang menjadi penampil data 
 
-```
+```Js
 //item01.js 
 
 function Todos({todos}){
+    return(
+    <div>
+    {todos.map((todo) => {
+    let itemSp = (
+        <div className="inCh">
+        
+        <input type="checkbox"/>
 
+        <p key={todo.id}>{todo.name}</p>
+
+        <button onClick={}>x</button>
+
+        </div>
+    )
+    return itemSp
+
+    })}
+    
+    </div>
+)
 }
+
+export default Todos
 ```
+
+Breakdown code: 
+
+
 
 
 

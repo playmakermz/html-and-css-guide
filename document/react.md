@@ -250,6 +250,7 @@ Todo List:
 - [Membuat konsep counter](./project-react/counter.md)
 - [membuat element muncul dan hilang](./project-react/add-delete.md)
 - [Membuat Form Lengkap fiture](./project-react/form-react.md)
+- [Todo app](./project-react/todo.md)
 
 ## Referensi:
 

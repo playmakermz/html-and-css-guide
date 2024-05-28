@@ -21,12 +21,100 @@ ReactJS dapat dikombinasi dengan banyak library, seperti Next.js dan lain-lain. 
 
 Tidak harus mempeljarai Jquery sebelum React. Jquery digunakan untuk mengatur DOM dan react juga bisa mengatur DOM oleh karena itu pelajari saja versi teknologi yang lebih baru.
 
+### membuat component
+
+**komponent React** adalah suatu blok code dasar dari aplikasi React. komponen adalah sebuah potongan kode yang dapat kita gunakan kemabali yang mewakili bagian dari UI. komponen dapat berupa sebuah element sederhana, atau bentuk yang lebih complex.
+
+Manfaat komponen react:
+
+- Modularitas: komponen React adalah suatu bagian kecil dari keseluruhan UI. Ini akan sangat memudahkan kita untuk melakukan pemeliharaan code kedepannya.
+- Dapat digunakan kembali, sama seperti konsep function
+- Enkapsulasi: semua variabel didalam komponen, hanya bisa diakses oleh komponen tersebut, dan tidak akan mempengaruhi komponen lain.
+
+Terdapat dua bentuk componentL:
+- function component
+- Class component
+
+## Variabel JSX 
+
+```
+const buttonText = <button>Click Me!</button>;
+
+function MyComponent() {
+  return (
+    <div>
+      {buttonText}
+    </div>
+  );
+}
+
+```
+
+## comment pada JSX 
+
+```
+// Ini adalah komentar satu baris tentang komponen
+
+function MyComponent() {
+  return (
+    <div>
+      {/* Ini adalah komentar multi-baris
+          tentang isi komponen */}
+      <h1>Hello, World!</h1>
+    </div>
+  );
+}
+
+```
+
+# aturan JSX 
+
+- untuk beberapa attribute HTML, kita harus menggunakan "camelCase" sebagai penulisan. Contoh: `onClick`, `onChange`
+- untuk penamaan attribute class adalah `className`
+- untuk single tag, gunakan seperti ini `<img src="#" />` harus memiliki penutup akhir. `<br />`
+- penulisan inline css `<p style={{ color: 'red', fontSize: '20px' }}>Teks merah dengan ukuran 20px</p>`
+- penulisan jika didalam JSX, `<button onClick={() => alert("Hello, World!")}>` perjelas informasi yang kita berikan itu string. 
+- perhatikan dalam membuat JSX, harus terdapat container!, jika didalam JSX terdapat banyak eleemnt.
+
+src: https://legacy.reactjs.org/docs/introducing-jsx.html
+
 ## React JSX 
 
 Fitur untuk menulis kode HTML didalam Javascript. 
 Ada beberapa Persyaratan untuk JSX ini: 
 
+## JSX (Javascript XML)
 
+adalah sebuah interaksi antara Javascript dengan HTML. dimana kita bisa menambahkan code Javascript dengan HTMl secara bersamaan.
+
+contoh:
+
+```
+<p> {1 + 2} </p>
+```
+hasilnya adalah 3 
+
+## State 
+
+state adalah bentuk konsep dimana kita bisa menyimpan suatu data, dan data tersebut bisa kita panggil, dan ubah kapan saja. konsep `state` itu sama seperti `property` pada class. 
+
+```
+constructor(props){
+        super(props)
+        this.state = {count: 0}
+    }
+```
+
+## Event 
+
+Event didalam React adalah suatu fungsi dimana user bisa melakukan interaksi dengan component yang kita buat. untuk melakukannya kita akan menggunakan `method` untuk menerima interaksi. 
+
+```
+ <button onClick={() => {this.handleClick()}}> + </button>
+```
+
+***
+# Bagian code 
 ***
 ## Cheatsheet 
 

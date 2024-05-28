@@ -14,11 +14,13 @@ function App() {
     setIsGameOver(true)
   }
 
+  
+  
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-
+        
         <TodoContext.Provider value={{ count, setCount, finishGame, isGameOver }}>
         <Item00 />
         </TodoContext.Provider>

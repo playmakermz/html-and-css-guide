@@ -335,6 +335,8 @@ break:
 - `todos.concat(newTodo)` - `concat` digunakan untuk mengabungkan array `todos` dengan `newTodo`. Yang menjadi `newTodo` adalah array urutan terakhir didalam `todos`.
 - `setTodos(updatedTodos)` - simpan array baru tersebut, untuk menimpa array state lama `todos`
 
+concat ref: https://www.w3schools.com/jsref/jsref_concat_array.asp
+
 
 ### Selanjutnya 
 
@@ -353,7 +355,14 @@ informasi:
 - `addItem()` - panggil fungsi diatas 
 - `setTitle()` - balikan perubahan pada state `title` yang menjadi representasi form, ke bentuk awal `''`
 
+### Selanjutnya 
 
+```
+// item00.js 
+<form onSubmit={(evet) => {handleSubmit(evet)}}>
+```
+
+perbarui "tag form" agar bisa menjalankan perintah tersebut disaat mereka dijalnakan. 
 
 
 ***

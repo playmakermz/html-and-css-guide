@@ -113,6 +113,25 @@ Event didalam React adalah suatu fungsi dimana user bisa melakukan interaksi den
  <button onClick={() => {this.handleClick()}}> + </button>
 ```
 
+## akses state 
+
+menampilkkan state kedalam JSX. 
+
+```
+ <h1>{this.state.count}</h1>
+```
+
+## perbarui state  
+
+```
+this.setState({count : this.state.count + 1})
+```
+
+- dimana `setState` adalah suatu method, yang bisa kita gunakan untuk melakukan perubahan state. 
+- `count` adalah state yang dipilih 
+- `this.state.count` adalah nilai didalam state, dan cara memangil mereka 
+- hasil dari aritmatika tersebut, akan disimpan ke `count` state
+
 ***
 # Bagian code 
 ***

@@ -203,7 +203,41 @@ tujuan:
 - dapat menghapus item spesifik
 
 
+pada `item00.js`
+```Js
+//item00.js 
+// Item00()
 
+function todoDelete(todoId){ // menghapus element spesifik
+        let abc = todos.filter((todoMt) => {
+            return todoMt.id !== todoId
+        })
+        setTodos(abc)
+        // todoId menerima parameter dari onclick, dan todoIt adalah pemangilan berkala dari filter
+        // filter sama seperti map, dimana dia juga melakukan loop. untuk memastikan semua telah sesuai
+        // https://www.digitalocean.com/community/tutorials/js-filter-array-method
+    }
+```
+Informasi: 
+- `todoId` - ini kita dapatkan dengan mengirim `todo.id` dari "button" pada file `item01.js`. dimana kita akan mendapatkan item spesifik yang ingin kita hapus.
+
+breakdown: 
+- `todos.filter()` - bertujuan untuk mencari "property" yang sesuai didalam array. 
+- `return todoMt.id !== todoId` - ini adalah yang dicari, dimana semua item yang memiliki berbeda property state `id` dengan `todoId` akan disimpan didalam array baru `abc`.
+- `setTodos(abc)` - array baru `abc` akan disimpan kedalam `todos`. secara mudahnya ditimpa array lama `todos` menjadi array baru `abc`
+
+
+### selanjutnya 
+
+```JS
+// item01.js 
+// Item01() 
+
+ <button onClick={() => todoDelete(todo.id)}>X</button>
+```
+
+- perbaiki "button" agar bisa mengirim informasi kepda function `todoDelete`
+- `todo.id` ini kita dapatkan dengan memanggil fungsi `map()` kepada `todos` array state
 
 
 ***
@@ -212,11 +246,118 @@ tujuan:
 
 tujuan:
 - melakukan "record" pada setiap perubahan huruf didalam form 
-- melakukan penyimpanan pada element yang dikirm melalui form.
+
+untuk melakukan "recording" kepada semua nilai input dari "form" kita bisa mengunakan fungsi `onChange`.
+
+pada file `item00.js`
+
+```Js
+//item00.js 
+// inside Item00()
+let [title, setTitle] = useState('')
+```
+- ini perlu kita buat "state" baru untuk menyimpan "value/str" dari form untuk sementara, setelah semua data complete. user bisa mengirim data sementara tersebut ke `todos`
+
+
+### Selanjutnya 
+```JS
+//item00.js 
+// inside function Item()
+function handleChange(event){ // menerima perubahan sync dari form
+    setTitle(event.target.value) // Mengambil nilai dari form real time
+    // kita buktikan dengan alert(title)
+    }
+```
+**Informasi**: `event` parameter tersebut kita dapatkan disaat kita melakukan pemanggilan dari tool pada file `item00.js` dengan fungsi `onChange`. 
+
+Breakdown:
+- `event.target.value` itu adalah nilai "str" yang kita dapatkan dari form. dan cara melakukan akses kepada "str" tersebut. 
+- `setTitle` adalah untuk melakukan perubahan pada state `title`
+
+### Selanjutnya
+```
+// item00.js 
+// Item00() 
+
+<input
+                    title='Email'
+                    value={title}
+                    onChange={(event) => {handleChange(event)}} // menyimpan input realtime
+                    />
+```
+Lakukan update pada element "input" didalam "form"
+
+
+Breakdown: 
+- `{title}` adalah memangil state baru yang kita buat. dimana state baru terssebut akan di update setiap kali user melakukan input 1 huruf. 
+- `onChange` untuk membuat function selalu dipanggil setiap kali terdapat perubahan pada form, gunakan `onChange`
+- `(event) => {handleChange(event)}` ini adalah function yang panggil
+
+***
+# Bagian 5 
+***
+
+Tujuan:
+- Membuat fitur, input dan melakukan penyimpanan kepada `todos`
+- terdapat dua function
+    - `addItem()` - digunakan untuk menyimpan hasil input "form" dan menyimpan hasil akhir kedalam `setTodos()`
+    - `handleSubmit()` - digunakan untuk menerima perintah dari "form", memangil function `addItem()`, dan melakukan pengubahan pada `setTitle()` agar setiap kali kita melakukan submit, form akan dibersihkan dari awal
+
+
+pada file `item00.js`
+
+```
+// item00.js 
+// Item00()
+
+function addItem(todoTitle)  { // Fungsi untuk membuat object baru dan memasukan kedalam array todos
+            if (todoTitle === '') {
+              return ''
+            }
+        
+            const newTodo = {
+              id: todos.length + 1, // mereujuk ke state todos
+              name: todoTitle,
+              completed: false,
+            }
+        
+            const updatedTodos = todos.concat(newTodo)
+            setTodos(updatedTodos) // merujuk kepada set setting
+          }
+```
+informasi: 
+- `todoTitle` - didapatkan dari function lain `handleSubmit()`
+
+break:
+- `if (todoTitle === '')` - jika form bnelum diisi, maka code dibawahnya tidak akan dijalankan. 
+- `newTodo = {}` - addalah array object baru yang dibuat berdasarkan hasil input user. 
+- `id: todos.length + 1` - itu berarti id baru akan dibuat berdasarkan, banyak item didalam array `todos`
+- `todos.concat(newTodo)` - `concat` digunakan untuk mengabungkan array `todos` dengan `newTodo`. Yang menjadi `newTodo` adalah array urutan terakhir didalam `todos`.
+- `setTodos(updatedTodos)` - simpan array baru tersebut, untuk menimpa array state lama `todos`
+
+
+### Selanjutnya 
+
+```Js 
+// item00.js 
+// Item00()
+function handleSubmit(event){ // melakukan penyimpanan data
+            event.preventDefault() // memastikan bahwasanya fitur browser tidak menginterfensi code
+            addItem(title) // fungsi setter, dan state
+            setTitle('')
+        }
+```
+informasi: 
+- `event` didapatkan disaat function ini dipanggil dari "form"
+- `event.preventDefault()` digunakan untuk memastikan, proses react buatan kita tidak di interupsi oleh sistem browseer. 
+- `addItem()` - panggil fungsi diatas 
+- `setTitle()` - balikan perubahan pada state `title` yang menjadi representasi form, ke bentuk awal `''`
+
+
 
 
 ***
-# Bagian 5
+# Bagian Akhir
 ***
 
 Hasil akhir code 

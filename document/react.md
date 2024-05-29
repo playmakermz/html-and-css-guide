@@ -192,6 +192,8 @@ Aturan diatas akan berlaku jika component memiliki bentuk function.
 
 jika component memiliki bentuk class maka cara pemanggilan akan seperti ini: `{this.Acc()}`
 
+method yang dipanggil JSX, harus huruf besar pada awalan. 
+
 ## { stateName ? }
 
 ```

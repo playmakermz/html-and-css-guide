@@ -192,6 +192,44 @@ dua persyaratan, jika `pokemonDetail` memiliki nilai value, maka print.
 # bagian 4 
 ***
 
+Tujuan: 
+- tambahkan fungsi "clear()"
+- tampilkan `pokemonDetail` jika ada value 
+- tambahkan style untuk clear buttomn (optional)
+
+### 1. 
+
+```
+// App.js 
+// function()
+function clear() {
+    setSelectedPokemonName("")
+    setPokemonDetail()
+  }
+```
+hapus element informasi, dan mulai halaman seperti pada awal. 
+
+
+### 2. 
+```
+// App.js 
+// App return 
+{pokemonDetail && (
+        <div>
+          <h2>Pokemon Detail</h2>
+          <PokeDetail pokemonDetail={pokemonDetail} />
+          <button style={styles.button} onClick={() => clear()}>
+            Clear
+          </button>
+        </div>
+      )}
+```
+menampilkan pokemon detail. 
+
+### 3. 
+
+isi component `PokeDetail` dengan informasi relevant disaat kita menampilkan mereka
+
 ***
 # Bagian akhir dan latihan
 ***

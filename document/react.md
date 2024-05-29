@@ -136,7 +136,7 @@ this.setState({count : this.state.count + 1})
 # Bagian 2 
 ***
 
-## Membuat className 
+## Membuat Style ( Inline CSS ) 
 ```
 <p  style={styles.colorP}> Ini berwarna merah </p>
 

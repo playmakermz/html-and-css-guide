@@ -133,6 +133,94 @@ this.setState({count : this.state.count + 1})
 - hasil dari aritmatika tersebut, akan disimpan ke `count` state
 
 ***
+# Bagian 2 
+***
+
+## Membuat className 
+```
+<p  style={styles.colorP}> Ini berwarna merah </p>
+
+// Styles bisa kita tempatkan diluar dari class, atau function.
+let styles = { 
+colorP: {color: 'red', fontSize: '40px'},
+colorH1: {color: 'red', fontSize: '40px'},
+}
+```
+
+## membuat banyak component 
+[Source Code](../code/jsPro/membuat-banyak-component)
+
+## Method map() 
+
+```
+render(){
+        let abc = [{id: 1, name:'appel', completed:false},
+    {id: 2, name:'manggo', completed:false},
+    {id: 3, name:'banana', completed:false},]
+
+        return(
+            <div>
+                {abc.map((item) => {
+                    return(<p>{item.name}</p>)
+                })}
+            </div>
+        )
+    }
+```
+
+## Pemanggilan JSX 
+terdapat dua cara pemanggilan JSX:
+
+```
+function App() {
+    let abc = <p> Saya Adalah JSX Variabel</p>
+
+    function Acc(){ // untuk render Element JSX wajib huruf besar pada awalan
+        return  <h1> Saya adalah JSX Function</h1>
+    }
+
+    return(
+        <div>
+            {abc}
+            <Acc />
+        </div>
+    )
+}
+```
+
+Aturan diatas akan berlaku jika component memiliki bentuk function. 
+
+jika component memiliki bentuk class maka cara pemanggilan akan seperti ini: `{this.Acc()}`
+
+## { stateName ? }
+
+```
+class PokeDetail extends React.Component {
+    constructor(props){
+        super(props)
+        this.state = {ch: true}
+    }
+
+    Acc(){ // untuk render Element JSX wajib huruf besar pada awalan
+        let abc = <p> Saya Adalah JSX Variabel</p>
+        return  <h1> Saya adalah JSX Function</h1>
+    }
+
+    render(){
+        return(
+            <div>
+                {this.state.ch? this.Acc() : <p>hi</p> }
+            </div>
+        )
+    }
+}
+```
+
+Ini adalah konep sederhana, dimana kita menempatkan dua element, dan salah satu element akan di render jika nilai `this.state.ch` adalah `true`. 
+
+contoh diatas, yang akan dirender adalaj `this.Acc()`
+
+***
 # Bagian code 
 ***
 ## Cheatsheet 

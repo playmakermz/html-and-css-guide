@@ -17,7 +17,7 @@ Tujuan:
 
 tahap pertama 
 
-```
+```Js
 import { useState, useEffect } from "react"
 import PokeList from "./components/PokeList"
 
@@ -67,7 +67,7 @@ Break:
 
 ## Selanjutnya 
 
-```
+```Js
 function PokeList({pokemonList}) {
   return (
     <div style={style.gridContent}>
@@ -109,14 +109,14 @@ Break:
 Tujuan: mengambil data API dan menampilkan informasi kedalam halaman. 
 
 ### 01 
-```
+```Js
 // App.js 
 const [selectedPokemonName, setSelectedPokemonName] = useState("")
 ```
 siapkan state dan event 
 
 ### 02 
-```
+```Js
 // App.js 
 {/* Memasuakan data state */}
      <PokeList
@@ -131,7 +131,7 @@ kirim data state kedalam component `PokeList`
 
 ### 03 
 
-```
+```Js
 // PokeList.js 
 {pokemonList.map((item) => (
         // Tambahkan onClick event ke dalam div
@@ -153,14 +153,14 @@ lakukan perubahan pada map(), dimana kita akan membuat informasi lebih detail pa
 Tujuan adalah mendapatkan informasi pokemon yang lebih spesifik dari input button user. secara garis besar, API pertama digunakan untuk mengambil informasi list pokemon. Setelah itu API kedua dijalankan disaat user telah memilih pokemon. 
 
 ### 1. 
-```
+```Js
 // App.js
 const [pokemonDetail, setPokemonDetail] = useState()
 ```
 buat state baru, untuk menyimpan data API ke 2 
 
 ### 2. 
-```
+```Js
 // App.js 
  useEffect(() => {
     if (!selectedPokemonName) return
@@ -179,7 +179,7 @@ Break:
 - ` if (!selectedPokemonName)` - adalah untuk memastikan API ke 2, tidak dijalankan disaat webpage awal load. API ke 2 akan dijalankan setelah user memilikih pokemon. 
 
 ### 3. 
-```
+```Js
 //App.js 
 
 {/* Menampilkan detail pokeon jika ada */}
@@ -199,7 +199,7 @@ Tujuan:
 
 ### 1. 
 
-```
+```Js
 // App.js 
 // function()
 function clear() {
@@ -211,7 +211,7 @@ hapus element informasi, dan mulai halaman seperti pada awal.
 
 
 ### 2. 
-```
+```Js
 // App.js 
 // App return 
 {pokemonDetail && (

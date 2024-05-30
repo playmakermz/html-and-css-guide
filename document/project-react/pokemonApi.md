@@ -235,3 +235,5 @@ isi component `PokeDetail` dengan informasi relevant disaat kita menampilkan mer
 ***
 
 Buat App sama dengan, pendekatan yang berbeda. 
+
+[Contoh](../../code/jsPro/pokeball)

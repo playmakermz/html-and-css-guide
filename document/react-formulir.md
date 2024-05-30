@@ -8,7 +8,7 @@ Tujuan adalah membuat sebuah formulir yang dapat menerima input, dan memberikan 
 - Membuat onClick terima -
 - Membuat feedback
 
-```
+```Js
 // itemForm.js 
 import React from 'react';
 

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.zeroContain {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  align-items: center;
+}
+
+.mainContain {
+  width: 70%;
+  border: 5px solid black;
+  padding: 0 15px 15px 15px;
+}
+
+
+.abcForm {
+  display: flex;
+  flex-direction: column;
+}
+

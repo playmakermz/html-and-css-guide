@@ -1510,6 +1510,17 @@ getDetails(buah)
 
 ```
 
+## Rest parameter 
+`...args | ...parameters`
+
+```
+function fun(...arg){
+    arg.map((i) => console.log(i))
+}
+
+fun(1,2,3,4,5,6,7)
+```
+
 Ref: https://www.geeksforgeeks.org/parameter-destructuring/
 
 ***

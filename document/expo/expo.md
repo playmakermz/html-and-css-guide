@@ -240,6 +240,11 @@ import { View, StyleSheet, TouchableOpacity, Text }
 
 adalah sebuah wrapper seperti `div` dimana kita bisa membuatnya sebagai pengganti button. seperti pada HTML biasa kita bisa menggunakan `div` sebagai alternative tag `button`
 
+***
+***
+# Note 
+- [Simpel todo App](./note-app-expo.md)
+
 
 # Reference:
 - https://www.freecodecamp.org/news/responsive-layout-react-native/ | App sangat sederhana <Begginer Recommended>

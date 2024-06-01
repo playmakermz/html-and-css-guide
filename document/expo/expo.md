@@ -18,6 +18,41 @@ install `Expo Go` untuk melakukan testing didalam android
 
 
 ***
+# Informasi 
+***
+
+jika menggunakan github codespace check area ini 
+```
+/app/(tabs)/index.tsx
+```
+
+contoh code 
+
+```Js
+import { HelloWave } from '@/components/HelloWave';
+import ParallaxScrollView from '@/components/ParallaxScrollView';
+import { ThemedText } from '@/components/ThemedText';
+import { ThemedView } from '@/components/ThemedView';
+
+export default function HomeScreen() {
+  return (
+    <View>
+
+<View style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 40 }}>Hello React Native</Text>
+      </View>
+
+<View style={{ alignItems: 'center' }}>
+        <Text style={{ fontSize: 40 }}>Hello React Native</Text>
+      </View>
+
+</View>
+  );
+}
+```
+
+
+***
 # Component Inti React Native
 ***
 Beberapa Component bawaan dari "Expo"
@@ -204,6 +239,7 @@ import { View, StyleSheet, TouchableOpacity, Text }
 ```
 
 adalah sebuah wrapper seperti `div` dimana kita bisa membuatnya sebagai pengganti button. seperti pada HTML biasa kita bisa menggunakan `div` sebagai alternative tag `button`
+
 
 # Reference:
 - https://www.freecodecamp.org/news/responsive-layout-react-native/ | App sangat sederhana <Begginer Recommended>

@@ -241,6 +241,12 @@ import { View, StyleSheet, TouchableOpacity, Text }
 adalah sebuah wrapper seperti `div` dimana kita bisa membuatnya sebagai pengganti button. seperti pada HTML biasa kita bisa menggunakan `div` sebagai alternative tag `button`
 
 ***
+# catatan tambahan
+***
+### deklarasi state
+state harus kita deklarasi didalam function, tidak boleh diluar function.
+
+***
 ***
 # Note 
 - [Simpel todo App](./note-app-expo.md)

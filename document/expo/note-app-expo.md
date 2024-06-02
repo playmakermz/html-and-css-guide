@@ -208,8 +208,8 @@ export default App;
 ```
 
 ### addNote
-```
-// addNote.js 
+```JS
+// addNote.tsx
 
 import React from 'react'
 import { Text } from 'react-native'
@@ -220,7 +220,8 @@ export default AddNote
 ```
 
 ### editNote
-```
+```Js
+// editNote.tsx
 import React from 'react'
 import { Text } from 'react-native'
 
@@ -228,6 +229,136 @@ const EditNote = () => <Text>Ubah Note</Text>
 
 export default EditNote
 ```
+
+### Home 
+```JS 
+// Home.tsx
+import React from 'react'
+import { FlatList, View, Text } from 'react-native'
+import CustomButton from './customButton'
+import { styles } from './Style'
+
+function NoteCard({item, setCurrentPage}) { // pemangilan kedua
+    return(
+        <View>
+
+    <Text>{item.title}</Text>
+    <Text>{item.desc}</Text>
+
+    <View style={styles.bcontain}> {/* === Buat container untuk dua button kosong ===*/}
+
+      <CustomButton
+        text="Ubah"
+        onPress={() => {setCurrentPage('edit')}}
+      />
+
+      <CustomButton
+        text="Hapus"
+        onPress={() => {}}
+      />
+
+    </View>
+
+  </View>
+    )
+}
+function home({noteList, setCurrentPage}){ // Pemangilan pertama, "noteList" adalah penerima data dari file lain. yaitu index.tsx
+    return (
+        <View>
+          <CustomButton
+        text="Tambahkan Note"
+        onPress={() => {setCurrentPage('add')}}
+      />
+          <FlatList // {/* Menampilkan array item dan button disebelah mereka  */}
+            showsVerticalScrollIndicator={false}
+            data={noteList}
+
+            renderItem={({ item }) => (
+              <NoteCard item={item} setCurrentPage={setCurrentPage} />
+            )}
+
+            keyExtractor={(item) => item.id}
+
+          />
+        </View>
+      )
+}
+
+
+
+export default home
+```
+- pada dua function ditas, tambahkan parameter `setCurrentPage`
+- dimana render item disini akan diperjelas, dimana mengunakan fitur method `map()` kita akan memangil mereka semua satu persatu item.
+- `{setCurrentPage('edit')}` - digunakan untuk memangil component `AddNote`
+- `{setCurrentPage('add')}` -  digunakan untuk meamngil component `EditNote` yang bisa kita akses setelah component ini terhubung dengan `index.tsx`
+
+### index
+```Js
+// index.tsx
+
+import React, { useState } from 'react'
+import { View, Text } from 'react-native'
+import Home from './components/Home'
+import AddNote from './screens/addNote'
+import EditNote from './screens/editNote'
+import { styles } from './components/Style'
+
+
+// ====================== New function =====================
+function CurrentPageWidget ({ currentPage, noteList, setCurrentPage }){
+  switch (currentPage) {
+    case 'home': // memasukan state "noteList" dan setState "setCurrentPage"
+      return (
+        <Home
+          noteList={noteList}
+          setCurrentPage={setCurrentPage}
+        />
+      )
+    case 'add': // ubah component pada halaman
+      return <AddNote />
+    case 'edit': // ubah component pada halaman
+      return <EditNote />
+    default: // kembali ke component awal saat 'home'
+      return <Home />
+  }
+}
+
+
+function App(){
+  const [currentPage, setCurrentPage] = useState('home') // New state
+
+  const [noteList, setNoteList] = useState([
+    {
+      id: 1,
+      title: 'Note pertama',
+      desc:
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry',
+    },
+  ])
+
+  return(
+    <View style={styles.zero}>
+      <View style={styles.main}>
+
+      <CurrentPageWidget
+      currentPage={currentPage}
+      setCurrentPage={setCurrentPage}
+      noteList={noteList}
+    />
+
+</View>
+
+    </View>
+  )
+}
+
+
+
+export default App;
+```
+
+- disini kita menggunakan "switch case". untuk memangil component apa yang akan ditampilkan pada halaman. sama seperti `{ state ? }`
 
 
 ## Referensi 

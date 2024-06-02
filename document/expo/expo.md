@@ -2,7 +2,15 @@
 
 adalah tool yang dapat membantu kita untuk membuat App android dan IOS. 
 
-cara instalasi:
+cara instalasi dengan yarn:
+```
+npm install -g yarn
+
+yarn add global expo-cli
+
+npx expo-cli upgrade // jika mengalami error karena version
+```
+ref: https://medium.com/@blackpintz/how-to-install-expo-cli-using-yarn-92efe8ed78f5
 
 ```
 npx create-expo-app my-app

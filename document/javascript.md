@@ -1525,6 +1525,40 @@ fun(1,2,3,4,5,6,7)
 
 Ref: https://www.geeksforgeeks.org/parameter-destructuring/
 
+## Melakukan perubahan pada property object didalam array
+melakukan perubahan pada array of object didalam array. 
+
+```Js
+let employees_data = [
+    {
+        employee_id: 1,
+        employee_name: "Aman",
+    },
+    {
+        employee_id: 2,
+        employee_name: "Bhargava",
+    },
+    {
+        employee_id: 3,
+        employee_name: "Chaitanya",
+    },
+];
+let new_updated_data =
+    employees_data.map((employee) => {
+        if (employee.employee_id === 2) {
+            return {
+                ...employee,
+                employee_name: "Anthony",
+            };
+        }
+        return employee;
+    });
+console.log("Updated Data: ");
+console.log(new_updated_data);
+
+```
+Ref: https://www.geeksforgeeks.org/how-to-modify-an-objects-property-in-an-array-of-objects-in-javascript/ | MAP()
+
 ***
 ## Additional note 
 - [javascript class](../document/javascript-class.md)

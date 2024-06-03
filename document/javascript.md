@@ -1174,6 +1174,8 @@ abc.Tampilkan()
 
 [Detail Catatan](https://github.com/playmakermz/warkop-website/blob/main/code/js-import/catatan.md)
 
+[Diskusi Export dan Import](https://stackoverflow.com/questions/49616639/how-can-i-export-all-functions-from-a-file-in-js)
+
 Src: 
 - https://www.freecodecamp.org/news/node-module-exports-explained-with-javascript-export-function-examples/
 - https://www.sitepoint.com/understanding-module-exports-exports-node-js/

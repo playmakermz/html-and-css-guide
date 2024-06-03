@@ -360,6 +360,16 @@ export default App;
 
 - disini kita menggunakan "switch case". untuk memangil component apa yang akan ditampilkan pada halaman. sama seperti `{ state ? }`
 
+***
+Bagian 3
+***
+
+
+***
+Bagian Akhir 
+***
+[Source code](../../code/jsPro/note-todoApp-expo)
+
 
 ## Referensi 
 - https://medium.com/@yildizfatma/handling-user-input-in-react-native-expo-text-input-buttons-6e7931bc227a

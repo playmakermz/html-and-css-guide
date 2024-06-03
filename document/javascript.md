@@ -1532,14 +1532,17 @@ melakukan perubahan pada array of object didalam array.
 let employees_data = [
     {
         employee_id: 1,
+        employee_group: 'Alpha',
         employee_name: "Aman",
     },
     {
         employee_id: 2,
+        employee_group: 'Alpha',
         employee_name: "Bhargava",
     },
     {
         employee_id: 3,
+        employee_group: 'Delta',
         employee_name: "Chaitanya",
     },
 ];

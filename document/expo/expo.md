@@ -262,3 +262,5 @@ state harus kita deklarasi didalam function, tidak boleh diluar function.
 
 # Reference:
 - https://www.freecodecamp.org/news/responsive-layout-react-native/ | App sangat sederhana <Begginer Recommended>
+
+- [React Expo Debugging](https://shift.infinite.red/start-using-reactotron-in-your-expo-project-today-in-3-easy-steps-a03d11032a7a)

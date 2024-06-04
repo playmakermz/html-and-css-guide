@@ -20,7 +20,7 @@ function App(){
     
     function handleChange(event){
         setFormInput(event.target.value)
-        console.log(event.target.value)
+        console.log(event.target.value) // tanpa preventdefault, log ini akan hilang
     } // ========================= handleChange ===============
     
     function handleSubmit(event){
@@ -29,7 +29,10 @@ function App(){
         }
         else{
             event.preventDefault()
+            // https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_preventdefault
             setFormInput('')
+            alert(formInput)
+
         }
     } // ======================== handleSubmit ===============
     

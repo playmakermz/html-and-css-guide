@@ -1523,6 +1523,12 @@ function fun(...arg){
 fun(1,2,3,4,5,6,7)
 ```
 
+## preventDefault()
+
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_event_preventdefault
+
+jika pada form, dengan mengunakan tool ini kita bisa memastikan tag `form` tidak akan melakukan refresh halaman. 
+
 Ref: https://www.geeksforgeeks.org/parameter-destructuring/
 
 ## Melakukan perubahan pada property object didalam array

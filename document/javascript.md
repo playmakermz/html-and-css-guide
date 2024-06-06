@@ -1609,6 +1609,8 @@ Fungsi dan kegunaan sama, tetapi fokus dari mereka berbeda.
 - `if` - mencari nilai true dan false 
 - `switch` - mencari nilai yang sama
 
+Ref: https://medium.com/@michellekwong2/switch-vs-if-else-1d458e7b0711
+
 ***
 ## Additional note 
 - [javascript class](../document/javascript-class.md)

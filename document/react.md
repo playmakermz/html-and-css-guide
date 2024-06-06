@@ -441,6 +441,7 @@ Todo List:
 - [membuat formulir interactive](./react-formulir.md)
 - [Add, Update, List JSX](./project-react/add-update-list.md)
 - [context](./project-react/context.md)
+- [UseEffect](./project-react/useEffect.md)
 
 
 ## Contoh project

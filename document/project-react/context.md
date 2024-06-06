@@ -56,6 +56,38 @@ let {count, setCount} = useContext(TodoContext)
 
 dengan begini maka component file `item00.js` bisa melakukan akses kepada state dan event yang dikirim oleh `App.js`
 
+***
+# Note Context
+***
+## Pada file utama ( export )
+harus ada 
+- `{createContext}`
+- `export let TodoContext = createContext()` - tempatkan pada luar function
+- `<TodoContext.Provider value={{ state, setState }}>` - Masukan component didalam provider
+- `</TodoContext.Provider>`
+
+## pada file secondary ( import )
+harus ada: 
+- `import {useContext} from 'react'`
+- `import {TodoContext} from './App'`
+- `let {state, setState} = useContext(TodoContext)`
+
+***
+# note Tanpa context 
+***
+## file utama (Export)
+- `function Header(){}` - Contoh data yang dikirim 
+
+- `<NewItem Header={Header}/>` - cara mengirim 
+
+## File secondary (import)
+- `function NewItem({Header}) { Header() }` - cara menerima
+
+***
+# Aturan dasar 
+***
+- Nama component wajib huruf besar diawal!.
+
 
 ## Hasil akhir 
 [context sc](../../code/jsPro/context-ts)

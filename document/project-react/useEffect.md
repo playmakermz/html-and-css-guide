@@ -195,7 +195,7 @@ oleh karena itu, kita akan menyimpan file JSON local untuk media pembelajaran.
 
 [Apa itu axios?](../../document/project-react/Api-Axios.md)
 
-```
+```Js
 /* RandomUserList.js */
 import React,{ useState, useEffect, } from 'react';
 import axios from 'axios'
@@ -214,12 +214,16 @@ function App() {
 	}, []);
   */
 
-  useEffect(() => { // Use effect ini hanya akan dijalankan sekali!
-		axios
-    .get('users.json') // simpan pada public folder
-			//.then(response => response.json())
-		.then(item => setUserList(item.data));
-	}, []);
+  useEffect(() => { // Ambil API secara sementara.
+    axios  // axios adalah bentuk dari "Promise".
+    .get('users.json')
+      .then((response) => {
+        setUserList(response.data)
+      })
+      .catch((error) => {
+        console.log(error)
+      })
+  }, [])
 
 	return (
 		<div>
@@ -238,7 +242,7 @@ function App() {
 						</p>
 						{/* Add more user data fields as needed */}
             <p>
-              Skill:
+              Skill:  
               {user.employment.key_skill}
             </p>
 					</li>
@@ -249,6 +253,7 @@ function App() {
 }
 
 export default App;
+
 ```
 - simpan file JSON, didalam `public` folder
 

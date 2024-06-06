@@ -1568,6 +1568,47 @@ console.log(new_updated_data);
 ```
 Ref: https://www.geeksforgeeks.org/how-to-modify-an-objects-property-in-an-array-of-objects-in-javascript/ | MAP()
 
+## Switch case 
+
+```Js 
+
+let abc = 3
+
+function Print(item){
+    console.log(item)
+}
+
+if (abc === 3){
+    Print(3)
+}
+else if (abc === 4){
+    Print(abc)
+}
+else {
+    Print(abc)
+}
+// ================== If Statement
+
+
+switch(abc){
+    case 1:
+        Print('hi '+ abc)
+        break
+    case 2:
+        Print('hi '+ abc)
+        break
+    case 3:
+        Print('hi '+ abc)
+        break
+    default:
+        Print('de'+abc)
+}
+
+```
+Fungsi dan kegunaan sama, tetapi fokus dari mereka berbeda. 
+- `if` - mencari nilai true dan false 
+- `switch` - mencari nilai yang sama
+
 ***
 ## Additional note 
 - [javascript class](../document/javascript-class.md)

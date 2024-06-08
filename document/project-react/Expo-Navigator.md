@@ -26,6 +26,12 @@ npm install react-native-screens react-native-safe-area-context
 npm install --save react-native-navigation
 ```
 
+- 5 
+```Js npm install @react-navigation/drawer```
+
+- 6 
+```Js npm install react-native-gesture-handler react-native-reanimated ```
+
 ***
 # Note Penting 
 ***

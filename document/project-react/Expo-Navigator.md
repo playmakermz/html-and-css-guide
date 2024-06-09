@@ -230,7 +230,53 @@ function App(){
 export default App
 ```
 
-<!-- Akhir hari ini, lanjutkan 8-06-2024 -->
+
+***
+# Navigation lifecycle 
+***
+
+Pada topic sebelumnya kita telah mempelajari bagiama mengunakan `navigation.navigate('RouteName')` untuk melakukan navigasi diantara routes.
+
+Pertanyaan: Apa yang terjadi jika kita melakukan navigasi jauh dari `Home`, atau bagaimana cara kita kembali? Bagaimana suatu route mencari tau user pergi dan kembali?
+
+contoh code: (Src)[../../code/jsPro/React-Navigator-Expo/index-nesting-nagvigator.tsx]
+
+Dimana disini, kita akan membuat dua "child container", yang berfungsi sebagai:
+
+**Tujuan**
+
+- Dimana screen awal adalah "setting". 
+- Terdapat dua screen utama "setting" dan "Home"
+- Kita tidak bisa membuat button pada "setting", untuk akses creen didalam "Home", dan sebaliknya.
+
+```Js
+<Tab.Navigator screenOptions={{ headerShown: false }}>
+ <Tab.Screen name="First">
+
+ {() => (
+            <SettingsStack.Navigator>
+              <SettingsStack.Screen name="Settings" component={SettingsScreen}/>
+              <SettingsStack.Screen name="Profile" component={ProfileScreen} />
+            </SettingsStack.Navigator>
+          )}
+
+ </Tab.Screen>
+ <Tab.Screen name="Second">
+
+ {() => (
+            <HomeStack.Navigator>
+              <HomeStack.Screen name="Home" component={HomeScreen} />
+              <HomeStack.Screen name="Details" component={DetailsScreen} />
+            </HomeStack.Navigator>
+          )}
+
+</Tab.Screen>
+```
+
+- "Home" hanya bisa akses "Details"
+- "Settings" hanya bisa akses profile
+
+
 
 
 

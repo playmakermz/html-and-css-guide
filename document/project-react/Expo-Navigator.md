@@ -160,6 +160,20 @@ ref: https://reactnavigation.org/docs/nesting-navigators#how-nesting-navigators-
 
 ref: https://reactnavigation.org/docs/nesting-navigators#how-nesting-navigators-affects-the-behaviour
 
+Setiap navigator memiliki "history" mereka sendiri-sendiri. Sebagai contoh jika kamu menjalankan sebuah navigator didalam "screen" maka kamu akan dapat kembali kedalam navigator semula dimana "navigator" parent berada. 
+
+### Tugas: 
+
+Membuat sebuah app navigator dimana terdapat: 
+- `Profile` - screen 
+- `Home` - screen 
+- `EmptyScreen` - `Settings` - screen 
+- `EmptyScreen` - `EditPost` - screen
+
+dan: 
+- pada `Home` screen, kita bisa akses `Profile` dan `EmptyScreen`
+- pada component app, kita akan membuat "navigator" utama, dimana mereka bisa diakses dari mana saja didalam component childern.
+
 <!-- Akhir hari ini, lanjutkan 8-06-2024 -->
 
 

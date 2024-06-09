@@ -174,6 +174,62 @@ dan:
 - pada `Home` screen, kita bisa akses `Profile` dan `EmptyScreen`
 - pada component app, kita akan membuat "navigator" utama, dimana mereka bisa diakses dari mana saja didalam component childern.
 
+```Js 
+import * as React from 'react';
+import { Button, View, Text } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+
+let Tab = createBottomTabNavigator()
+let Stack = createNativeStackNavigator()
+
+function Profile({navigation}){
+  return (
+    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+      <Text>Profile Screen</Text>
+      <Button
+        onPress={() => navigation.navigate('EditPost')}
+        title="Go to Edit Post"
+      />
+    </View>
+  )
+}
+
+function EmptyScreen(){
+  return (
+    <View>
+      <Text>Hai, this is Empty and dummy screen</Text>
+    </View>
+  )
+}
+
+function Home(){
+  // tidak boleh ada selain Screen didalam navigator
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="Profile" component={Profile} />
+      <Tab.Screen name="Settings" component={EmptyScreen} />
+    </Tab.Navigator>
+  )
+}
+
+function App(){
+  // Halaman utama akan diambil dari 
+  // Stack.Screen pertama,
+  // untuk akses Stack Screen kedua "EditPost"
+  // kita bisa akses dari component "Profile" "navigation"!!
+  return (
+    <Stack.Navigator>
+      <Stack.Screen name='Home' component={Home} options={{ headerShown: false }}/>
+      <Stack.Screen name='EditPost' component={EmptyScreen} />
+    </Stack.Navigator>
+  )
+}
+
+export default App
+```
+
 <!-- Akhir hari ini, lanjutkan 8-06-2024 -->
 
 

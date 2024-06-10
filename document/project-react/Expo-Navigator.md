@@ -342,6 +342,18 @@ Untuk kemudian kita tidak perlu mengunakan `<NavigationContainer>`, **cukup paka
 
 - `Navigation Prop` "navigate" - digunakan untuk melakukan navigasi kita.
 
+***
+# mengetahui kapan masuk dan keluar screen (LifeCyle)
+***
+
+[source code](../../code/jsPro/React-Navigator-Expo/index-lifecylce-navigator.tsx)
+
+
+***
+# Tugas Akhir, membuat pilihan keluar atau stay pada screen 
+***
+Ref: https://reactnavigation.org/docs/preventing-going-back
+
 
 ## Referensi 
 - https://snack.expo.dev/ 

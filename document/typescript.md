@@ -43,6 +43,44 @@ TypeScript adalah bahasa pemrograman yang mudah dipelajari bagi para pengembang 
 
 TypeScript adalah alat yang berharga bagi para pengembang JavaScript yang ingin meningkatkan kualitas dan keandalan kode mereka. Dengan sistem tipe data statisnya, TypeScript membantu mencegah bug, meningkatkan pemahaman kode, mempermudah refactoring kode, dan mempercepat pengembangan. Jika Anda ingin meningkatkan skill pengembangan web Anda, mempelajari TypeScript adalah langkah yang tepat.
 
+***
+# TypeScript Fundamental
+***
+
+```JavaScript
+
+let name: string = "udin"
+let age: number = 10 
+let isReady: boolean = true 
+let x: null = null 
+let array1: number[] = [1,2]
+let array2: string[] = ["udin"]
+let array3: boolean[] = [true, false]
+let namaku: undefined | string = "udin" // Bisa dua tipe data yang masuk
+
+let abc: object = {name:'udin',age:22}
+let acc: {name: string, age: number} = {name: 'fatoni', age: 22}
+
+// =============== TS 
+
+const hello = (name: string): string => {
+  return `Hello ${name}`
+}
+
+// ====================== Eliminate parameter
+
+const findLocationInJakarta = (
+  location: 'Utara' | 'Timur' | 'Selatan' | 'Barat',
+): string => {
+  return `Jakarta ${location}`
+}
+
+findLocationInJakarta('Utara')
+
+findLocationInJakarta('Selatan')
+
+findLocationInJakarta('udin') // Error
+```
 
 
 ## Reference

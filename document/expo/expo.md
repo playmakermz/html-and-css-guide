@@ -7,6 +7,7 @@ cara instalasi dengan yarn:
 npm install -g yarn
 
 yarn add global expo-cli
+yarn add global expo
 
 npx expo-cli upgrade // jika mengalami error karena version
 ```

@@ -1,5 +1,26 @@
 # Expo 
 
+## React Native 
+
+React Native adalah framework open-source yang dapat membantu kita untuk melakukan pengembangan suatu aplikasi mobile dengan javascriopt. 
+
+Kelebihan React Native:
+- **Pengembangan lintas platfrom**: Satu code, bisa digunakan untuk android atau IOS. 
+
+## Expo 
+
+Expo adalah aplikasi yang dibangung diatas React Native. Expo dapat digunakan untuk mempercepat pengembangan aplikasi dengan React Native. 
+
+Keuntungan dengan EXPO:
+- Dengan Expo, kita bisa melewati beberapa configurasi yang diperlukan untuk membuat app. 
+- "Expo SDK", menyediakan Module dan library yang siap pakai seperti "navigasi" dan lain-lain. 
+- "Expo CLI", Digunakan untuk membangun dan menjalankan app.
+- "Expo-Go", digunakan untuk membantu kita menjalankan aplikasi tanpa harus melakukan build dan deployment.
+
+
+
+***
+
 adalah tool yang dapat membantu kita untuk membuat App android dan IOS. 
 
 cara instalasi dengan yarn:

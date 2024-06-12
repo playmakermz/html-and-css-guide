@@ -23,6 +23,8 @@ Keuntungan dengan EXPO:
 
 adalah tool yang dapat membantu kita untuk membuat App android dan IOS. 
 
+Untuk IDX tetap pakai `yarn`
+
 cara instalasi dengan yarn:
 ```
 npm install -g yarn

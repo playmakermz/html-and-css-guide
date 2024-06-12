@@ -172,6 +172,8 @@ import { View, Image, StyleSheet } from 'react-native'
 ```
 Sama seperti Tag `image`
 
+Ref: https://www.tutorialspoint.com/react_native/react_native_images.htm
+
 ### TextInput
 ```Js 
 import { View, StyleSheet, TextInput } from 'react-native'
@@ -191,6 +193,16 @@ Adalaj bentuk form. Untuk lebih detail mengenai form TextInput: https://reactnat
 ***
 # Bagian View dan Scroll 
 ***
+
+**Attribute** special untuk component container: 
+
+```Js 
+contentContainerStyle={styles.wrapper}
+```
+
+Berfungsi sebagai penerima css bagi container. 
+
+ref: https://stackoverflow.com/questions/46032604/scrollview-child-layout-must-be-applied-through-the-contentcontainerstyle-prop
 
 ### ScrollView
 

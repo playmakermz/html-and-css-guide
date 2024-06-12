@@ -208,6 +208,8 @@ import { StyleSheet, View, ScrollView, Text } from 'react-native'
     </View>
 ```
 
+Reference: https://reactnative.dev/docs/using-a-scrollview
+
 ### FlatList
 
 menyerupai dengan ScrollView, tetapi memiliki perbedaan kapan harus digunakan. Dimana `FlatList` digunakan saat kita memangil banyak item dari array. 
@@ -233,6 +235,8 @@ Break: dimana pada fungsi `App()` kita memangil item satu demi satu.
 - `data` - adalah item spesifik 
 - `renderItem` - adalah list item 
 - `keyExtractor` - adalah `key.id` pada react biasa. konsep untuk penanda item list
+
+Ref: https://reactnative.dev/docs/flatlist
 
 ### perbedaan scrollView dan FlatList
 

@@ -1612,6 +1612,55 @@ Fungsi dan kegunaan sama, tetapi fokus dari mereka berbeda.
 Ref: https://medium.com/@michellekwong2/switch-vs-if-else-1d458e7b0711
 
 ***
+# Mencari Nilai Bilangan Prima 
+***
+
+```Js 
+function isPrime(num) {
+  if (num <= 1) return false;
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) return false ;
+  }
+  return true; // Jika bilangan prima, maka return
+}
+
+
+let myArray = [1,2,3,4,5,6,7]
+
+let abc = myArray.filter((item) => { return isPrime(item)})
+
+console.log(abc); // Output: true
+```
+
+Dengan logika:
+- jika nilai adalah "kurang, atau sama" dengan 1 maka bukan. 
+- Lakukan loop 
+
+Ref: https://stackoverflow.com/questions/5811151/why-do-we-check-up-to-the-square-root-of-a-number-to-determine-if-the-number-is | mengunakan sqrt untuk bilangan prima
+
+## Mencari bilangan genap 
+
+```Js 
+function isEven(num) {
+    if ((num % 2) === 0) {
+        return true
+    }
+    else {
+        return false
+    }
+}
+
+
+let myArray = [1,2,3,4,5,6,7,8]
+
+let abc = myArray.filter((item) => { return isEven(item)} )
+
+console.log(myArray)
+console.log(abc); // Output: true
+
+```
+
+***
 ## Additional note 
 - [javascript class](../document/javascript-class.md)
 - [javascript-array](../document/javascript-array.md)

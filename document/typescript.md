@@ -67,6 +67,11 @@ const hello = (name: string): string => {
   return `Hello ${name}`
 }
 
+
+function mat(item: number): number {
+  return item + 1;
+}
+
 // ====================== Eliminate parameter
 
 const findLocationInJakarta = (

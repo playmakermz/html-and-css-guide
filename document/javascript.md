@@ -1660,6 +1660,33 @@ console.log(abc); // Output: true
 
 ```
 
+## Array Sort 
+
+```js 
+const points = [40, 100, 1, 5, 25, 10];
+
+let abc = points.sort((a,b) => {return a - b})
+
+console.log(abc)
+
+// [ 1, 5, 10, 25, 40, 100 ]
+
+```
+
+Dengan cara kerja:
+
+- paramater "a" adalah tugas loop 1. Dimana semua item akan dibandingkan dengannya. 
+- Jika ditemukan bahwa "a" lebih kecil dari item yang dibandingkan maka simpan "a" sebagai indikasi nilai paling kecil. 
+- Dan seterusnya. 
+
+Maka bentuk sebaliknya 
+```Js 
+const points = [40, 100, 1, 5, 25, 10];
+points.sort(function(a, b){return b - a});
+```
+
+ref: https://www.w3schools.com/js/js_array_sort.asp
+
 
 
 ***

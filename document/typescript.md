@@ -1,5 +1,21 @@
 # Typescript
 
+## Instalasi 
+
+```Sh 
+npm install -g ts-node
+
+npm install -g ts-node
+
+// Setelah itu, pastikan pada file "package.json" kita tidak menggunakan "module" import.
+```
+
+Ref: 
+
+- https://www.geeksforgeeks.org/how-to-execute-typescript-file-using-command-line/ | Instalasi 
+- https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node | Instalasi dan contoh 
+- https://stackoverflow.com/questions/62096269/cant-run-my-node-js-typescript-project-typeerror-err-unknown-file-extension | informasi jika error. 
+
 ## TypeScript: Memperkuat JavaScript dengan Tipe Data
 
 Di era modern, pengembangan web telah menjadi semakin kompleks. Aplikasi web modern membutuhkan fungsionalitas yang lebih canggih dan basis kode yang lebih besar. Hal ini dapat menyebabkan berbagai masalah, seperti bug dan inkonsistensi kode.

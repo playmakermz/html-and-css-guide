@@ -5,7 +5,7 @@
 ```Sh 
 npm install -g ts-node
 
-npm install -g ts-node
+ts-node <file-name>
 
 // Setelah itu, pastikan pada file "package.json" kita tidak menggunakan "module" import.
 ```

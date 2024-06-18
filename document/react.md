@@ -360,7 +360,7 @@ export default App;
 
 ### Memasukan attribute DOM kedalam JSX 
 
-```
+```Js 
 import React from 'react';
 
 class App extends React.Component {
@@ -387,7 +387,7 @@ render(){
 - state = state adalah nilai yang dapat kita ubah berdasarkan adaannya tindakan dari user.
 
 contoh deklarasi state.
-```
+```Js
 \\ Class React.Component {
 
 constructor(props){
@@ -399,7 +399,7 @@ constructor(props){
 ```
 
 **Contoh deklarasi state, didalam JSX**
-```
+```Js
 // Import React from ''
 import React from 'react';
 
@@ -421,6 +421,183 @@ constructor(props){
 
 export default App;
 ```
+
+***
+# Life-Cycle
+***
+
+```Js
+import React, { useState, useEffect } from 'react';
+
+function Counter({setGCount, gCount}) {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  // Lifecycle methods
+  function componentDidMount() {
+    console.log('Component Counter() mounted!'); // Logs when the component is inserted into the DOM
+  }
+
+  useEffect(() => {
+  	setGCount(gCount + 1)
+   	console.log(`Nilai Count :  ${count}`)
+  }, [count]);
+
+  // ============================
+
+  componentDidMount()
+
+  // ===========================
+
+  return (
+    <div>
+      <p>Count: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+}
+
+
+// ======================== hit() =============
+function Hit() {
+  const [count, setCount] = useState(0);
+
+  const increment = () => {
+    setCount(count + 1);
+  };
+
+  const decrement = () => {
+    setCount(count - 1);
+  };
+
+  // Lifecycle methods
+  function componentDidMount() {
+    console.log('Component Hit() mounted!'); // Logs when the component is inserted into the DOM
+  }
+
+  useEffect(() => {
+   	console.log(`Nilai Count :  ${count}`)
+  }, [count]);
+
+
+  // ============================
+
+  componentDidMount()
+
+  // ===========================
+
+  return (
+    <div>
+      <p>Hit: {count}</p>
+      <button onClick={increment}>Increment</button>
+      <button onClick={decrement}>Decrement</button>
+    </div>
+  );
+}
+
+// ====================== App() =============
+function App(){
+
+let [gCount, setGCount] = useState(0)
+console.log(`gCount main container : ${gCount}`)
+// ========= Jika diatas dijalankan maka terjadi re-render ======
+
+function componentWillUnmount() {
+    console.log('Component unmounted!'); // Logs before the component is removed from the DOM
+  }
+
+  componentWillUnmount()
+
+return(
+<>
+
+<Counter setGCount={setGCount} gCount={gCount}/>
+
+<h1> ============ H1 ============ </h1>
+
+<Hit />
+</>
+)
+}
+
+export default App;
+
+```
+
+Terdapat 3 fase state:
+
+- **Mounting**
+    Load Component dalam website. 
+- **Updating**
+    Lakukan update berdasarkan informasi state.
+- **UnMounting**
+    Unload component, berpindah component.
+
+***
+# Use-Memo 
+***
+```Js 
+import { View, Button, Text } from 'react-native';
+import { useState, useMemo } from 'react';
+
+function Home(){
+  
+  console.log(`Component Home() telah di render`)
+
+  return(
+    <View>
+      <App/>
+    </View>
+  )
+}
+
+function App(){
+  let [count, setCount] = useState(0)
+  console.log(`Component App telah terpangil (Re-Render)`)
+  const ItemOr = useMemo(() => Item(count), [count]); // ===== Gunakan ini agar tidak perlu re-render =======
+  // const ItemOr = useMemo(() => Item(), []) bisa seperti ini juga!
+
+  return (
+    <View>
+      <Text>This is Counter App</Text>
+      <Text>Count : ${count}</Text>
+
+      <Button onPress={() => setCount(count+1)} title="Count Button"/>
+      {ItemOr}
+    </View>
+  )
+}
+
+function Item(count){
+  console.log(`Component count dikirm : ${count}`)
+  console.log(`Component Item telah terpangil (Re-Render)`)
+  return(
+    <View>
+      <Text>This Content From Item : {count}</Text>
+    </View>
+  )
+}
+
+
+export default Home 
+```
+
+### useMemo 
+
+adalah sebuah untuk react "Hook", dimana ini sedikit menyerupai "Event Listener". Maka Component hanya akan dijalankan jika terjadi perubahan pada state khusus. 
+
+Ref: https://www.w3schools.com/react/react_usememo.asp
+
+Contoh kasar: https://www.joshwcomeau.com/react/why-react-re-renders/
+
 
 
 

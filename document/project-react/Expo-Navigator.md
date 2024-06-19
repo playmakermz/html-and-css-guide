@@ -425,6 +425,8 @@ export default App;
       <Button title="Go back" onPress={() => navigation.goBack()} />
 ```
 
+ref: https://stackoverflow.com/questions/51090135/react-navigation-v2-difference-between-navigation-push-and-navigation-navigate
+
 ***
 # Passing Parameter to routes
 ***
@@ -475,7 +477,7 @@ function DetailsScreen({ route, navigation }) {
 
 ```
 
-** Point penting :***
+**Point penting :***
 
 ```Js 
 // ====== Params sender ==========
@@ -500,7 +502,7 @@ function DetailsScreen({ route, navigation }) {
 ```
 
 
-** Atau dengan :**
+**Atau dengan :**
 
 initial params. dimana ini kita tulis didalam screen. 
 

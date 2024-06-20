@@ -346,6 +346,25 @@ Untuk kemudian kita tidak perlu mengunakan `<NavigationContainer>`, **cukup paka
 # mengetahui kapan masuk dan keluar screen (LifeCyle)
 ***
 
+
+```Js
+import { useState, useCallback } from "react"
+import { useFocusEffect } from '@react-navigation/native';
+
+useFocusEffect(
+    useCallback(() => {
+      console.log('Screen was focused ( Mount )');
+      // Do something when the screen is focused
+      return () => {
+        console.log('Screen was unfocused ( Unmount )');
+        setCount(0)
+        // Do something when the screen is unfocused
+        // Useful for cleanup functions
+      };
+    }, [])
+  );
+```
+
 [source code](../../code/jsPro/React-Navigator-Expo/index-lifecylce-navigator.tsx)
 
 

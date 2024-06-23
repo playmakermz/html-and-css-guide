@@ -289,6 +289,73 @@ import { View, StyleSheet, TouchableOpacity, Text }
 adalah sebuah wrapper seperti `div` dimana kita bisa membuatnya sebagai pengganti button. seperti pada HTML biasa kita bisa menggunakan `div` sebagai alternative tag `button`
 
 ***
+# expo-linear-gradient
+***
+
+Instalasi 
+```js 
+// npm install expo-linear-gradient
+// Instalasi 
+
+import LinearGradient from 'expo-linear-gradient';
+
+<LinearGradient
+  colors={['#FF0000', '#FFFF00', '#00FF00']}
+  start={[0, 0]}
+  end={[1, 1]}
+>
+  <View>
+    {/* Content to display within the gradient */}
+  </View>
+</LinearGradient>
+
+```
+
+Pada contoh diatas, akan dibuat suatu transisi dari kiri ke kanan. dimana component semua item pada component "view". 
+
+Manfaat: 
+- Meningkatkan kualitas visual 
+- dapat kita gunakan untuk memberikan Highlight pada area spesifik. 
+
+Ref: 
+- https://github.com/react-native-linear-gradient/react-native-linear-gradient | 
+- https://codesandbox.io/s/react-hv1g9e | contoh hasil 
+
+***
+# ImageBackground 
+***
+```Js 
+import {ImageBackground, StyleSheet, Text, View} from 'react-native';
+
+const image = {uri: 'https://legacy.reactjs.org/logo-og.png'};
+
+const App = () => (
+  <View style={styles.container}>
+    <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+      <Text style={styles.text}>Inside</Text>
+    </ImageBackground>
+  </View>
+);
+```
+
+berfungsi untuk menambahkan item didalam gambar. 
+
+ref: https://reactnative.dev/docs/imagebackground
+
+***
+# FontAwesome (Logo)
+***
+
+```Js 
+
+import { FontAwesome } from '@expo/vector-icons'
+
+<FontAwesome name="star" size={16} color="yellow" />
+```
+
+Ref: https://icons.expo.fyi/Index 
+
+***
 # catatan tambahan
 ***
 ### deklarasi state

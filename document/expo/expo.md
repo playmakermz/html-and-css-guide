@@ -31,6 +31,9 @@ npm install -g yarn
 
 yarn add global expo-cli
 yarn add global expo
+# =================== atau seperti ini =============
+npm install expo-cli
+npm install expo
 
 npx expo-cli upgrade // jika mengalami error karena version
 ```

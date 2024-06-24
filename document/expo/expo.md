@@ -319,7 +319,8 @@ Manfaat:
 
 Ref: 
 - https://github.com/react-native-linear-gradient/react-native-linear-gradient | 
-- https://codesandbox.io/s/react-hv1g9e | contoh hasil 
+- https://codesandbox.io/s/react-hv1g9e | contoh hasil
+- https://docs.expo.dev/versions/latest/sdk/linear-gradient/ | Contoh Official
 
 ***
 # ImageBackground 

@@ -533,8 +533,21 @@ initial params. dimana ini kita tulis didalam screen.
 />
 ```
 
+***
+# useNavigation
+***
+Ref: https://reactnavigation.org/docs/use-navigation/
+
+Sebuah metode untuk berpindah screen jika kita berada didalam component paling bawah. 
+
+***
+# StackAction
+***
+
+Ref: https://reactnavigation.org/docs/stack-actions/
 
 
+StackAction push adalah sebuah metode untuk kita mengirim data dari screen lain
 
 
 

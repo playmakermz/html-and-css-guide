@@ -549,7 +549,8 @@ Ref: https://reactnavigation.org/docs/stack-actions/
 
 StackAction push adalah sebuah metode untuk kita mengirim data dari screen lain
 
-
+- Gunakan "Push" ketika Anda ingin menambahkan layar baru ke riwayat navigasi dan memungkinkan pengguna untuk kembali ke layar sebelumnya.
+- Gunakan "Replace" ketika Anda ingin mengganti layar yang ada dengan layar baru dan mencegah pengguna kembali ke layar yang diganti.
 
 
 ## Referensi 

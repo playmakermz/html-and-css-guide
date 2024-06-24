@@ -43,7 +43,8 @@ ref: https://medium.com/@blackpintz/how-to-install-expo-cli-using-yarn-92efe8ed7
 npx create-expo-app my-app
 
 
-npx expo start
+# =========== Jalankan App pada website ===========
+npm run web
 ```
 
 

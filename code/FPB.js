@@ -37,4 +37,5 @@ console.log(obj.hasil())
 
 
 // 12
-// test https://matematikamudah10.blogspot.com/2019/05/contoh-soal-fpb-dan-penyelesaiannya.htmlhttps://matematikamudah10.blogspot.com/2019/05/contoh-soal-fpb-dan-penyelesaiannya.html
+// test https://matematikamudah10.blogspot.com/2019/05/contoh-soal-fpb-dan-penyelesaiannya.html
+// https://matematikamudah10.blogspot.com/2019/05/contoh-soal-fpb-dan-penyelesaiannya.html

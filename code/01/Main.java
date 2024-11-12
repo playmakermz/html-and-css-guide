@@ -2,12 +2,14 @@ import java.util.*;
 import java.util.Scanner;
 
 class MenuItem {
+    // ============ Tipe data yang akan digunakan ==============
     int id;
     String nama;
     int harga;
     String kategori;
     int jumlah;
 
+    // ======================== Mendaftarkan informasi (Penting ) ============
     public MenuItem(int id, String nama, int harga, String kategori) {
         this.id = id;
         this.nama = nama;
@@ -26,6 +28,7 @@ class Order {
     }
 }
 
+// ================== Blueprint untuk Client ======================
 class Client {
     String name;
     int age;
@@ -34,11 +37,13 @@ class Client {
         this.name = name;
         this.age = age;
     }
+    // Informasi ekstra untuk data pribadi client, 
 
     public void mesinPesanan(List<Order> pesanan, int namaM, int jumlahM) {
         pesanan.add(new Order(namaM, jumlahM));
     }
 
+    // ====================== Informasi perpajakan ====================
     public int value(List<MenuItem> a) {
         int abc = 0;
         for (MenuItem item : a) {
@@ -58,6 +63,7 @@ class Client {
         return abc;
     }
 
+    // ========================= Proses pemesanan ====================
     public void main(List<MenuItem> menuList) {
         Scanner scanner = new Scanner(System.in);
 
@@ -96,6 +102,9 @@ class Client {
             }
         }
 
+        // ======================= Menetapkan informasi kepada list menu ================
+        // Pesanan = dari user
+        // menulist = menu resto
         List<MenuItem> totalPrice = new ArrayList<>();
         for (Order order : pesanan) {
             for (MenuItem item : menuList) {
@@ -116,17 +125,15 @@ class Client {
     }
 }
 
-class Owner {
-    public void main(List<MenuItem> menuList) {
-        
-    }
-}
+
 
 public class Main {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        Client toko = new Client("John", 30);
-        Owner owner = new Owner();
+        Scanner scanner = new Scanner(System.in); // Sistem input
+        Client toko = new Client("John", 30); // Instance object
+        
+
+        // ===================================== Membuat List pilihan ======================
         List<MenuItem> menuList = new ArrayList<>();
         menuList.add(new MenuItem(1, "bakso", 10000, "makanan"));
         menuList.add(new MenuItem(2, "sate", 10000, "makanan"));
@@ -145,8 +152,10 @@ public class Main {
         System.out.println("===========================================================\n");
 
         System.out.print("Login sebagai ? : ");
-        String startA = scanner.nextLine();
+        String startA = scanner.nextLine(); 
+        // ===================== Penerima input user ================
 
+        // ========================================= Operasi Program pusat dan awal ===============================
         if (startA.equals("1")) {
             System.out.println("=============     Selamat datang owner        =========");
             System.out.print("Masukan nama menu baru : ");

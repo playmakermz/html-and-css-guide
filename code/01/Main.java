@@ -58,19 +58,8 @@ class Client {
         return abc;
     }
 
-    public void main() {
+    public void main(List<MenuItem> menuList) {
         Scanner scanner = new Scanner(System.in);
-        """
-        List<MenuItem> menuList = new ArrayList<>();
-        menuList.add(new MenuItem(1, "bakso", 10000, "makanan"));
-        menuList.add(new MenuItem(2, "sate", 10000, "makanan"));
-        menuList.add(new MenuItem(3, "ayam goreng", 10000, "makanan"));
-        menuList.add(new MenuItem(4, "bebek goreng", 10000, "makanan"));
-        menuList.add(new MenuItem(5, "es teh anget", 5000, "minuman"));
-        menuList.add(new MenuItem(6, "es jeruk", 5000, "minuman"));
-        menuList.add(new MenuItem(7, "es buah", 5000, "minuman"));
-        menuList.add(new MenuItem(8, "es kelapa", 5000, "minuman"));
-        """
 
         System.out.println("\n======================= List Menu Resto =============================\n");
 
@@ -170,9 +159,9 @@ public class Main {
             int inputId = Integer.parseInt(scanner.nextLine());
     
             menuList.add(new MenuItem(inputId, inputL, inputH, inputKat));
-            toko.main();
+            toko.main(menuList);
         } else if (startA.equals("2")) {
-            toko.main();
+            toko.main(menuList);
         } else {
             System.out.println("Demi keamanan Toko, pengguna yang tidak dikenali tidak diperbolehkan masuk..");
         }

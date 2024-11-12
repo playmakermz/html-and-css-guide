@@ -126,7 +126,7 @@ class Owner{
     let inputKat = readline.question('Masukan kategori' + ' :') // Input kategori
     let inputId = readline.question('Masukan code Id' + ' :') // Input id
 
-    menuList.push({id: parseInt(inputId), nama: inputL, harga: inputH, kategori: inputKat})
+    menuList.push({id: parseInt(inputId), nama: inputL, harga: parseInt(inputH), kategori: inputKat})
     
     
   }

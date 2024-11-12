@@ -6,6 +6,7 @@ class MenuItem {
     String nama;
     int harga;
     String kategori;
+    int jumlah;
 
     public MenuItem(int id, String nama, int harga, String kategori) {
         this.id = id;
@@ -59,6 +60,7 @@ class Client {
 
     public void main() {
         Scanner scanner = new Scanner(System.in);
+        """
         List<MenuItem> menuList = new ArrayList<>();
         menuList.add(new MenuItem(1, "bakso", 10000, "makanan"));
         menuList.add(new MenuItem(2, "sate", 10000, "makanan"));
@@ -68,6 +70,7 @@ class Client {
         menuList.add(new MenuItem(6, "es jeruk", 5000, "minuman"));
         menuList.add(new MenuItem(7, "es buah", 5000, "minuman"));
         menuList.add(new MenuItem(8, "es kelapa", 5000, "minuman"));
+        """
 
         System.out.println("\n======================= List Menu Resto =============================\n");
 
@@ -156,7 +159,6 @@ public class Main {
         String startA = scanner.nextLine();
 
         if (startA.equals("1")) {
-            Scanner scanner = new Scanner(System.in);
             System.out.println("=============     Selamat datang owner        =========");
             System.out.print("Masukan nama menu baru : ");
             String inputL = scanner.nextLine();

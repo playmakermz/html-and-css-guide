@@ -28,6 +28,12 @@ class Order {
     }
 }
 
+class Owner {
+    public void main(List<MenuItem> menuList) {
+        
+    }
+}
+
 // ================== Blueprint untuk Client ======================
 class Client {
     String name;
@@ -131,6 +137,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in); // Sistem input
         Client toko = new Client("John", 30); // Instance object
+        Owner owner = new Owner(); // Instance Object
         
 
         // ===================================== Membuat List pilihan ======================

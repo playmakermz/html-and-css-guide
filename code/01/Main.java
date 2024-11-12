@@ -126,18 +126,7 @@ class Client {
 
 class Owner {
     public void main(List<MenuItem> menuList) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.println("=============     Selamat datang owner        =========");
-        System.out.print("Masukan nama menu baru : ");
-        String inputL = scanner.nextLine();
-        System.out.print("Masukan Harga : ");
-        int inputH = Integer.parseInt(scanner.nextLine());
-        System.out.print("Masukan kategori : ");
-        String inputKat = scanner.nextLine();
-        System.out.print("Masukan code Id : ");
-        int inputId = Integer.parseInt(scanner.nextLine());
-
-        menuList.add(new MenuItem(inputId, inputL, inputH, inputKat));
+        
     }
 }
 
@@ -167,7 +156,18 @@ public class Main {
         String startA = scanner.nextLine();
 
         if (startA.equals("1")) {
-            owner.main(menuList);
+            Scanner scanner = new Scanner(System.in);
+            System.out.println("=============     Selamat datang owner        =========");
+            System.out.print("Masukan nama menu baru : ");
+            String inputL = scanner.nextLine();
+            System.out.print("Masukan Harga : ");
+            int inputH = Integer.parseInt(scanner.nextLine());
+            System.out.print("Masukan kategori : ");
+            String inputKat = scanner.nextLine();
+            System.out.print("Masukan code Id : ");
+            int inputId = Integer.parseInt(scanner.nextLine());
+    
+            menuList.add(new MenuItem(inputId, inputL, inputH, inputKat));
             toko.main();
         } else if (startA.equals("2")) {
             toko.main();

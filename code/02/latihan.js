@@ -69,6 +69,14 @@ class Menu {
       {id: 8, nama: 'es kelapa', harga: 5000, kategori: 'minuman' },
       ]
 
+      console.log(`
+
+      ================= Resto Open Source =====================
+      Menambahkan Menu baru kedala Restoran kami:
+      =========================================================
+
+      `)
+
       let inputL = readline.question('Masukan nama menu baru' + ' :') // Input List
       let inputH = readline.question('Masukan Harga ' + ' :') // Input Harga
       let inputKat = readline.question('Masukan kategori' + ' :') // Input kategori

@@ -1,5 +1,7 @@
 let readline = require('readline-sync')
+var fs = require('fs');
 // npm install readline-sync
+// write on file
 class MenuItem {
     constructor(id, nama, harga, kategori) {
       this.id = id;
@@ -58,6 +60,7 @@ class Diskon extends MenuItem {
 
 class Menu {
   Main(){
+    // ===========================
     let menuList = [
       {id: 1, nama: 'bakso', harga: 10000, kategori: 'makanan' },
       {id: 2, nama: 'sate', harga: 10000, kategori: 'makanan' },
@@ -82,19 +85,18 @@ class Menu {
       let inputKat = readline.question('Masukan kategori' + ' :') // Input kategori
       let inputId = readline.question('Masukan code Id' + ' :') // Input id
   
-      menuList.push({id: parseInt(inputId), nama: inputL, harga: parseInt(inputH), kategori: inputKat})
+      let haloInput = {id: parseInt(inputId), nama: inputL, harga: parseInt(inputH), kategori: inputKat}
+      menuList.push(haloInput)
+      fs.writeFileSync('my.json', JSON.stringify(menuList, null, 2))
       console.log(menuList)
-      
+
   }// ================ Method Main End ===========
 }// ======================== Class Menu End ======================
 
 class Pesanan {
-
-
   Main(){
+    let restoList = require('./my.json')
     let diskon = new Diskon(1, 'diskon', 10, 'diskon' )
-    
-
     let menuList = [
       {id: 1, nama: 'bakso', harga: 10000, kategori: 'makanan' },
       {id: 2, nama: 'sate', harga: 10000, kategori: 'makanan' },
@@ -105,6 +107,8 @@ class Pesanan {
       {id: 7, nama: 'es buah', harga: 5000, kategori: 'minuman' },
       {id: 8, nama: 'es kelapa', harga: 5000, kategori: 'minuman' },
       ]
+
+      menuList = restoList
 
       console.log(`
 
@@ -181,3 +185,8 @@ let deg = new Pesanan()
 
 abc.Main()
 deg.Main()
+
+
+// Ref: https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
+// https://www.geeksforgeeks.org/javascript-program-to-write-data-in-a-text-file/
+// pastikan JSON mengunakan yang sudah ada, agar nanti bisa diupdate dengan mudah

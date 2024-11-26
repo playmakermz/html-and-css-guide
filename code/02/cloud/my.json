@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nama": "bakso",
+    "harga": 10000,
+    "kategori": "makanan"
+  },
+  {
+    "id": 2,
+    "nama": "sate",
+    "harga": 10000,
+    "kategori": "makanan"
+  },
+  {
+    "id": 3,
+    "nama": "ayam goreng",
+    "harga": 10000,
+    "kategori": "makanan"
+  },
+  {
+    "id": 4,
+    "nama": "bebek goreng",
+    "harga": 10000,
+    "kategori": "makanan"
+  },
+  {
+    "id": 5,
+    "nama": "es teh anget",
+    "harga": 5000,
+    "kategori": "minuman"
+  },
+  {
+    "id": 6,
+    "nama": "es jeruk",
+    "harga": 5000,
+    "kategori": "minuman"
+  },
+  {
+    "id": 7,
+    "nama": "es buah",
+    "harga": 5000,
+    "kategori": "minuman"
+  },
+  {
+    "id": 8,
+    "nama": "es kelapa",
+    "harga": 5000,
+    "kategori": "minuman"
+  },
+  {
+    "id": 9,
+    "nama": "1",
+    "harga": 10,
+    "kategori": "minuman"
+  }
+]

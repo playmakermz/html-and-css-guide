@@ -61,17 +61,7 @@ class Diskon extends MenuItem {
 class Menu {
   Main(){
     // ===========================
-    let menuList = [
-      {id: 1, nama: 'bakso', harga: 10000, kategori: 'makanan' },
-      {id: 2, nama: 'sate', harga: 10000, kategori: 'makanan' },
-      {id: 3, nama: 'ayam goreng', harga: 10000, kategori: 'makanan' },
-      {id: 4, nama: 'bebek goreng', harga: 10000, kategori: 'makanan' },
-      {id: 5, nama: 'es teh anget', harga: 5000, kategori: 'minuman' },
-      {id: 6, nama: 'es jeruk', harga: 5000, kategori: 'minuman' },
-      {id: 7, nama: 'es buah', harga: 5000, kategori: 'minuman' },
-      {id: 8, nama: 'es kelapa', harga: 5000, kategori: 'minuman' },
-      ]
-
+    let menuList = require('./my.json')
       console.log(`
 
       ================= Resto Open Source =====================
@@ -97,18 +87,7 @@ class Pesanan {
   Main(){
     let restoList = require('./my.json')
     let diskon = new Diskon(1, 'diskon', 10, 'diskon' )
-    let menuList = [
-      {id: 1, nama: 'bakso', harga: 10000, kategori: 'makanan' },
-      {id: 2, nama: 'sate', harga: 10000, kategori: 'makanan' },
-      {id: 3, nama: 'ayam goreng', harga: 10000, kategori: 'makanan' },
-      {id: 4, nama: 'bebek goreng', harga: 10000, kategori: 'makanan' },
-      {id: 5, nama: 'es teh anget', harga: 5000, kategori: 'minuman' },
-      {id: 6, nama: 'es jeruk', harga: 5000, kategori: 'minuman' },
-      {id: 7, nama: 'es buah', harga: 5000, kategori: 'minuman' },
-      {id: 8, nama: 'es kelapa', harga: 5000, kategori: 'minuman' },
-      ]
-
-      menuList = restoList
+    let menuList = restoList
 
       console.log(`
 
@@ -144,7 +123,7 @@ class Pesanan {
 
     while (proses) {
       let inUserN = readline.question('Masukan Nomor id Pesanan :') // Input user nama
-        if(parseInt(inUserN) < 10 ){
+        if(parseInt(inUserN) < 15 ){
             let inUserJ = readline.question('Masukan jumlah pesanan ' + ' :') // Input User Jumlah
             pesananList.push({id: inUserN, quantity: inUserJ})
         }
@@ -187,6 +166,7 @@ abc.Main()
 deg.Main()
 
 
+// Ref: https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
 // Ref: https://stackoverflow.com/questions/17614123/node-js-how-to-write-an-array-to-file
 // https://www.geeksforgeeks.org/javascript-program-to-write-data-in-a-text-file/
 // pastikan JSON mengunakan yang sudah ada, agar nanti bisa diupdate dengan mudah

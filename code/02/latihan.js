@@ -30,8 +30,30 @@ class Minuman extends MenuItem {
 class Diskon extends MenuItem {
   constructor(id, nama, harga, kategori) {
     super(id, nama, harga, kategori);
-    this.jenisDiskon = "Diskon";
+    this.jenisDiskon = 0.10;
   }
+
+  Value(a){
+    let abc = 0
+    let i 
+    for (i in a){
+      abc += a[i].harga * a[i].jumlah // mehitung hasil dari informasi harga dan jumlah
+    }
+    if (abc >= 100000){
+      abc = abc
+      console.log('Dengan tambahan pajak 10% : ' + (abc * 0.10) )
+      console.log('dikarenakan pembelian diatas Rp. 100.000, medapatkan diskon 10% : ' + (abc * this.jenisDiskon))
+    }
+    else {
+      abc = abc + (abc * 0.10)
+      console.log('Dengan tambahan pajak 10% : ' + (abc * 0.10) )
+    }
+    
+    if(abc > 50000){
+      console.log('Dapat 1 bonus minuman special, Silahkan diambil di kasir')
+    }
+    return abc
+  }// ============== Akhir method Value ===============
 }// ============ Class Diskon End ===========
 
 class Menu {
@@ -60,29 +82,11 @@ class Menu {
 
 class Pesanan {
 
-  Value(a){
-    let abc = 0
-    let i 
-    for (i in a){
-      abc += a[i].harga * a[i].jumlah // mehitung hasil dari informasi harga dan jumlah
-    }
-    if (abc > 100000){
-      abc = abc
-      console.log('Dengan tambahan pajak 10% : ' + (abc * 0.10) )
-      console.log('dikarenakan pembelian diatas Rp. 100.000, medapatkan diskon 10%')
-    }
-    else {
-      abc = abc + (abc * 0.10)
-      console.log('Dengan tambahan pajak 10% : ' + (abc * 0.10) )
-    }
-    
-    if(abc > 50000){
-      console.log('Dapat 1 bonus minuman special, Silahkan diambil di kasir')
-    }
-    return abc
-  }// ============== Akhir method Value ===============
 
   Main(){
+    let diskon = new Diskon(1, 'diskon', 10, 'diskon' )
+    
+
     let menuList = [
       {id: 1, nama: 'bakso', harga: 10000, kategori: 'makanan' },
       {id: 2, nama: 'sate', harga: 10000, kategori: 'makanan' },
@@ -155,7 +159,7 @@ for (let i in pesananList){
 }
 console.log('======================== Nota Pembelian ==========================')
 console.log(totalPrice)
-console.log('Total Harga : ' + this.Value(totalPrice))
+console.log('Total Harga : ' + diskon.Value(totalPrice))
 console.log('======================== Nota Pembelian ==========================')
     
     // =============== Maijn akhir ===================

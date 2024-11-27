@@ -1,7 +1,7 @@
 import java.io.FileWriter;   // Import the FileWriter class
 import java.io.IOException;  // Import the IOException class to handle errors
-import java.util.ArrayList;
-import java.util.List;
+import java.util.ArrayList;  // Import the File class
+import java.util.List;  // Import this class to handle errors
 import java.util.Scanner;
 
 

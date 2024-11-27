@@ -1,8 +1,13 @@
-import java.io.FileWriter;   // Import the FileWriter class
-import java.io.IOException;  // Import the IOException class to handle errors
+// Finale 11:51 hari Rabu
+import java.io.File;   // Import the FileWriter class
+import java.io.FileNotFoundException;  // Import the IOException class to handle errors
+import java.io.FileWriter;  // Import the File class
+import java.io.IOException;  // Import this class to handle errors
 import java.util.ArrayList;  // Import the File class
-import java.util.List;  // Import this class to handle errors
+import java.util.List;
 import java.util.Scanner;
+
+
 
 
 class MenuItem {
@@ -158,7 +163,7 @@ class Menu {
             FileWriter myWriter = new FileWriter("Menu.txt");
 
             for (MenuItem item : menuList){
-                myWriter.write("ID: " + item.id + ", Nama: " + item.nama + ", Harga: " + item.harga + ", Kategori: === " + item.kategori + " ===");
+                myWriter.write("ID: " + item.id + ", Nama: " + item.nama + ", Harga: " + item.harga + ", Kategori: === " + item.kategori + " ===" + "\r\n");
                 } 
             myWriter.close();
             System.out.println("Successfully wrote Menu to the file.");
@@ -174,6 +179,30 @@ class Menu {
     }
 
 }
+
+// =================================== File ======================
+
+
+class CFC {
+    public static void main(String wkw) throws IOException {
+
+        try {
+            File myObj = new File("Menu.txt");
+            Scanner myReader = new Scanner(myObj);
+            while (myReader.hasNextLine()) {
+              String data = myReader.nextLine();
+              System.out.println(data);
+            }
+            myReader.close();
+          } catch (FileNotFoundException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+          }
+
+    }
+}
+
+// ====================================== Read File ===================
 
 
 
@@ -210,24 +239,18 @@ class Pesanan {
         System.out.println("=========================================================\n\n");
 
 
+        // ============================================ Menu List ======================
 
-        for (MenuItem item : menuList) {
+        CFC laporanP = new CFC();
+        // Wajib check keluar masuk
+        try {
+            laporanP.main("hi");
+          } catch (IOException e) {
+            System.out.println("An error occurred.");
+            e.printStackTrace();
+          }
 
-            if (item.kategori.equals("makanan")) {
-
-                Makanan makanan = new Makanan(item.id, item.nama, item.harga, item.kategori);
-
-                makanan.tampilMenu();
-
-            } else if (item.kategori.equals("minuman")) {
-
-                Minuman minuman = new Minuman(item.id, item.nama, item.harga, item.kategori);
-
-                minuman.tampilMenu();
-
-            }
-
-        }
+        // ======================================= Menu List ===========================
 
 
 

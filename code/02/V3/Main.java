@@ -1,4 +1,5 @@
-// Finale 11:51 hari Rabu
+// 6:34
+
 import java.io.File;   // Import the FileWriter class
 import java.io.FileNotFoundException;  // Import the IOException class to handle errors
 import java.io.FileWriter;  // Import the File class
@@ -6,6 +7,7 @@ import java.io.IOException;  // Import this class to handle errors
 import java.util.ArrayList;  // Import the File class
 import java.util.List;
 import java.util.Scanner;
+
 
 
 
@@ -368,14 +370,26 @@ public class Main {
     public static void main(String[] args){
 
         Menu abc = new Menu();
-
         Pesanan deg = new Pesanan();
+        Scanner scanner = new Scanner(System.in); // Sistem input
 
+        System.out.print("===================== Login System ================\n\n");
+        System.out.print("1. Owner\n\n");
+        System.out.print("2. Client Only\n\n");
 
+        System.out.print("Login sebagai ? : ");
+        String startA = scanner.nextLine(); 
 
-        abc.Main();
+        if (startA.equals("1")) {
+            abc.Main();
+            deg.Main();
+        }
 
-        deg.Main();
+        else if (startA.equals("2")) {
+            deg.Main();
+        } else {
+            System.out.println("Sampa Jumpa");
+        }
 
     }
 

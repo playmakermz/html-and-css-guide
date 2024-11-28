@@ -1,5 +1,3 @@
-// 6:34
-
 import java.io.File;   // Import the FileWriter class
 import java.io.FileNotFoundException;  // Import the IOException class to handle errors
 import java.io.FileWriter;  // Import the File class
@@ -16,12 +14,12 @@ class MenuItem {
 
     int id;
     String nama;
-    int harga;
+    double harga;
     String kategori;
 
 
 
-    public MenuItem(int id, String nama, int harga, String kategori) {
+    public MenuItem(int id, String nama, double harga, String kategori) {
 
         this.id = id;
         this.nama = nama;
@@ -159,7 +157,7 @@ class Menu {
 
         menuList.add(new MenuItem(inputId, inputL, inputH, inputKat));
 
-        // ======================== Input kedalam JSON ==========
+        // ======================== Input kedalam TXT ==========
 
         try {
             FileWriter myWriter = new FileWriter("Menu.txt");
@@ -174,7 +172,7 @@ class Menu {
             e.printStackTrace();
           }
 
-        // ===================== Inpu kedalam Json ==================
+        // ===================== Inpu kedalam TXT ==================
 
         
 
